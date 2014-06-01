@@ -75,7 +75,7 @@ gnd.is = {};
             return false;
         }
 
-        if ( toTest instanceof jQuery || gnd.is.$( toTest ) ) {
+        if ( gnd.is.$( toTest ) || gnd.is.domElement( toTest.elem ) || gnd.is.domElement( toTest[0] ) ) {
             return false;
         }
 
