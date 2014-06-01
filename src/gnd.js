@@ -86,6 +86,8 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
 
     /**
      * @method
+     * TODO: Update this functionality for simplicity.
+     *       See _.extend()
      *
      * @author
      *  MelechMizrachi
