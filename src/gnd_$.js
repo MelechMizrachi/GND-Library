@@ -14,6 +14,7 @@
  *      @property                           gnd.$.SPACE_SPLIT
  *      @property                           gnd.$.getElements()
  *      @property                           gnd.$.find()
+ *      @property                           gnd.$.parent()
  *      @property                           gnd.$.get()
  *      @property                           gnd.$.closest()
  *      @property                           gnd.$.handleEvent()
@@ -298,6 +299,26 @@ gnd.$ = function ( selector, context )
     gnd.$.prototype.find = function ( selector )
     {
         return gnd.$( this.getElements( this.elem, selector ) );
+    };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Get the elem parent
+     *
+     * @params
+     *********
+     *
+     * @return {gnd.$}
+     *  The parent
+     **/
+    gnd.$.prototype.parent = function ()
+    {
+        return gnd.$( this.elem.parentNode );
     };
 
     /**
