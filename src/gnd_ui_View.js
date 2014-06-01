@@ -541,7 +541,7 @@ gnd.ui.View = function ( options )
      *  MelechMizrachi
      *
      * @desc
-     *  Ensure the view element exists and is a jQuery object
+     *  Ensure the view element exists
      *
      * @params
      *********

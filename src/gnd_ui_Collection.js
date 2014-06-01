@@ -75,7 +75,7 @@ gnd.ui.Collection = function ( options )
      * @namespace
      *
      * @desc
-     *  The jQuery selector for the DOM elements
+     *  The selector for the DOM elements
      *
      * @type {object}
      **/
@@ -188,7 +188,7 @@ gnd.ui.Collection = function ( options )
     {
         // Determine whether to use Views or $views
         // - Views     : Object of Views
-        // - $views     : jQuery selector to get the correct views from the DOM
+        // - $views    : Selector to get the correct views from the DOM
 
         // Default views to Views
         var
@@ -196,7 +196,7 @@ gnd.ui.Collection = function ( options )
             ,   self    = this
         ;
 
-        // If $views is an object (jQuery object)
+        // If $views is an object
         if ( !gnd.is.empty.object( this.$views ) ) {
             // Set views to $views
             Views = this.$views;

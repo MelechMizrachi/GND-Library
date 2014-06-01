@@ -17,7 +17,15 @@
 /**
  * @class
  **/
- var gnd = gnd || {};
+var gnd = gnd || {};
+
+/**
+ * @namespace
+ *
+ * Ensure we have a namespace set for GND Globals
+ * In the case one does not exist
+ **/
+window.GND_GLOBALS = window.GND_GLOBALS || {};
 
     /**
      * @constant

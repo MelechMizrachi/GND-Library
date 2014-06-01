@@ -36,7 +36,7 @@ gnd.dom = {};
      *
      * @extends {gnd.$}
      **/
-    gnd.dom.$ = jQuery;
+    gnd.dom.$ = GND_GLOBALS['gnd.dom.$'] || gnd.$;
 
     /**
      * @namespace
