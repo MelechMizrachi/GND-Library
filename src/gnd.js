@@ -27,7 +27,7 @@
      *
      * @type {string}
      **/
-    gnd.VERSION = '1.1.38. alpha';
+    gnd.VERSION = '1.2. alpha';
 
     /**
      * @constant
