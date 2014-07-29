@@ -24,7 +24,7 @@ gnd.xhr = {};
      *
      * @type {string}
      **/
-    gnd.xhr.URL = '/wp-admin/admin-ajax.php';
+    gnd.xhr.URL = '/Service/Api/';
 
     /**
      * @method
@@ -59,8 +59,14 @@ gnd.xhr = {};
                 options = url;
             }
 
-            // Set the url to the default url
-            url = gnd.xhr.URL;
+            if ( gnd.is.empty.string( options.url ) ) {
+                url = options.url;
+            } else {
+                return false;
+            }
+
+//            // Set the url to the default url
+//            url = gnd.xhr.URL;
         }
 
         /**
