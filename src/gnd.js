@@ -35,7 +35,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *
      * @type {string}
      **/
-    gnd.VERSION = '1.5. alpha';
+    gnd.VERSION = '2.0. alpha';
 
     /**
      * @constant

@@ -1302,132 +1302,6 @@ gnd.$ = function ( selector, context )
         gnd.$.prototype.class.toggle = gnd.$.prototype.toggleClass;
 
     /**
-     * @method
-     *
-     * @author
-     *  MelechMizrachi
-     *
-     * @desc
-     *  Get an attribute value
-     *
-     * @params
-     *********
-     * @param attr {string}
-     *  The attribute to get
-     *********
-     *
-     * @return {string|boolean}
-     **/
-    gnd.$.prototype.getAttr = function ( attr )
-    {
-        // If no attribute was provided
-        if ( !attr ) {
-            // Return false
-            return false;
-        }
-
-        // Return this for chaining
-        return this.get( 0 ).getAttribute( attr );
-    };
-
-    /**
-     * @method
-     *
-     * @author
-     *  MelechMizrachi
-     *
-     * @desc
-     *  Adds attribute to elem
-     *
-     * @params
-     *********
-     * @param attr {string}
-     *  The attribute to add to
-     **
-     * @param value {*}
-     *  The attribute to add to
-     *********
-     *
-     * @return {gnd.$}
-     **/
-    gnd.$.prototype.addAttr = function ( attr, value )
-    {
-        // If no attribute or value were provided
-        if ( !attr || !value ) {
-            // Return this for chaining
-            return this;
-        }
-
-        // If the element is a dom element and not a list
-        if ( gnd.is.domElement( this.elem ) ) {
-            // Set the element's attribute
-            this.elem.setAttribute( attr, value );
-        }
-
-        var
-                i   = 0
-            ,   len = this.getLength()
-        ;
-
-        // Iterate through the node list
-        for ( ; i < len; i++ ) {
-            // Set the attribute to the value specified
-            this.elem[ i ].setAttribute( attr, value );
-        }
-
-        // Return this for chaining
-        return this;
-    };
-
-    gnd.$.prototype.setAttr = gnd.$.prototype.addAttr;
-
-    /**
-     * @method
-     *
-     * @author
-     *  MelechMizrachi
-     *
-     * @desc
-     *  Removes an attribute from elem
-     *
-     * @params
-     *********
-     * @param attr {string}
-     *  The attribute to remove
-     *********
-     *
-     * @return {gnd.$}
-     **/
-    gnd.$.prototype.removeAttr = function ( attr )
-    {
-        // If no attribute was provided
-        if ( !attr ) {
-            // Return this for chaining
-            return this;
-        }
-
-        // If the element is a dom element and not a list
-        if ( gnd.is.domElement( this.elem ) ) {
-            // Remove the element's attribute
-            this.elem.removeAttribute( attr );
-        }
-
-        var
-                i   = 0
-            ,   len = this.getLength()
-        ;
-
-        // Iterate through the node list
-        for ( ; i < len; i++ ) {
-            // Remove the attribute specified
-            this.elem[ i ].removeAttribute( attr );
-        }
-
-        // Return this for chaining
-        return this;
-    };
-
-    /**
      * @class
      **/
     gnd.$.prototype.attr = {};
@@ -1437,120 +1311,124 @@ gnd.$ = function ( selector, context )
          *
          * @author
          *  MelechMizrachi
+         *
+         * @desc
+         *  Get an attribute value
+         *
+         * @params
+         *********
+         * @param attr {string}
+         *  The attribute to get
+         *********
+         *
+         * @return {string|boolean}
          **/
-        gnd.$.prototype.attr.get = gnd.$.prototype.getAttr;
+        gnd.$.prototype.attr.get = function ( attr )
+        {
+            // If no attribute was provided
+            if ( !attr ) {
+                // Return false
+                return false;
+            }
+
+            // Return this for chaining
+            return this.get( 0 ).getAttribute( attr );
+        };
 
         /**
          * @method
          *
          * @author
          *  MelechMizrachi
-         **/
-        gnd.$.prototype.attr.add = gnd.$.prototype.addAttr;
-
-        /**
-         * @method
          *
-         * @author
-         *  MelechMizrachi
-         **/
-        gnd.$.prototype.attr.set = gnd.$.prototype.addAttr;
-
-        /**
-         * @method
+         * @desc
+         *  Adds attribute to elem
          *
-         * @author
-         *  MelechMizrachi
+         * @params
+         *********
+         * @param attr {string}
+         *  The attribute to add to
+         **
+         * @param value {*}
+         *  The attribute to add to
+         *********
+         *
+         * @return {gnd.$}
          **/
-        gnd.$.prototype.attr.remove = gnd.$.prototype.removeAttr;
+        gnd.$.prototype.attr.set = function ( attr, value )
+        {
+            // If no attribute or value were provided
+            if ( !attr || !value ) {
+                // Return this for chaining
+                return this;
+            }
 
-    /**
-     * @method
-     *
-     * @author
-     *  MelechMizrachi
-     *
-     * @desc
-     *  Get a data attribute value
-     *
-     * @params
-     *********
-     * @param data {string}
-     *  The data attribute to get
-     *********
-     *
-     * @return {string|boolean}
-     **/
-    gnd.$.prototype.getDataAttr = function ( data )
-    {
-        // If no data attribute was provided
-        if ( !data ) {
-            // Return false
-            return false;
-        }
+            // If the element is a dom element and not a list
+            if ( gnd.is.domElement( this.elem ) ) {
+                // Set the element's attribute
+                this.elem.setAttribute( attr, value );
+            }
 
-        return this.getAttr( 'data-' + data );
-    };
+            var
+                    i   = 0
+                ,   len = this.getLength()
+            ;
 
-    /**
-     * @method
-     *
-     * @author
-     *  MelechMizrachi
-     *
-     * @desc
-     *  Adds a data attribute to elem
-     *
-     * @params
-     *********
-     * @param data
-     *  The data to add to
-     * @type    {string}
-     **
-     * @param value {*}
-     *  The attribute to add to
-     *********
-     *
-     * @return {object}
-     **/
-    gnd.$.prototype.addDataAttr = function ( data, value )
-    {
-        // If no data attribute or value were provided
-        if ( !data || !value ) {
+            // Iterate through the node list
+            for ( ; i < len; i++ ) {
+                // Set the attribute to the value specified
+                this.elem[ i ].setAttribute( attr, value );
+            }
+
             // Return this for chaining
             return this;
-        }
+        };
 
-        return this.addAttr( 'data-' + data, value );
-    };
+        /**
+         * @method
+         *
+         * @author
+         *  MelechMizrachi
+         *
+         * @desc
+         *  Removes an attribute from elem
+         *
+         * @params
+         *********
+         * @param attr {string}
+         *  The attribute to remove
+         *********
+         *
+         * @return {gnd.$}
+         **/
+        gnd.$.prototype.attr.remove = function ( attr )
+        {
+            // If no attribute was provided
+            if ( !attr ) {
+                // Return this for chaining
+                return this;
+            }
 
-    /**
-     * @method
-     *
-     * @author
-     *  MelechMizrachi
-     *
-     * @desc
-     *  Removes a data attribute from elem
-     *
-     * @params
-     *********
-     * @param data {string}
-     *  The data to remove
-     *********
-     *
-     * @return {object}
-     **/
-    gnd.$.prototype.removeDataAttr = function ( data )
-    {
-        // If no data attribute was provided
-        if ( !data || !value ) {
+            // If the element is a dom element and not a list
+            if ( gnd.is.domElement( this.elem ) ) {
+                // Remove the element's attribute
+                this.elem.removeAttribute( attr );
+            }
+
+            var
+                    i   = 0
+                ,   len = this.getLength()
+            ;
+
+            // Iterate through the node list
+            for ( ; i < len; i++ ) {
+                // Remove the attribute specified
+                this.elem[ i ].removeAttribute( attr );
+            }
+
             // Return this for chaining
             return this;
-        }
-
-        return this.removeAttr( 'data-' + data );
-    };
+        };
 
     /**
      * @class
@@ -1562,32 +1440,88 @@ gnd.$ = function ( selector, context )
          *
          * @author
          *  MelechMizrachi
+         *
+         * @desc
+         *  Get a data attribute value
+         *
+         * @params
+         *********
+         * @param data {string}
+         *  The data attribute to get
+         *********
+         *
+         * @return {string|boolean}
          **/
-        gnd.$.prototype.data.get = gnd.$.prototype.getDataAttr;
+        gnd.$.prototype.data.get = function ( data )
+        {
+            // If no data attribute was provided
+            if ( !data ) {
+                // Return false
+                return false;
+            }
+
+            return this.attr.get( 'data-' + data );
+        };
 
         /**
          * @method
          *
          * @author
          *  MelechMizrachi
+         *
+         * @desc
+         *  Adds a data attribute to elem
+         *
+         * @params
+         *********
+         * @param data
+         *  The data to add to
+         * @type    {string}
+         **
+         * @param value {*}
+         *  The attribute to add to
+         *********
+         *
+         * @return {object}
          **/
-        gnd.$.prototype.data.add = gnd.$.prototype.addDataAttr;
+        gnd.$.prototype.data.set = function ( data, value )
+        {
+            // If no data attribute or value were provided
+            if ( !data || !value ) {
+                // Return this for chaining
+                return this;
+            }
+
+            return this.attr.set( 'data-' + data, value );
+        };
 
         /**
          * @method
          *
          * @author
          *  MelechMizrachi
-         **/
-        gnd.$.prototype.data.set = gnd.$.prototype.addDataAttr;
-
-        /**
-         * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @desc
+         *  Removes a data attribute from elem
+         *
+         * @params
+         *********
+         * @param data {string}
+         *  The data to remove
+         *********
+         *
+         * @return {object}
          **/
-        gnd.$.prototype.data.remove = gnd.$.prototype.removeDataAttr;
+        gnd.$.prototype.data.remove = function ( data )
+        {
+            // If no data attribute was provided
+            if ( !data || !value ) {
+                // Return this for chaining
+                return this;
+            }
+
+            return this.attr.remove( 'data-' + data );
+        };
 
 /**
  * @author
