@@ -11,6 +11,7 @@
  *          @property                           gnd.dom.elems.document
  *          @property                           gnd.dom.elems.window
  *          @property                           gnd.dom.elems.html
+ *          @property                           gnd.dom.elems.body
  *          @property                           gnd.dom.elems.header
  *          @property                           gnd.dom.elems.main
  *          @property                           gnd.dom.elems.footer
@@ -77,6 +78,16 @@ gnd.dom = {};
          * @type {gnd.$}
          **/
         gnd.dom.elems.html = gnd.$( 'html' );
+
+        /**
+         * @namespace
+         *
+         * @desc
+         *  Create new instance of gnd.$ for body
+         *
+         * @type {gnd.$}
+         **/
+        gnd.dom.elems.body = gnd.$( 'body' );
 
         /**
          * @namespace

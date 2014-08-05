@@ -1252,6 +1252,12 @@ gnd.$ = function ( selector, context )
             return this;
         }
 
+        var elem = this.elem;
+
+        if ( !gnd.is.domElement( this.elem ) ) {
+            elem = this.get( 0 );
+        }
+
         // If there are more than one classes added
         if ( gnd.string.contains( className, this.SPACE_SPLIT ) ) {
             // Just use the first item
@@ -1259,7 +1265,7 @@ gnd.$ = function ( selector, context )
         }
 
         // Return the new object
-        return this.elem.classList.contains( className );
+        return elem.classList.contains( className );
     };
 
     /**
