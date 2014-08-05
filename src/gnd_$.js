@@ -40,19 +40,13 @@
  *          @property                           gnd.$.class.set()
  *          @property                           gnd.$.class.remove()
  *          @property                           gnd.$.class.toggle()
- *      @property                           gnd.$.getAttr()
- *      @property                           gnd.$.addAttr()
- *      @property                           gnd.$.removeAttr()
  *      @property                           gnd.$.attr
  *          @property                           gnd.$.attr.get()
- *          @property                           gnd.$.attr.add()
+ *          @property                           gnd.$.attr.set()
  *          @property                           gnd.$.attr.remove()
- *      @property                           gnd.$.getDataAttr()
- *      @property                           gnd.$.addDataAttr()
- *      @property                           gnd.$.removeDataAttr()
  *      @property                           gnd.$.data
  *          @property                           gnd.$.data.get()
- *          @property                           gnd.$.data.add()
+ *          @property                           gnd.$.data.set()
  *          @property                           gnd.$.data.remove()
  *     @property                            gnd.$.Init.prototype
  *
@@ -141,6 +135,10 @@ gnd.$ = function ( selector, context )
             // Set elem as the individual element
             this.elem = this.elem[ 0 ];
         }
+
+        this.class.self =
+        this.attr.self =
+        this.data.self = this;
 
         // Return the new object
         return this;
@@ -341,7 +339,7 @@ gnd.$ = function ( selector, context )
     gnd.$.prototype.get = function ( index )
     {
         // If the elem is a nodeList AND the index is numeric
-        if ( this.getLength() > 0 ) {
+        if ( this.getLength() > 0 && this.elem[ index ] ) {
             // Return the requested element
             return this.elem[ index ];
         }
@@ -1270,6 +1268,17 @@ gnd.$ = function ( selector, context )
     gnd.$.prototype.class = {};
 
         /**
+         * @namespace
+         *
+         * @author
+         *  MelechMizrachi
+         *
+         * @desc
+         *  The scope of the main $
+         **/
+        gnd.$.prototype.data.self;
+
+        /**
          * @method
          *
          * @author
@@ -1307,6 +1316,17 @@ gnd.$ = function ( selector, context )
     gnd.$.prototype.attr = {};
 
         /**
+         * @namespace
+         *
+         * @author
+         *  MelechMizrachi
+         *
+         * @desc
+         *  The scope of the main $
+         **/
+        gnd.$.prototype.attr.self;
+
+        /**
          * @method
          *
          * @author
@@ -1332,7 +1352,7 @@ gnd.$ = function ( selector, context )
             }
 
             // Return this for chaining
-            return this.get( 0 ).getAttribute( attr );
+            return this.self.get( 0 ).getAttribute( attr );
         };
 
         /**
@@ -1360,28 +1380,28 @@ gnd.$ = function ( selector, context )
             // If no attribute or value were provided
             if ( !attr || !value ) {
                 // Return this for chaining
-                return this;
+                return this.self;
             }
 
             // If the element is a dom element and not a list
-            if ( gnd.is.domElement( this.elem ) ) {
+            if ( gnd.is.domElement( this.self.elem ) ) {
                 // Set the element's attribute
-                this.elem.setAttribute( attr, value );
+                this.self.elem.setAttribute( attr, value );
             }
 
             var
                     i   = 0
-                ,   len = this.getLength()
+                ,   len = this.self.getLength()
             ;
 
             // Iterate through the node list
             for ( ; i < len; i++ ) {
                 // Set the attribute to the value specified
-                this.elem[ i ].setAttribute( attr, value );
+                this.self.elem[ i ].setAttribute( attr, value );
             }
 
             // Return this for chaining
-            return this;
+            return this.self;
         };
 
         /**
@@ -1406,34 +1426,45 @@ gnd.$ = function ( selector, context )
             // If no attribute was provided
             if ( !attr ) {
                 // Return this for chaining
-                return this;
+                return this.self;
             }
 
             // If the element is a dom element and not a list
-            if ( gnd.is.domElement( this.elem ) ) {
+            if ( gnd.is.domElement( this.self.elem ) ) {
                 // Remove the element's attribute
-                this.elem.removeAttribute( attr );
+                this.self.elem.removeAttribute( attr );
             }
 
             var
                     i   = 0
-                ,   len = this.getLength()
+                ,   len = this.self.getLength()
             ;
 
             // Iterate through the node list
             for ( ; i < len; i++ ) {
                 // Remove the attribute specified
-                this.elem[ i ].removeAttribute( attr );
+                this.self.elem[ i ].removeAttribute( attr );
             }
 
             // Return this for chaining
-            return this;
+            return this.self;
         };
 
     /**
      * @class
      **/
     gnd.$.prototype.data = {};
+
+        /**
+         * @namespace
+         *
+         * @author
+         *  MelechMizrachi
+         *
+         * @desc
+         *  The scope of the main $
+         **/
+        gnd.$.prototype.data.self;
 
         /**
          * @method
@@ -1460,7 +1491,7 @@ gnd.$ = function ( selector, context )
                 return false;
             }
 
-            return this.attr.get( 'data-' + data );
+            return this.self.attr.get( 'data-' + data );
         };
 
         /**
@@ -1492,7 +1523,7 @@ gnd.$ = function ( selector, context )
                 return this;
             }
 
-            return this.attr.set( 'data-' + data, value );
+            return this.self.attr.set( 'data-' + data, value );
         };
 
         /**
@@ -1515,12 +1546,12 @@ gnd.$ = function ( selector, context )
         gnd.$.prototype.data.remove = function ( data )
         {
             // If no data attribute was provided
-            if ( !data || !value ) {
+            if ( !data ) {
                 // Return this for chaining
                 return this;
             }
 
-            return this.attr.remove( 'data-' + data );
+            return this.self.attr.remove( 'data-' + data );
         };
 
 /**
