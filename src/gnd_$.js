@@ -1276,7 +1276,7 @@ gnd.$ = function ( selector, context )
          * @desc
          *  The scope of the main $
          **/
-        gnd.$.prototype.data.self;
+        gnd.$.prototype.class.self;
 
         /**
          * @method
