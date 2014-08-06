@@ -421,7 +421,7 @@ gnd.$ = function ( selector, context )
                 }
 
                 // Test the filter
-                failsFilter         = !gnd.string.contains( filter, selector );
+                failsFilter         = !gnd.string.compare( filter, selector );
                 // If the filter fails
                 if ( failsFilter ) {
                     // Set the elem as the parent node to continue testing up the dom
@@ -511,6 +511,7 @@ gnd.$ = function ( selector, context )
             ,   args
             ,   dEvent
             ,   finalCallback   = callback
+            ,   self            = this
         ;
 
         // If the selector is the callback
@@ -529,7 +530,7 @@ gnd.$ = function ( selector, context )
             finalCallback = function ( event )
             {
                 // Set a custom target for the selector since target can be a child
-                event.selectorTarget = gnd.$.prototype.closest( selector, event.target ).elem;
+                event.selectorTarget = self.closest( selector, event.target ).elem;
 
                 // Check that the target matches the selector
                 if ( event.selectorTarget ) {

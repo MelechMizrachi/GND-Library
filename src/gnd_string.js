@@ -13,6 +13,8 @@
  *          @property                           gnd.string.is.empty()
  *      @property                           gnd.string.contains()
  *      @property                           gnd.string.containsInsensitive()
+ *      @property                           gnd.string.compare()
+ *      @property                           gnd.string.compareInsensitive()
  *
 \**=================================================================================**/
 
@@ -172,4 +174,55 @@ gnd.string = {};
     gnd.string.containsInsensitive = function ( toTest, value )
     {
         return gnd.string.contains( toTest.toLowerCase(), value.toLowerCase() );
+    };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Compare to strings to see if they match
+     *
+     * @params
+     *********
+     * @param toTest {string}
+     *  The string to test
+     **
+     * @param value {string}
+     *  The value to test for
+     *********
+     *
+     * @return {boolean}
+     **/
+    gnd.string.compare = function ( toTest, value )
+    {
+        return toTest === value;
+    };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Case insensitive of
+     *  @link gnd.string.compare
+     *
+     * @params
+     *********
+     * @param toTest {string}
+     *  The string to test
+     **
+     * @param value {string}
+     *  The value to test for
+     *********
+     *
+     * @return {boolean}
+     **/
+    gnd.string.compareInsensitive = function ( toTest, value )
+    {
+        return toTest.toLowerCase() === value.toLowerCase();
     };
