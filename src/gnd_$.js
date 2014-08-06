@@ -100,6 +100,10 @@ gnd.$ = function ( selector, context )
      **/
     gnd.$.Init = function ( selector, context )
     {
+        this.class.self =
+        this.attr.self =
+        this.data.self = this;
+
         // If the selector is not a string
         if ( !gnd.is.string( selector ) || !selector ) {
             // Set the elem as the selector
@@ -135,10 +139,6 @@ gnd.$ = function ( selector, context )
             // Set elem as the individual element
             this.elem = this.elem[ 0 ];
         }
-
-        this.class.self =
-        this.attr.self =
-        this.data.self = this;
 
         // Return the new object
         return this;
