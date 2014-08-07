@@ -513,9 +513,8 @@ gnd.ui.Collection = function ( options )
 
     // Extend Collection prototype
     gnd.extend(
-            true
-        ,   gnd.ui.Collection.prototype
-        ,   gnd.ui.baseExtend
+        gnd.ui.Collection.prototype
+    ,   gnd.ui.baseExtend
     );
 
     /**

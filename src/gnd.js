@@ -36,7 +36,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *
      * @type {string}
      **/
-    gnd.VERSION = '3.4. alpha';
+    gnd.VERSION = '3.7.7. alpha';
 
     /**
      * @constant
@@ -107,8 +107,6 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
 
     /**
      * @method
-     * TODO: Update this functionality for simplicity.
-     *       See _.extend()
      *
      * @author
      *  MelechMizrachi
@@ -125,81 +123,15 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      * @return {object}
      *  The extended object
      **/
-    gnd.extend = function ()
+    gnd.extend = function ( obj, source )
     {
-        var
-                options
-            ,   source
-            ,   copy
-            ,   copyIsArray
-            ,   clone
-            ,   target                                  = arguments[ 0 ] || {}
-            ,   i                                       = 1
-            ,   length                                  = arguments.length
-            ,   deep                                    = false
-            ,   functionToUse
-        ;
-
-        // Handle a deep copy situation
-        if ( gnd.is.bool( target ) ) {
-            deep                                        = target;
-
-            // skip the boolean and the target
-            target                                      = arguments[ i ] || {};
-            i++;
-        }
-
-        // Handle case when target is a string or something (possible in deep copy)
-        if ( !gnd.is.object( target ) && !gnd.is.func( target ) ) {
-            target                                      = {};
-        }
-
-        // extend jQuery itself if only one argument is passed
-        if ( i === length ) {
-            target                                      = this;
-            i--;
-        }
-
-        functionToUse = function ( index, item )
-        {
-            source                                      = target[ index ];
-            copy                                        = item;
-
-            if ( target !== copy ) {
-                if ( deep && copy && ( gnd.is.plainObject( copy ) || ( copyIsArray = gnd.is.array( copy ) ) ) ) {
-                    if ( copyIsArray ) {
-                        copyIsArray                     = false;
-                        clone                           = ( source && gnd.is.array( source ) )
-                            ? source
-                            : []
-                        ;
-
-                    } else {
-                        clone                           = ( source && gnd.is.plainObject( source ) )
-                            ? source
-                            : {}
-                        ;
-                    }
-
-                    target[ index ]                     = gnd.extend( deep, clone, copy );
-
-                } else if ( !gnd.is.undefined( copy ) ) {
-                    target[ index ]                     = copy;
+        if ( source ) {
+            for ( var prop in source ) {
+                if ( gnd.object.hasOwn( source, prop ) ) {
+                    obj[prop] = source[prop];
                 }
             }
-        };
-
-        for ( ; i < length; i++ ) {
-            // Only deal with non-null/undefined values
-            if ( ( options = arguments[ i ] ) != null ) {
-                // Iterate through options
-                gnd.utils.each(
-                    options
-                ,   functionToUse
-                );
-            }
         }
 
-        // Return the modified object
-        return target;
+        return obj;
     };

@@ -392,12 +392,8 @@ gnd.ui.Model = function ( attributes, options )
 
         // Extend the model attributes with incoming attributes and defaults
         this.attributes = gnd.utils.extend(
-            // Deep extend
-            true
-            // More attributes
-        ,   {}
             // Default attributes
-        ,   this.defaults
+            this.defaults
             // Incoming attributes to overwrite all
         ,   attributes
         );
@@ -408,9 +404,8 @@ gnd.ui.Model = function ( attributes, options )
 
     // Extend Collection prototype
     gnd.extend(
-            true
-        ,   gnd.ui.Model.prototype
-        ,   gnd.ui.baseExtend
+        gnd.ui.Model.prototype
+    ,   gnd.ui.baseExtend
     );
 
     /**

@@ -121,8 +121,7 @@ gnd.utils = {};
         if ( !gnd.is.empty.object( toClone ) ) {
             // It is a valid object so return the cloned object
             return gnd.utils.extend(
-                true
-            ,   {}
+                {}
             ,   toClone
             );
         }

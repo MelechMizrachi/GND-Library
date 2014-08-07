@@ -8,7 +8,6 @@
  *  @property                           gnd.ui.View
  *      @property                           gnd.ui.View.sID
  *      @property                           gnd.ui.View.elem
- *      @property                           gnd.ui.View.use$
  *      @property                           gnd.ui.View.tagName
  *      @property                           gnd.ui.View.className
  *      @property                           gnd.ui.View.template
@@ -85,14 +84,6 @@ gnd.ui.View = function ( options )
      * @type {gnd.$}
      **/
     gnd.ui.View.prototype.elem = '';
-
-    /**
-     * @function
-     *
-     * @desc
-     *  The dom selection library/framework to use
-     **/
-    gnd.ui.View.prototype.use$ = gnd.ui.$;
 
     /**
      * @namespace
@@ -293,16 +284,15 @@ gnd.ui.View = function ( options )
     gnd.ui.View.prototype.setElement = function ( element, delegateEvents )
     {
         // If an element is already set
-        if ( this.elem ) {
+        if ( this.elem instanceof gnd.$ ) {
             // Undelegate all event handles for the old element
             this.undelegateEvents();
+            // Set the elem
+            this.elem = element;
+        } else {
+            // Set the elem
+            this.elem = gnd.$( element );
         }
-
-        // Set the new element
-        this.elem = ( element instanceof this.use$ )
-            ? element
-            : this.use$( element )
-        ;
 
         // If the optional boolean is not false
         if ( delegateEvents !== false ) {
@@ -553,7 +543,7 @@ gnd.ui.View = function ( options )
         // Check if element is an element exists
         if ( !this.elem ) {
             // Set the elem to document
-            this.elem = document;
+            this.elem = gnd.$( document );
         }
 
         // Set the element
@@ -562,9 +552,8 @@ gnd.ui.View = function ( options )
 
     // Extend View prototype
     gnd.extend(
-            true
-        ,   gnd.ui.View.prototype
-        ,   gnd.ui.baseExtend
+        gnd.ui.View.prototype
+    ,   gnd.ui.baseExtend
     );
 
     /**

@@ -477,8 +477,7 @@ gnd.ui = {};
 
             // Extend the component with the accepted options
             gnd.extend(
-                true
-            ,   this
+                this
             ,   newOptions
             );
 
@@ -493,9 +492,7 @@ gnd.ui = {};
      *  Extend Helpers and Topics to new class
      */
     gnd.ui.baseExtend = gnd.extend(
-        true
-    ,   {}
-    ,   gnd.ui.Topics
+        gnd.ui.Topics
     ,   gnd.ui.Helpers
     );
 
@@ -531,12 +528,14 @@ gnd.ui = {};
 
         // Extended prototype is a new copy of parent and new object
         extended.prototype = gnd.utils.extend(
-            // Deep copy
-            true
             // New object
-        ,   {}
+            {}
             // Parent prototype
         ,   parent.prototype
+        );
+        extended.prototype = gnd.utils.extend(
+            // The extended prototype
+            extended.prototype
             // Object to merge in, overwrite any previous vars
         ,   objectToMerge
         );
