@@ -376,7 +376,7 @@ gnd.$ = function ( selector, context )
         if ( selector ) {
 
             var
-                    elem            = ( element ) ? element : this.get( 0 ).parentNode
+                    elem            = ( element ) ? element : this.get( 0 )
                 ,   type            = 'className'
                 ,   failsFilter     = true
                 ,   filter
