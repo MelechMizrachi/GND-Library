@@ -376,10 +376,11 @@ gnd.$ = function ( selector, context )
         if ( selector ) {
 
             var
-                    elem            = ( element ) ? element : this.get( 0 ).elem.parentNode
+                    elem            = ( element ) ? element : this.get( 0 ).parentNode
                 ,   type            = 'className'
                 ,   failsFilter     = true
                 ,   filter
+                ,   stringCompare   = 'contains'
             ;
 
             // The selector is an ID
@@ -398,6 +399,7 @@ gnd.$ = function ( selector, context )
             else {
                 // Set the type as tagName
                 type                = 'tagName';
+                stringCompare       = 'compare';
             }
 
             // Set the filter to use
@@ -421,7 +423,7 @@ gnd.$ = function ( selector, context )
                 }
 
                 // Test the filter
-                failsFilter         = !gnd.string.compare( filter, selector );
+                failsFilter         = !gnd.string[ stringCompare ]( filter, selector );
                 // If the filter fails
                 if ( failsFilter ) {
                     // Set the elem as the parent node to continue testing up the dom
