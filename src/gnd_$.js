@@ -915,7 +915,7 @@ gnd.$ = function ( selector, context )
         }
 
         // If the elem is a node list
-        if ( gnd.is.nodeList( elem ) ) {
+        if ( !gnd.is.domElement( elem ) ) {
             // Iterate through the node list
             for ( ; i < len; i++ ) {
                 // [app/pre]end the child
