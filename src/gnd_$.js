@@ -536,10 +536,8 @@ gnd.$ = function ( selector, context )
 
                 // Check that the target matches the selector
                 if ( event.selectorTarget ) {
-                    // Set a sourceTarget variable as the original event triggering target
-                    event.sourceTarget = event.target;
                     // Set the target to the requested clicked event when delegated
-                    event.target = event.selectorTarget;
+                    event.selector = event.selectorTarget;
                     // If it does apply the event
                     callback.apply( callback, arguments );
                 }

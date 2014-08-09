@@ -147,7 +147,11 @@ gnd.string = {};
      **/
     gnd.string.contains = function ( toTest, value )
     {
-        return String.prototype.indexOf.call( toTest, value ) != -1;
+        if ( !toTest || !value ) {
+            return false;
+        }
+
+        return String.prototype.indexOf.call( toTest, value ) !== -1;
     };
 
     /**
@@ -173,6 +177,10 @@ gnd.string = {};
      **/
     gnd.string.containsInsensitive = function ( toTest, value )
     {
+        if ( !toTest || !value ) {
+            return false;
+        }
+
         return gnd.string.contains( toTest.toLowerCase(), value.toLowerCase() );
     };
 
@@ -224,5 +232,9 @@ gnd.string = {};
      **/
     gnd.string.compareInsensitive = function ( toTest, value )
     {
+        if ( !toTest || !value ) {
+            return false;
+        }
+
         return toTest.toLowerCase() === value.toLowerCase();
     };
