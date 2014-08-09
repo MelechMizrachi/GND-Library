@@ -1029,7 +1029,7 @@ gnd.$ = function ( selector, context )
 
         // Set the innerHTML to null
         // Thus removing all child nodes
-        elem.innerHTML = null;
+        elem.innerHTML = '';
 
         // Return this for chaining
         return this;
