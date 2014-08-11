@@ -423,7 +423,7 @@ gnd.$ = function ( selector, context )
                 }
 
                 // Test the filter
-                failsFilter         = !gnd.string[ stringCompare ]( filter, selector );
+                failsFilter         = !gnd.string[ stringCompare ]( ' ' + filter + ' ', ' ' + selector + ' ' );
                 // If the filter fails
                 if ( failsFilter ) {
                     // Set the elem as the parent node to continue testing up the dom
