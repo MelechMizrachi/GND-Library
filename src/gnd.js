@@ -9,7 +9,6 @@
  *      @property                           gnd.VERSION
  *      @property                           gnd.DEBUG
  *      @property                           gnd.global
- *      @property                           gnd.isModernBrowser
  *      @property                           gnd.isTypeOf()
  *      @property                           gnd.extend()
  *
@@ -36,7 +35,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *
      * @type {string}
      **/
-    gnd.VERSION = '3.8.6. alpha';
+    gnd.VERSION = '3.9. alpha';
 
     /**
      * @constant
@@ -57,26 +56,6 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      * @type {object}
      **/
     gnd.global = window;
-
-    /**
-     * @namespace
-     *
-     * @desc
-     *  Is this a modern browser
-     *
-     * @type {boolean}
-     **/
-    gnd.isModernBrowser = (
-        'querySelector' in document
-        && 'addEventListener' in window
-        && 'localStorage' in window
-        && 'sessionStorage' in window
-        && 'bind' in Function
-        && (
-            ('XMLHttpRequest' in window && 'withCredentials' in new XMLHttpRequest())
-            || 'XDomainRequest' in window
-        )
-    );
 
     /**
      * @method

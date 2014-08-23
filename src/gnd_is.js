@@ -6,7 +6,7 @@
  *  @Table_of_Contents
  *
  *  @property                           gnd.is
- *      @property                           gnd.is.plainObject()
+ *      @property                           gnd.is.modernBrowser()
  *      @property                           gnd.is.array()
  *      @property                           gnd.is.window()
  *      @property                           gnd.is.document()
@@ -59,29 +59,21 @@ gnd.is = {};
      *  MelechMizrachi
      *
      * @desc
-     *  Determine if an object is plain, or an HTML Element
+     *  Is this a modern browser
      *
-     * @params
-     *********
-     * @param toTest {*}
-     *  The object to test
-     *********
-     *
-     * @return {boolean}
+     * @type {boolean}
      **/
-    gnd.is.plainObject = function ( toTest )
-    {
-        if ( !gnd.is.object( toTest ) || gnd.is.window( toTest ) || gnd.is.domElement( toTest ) || gnd.is.array( toTest ) ) {
-            return false;
-        }
-
-        if ( gnd.is.$( toTest ) || gnd.is.domElement( toTest.elem ) || gnd.is.domElement( toTest[0] ) ) {
-            return false;
-        }
-
-        // Always assume the object is a valid object
-        return true;
-    };
+    gnd.is.modernBrowser = (
+        'querySelector' in document
+        && 'addEventListener' in window
+        && 'localStorage' in window
+        && 'sessionStorage' in window
+        && 'bind' in Function
+        && (
+            ('XMLHttpRequest' in window && 'withCredentials' in new XMLHttpRequest())
+            || 'XDomainRequest' in window
+        )
+    );
 
     /**
      * @method
