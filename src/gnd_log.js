@@ -32,7 +32,9 @@ gnd.log = {};
      **/
     gnd.log.log = function ()
     {
-        console.log.apply( console, arguments );
+        if ( gnd.DEBUG ) {
+            console.log.apply( console, arguments );
+        }
     };
 
     /**
@@ -53,7 +55,9 @@ gnd.log = {};
      **/
     gnd.log.info = function ()
     {
-        console.info.apply( console, arguments );
+        if ( gnd.DEBUG ) {
+            console.info.apply( console, arguments );
+        }
     };
 
     /**
@@ -74,7 +78,9 @@ gnd.log = {};
      **/
     gnd.log.warn = function ()
     {
-        console.warn.apply( console, arguments );
+        if ( gnd.DEBUG ) {
+            console.warn.apply( console, arguments );
+        }
     };
 
     /**
@@ -95,7 +101,9 @@ gnd.log = {};
      **/
     gnd.log.debug = function ()
     {
-        console.debug.apply( console, arguments );
+        if ( gnd.DEBUG ) {
+            console.debug.apply( console, arguments );
+        }
     };
 
     /**
@@ -116,7 +124,9 @@ gnd.log = {};
      **/
     gnd.log.error = function ()
     {
-        console.error.apply( console, arguments );
+        if ( gnd.DEBUG ) {
+            console.error.apply( console, arguments );
+        }
     };
 
     /**
@@ -137,7 +147,9 @@ gnd.log = {};
      **/
     gnd.log.time = function ()
     {
-        console.time.apply( console, arguments );
+        if ( gnd.DEBUG ) {
+            console.time.apply( console, arguments );
+        }
     };
 
     /**
@@ -158,5 +170,7 @@ gnd.log = {};
      **/
     gnd.log.timeEnd = function ()
     {
-        console.timeEnd.apply( console, arguments );
+        if ( gnd.DEBUG ) {
+            console.timeEnd.apply( console, arguments );
+        }
     };

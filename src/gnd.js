@@ -45,7 +45,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *
      * @type {boolean}
      **/
-    gnd.DEBUG = false;
+    gnd.DEBUG = GND_GLOBALS.IS_DEV || false;
 
     /**
      * @namespace
