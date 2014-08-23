@@ -17,6 +17,7 @@
  *          @property                           gnd.object.empty
  *      @property                           gnd.object.get
  *          @property                           gnd.object.get.byPath()
+ *          @property                           gnd.object.get.firstProp()
  *      @property                           gnd.object.set
  *          @property                           gnd.object.set.byPath()
  *          @property                           gnd.object.handlePath()
@@ -275,6 +276,32 @@ gnd.object = {};
         gnd.object.get.byPath = function ( obj, path, def )
         {
             return gnd.object.handlePath( 'get', obj, path, def );
+        };
+
+        /**
+         * @method
+         *
+         * @author
+         *  MelechMizrachi
+         *
+         * @desc
+         *  Get the first property in a given object
+         *
+         * @params
+         *********
+         * @param obj {object|array}
+         *  The object
+         *********
+         *
+         * @return {*}
+         **/
+        gnd.object.get.firstProp = function ( obj )
+        {
+            for ( var prop in obj ) {
+                if ( obj.hasOwnProperty( prop ) ) {
+                    return obj[ prop ];
+                }
+            }
         };
 
     /**
