@@ -316,7 +316,7 @@ gnd.$ = function ( selector, context )
      **/
     gnd.$.prototype.parent = function ()
     {
-        return gnd.$( this.elem.parentNode );
+        return gnd.$( this.get( 0 ).parentNode );
     };
 
     /**
