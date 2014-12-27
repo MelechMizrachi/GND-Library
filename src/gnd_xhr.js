@@ -24,7 +24,7 @@ gnd.xhr = {};
      *
      * @type {string}
      **/
-    gnd.xhr.URL = '/Service/Api/';
+    gnd.xhr.URL = '/service/api/';
 
     /**
      * @method
@@ -88,6 +88,10 @@ gnd.xhr = {};
          *      @propertyOf options
          *      @type   {object}
          **/
+        /**     @name   options#headers
+         *      @propertyOf options
+         *      @type   {object}
+         **/
         /**     @name   options#dataString
          *      @propertyOf options
          *      @type   {string}
@@ -127,10 +131,14 @@ gnd.xhr = {};
             ,   data                                    = ( !gnd.is.empty.object( options.data ) )
                     ? options.data
                     : {}
+            ,   headers                                 = ( !gnd.is.empty.object( options.headers ) )
+                    ? options.headers
+                    : {}
             ,   dataString                              = ( !gnd.is.empty.string( options.dataString ) )
                     ? options.dataString
                     : ''
             ,   dataIndex                               = 0
+            ,   header
             ,   onreadystatechange
             ,   response
         ;
@@ -159,6 +167,18 @@ gnd.xhr = {};
             'X-Requested-With'
         ,   'XMLHttpRequest'
         );
+
+        // Iterate through all the headers provided
+        for ( header in headers ) {
+            // Ensure they are properties of headers
+            if ( headers.hasOwnProperty( header )) {
+                // Set these headers
+                XHR.setRequestHeader(
+                    header
+                ,   headers[ header ]
+                );
+            }
+        }
 
         // On ready state change
         onreadystatechange = function ()
