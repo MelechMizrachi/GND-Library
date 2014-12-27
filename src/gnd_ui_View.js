@@ -61,6 +61,8 @@ gnd.ui.View = function ( options )
     // Initialize View
     this.init.apply( this, arguments );
 
+    console.log( this.events );
+
     // Create Events
     this.handleEvents( this.events );
 };
@@ -362,6 +364,7 @@ gnd.ui.View = function ( options )
     {
         // Sanity checks
         if ( !event || !callbackMethod ) {
+            gnd.log.error( 'event or callback method not specified', event, callbackMethod );
             // The parameters aren't correct
             return false;
         }
@@ -387,6 +390,7 @@ gnd.ui.View = function ( options )
         if ( gnd.is.string( callbackMethod ) ) {
             // Check that this function exists in this view
             if ( !gnd.is.func( scope[ callbackMethod ] ) ) {
+                gnd.log.error( 'callback method is not a function', scope[ callbackMethod ] );
                 // If not return false, get out of here
                 return false;
             }
@@ -476,13 +480,13 @@ gnd.ui.View = function ( options )
     {
         // Determine validity of events object
         if ( !events ) {
+            gnd.log.error( 'no events provided', events );
             // Events object is invalid
             return false;
         }
 
         // Loop through events object
         for ( var event in events ) {
-
             // If this is a property of the object
             if ( events.hasOwnProperty( event ) ) {
                 // Create event
