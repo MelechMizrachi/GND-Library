@@ -489,7 +489,8 @@ gnd.$ = function ( selector, context )
         // Ensure we have a valid callback
         //      Testing for selector because if there are only three params
         //      The third (selector) would be the callback
-        if ( !type || !eventType || ( !selector && !callback ) ) {
+        if ( !type || !eventType || !( selector || callback ) ) {
+            gnd.log.error( 'type, eventType, selector or callback was not provided', arguments );
             // Return this for chaining
             return this;
         }

@@ -61,8 +61,6 @@ gnd.ui.View = function ( options )
     // Initialize View
     this.init.apply( this, arguments );
 
-    console.log( this.events );
-
     // Create Events
     this.handleEvents( this.events );
 };
