@@ -26,6 +26,7 @@ gulp.task( 'scripts', function ()
             'src/gnd_ui_view.js'
         ])
         .pipe(concat('gnd.js'))
+        .pipe(gulp.dest('../'))
         .pipe(gulp.dest('.'))
         .pipe(rename('gnd.min.js'))
         .pipe(uglify())
