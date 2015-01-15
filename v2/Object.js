@@ -8,6 +8,7 @@
  *  @property                           Object.validate()
  *  @property                           Object.clone()
  *  @property                           Object.each()
+ *  @property                           Object.extend()
  *
 \**********************************************************************************************************************/
 
@@ -49,6 +50,9 @@
           , 'each' : {
                 value : Utils.each
             }
+          , 'extend' : {
+                value : Utils.extend
+            }
         }
     );
 
@@ -66,6 +70,12 @@
                 value : function ( callback )
                 {
                     return Object.each( this, callback );
+                }
+            }
+          , 'extend' : {
+                value : function ( source )
+                {
+                    return Object.extend( this, source );
                 }
             }
           , 'validate' : {

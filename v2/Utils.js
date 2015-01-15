@@ -10,7 +10,6 @@
  *  @property                           Utils.each()
  *  @property                           Utils.extend()
  *  @property                           Utils.merge()
- *  @property                           Utils.validateObject()
  *
 \**********************************************************************************************************************/
 
