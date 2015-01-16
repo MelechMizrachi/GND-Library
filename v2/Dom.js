@@ -110,7 +110,7 @@ var Dom = function ( selector, context )
     Dom.Init = function ( selector, context )
     {
         // If the selector is not a string
-        if ( !gnd.is.string( selector ) || !selector ) {
+        if ( !is.string( selector ) || !selector ) {
             // Set the elem as the selector
             this.elem           = selector || this.elem;
 
@@ -140,7 +140,7 @@ var Dom = function ( selector, context )
         this.elem = this.getElements( this.elem, selector );
 
         // If elem is a node list and there is only one element in node list
-        if ( gnd.is.nodeList( this.elem ) && this.elem.length === 1 ) {
+        if ( is.nodeList( this.elem ) && this.elem.length === 1 ) {
             // Set elem as the individual element
             this.elem = this.elem[ 0 ];
         }
@@ -234,7 +234,7 @@ var Dom = function ( selector, context )
 
         // Create local variables
         var
-                selectorIndexOf = gnd.string.contains( selector, this.SPACE_SPLIT )
+                selectorIndexOf = String.contains( selector, this.SPACE_SPLIT )
             ,   domGetType      = 'getElementById'
             ,   firstChar       = selector.charAt( 0 )
             ,   isID            = firstChar === '#'
@@ -383,14 +383,14 @@ var Dom = function ( selector, context )
             ;
 
             // The selector is an ID
-            if ( gnd.string.contains( selector, '#' ) ) {
+            if ( String.contains( selector, '#' ) ) {
                 // Set the type as id
                 type                = 'id';
                 // Replace the id signifier in the selector
                 selector            = selector.substr( 1 );
             }
             // If the selector is a class
-            else if ( gnd.string.contains( selector, '.' ) ) {
+            else if ( String.contains( selector, '.' ) ) {
                 // Replace the class signifier in the selector
                 selector            = selector.substr( 1 );
             }
@@ -411,7 +411,7 @@ var Dom = function ( selector, context )
             }
 
             // If the filter failed and the elem is a dom element
-            while ( failsFilter === true && gnd.is.domElement( elem ) ) {
+            while ( failsFilter === true && is.domElement( elem ) ) {
 
                 // Set the filter to use
                 filter              = elem[ type ];
@@ -422,7 +422,7 @@ var Dom = function ( selector, context )
                 }
 
                 // Test the filter
-                failsFilter         = !gnd.string[ stringCompare ]( ' ' + filter + ' ', ' ' + selector + ' ' );
+                failsFilter         = !String[ stringCompare ]( ' ' + filter + ' ', ' ' + selector + ' ' );
                 // If the filter fails
                 if ( failsFilter ) {
                     // Set the elem as the parent node to continue testing up the dom
@@ -491,7 +491,7 @@ var Dom = function ( selector, context )
         //      Testing for selector because if there are only three params
         //      The third (selector) would be the callback
         if ( !type || !eventType || !( selector || callback ) ) {
-            gnd.log.error( 'type, eventType, selector or callback was not provided', arguments );
+            Logger.error( 'type, eventType, selector or callback was not provided', arguments );
             // Return this for chaining
             return this;
         }
@@ -508,7 +508,7 @@ var Dom = function ( selector, context )
         ;
 
         // If the selector is the callback
-        if ( gnd.is.func( selector ) ) {
+        if ( is.func( selector ) ) {
             // Set the callback as the selector
             callback = selector;
             // Set the selector to null
@@ -517,7 +517,7 @@ var Dom = function ( selector, context )
             finalCallback = callback;
         }
         // There is a selector
-        else if ( !gnd.is.empty.string( selector ) ) {
+        else if ( !is.string.empty( selector ) ) {
 
             // Create the callback function
             finalCallback = function ( event )
@@ -861,7 +861,7 @@ var Dom = function ( selector, context )
         ;
 
         // If html is a string
-        if ( gnd.is.string( html ) ) {
+        if ( is.string( html ) ) {
 
             // Create a temporary div
             tempDiv = document.createElement( 'div' );
@@ -874,7 +874,7 @@ var Dom = function ( selector, context )
         }
 
         // If the elem is a node list
-        if ( !gnd.is.domElement( elem ) ) {
+        if ( !is.domElement( elem ) ) {
             // Iterate through the node list
             for ( ; i < len; i++ ) {
                 // [app/pre]end the child
@@ -1060,7 +1060,7 @@ var Dom = function ( selector, context )
         ;
 
         // Check if there are more than one classes to add
-        if ( gnd.string.contains( className, this.SPACE_SPLIT ) ) {
+        if ( String.contains( className, this.SPACE_SPLIT ) ) {
 
             // Split the className up by the space splitter
             classes             = className.split( this.SPACE_SPLIT );
@@ -1068,7 +1068,7 @@ var Dom = function ( selector, context )
             length              = classes.length;
 
             // If the elem is a single node
-            if ( gnd.is.domElement( this.elem ) ) {
+            if ( is.domElement( this.elem ) ) {
                 // Iterate through the classes
                 for ( ; i < length; i++ ) {
                     // Do the type for the class to the elem
@@ -1090,7 +1090,7 @@ var Dom = function ( selector, context )
         // There is only one class to add
         else {
             // Check
-            if ( gnd.is.domElement( this.elem ) ) {
+            if ( is.domElement( this.elem ) ) {
                 // Do the type for the class to the elem
                 classList[ type ]( className );
             }
@@ -1189,12 +1189,12 @@ var Dom = function ( selector, context )
 
         var elem = this.elem;
 
-        if ( !gnd.is.domElement( this.elem ) ) {
+        if ( !is.domElement( this.elem ) ) {
             elem = this.get( 0 );
         }
 
         // If there are more than one classes added
-        if ( gnd.string.contains( className, this.SPACE_SPLIT ) ) {
+        if ( String.contains( className, this.SPACE_SPLIT ) ) {
             // Just use the first item
             className = className.split( this.SPACE_SPLIT )[ 0 ];
         }
@@ -1254,7 +1254,7 @@ var Dom = function ( selector, context )
         }
 
         // If the element is a dom element and not a list
-        if ( gnd.is.domElement( this.elem ) ) {
+        if ( is.domElement( this.elem ) ) {
             // Set the element's attribute
             this.elem.setAttribute( attr, value );
         }
@@ -1297,7 +1297,7 @@ var Dom = function ( selector, context )
         }
 
         // If the element is a dom element and not a list
-        if ( gnd.is.domElement( this.elem ) ) {
+        if ( is.domElement( this.elem ) ) {
             // Remove the element's attribute
             this.elem.removeAttribute( attr );
         }
@@ -1566,7 +1566,7 @@ var Dom = function ( selector, context )
      *
      * @type {object}
      **/
-    gnd.elems = Dom.elems = {};
+    Dom.elems = {};
 
     /**
      * @namespace

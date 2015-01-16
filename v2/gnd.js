@@ -18,7 +18,7 @@
  * @desc
  *  GND Library namespace
  */
-var gnd = {};
+var gnd = gnd || {};
 
 (function ()
 {
@@ -38,7 +38,7 @@ var gnd = {};
      *
      * @type {string}
      **/
-    gnd.VERSION = '4.1.4. alpha';
+    gnd.VERSION = '2.0.0. alpha';
 
     /**
      * @constant

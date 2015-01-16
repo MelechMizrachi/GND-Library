@@ -8,6 +8,7 @@
  *  @property                           is
  *  @property                           is.typeOf()
  *  @property                           is.modernBrowser()
+ *  @property                           is.bool()
  *  @property                           is.array()
  *  @property                           is.object()
  *  @property                           is.document()
@@ -81,6 +82,25 @@ var is = {};
             || 'XDomainRequest' in window
         )
     );
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Determine if a variable is a boolean
+     *
+     * @param bool {*}
+     *  The variable to test
+     *
+     * @return {boolean}
+     **/
+    is.bool = function ( bool )
+    {
+        return is.typeOf( bool, 'boolean' );
+    };
 
     /**
      * @method

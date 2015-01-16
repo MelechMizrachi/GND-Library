@@ -1,7 +1,9 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
+var
+    gulp    = require('gulp')
+  , concat  = require('gulp-concat')
+  , uglify  = require('gulp-uglify')
+  , rename  = require('gulp-rename')
+;
 
 // Concatenate & Minify JS
 gulp.task( 'scripts', function ()
@@ -35,11 +37,41 @@ gulp.task( 'scripts', function ()
     ;
 });
 
+// Concatenate & Minify JS for V2
+gulp.task( 'scriptsv2', function ()
+{
+    return gulp.src([
+            'v2/gnd.js',
+            'v2/is.js',
+            'v2/Logger.js',
+            'v2/Utils.js',
+            'v2/Array.js',
+            'v2/Object.js',
+            'v2/String.js',
+            'v2/Ajax.js',
+            'v2/Auth.js',
+            'v2/Cookies.js',
+            'v2/Dom.js',
+            'v2/Router.js',
+            'v2/Template.js',
+            'v2/UserAgent.js'
+        ])
+        .pipe(concat('gnd.v2.js'))
+        .pipe(gulp.dest('../'))
+        .pipe(gulp.dest('.'))
+        .pipe(rename('gnd.v2.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('../'))
+        .pipe(gulp.dest('.'))
+    ;
+});
+
 // Watch Files For Changes
 gulp.task( 'watch', function ()
 {
     gulp.watch( 'src/*.js', ['scripts'] );
+    gulp.watch( 'v2/*.js', ['scriptsv2'] );
 });
 
 // Default Task
-gulp.task( 'default', ['scripts'] );
+gulp.task( 'default', ['scripts','scriptsv2'] );
