@@ -49,7 +49,7 @@ var Cookies = {};
                         + encodeURIComponent( key ).replace( /[\-\.\+\*]/g, "\\$&" )
                         + "\\s*\\=\\s*([^;]*).*$)|^.*$"
                     )
-                ,   "$1"
+                    , "$1"
                 )
             )
             ||
@@ -102,9 +102,9 @@ var Cookies = {};
                 // Constructor is a number
                 case Number:
                     // Set the expiration
-                    expiration = ( expires === Infinity )
-                    ? '; expires=Fri, 31 Dec 9999 23:59:59 GMT'
-                    : '; max-age=' + expires
+                    expiration  = ( expires === Infinity )
+                                ? '; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+                                : '; max-age=' + expires
                     ;
 
                     // Break as we've found our case
@@ -235,13 +235,13 @@ var Cookies = {};
     Cookies.keys = function ()
     {
         var
-                // The keys
-                keys = document.cookie.replace(
-                    /((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, ""
-                ).split( /\s*(?:\=[^;]*)?;\s*/ )
+            // The keys
+            keys = document.cookie.replace(
+                /((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, ""
+            ).split( /\s*(?:\=[^;]*)?;\s*/ )
 
-                // Index to use for iteration
-            ,   index = 0
+            // Index to use for iteration
+            , index = 0
         ;
 
         // Iterate through all the keys
@@ -269,20 +269,20 @@ var Cookies = {};
     Cookies.getAll = function ()
     {
         var
-                // Split the cookies string into an array
-                cookies         = document.cookie.split( ';' )
-                // The returned object
-            ,   cookiesObject   = {}
-                // The for loop index
-            ,   i               = 0
-                // How many cookies are there
-            ,   length          = cookies.length
-                // Quick cookie reference inside of for loop
-            ,   cookie
-                // Quick cookie index reference inside for loop
-            ,   cookieIndex
-                // Quick cookie value reference inside for loop
-            ,   cookieVal
+            // Split the cookies string into an array
+            cookies         = document.cookie.split( ';' )
+            // The returned object
+            , cookiesObject = {}
+            // The for loop index
+            , i             = 0
+            // How many cookies are there
+            , length        = cookies.length
+            // Quick cookie reference inside of for loop
+            , cookie
+            // Quick cookie index reference inside for loop
+            , cookieIndex
+            // Quick cookie value reference inside for loop
+            , cookieVal
         ;
 
         // Iterate through the cookies

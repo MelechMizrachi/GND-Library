@@ -138,57 +138,57 @@ var Ajax = function ( url, options )
         options = options || {};
 
         var
-                XHR                                     = new XMLHttpRequest()
-            ,   method                                  = ( is.string( options.method ) )
-                    ? options.method
-                    : 'GET'
-            ,   accept                                  = ( is.string( options.accept ) )
-                    ? options.accept
-                    : 'application/json, text/javascript, */*'
-            ,   async                                   = ( is.bool( options.async ) )
-                    ? options.async
-                    : true
-            ,   contentType                             = ( is.string( options.contentType ) )
-                    ? options.contentType
-                    : 'application/x-www-form-urlencoded; charset=UTF-8'
-            ,   data                                    = ( is.object( options.data ) )
-                    ? options.data
-                    : {}
-            ,   headers                                 = ( is.object( options.headers ) )
-                    ? options.headers
-                    : {}
-            ,   dataString                              = ( is.string( options.dataString ) )
-                    ? options.dataString
-                    : ''
-            ,   dataIndex                               = 0
-            ,   header
-            ,   onreadystatechange
-            ,   response
+            XHR             = new XMLHttpRequest()
+            , method        = ( is.string( options.method ) )
+                              ? options.method
+                              : 'GET'
+            , accept        = ( is.string( options.accept ) )
+                              ? options.accept
+                              : 'application/json, text/javascript, */*'
+            , async         = ( is.bool( options.async ) )
+                              ? options.async
+                              : true
+            , contentType   = ( is.string( options.contentType ) )
+                              ? options.contentType
+                              : 'application/x-www-form-urlencoded; charset=UTF-8'
+            , data          = ( is.object( options.data ) )
+                              ? options.data
+                              : {}
+            , headers       = ( is.object( options.headers ) )
+                              ? options.headers
+                              : {}
+            , dataString    = ( is.string( options.dataString ) )
+                              ? options.dataString
+                              : ''
+            , dataIndex     = 0
+            , header
+            , onreadystatechange
+            , response
         ;
 
         // Open the XHR connection
         XHR.open(
             method
-        ,   url
-        ,   async
+            , url
+            , async
         );
 
         // Set the Accept header
         XHR.setRequestHeader(
             'Accept'
-        ,   accept
+            , accept
         );
 
         // Set the content type header
         XHR.setRequestHeader(
             'Content-Type'
-        ,   contentType
+            , contentType
         );
 
         // Set the requested with header
         XHR.setRequestHeader(
             'X-Requested-With'
-        ,   'XMLHttpRequest'
+            , 'XMLHttpRequest'
         );
 
         // Iterate through all the headers provided
@@ -198,7 +198,7 @@ var Ajax = function ( url, options )
                 // Set these headers
                 XHR.setRequestHeader(
                     header
-                ,   headers[ header ]
+                    , headers[ header ]
                 );
             }
         }

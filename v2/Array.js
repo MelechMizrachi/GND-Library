@@ -78,20 +78,20 @@
 
     Object.defineProperties(
         Array.prototype
-      , {
+        , {
             'clone' : {
                 value : function ()
                 {
                     return Array.clone( this );
                 }
             }
-          , 'contains' : {
+            , 'contains' : {
                 value : function ( value )
                 {
                     return Array.contains( this, value );
                 }
             }
-          , 'insert' : {
+            , 'insert' : {
                 value : function ( value )
                 {
                     return Array.insert( this, value );

@@ -47,7 +47,7 @@ var Utils = {};
             // It is a valid object so return the cloned object
             return Utils.extend(
                 isArr
-            ,   toClone
+                , toClone
             );
         }
 

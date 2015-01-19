@@ -43,14 +43,14 @@
     // Define prototype properties
     Object.defineProperties(
         Object
-      , {
+        , {
             'clone' : {
                 value : Utils.clone
             }
-          , 'each' : {
+            , 'each' : {
                 value : Utils.each
             }
-          , 'extend' : {
+            , 'extend' : {
                 value : Utils.extend
             }
         }
@@ -59,26 +59,26 @@
     // Define prototype properties
     Object.defineProperties(
         Object.prototype
-      , {
+        , {
             'clone' : {
                 value : function ()
                 {
                     return Object.clone( this );
                 }
             }
-          , 'each' : {
+            , 'each' : {
                 value : function ( callback )
                 {
                     return Object.each( this, callback );
                 }
             }
-          , 'extend' : {
+            , 'extend' : {
                 value : function ( source )
                 {
                     return Object.extend( this, source );
                 }
             }
-          , 'validate' : {
+            , 'validate' : {
                 value : function ()
                 {
                     return Object.validate( this );

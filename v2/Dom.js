@@ -234,10 +234,10 @@ var Dom = function ( selector, context )
 
         // Create local variables
         var
-                selectorIndexOf = String.contains( selector, this.SPACE_SPLIT )
-            ,   domGetType      = 'getElementById'
-            ,   firstChar       = selector.charAt( 0 )
-            ,   isID            = firstChar === '#'
+            selectorIndexOf = String.contains( selector, this.SPACE_SPLIT )
+            , domGetType    = 'getElementById'
+            , firstChar     = selector.charAt( 0 )
+            , isID          = firstChar === '#'
         ;
 
         // If this is an #id AND there is only one selector
@@ -375,11 +375,11 @@ var Dom = function ( selector, context )
         if ( selector ) {
 
             var
-                    elem            = ( element ) ? element : this.get( 0 )
-                ,   type            = 'className'
-                ,   failsFilter     = true
-                ,   filter
-                ,   stringCompare   = 'contains'
+                elem            = ( element ) ? element : this.get( 0 )
+                , type          = 'className'
+                , failsFilter   = true
+                , filter
+                , stringCompare = 'contains'
             ;
 
             // The selector is an ID
@@ -497,14 +497,14 @@ var Dom = function ( selector, context )
         }
 
         var
-                elem            = this.elem
-            ,   elemI
-            ,   i               = 0
-            ,   length          = elem.length
-            ,   args
-            ,   dEvent
-            ,   finalCallback   = callback
-            ,   self            = this
+            elem            = this.elem
+            , elemI
+            , i             = 0
+            , length        = elem.length
+            , args
+            , dEvent
+            , finalCallback = callback
+            , self          = this
         ;
 
         // If the selector is the callback
@@ -592,9 +592,9 @@ var Dom = function ( selector, context )
     {
         return this.handleEvent(
             'addEventListener'
-        ,   eventType
-        ,   selector
-        ,   callback
+            , eventType
+            , selector
+            , callback
         );
     };
 
@@ -625,7 +625,7 @@ var Dom = function ( selector, context )
                 // Cloning the elem
                 this.elem.cloneNode( true )
                 // And replacing the elem in the parent
-            ,   this.elem
+                , this.elem
             );
 
             // Return this for chaining
@@ -634,9 +634,9 @@ var Dom = function ( selector, context )
 
         return this.handleEvent(
             'removeEventListener'
-        ,   eventType
-        ,   selector
-        ,   callback
+            , eventType
+            , selector
+            , callback
         );
     };
 
@@ -660,8 +660,8 @@ var Dom = function ( selector, context )
     {
         return this.handleEvent(
             'dispatchEvent'
-        ,   eventType
-        ,   selector
+            , eventType
+            , selector
         );
     };
 
@@ -684,8 +684,8 @@ var Dom = function ( selector, context )
         // If a value was given to override with
         if ( value ) {
             var
-                    i       = 0
-                ,   len     = this.getLength()
+                i       = 0
+                , len   = this.getLength()
             ;
 
             // If this elem is a node list
@@ -755,10 +755,10 @@ var Dom = function ( selector, context )
         // If no text was given
         if ( !html ) {
             var
-                    func        = 'innerHTML'
-                ,   i           = 0
-                ,   len         = this.getLength()
-                ,   retArray    = []
+                func        = 'innerHTML'
+                , i         = 0
+                , len       = this.getLength()
+                , retArray  = []
             ;
 
             // If the type is text
@@ -854,10 +854,10 @@ var Dom = function ( selector, context )
     Dom.prototype.handleHTML = function ( type, html )
     {
         var
-                elem    = this.elem
-            ,   i       = 0
-            ,   len     = elem.length
-            ,   tempDiv
+            elem    = this.elem
+            , i     = 0
+            , len   = elem.length
+            , tempDiv
         ;
 
         // If html is a string
@@ -915,9 +915,9 @@ var Dom = function ( selector, context )
         elem = elem || this.elem;
 
         var
-                i       = 0
-            ,   len
-            ,   node
+            i       = 0
+            , len
+            , node
         ;
 
         // If this is an html
@@ -1006,8 +1006,8 @@ var Dom = function ( selector, context )
         elem = elem || this.elem;
 
         var
-                i   = 0
-            ,   len = elem.length
+            i       = 0
+            , len   = elem.length
         ;
 
         // If the elem is a node list
@@ -1051,12 +1051,12 @@ var Dom = function ( selector, context )
         }
 
         var
-                classes
-            ,   length
-            ,   len             = this.getLength()
-            ,   i               = 0
-            ,   j               = 0
-            ,   classList       = this.elem.classList
+            classes
+            , length
+            , len       = this.getLength()
+            , i         = 0
+            , j         = 0
+            , classList = this.elem.classList
         ;
 
         // Check if there are more than one classes to add
@@ -1260,8 +1260,8 @@ var Dom = function ( selector, context )
         }
 
         var
-                i   = 0
-            ,   len = this.getLength()
+            i       = 0
+            , len   = this.getLength()
         ;
 
         // Iterate through the node list
@@ -1303,8 +1303,8 @@ var Dom = function ( selector, context )
         }
 
         var
-                i   = 0
-            ,   len = this.getLength()
+            i       = 0
+            , len   = this.getLength()
         ;
 
         // Iterate through the node list
@@ -1527,12 +1527,12 @@ var Dom = function ( selector, context )
     Dom.parseHTML = function ( html )
     {
         var
-                doc     = document.implementation.createDocument( 'http://www.w3.org/1999/xhtml', 'html', null )
-            ,   body    = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'body' )
-            ,   div     = document.createElement( 'div' )
-            ,   i       = 0
-            ,   node
-            ,   len
+            doc     = document.implementation.createDocument( 'http://www.w3.org/1999/xhtml', 'html', null )
+            , body  = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'body' )
+            , div   = document.createElement( 'div' )
+            , i     = 0
+            , node
+            , len
         ;
 
         // Append the created body to the created document

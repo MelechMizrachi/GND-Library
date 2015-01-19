@@ -727,7 +727,7 @@ var Utils = {};
             // It is a valid object so return the cloned object
             return Utils.extend(
                 isArr
-            ,   toClone
+                , toClone
             );
         }
 
@@ -904,20 +904,20 @@ var Utils = {};
 
     Object.defineProperties(
         Array.prototype
-      , {
+        , {
             'clone' : {
                 value : function ()
                 {
                     return Array.clone( this );
                 }
             }
-          , 'contains' : {
+            , 'contains' : {
                 value : function ( value )
                 {
                     return Array.contains( this, value );
                 }
             }
-          , 'insert' : {
+            , 'insert' : {
                 value : function ( value )
                 {
                     return Array.insert( this, value );
@@ -971,14 +971,14 @@ var Utils = {};
     // Define prototype properties
     Object.defineProperties(
         Object
-      , {
+        , {
             'clone' : {
                 value : Utils.clone
             }
-          , 'each' : {
+            , 'each' : {
                 value : Utils.each
             }
-          , 'extend' : {
+            , 'extend' : {
                 value : Utils.extend
             }
         }
@@ -987,26 +987,26 @@ var Utils = {};
     // Define prototype properties
     Object.defineProperties(
         Object.prototype
-      , {
+        , {
             'clone' : {
                 value : function ()
                 {
                     return Object.clone( this );
                 }
             }
-          , 'each' : {
+            , 'each' : {
                 value : function ( callback )
                 {
                     return Object.each( this, callback );
                 }
             }
-          , 'extend' : {
+            , 'extend' : {
                 value : function ( source )
                 {
                     return Object.extend( this, source );
                 }
             }
-          , 'validate' : {
+            , 'validate' : {
                 value : function ()
                 {
                     return Object.validate( this );
@@ -1294,57 +1294,57 @@ var Ajax = function ( url, options )
         options = options || {};
 
         var
-                XHR                                     = new XMLHttpRequest()
-            ,   method                                  = ( is.string( options.method ) )
-                    ? options.method
-                    : 'GET'
-            ,   accept                                  = ( is.string( options.accept ) )
-                    ? options.accept
-                    : 'application/json, text/javascript, */*'
-            ,   async                                   = ( is.bool( options.async ) )
-                    ? options.async
-                    : true
-            ,   contentType                             = ( is.string( options.contentType ) )
-                    ? options.contentType
-                    : 'application/x-www-form-urlencoded; charset=UTF-8'
-            ,   data                                    = ( is.object( options.data ) )
-                    ? options.data
-                    : {}
-            ,   headers                                 = ( is.object( options.headers ) )
-                    ? options.headers
-                    : {}
-            ,   dataString                              = ( is.string( options.dataString ) )
-                    ? options.dataString
-                    : ''
-            ,   dataIndex                               = 0
-            ,   header
-            ,   onreadystatechange
-            ,   response
+            XHR             = new XMLHttpRequest()
+            , method        = ( is.string( options.method ) )
+                              ? options.method
+                              : 'GET'
+            , accept        = ( is.string( options.accept ) )
+                              ? options.accept
+                              : 'application/json, text/javascript, */*'
+            , async         = ( is.bool( options.async ) )
+                              ? options.async
+                              : true
+            , contentType   = ( is.string( options.contentType ) )
+                              ? options.contentType
+                              : 'application/x-www-form-urlencoded; charset=UTF-8'
+            , data          = ( is.object( options.data ) )
+                              ? options.data
+                              : {}
+            , headers       = ( is.object( options.headers ) )
+                              ? options.headers
+                              : {}
+            , dataString    = ( is.string( options.dataString ) )
+                              ? options.dataString
+                              : ''
+            , dataIndex     = 0
+            , header
+            , onreadystatechange
+            , response
         ;
 
         // Open the XHR connection
         XHR.open(
             method
-        ,   url
-        ,   async
+            , url
+            , async
         );
 
         // Set the Accept header
         XHR.setRequestHeader(
             'Accept'
-        ,   accept
+            , accept
         );
 
         // Set the content type header
         XHR.setRequestHeader(
             'Content-Type'
-        ,   contentType
+            , contentType
         );
 
         // Set the requested with header
         XHR.setRequestHeader(
             'X-Requested-With'
-        ,   'XMLHttpRequest'
+            , 'XMLHttpRequest'
         );
 
         // Iterate through all the headers provided
@@ -1354,7 +1354,7 @@ var Ajax = function ( url, options )
                 // Set these headers
                 XHR.setRequestHeader(
                     header
-                ,   headers[ header ]
+                    , headers[ header ]
                 );
             }
         }
@@ -1665,7 +1665,7 @@ var Cookies = {};
                         + encodeURIComponent( key ).replace( /[\-\.\+\*]/g, "\\$&" )
                         + "\\s*\\=\\s*([^;]*).*$)|^.*$"
                     )
-                ,   "$1"
+                    , "$1"
                 )
             )
             ||
@@ -1718,9 +1718,9 @@ var Cookies = {};
                 // Constructor is a number
                 case Number:
                     // Set the expiration
-                    expiration = ( expires === Infinity )
-                    ? '; expires=Fri, 31 Dec 9999 23:59:59 GMT'
-                    : '; max-age=' + expires
+                    expiration  = ( expires === Infinity )
+                                ? '; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+                                : '; max-age=' + expires
                     ;
 
                     // Break as we've found our case
@@ -1851,13 +1851,13 @@ var Cookies = {};
     Cookies.keys = function ()
     {
         var
-                // The keys
-                keys = document.cookie.replace(
-                    /((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, ""
-                ).split( /\s*(?:\=[^;]*)?;\s*/ )
+            // The keys
+            keys = document.cookie.replace(
+                /((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, ""
+            ).split( /\s*(?:\=[^;]*)?;\s*/ )
 
-                // Index to use for iteration
-            ,   index = 0
+            // Index to use for iteration
+            , index = 0
         ;
 
         // Iterate through all the keys
@@ -1885,20 +1885,20 @@ var Cookies = {};
     Cookies.getAll = function ()
     {
         var
-                // Split the cookies string into an array
-                cookies         = document.cookie.split( ';' )
-                // The returned object
-            ,   cookiesObject   = {}
-                // The for loop index
-            ,   i               = 0
-                // How many cookies are there
-            ,   length          = cookies.length
-                // Quick cookie reference inside of for loop
-            ,   cookie
-                // Quick cookie index reference inside for loop
-            ,   cookieIndex
-                // Quick cookie value reference inside for loop
-            ,   cookieVal
+            // Split the cookies string into an array
+            cookies         = document.cookie.split( ';' )
+            // The returned object
+            , cookiesObject = {}
+            // The for loop index
+            , i             = 0
+            // How many cookies are there
+            , length        = cookies.length
+            // Quick cookie reference inside of for loop
+            , cookie
+            // Quick cookie index reference inside for loop
+            , cookieIndex
+            // Quick cookie value reference inside for loop
+            , cookieVal
         ;
 
         // Iterate through the cookies
@@ -2154,10 +2154,10 @@ var Dom = function ( selector, context )
 
         // Create local variables
         var
-                selectorIndexOf = String.contains( selector, this.SPACE_SPLIT )
-            ,   domGetType      = 'getElementById'
-            ,   firstChar       = selector.charAt( 0 )
-            ,   isID            = firstChar === '#'
+            selectorIndexOf = String.contains( selector, this.SPACE_SPLIT )
+            , domGetType    = 'getElementById'
+            , firstChar     = selector.charAt( 0 )
+            , isID          = firstChar === '#'
         ;
 
         // If this is an #id AND there is only one selector
@@ -2295,11 +2295,11 @@ var Dom = function ( selector, context )
         if ( selector ) {
 
             var
-                    elem            = ( element ) ? element : this.get( 0 )
-                ,   type            = 'className'
-                ,   failsFilter     = true
-                ,   filter
-                ,   stringCompare   = 'contains'
+                elem            = ( element ) ? element : this.get( 0 )
+                , type          = 'className'
+                , failsFilter   = true
+                , filter
+                , stringCompare = 'contains'
             ;
 
             // The selector is an ID
@@ -2417,14 +2417,14 @@ var Dom = function ( selector, context )
         }
 
         var
-                elem            = this.elem
-            ,   elemI
-            ,   i               = 0
-            ,   length          = elem.length
-            ,   args
-            ,   dEvent
-            ,   finalCallback   = callback
-            ,   self            = this
+            elem            = this.elem
+            , elemI
+            , i             = 0
+            , length        = elem.length
+            , args
+            , dEvent
+            , finalCallback = callback
+            , self          = this
         ;
 
         // If the selector is the callback
@@ -2512,9 +2512,9 @@ var Dom = function ( selector, context )
     {
         return this.handleEvent(
             'addEventListener'
-        ,   eventType
-        ,   selector
-        ,   callback
+            , eventType
+            , selector
+            , callback
         );
     };
 
@@ -2545,7 +2545,7 @@ var Dom = function ( selector, context )
                 // Cloning the elem
                 this.elem.cloneNode( true )
                 // And replacing the elem in the parent
-            ,   this.elem
+                , this.elem
             );
 
             // Return this for chaining
@@ -2554,9 +2554,9 @@ var Dom = function ( selector, context )
 
         return this.handleEvent(
             'removeEventListener'
-        ,   eventType
-        ,   selector
-        ,   callback
+            , eventType
+            , selector
+            , callback
         );
     };
 
@@ -2580,8 +2580,8 @@ var Dom = function ( selector, context )
     {
         return this.handleEvent(
             'dispatchEvent'
-        ,   eventType
-        ,   selector
+            , eventType
+            , selector
         );
     };
 
@@ -2604,8 +2604,8 @@ var Dom = function ( selector, context )
         // If a value was given to override with
         if ( value ) {
             var
-                    i       = 0
-                ,   len     = this.getLength()
+                i       = 0
+                , len   = this.getLength()
             ;
 
             // If this elem is a node list
@@ -2675,10 +2675,10 @@ var Dom = function ( selector, context )
         // If no text was given
         if ( !html ) {
             var
-                    func        = 'innerHTML'
-                ,   i           = 0
-                ,   len         = this.getLength()
-                ,   retArray    = []
+                func        = 'innerHTML'
+                , i         = 0
+                , len       = this.getLength()
+                , retArray  = []
             ;
 
             // If the type is text
@@ -2774,10 +2774,10 @@ var Dom = function ( selector, context )
     Dom.prototype.handleHTML = function ( type, html )
     {
         var
-                elem    = this.elem
-            ,   i       = 0
-            ,   len     = elem.length
-            ,   tempDiv
+            elem    = this.elem
+            , i     = 0
+            , len   = elem.length
+            , tempDiv
         ;
 
         // If html is a string
@@ -2835,9 +2835,9 @@ var Dom = function ( selector, context )
         elem = elem || this.elem;
 
         var
-                i       = 0
-            ,   len
-            ,   node
+            i       = 0
+            , len
+            , node
         ;
 
         // If this is an html
@@ -2926,8 +2926,8 @@ var Dom = function ( selector, context )
         elem = elem || this.elem;
 
         var
-                i   = 0
-            ,   len = elem.length
+            i       = 0
+            , len   = elem.length
         ;
 
         // If the elem is a node list
@@ -2971,12 +2971,12 @@ var Dom = function ( selector, context )
         }
 
         var
-                classes
-            ,   length
-            ,   len             = this.getLength()
-            ,   i               = 0
-            ,   j               = 0
-            ,   classList       = this.elem.classList
+            classes
+            , length
+            , len       = this.getLength()
+            , i         = 0
+            , j         = 0
+            , classList = this.elem.classList
         ;
 
         // Check if there are more than one classes to add
@@ -3180,8 +3180,8 @@ var Dom = function ( selector, context )
         }
 
         var
-                i   = 0
-            ,   len = this.getLength()
+            i       = 0
+            , len   = this.getLength()
         ;
 
         // Iterate through the node list
@@ -3223,8 +3223,8 @@ var Dom = function ( selector, context )
         }
 
         var
-                i   = 0
-            ,   len = this.getLength()
+            i       = 0
+            , len   = this.getLength()
         ;
 
         // Iterate through the node list
@@ -3447,12 +3447,12 @@ var Dom = function ( selector, context )
     Dom.parseHTML = function ( html )
     {
         var
-                doc     = document.implementation.createDocument( 'http://www.w3.org/1999/xhtml', 'html', null )
-            ,   body    = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'body' )
-            ,   div     = document.createElement( 'div' )
-            ,   i       = 0
-            ,   node
-            ,   len
+            doc     = document.implementation.createDocument( 'http://www.w3.org/1999/xhtml', 'html', null )
+            , body  = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'body' )
+            , div   = document.createElement( 'div' )
+            , i     = 0
+            , node
+            , len
         ;
 
         // Append the created body to the created document
@@ -3781,14 +3781,14 @@ var Template = function ( objToMerge )
      * @type {array}
      **/
     Template.prototype.__options = [
-            'Model'
-        ,   'Collection'
-        ,   'elem'
-        ,   'sID'
-        ,   'attributes'
-        ,   'className'
-        ,   'tagName'
-        ,   'events'
+        'Model'
+        , 'Collection'
+        , 'elem'
+        , 'sID'
+        , 'attributes'
+        , 'className'
+        , 'tagName'
+        , 'events'
     ];
 
     /**
@@ -3944,13 +3944,13 @@ var Template = function ( objToMerge )
 
         var
             eventSplit      = event.split( this.EVENT_SPLIT )
-          , eventName       = eventSplit[ 0 ]
-          , selector        = eventSplit[ 1 ]
-          , typeOfEvent     = ( removeEvent === true )
+              , eventName   = eventSplit[ 0 ]
+              , selector    = eventSplit[ 1 ]
+              , typeOfEvent = ( removeEvent === true )
                               ? 'off'
                               : 'on'
-          , self            = this
-          , elem            = self.elem
+              , self        = this
+              , elem        = self.elem
         ;
 
         // If no scope was provided
@@ -3975,8 +3975,8 @@ var Template = function ( objToMerge )
         // Create/Delete the event
         elem[ typeOfEvent ](
             eventName
-          , selector
-          , callbackMethod
+              , selector
+              , callbackMethod
         );
 
         // Return the view
@@ -4010,8 +4010,8 @@ var Template = function ( objToMerge )
 
             var
                 eventSplit  = event.split( this.EVENT_SPLIT )
-              , eventName   = eventSplit[0]
-              , selector    = eventSplit[1]
+                , eventName = eventSplit[0]
+                , selector  = eventSplit[1]
             ;
 
             // Trigger the event
@@ -4060,9 +4060,9 @@ var Template = function ( objToMerge )
                     // The event string
                     event
                     // The callback method
-                  , events[ event ]
+                    , events[ event ]
                     // Whether to add/remove the event
-                  , removeEvent
+                    , removeEvent
                 );
             }
         }
@@ -4138,7 +4138,7 @@ var Template = function ( objToMerge )
 
         var
             newOptions = {}
-          , name
+            , name
         ;
 
         // Iterate through objects
@@ -4196,7 +4196,7 @@ var Topics = function ( topicName )
 {
     var
         topic   = topicName && Topics._topics[ topicName ]
-      , self    = Topics
+        , self  = Topics
     ;
 
     // If there is no topic already created
@@ -4204,17 +4204,17 @@ var Topics = function ( topicName )
         // Create the topic
         topic           = {
             // Trigger a topic to fire it's callbacks
-            trigger         : self.triggerTopic
+            trigger             : self.triggerTopic
             // Add a callback to a topic
-          , subscribe       : self.subscribeToTopic
+            , subscribe         : self.subscribeToTopic
             // Remove a callback from a topic
-          , unSubscribe     : self.unSubscribeFromTopic
+            , unSubscribe       : self.unSubscribeFromTopic
             // Remove all callbacks from a topic
-          , unSubscribeAll  : self.unSubscribeAllFromTopic
+            , unSubscribeAll    : self.unSubscribeAllFromTopic
             // Storage for topic callbacks
-          , _callbacks      : []
+            , _callbacks        : []
             // The default scope of things
-          , scope           : self
+            , scope             : self
         };
 
         // If the topic name is passed
@@ -4274,8 +4274,8 @@ var Topics = function ( topicName )
         }
 
         var
-            i   = 0
-          , len = this._callbacks.length
+            i       = 0
+            , len   = this._callbacks.length
         ;
 
         // Iterate through the callbacks for this topic
@@ -4290,7 +4290,7 @@ var Topics = function ( topicName )
         // Push this new callback to the topics array
         this._callbacks.push({
             callback    : callback
-        ,   scope       : scope
+            , scope     : scope
         });
 
         // Return the topic
@@ -4323,8 +4323,8 @@ var Topics = function ( topicName )
         }
 
         var
-            i   = 0
-          , len = this._callbacks.length
+            i       = 0
+            , len   = this._callbacks.length
         ;
 
         // Determine if scope is a valid object
@@ -4364,9 +4364,9 @@ var Topics = function ( topicName )
     Topics.triggerTopic = function ()
     {
         var
-            i   = 0
-          , len = this._callbacks.length
-          , callbackItem
+            i       = 0
+            , len   = this._callbacks.length
+            , callbackItem
         ;
 
         // Iterate through the callbacks
@@ -4431,16 +4431,16 @@ var Topics = function ( topicName )
         }
 
         var
-            self        = this
-          , topic
-          , topicItem
+            self            = this
+            , topic
+            , topicItem
             // Subscribe or unsubscribe?
-          , topicMethod = ( typeof remove === true )
-                          ? 'unsubscribe'
-                          : 'subscribe'
-          , sTopic
-          , i           = 0
-          , len
+            , topicMethod   = ( typeof remove === true )
+                              ? 'unsubscribe'
+                              : 'subscribe'
+            , sTopic
+            , i             = 0
+            , len
         ;
 
         // Iterate through topics
@@ -4490,8 +4490,8 @@ var Topics = function ( topicName )
     Topics.removeTopics = function ()
     {
         // Re-set topic objects to empty object
-        this._topics       = {};
-        this.topics        = {};
+        this._topics    = {};
+        this.topics     = {};
 
         // Return the topic
         return this;

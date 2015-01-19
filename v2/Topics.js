@@ -35,7 +35,7 @@ var Topics = function ( topicName )
 {
     var
         topic   = topicName && Topics._topics[ topicName ]
-      , self    = Topics
+        , self  = Topics
     ;
 
     // If there is no topic already created
@@ -43,17 +43,17 @@ var Topics = function ( topicName )
         // Create the topic
         topic           = {
             // Trigger a topic to fire it's callbacks
-            trigger         : self.triggerTopic
+            trigger             : self.triggerTopic
             // Add a callback to a topic
-          , subscribe       : self.subscribeToTopic
+            , subscribe         : self.subscribeToTopic
             // Remove a callback from a topic
-          , unSubscribe     : self.unSubscribeFromTopic
+            , unSubscribe       : self.unSubscribeFromTopic
             // Remove all callbacks from a topic
-          , unSubscribeAll  : self.unSubscribeAllFromTopic
+            , unSubscribeAll    : self.unSubscribeAllFromTopic
             // Storage for topic callbacks
-          , _callbacks      : []
+            , _callbacks        : []
             // The default scope of things
-          , scope           : self
+            , scope             : self
         };
 
         // If the topic name is passed
@@ -113,8 +113,8 @@ var Topics = function ( topicName )
         }
 
         var
-            i   = 0
-          , len = this._callbacks.length
+            i       = 0
+            , len   = this._callbacks.length
         ;
 
         // Iterate through the callbacks for this topic
@@ -129,7 +129,7 @@ var Topics = function ( topicName )
         // Push this new callback to the topics array
         this._callbacks.push({
             callback    : callback
-        ,   scope       : scope
+            , scope     : scope
         });
 
         // Return the topic
@@ -162,8 +162,8 @@ var Topics = function ( topicName )
         }
 
         var
-            i   = 0
-          , len = this._callbacks.length
+            i       = 0
+            , len   = this._callbacks.length
         ;
 
         // Determine if scope is a valid object
@@ -203,9 +203,9 @@ var Topics = function ( topicName )
     Topics.triggerTopic = function ()
     {
         var
-            i   = 0
-          , len = this._callbacks.length
-          , callbackItem
+            i       = 0
+            , len   = this._callbacks.length
+            , callbackItem
         ;
 
         // Iterate through the callbacks
@@ -270,16 +270,16 @@ var Topics = function ( topicName )
         }
 
         var
-            self        = this
-          , topic
-          , topicItem
+            self            = this
+            , topic
+            , topicItem
             // Subscribe or unsubscribe?
-          , topicMethod = ( typeof remove === true )
-                          ? 'unsubscribe'
-                          : 'subscribe'
-          , sTopic
-          , i           = 0
-          , len
+            , topicMethod   = ( typeof remove === true )
+                              ? 'unsubscribe'
+                              : 'subscribe'
+            , sTopic
+            , i             = 0
+            , len
         ;
 
         // Iterate through topics
@@ -329,8 +329,8 @@ var Topics = function ( topicName )
     Topics.removeTopics = function ()
     {
         // Re-set topic objects to empty object
-        this._topics       = {};
-        this.topics        = {};
+        this._topics    = {};
+        this.topics     = {};
 
         // Return the topic
         return this;

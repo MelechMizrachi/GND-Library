@@ -198,14 +198,14 @@ var Template = function ( objToMerge )
      * @type {array}
      **/
     Template.prototype.__options = [
-            'Model'
-        ,   'Collection'
-        ,   'elem'
-        ,   'sID'
-        ,   'attributes'
-        ,   'className'
-        ,   'tagName'
-        ,   'events'
+        'Model'
+        , 'Collection'
+        , 'elem'
+        , 'sID'
+        , 'attributes'
+        , 'className'
+        , 'tagName'
+        , 'events'
     ];
 
     /**
@@ -361,13 +361,13 @@ var Template = function ( objToMerge )
 
         var
             eventSplit      = event.split( this.EVENT_SPLIT )
-          , eventName       = eventSplit[ 0 ]
-          , selector        = eventSplit[ 1 ]
-          , typeOfEvent     = ( removeEvent === true )
+              , eventName   = eventSplit[ 0 ]
+              , selector    = eventSplit[ 1 ]
+              , typeOfEvent = ( removeEvent === true )
                               ? 'off'
                               : 'on'
-          , self            = this
-          , elem            = self.elem
+              , self        = this
+              , elem        = self.elem
         ;
 
         // If no scope was provided
@@ -392,8 +392,8 @@ var Template = function ( objToMerge )
         // Create/Delete the event
         elem[ typeOfEvent ](
             eventName
-          , selector
-          , callbackMethod
+              , selector
+              , callbackMethod
         );
 
         // Return the view
@@ -427,8 +427,8 @@ var Template = function ( objToMerge )
 
             var
                 eventSplit  = event.split( this.EVENT_SPLIT )
-              , eventName   = eventSplit[0]
-              , selector    = eventSplit[1]
+                , eventName = eventSplit[0]
+                , selector  = eventSplit[1]
             ;
 
             // Trigger the event
@@ -477,9 +477,9 @@ var Template = function ( objToMerge )
                     // The event string
                     event
                     // The callback method
-                  , events[ event ]
+                    , events[ event ]
                     // Whether to add/remove the event
-                  , removeEvent
+                    , removeEvent
                 );
             }
         }
@@ -555,7 +555,7 @@ var Template = function ( objToMerge )
 
         var
             newOptions = {}
-          , name
+            , name
         ;
 
         // Iterate through objects
