@@ -3543,6 +3543,29 @@ var Router = {};
  *  @Table_of_Contents
  *
  *  @property                           Template
+ *  @property                           Template.Init()
+ *  @property                           Template.Init.prototype
+ *  @property                           Template.prototype.constructor
+ *  @property                           Template.prototype.render
+ *  @property                           Template.prototype.sID
+ *  @property                           Template.prototype.elem
+ *  @property                           Template.prototype.tagName
+ *  @property                           Template.prototype.className
+ *  @property                           Template.prototype.template
+ *  @property                           Template.prototype.attributes
+ *  @property                           Template.prototype.events
+ *  @property                           Template.prototype.__options
+ *  @property                           Template.prototype.EVENT_SPLIT
+ *  @property                           Template.prototype.initialize()
+ *  @property                           Template.prototype.Dom()
+ *  @property                           Template.prototype.setElement()
+ *  @property                           Template.prototype.remove()
+ *  @property                           Template.prototype.handleEvent()
+ *  @property                           Template.prototype.triggerEvent()
+ *  @property                           Template.prototype.handleEvents()
+ *  @property                           Template.prototype.undelegateEvents()
+ *  @property                           Template.prototype.__ensureElement()
+ *  @property                           Template.prototype.__setOptions()
  *
 \**********************************************************************************************************************/
 
@@ -3583,7 +3606,7 @@ var Template = function ( objToMerge )
     Template.Init = function ( objToMerge )
     {
         return this.extend( objToMerge );
-    }
+    };
 
     /**
      * @author
@@ -4098,6 +4121,13 @@ var Template = function ( objToMerge )
  *  @Table_of_Contents
  *
  *  @property                           Topics
+ *  @property                           Topics._topics
+ *  @property                           Topics.subscribeToTopic()
+ *  @property                           Topics.unSubscribeFromTopic()
+ *  @property                           Topics.triggerTopic()
+ *  @property                           Topics.unSubscribeAllFromTopic()
+ *  @property                           Topics.handleTopics()
+ *  @property                           Topics.removeTopics()
  *
 \**********************************************************************************************************************/
 
