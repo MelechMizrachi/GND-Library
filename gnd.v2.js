@@ -352,7 +352,7 @@ var is = {};
      *  MelechMizrachi
      *
      * @desc
-     *  Determine if a variable is an instance of gnd.dom.$
+     *  Determine if a variable is an instance of Dom
      *
      * @param toTest {*}
      *  The variable to test
@@ -361,7 +361,7 @@ var is = {};
      **/
     is.$ = function ( toTest )
     {
-        return toTest instanceof gnd.$;
+        return toTest instanceof Dom;
     };
 
     /**
@@ -896,7 +896,7 @@ var Utils = {};
      **/
     Array.insert = function ( arr, value )
     {
-        if ( !gnd.array.contains( arr, value ) ) {
+        if ( !Array.contains( arr, value ) ) {
             arr.push( value );
         }
     };
@@ -1576,6 +1576,11 @@ var Auth = function ()
  *  @Table_of_Contents
  *
  *  @property                           Cache
+ *  @property                           Cache.get()
+ *  @property                           Cache.set()
+ *  @property                           Cache.len()
+ *  @property                           Cache.del()
+ *  @property                           Cache.clear()
  *
 \**********************************************************************************************************************/
 

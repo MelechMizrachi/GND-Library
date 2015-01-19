@@ -71,7 +71,7 @@
      **/
     Array.insert = function ( arr, value )
     {
-        if ( !gnd.array.contains( arr, value ) ) {
+        if ( !Array.contains( arr, value ) ) {
             arr.push( value );
         }
     };

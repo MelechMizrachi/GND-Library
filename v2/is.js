@@ -290,7 +290,7 @@ var is = {};
      *  MelechMizrachi
      *
      * @desc
-     *  Determine if a variable is an instance of gnd.dom.$
+     *  Determine if a variable is an instance of Dom
      *
      * @param toTest {*}
      *  The variable to test
@@ -299,7 +299,7 @@ var is = {};
      **/
     is.$ = function ( toTest )
     {
-        return toTest instanceof gnd.$;
+        return toTest instanceof Dom;
     };
 
     /**
