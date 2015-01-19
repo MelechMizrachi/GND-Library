@@ -1,8 +1,13 @@
 var
     gulp    = require('gulp')
+    // Concatenate files
   , concat  = require('gulp-concat')
+    // JS Uglify (minifier)
   , uglify  = require('gulp-uglify')
+    // Rename files
   , rename  = require('gulp-rename')
+    // Notifications
+  , notify  = require('gulp-notify')
 ;
 
 // Concatenate & Minify JS
@@ -34,6 +39,7 @@ gulp.task( 'scripts', function ()
         .pipe(uglify())
         .pipe(gulp.dest('../'))
         .pipe(gulp.dest('.'))
+        .pipe(notify('GND Lib v1 done.'))
     ;
 });
 
@@ -63,6 +69,7 @@ gulp.task( 'scriptsv2', function ()
         .pipe(uglify())
         .pipe(gulp.dest('../'))
         .pipe(gulp.dest('.'))
+        .pipe(notify('GND Lib v2 done.'))
     ;
 });
 
