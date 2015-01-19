@@ -64,7 +64,7 @@ var UserAgent = {};
      **/
     UserAgent.contains = function ( value )
     {
-        return gnd.string.contains( UserAgent.UA, value );
+        return UserAgent.UA.contains( value );
     };
     
     /**

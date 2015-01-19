@@ -37,7 +37,7 @@ var Logger = {};
      **/
     Logger.log = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.log.apply( console, arguments );
         }
     };
@@ -57,7 +57,7 @@ var Logger = {};
      **/
     Logger.info = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.info.apply( console, arguments );
         }
     };
@@ -80,7 +80,7 @@ var Logger = {};
      **/
     Logger.warn = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.warn.apply( console, arguments );
         }
     };
@@ -100,7 +100,7 @@ var Logger = {};
      **/
     Logger.debug = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.debug.apply( console, arguments );
         }
     };
@@ -120,7 +120,7 @@ var Logger = {};
      **/
     Logger.error = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.error.apply( console, arguments );
         }
     };
@@ -140,7 +140,7 @@ var Logger = {};
      **/
     Logger.time = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.time.apply( console, arguments );
         }
     };
@@ -160,7 +160,7 @@ var Logger = {};
      **/
     Logger.timeEnd = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.timeEnd.apply( console, arguments );
         }
     };

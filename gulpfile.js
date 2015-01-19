@@ -47,7 +47,7 @@ gulp.task( 'scripts', function ()
 gulp.task( 'scriptsv2', function ()
 {
     return gulp.src([
-            'v2/gnd.js',
+            'v2/Config.js',
             'v2/is.js',
             'v2/Logger.js',
             'v2/Utils.js',

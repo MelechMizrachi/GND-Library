@@ -1,64 +1,65 @@
 /**********************************************************************************************************************\
  *
  *  @author                             VGND Team
- *  @desc                               GND Library
+ *  @desc                               GND Library Configs
  *
  *  @Table_of_Contents
  *
- *  @property                           gnd
- *  @property                           gnd.VERSION
- *  @property                           gnd.DEBUG
- *  @property                           gnd.global
+ *  @property                           Config
+ *  @property                           Config.GLOBALS
+ *  @property                           Config.VERSION
+ *  @property                           Config.DEBUG
+ *  @property                           Config.global
  *
 \**********************************************************************************************************************/
 
 /**
- * @class gnd
+ * @class Config
  *
  * @desc
- *  GND Library namespace
+ *  GND Library Config Class
  */
-var gnd = gnd || {};
+var Config = {};
 
 (function ()
 {
     /**
      * @namespace
      *
-     * Ensure we have a namespace set for GND Globals
+     * Ensure we have a namespace set for Globals
      * In the case one does not exist
      **/
-    window.GND_GLOBALS = window.GND_GLOBALS || {};
+    Config.GLOBALS = window.GLOBALS = window.GLOBALS || {};
 
     /**
      * @constant
      *
      * @desc
-     *  The version number for this copy of the gnd library
+     *  The version of gnd library
      *
      * @type {string}
      **/
-    gnd.VERSION = '2.0.0. alpha';
+    Config.VERSION = '2.0.0. alpha';
 
     /**
      * @constant
      *
      * @desc
-     *  Whether to run debug unit testing on the library or not
+     *  Whether to run debug within the library
      *
      * @type {boolean}
      **/
-    gnd.DEBUG = GND_GLOBALS.IS_DEV || false;
+    Config.DEBUG = Config.GLOBALS.DEBUG || Config.GLOBALS.IS_DEV || false;
 
     /**
      * @namespace
      *
      * @desc
-     *  The gnd parent (window)
+     *  The parent (window)
      *
      * @type {object}
      **/
-    gnd.global = window;
+    Config.global = window;
 })();
 /**********************************************************************************************************************\
  *
@@ -549,7 +550,7 @@ var Logger = {};
      **/
     Logger.log = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.log.apply( console, arguments );
         }
     };
@@ -569,7 +570,7 @@ var Logger = {};
      **/
     Logger.info = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.info.apply( console, arguments );
         }
     };
@@ -592,7 +593,7 @@ var Logger = {};
      **/
     Logger.warn = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.warn.apply( console, arguments );
         }
     };
@@ -612,7 +613,7 @@ var Logger = {};
      **/
     Logger.debug = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.debug.apply( console, arguments );
         }
     };
@@ -632,7 +633,7 @@ var Logger = {};
      **/
     Logger.error = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.error.apply( console, arguments );
         }
     };
@@ -652,7 +653,7 @@ var Logger = {};
      **/
     Logger.time = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.time.apply( console, arguments );
         }
     };
@@ -672,7 +673,7 @@ var Logger = {};
      **/
     Logger.timeEnd = function ()
     {
-        if ( gnd.DEBUG ) {
+        if ( Config.DEBUG ) {
             console.timeEnd.apply( console, arguments );
         }
     };
@@ -4564,7 +4565,7 @@ var UserAgent = {};
      **/
     UserAgent.contains = function ( value )
     {
-        return gnd.string.contains( UserAgent.UA, value );
+        return UserAgent.UA.contains( value );
     };
     
     /**
