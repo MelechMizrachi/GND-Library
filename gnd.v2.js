@@ -3616,9 +3616,6 @@ var Template = function ( objToMerge )
      * @param [options] {object}
      *  Any custom options for this view
      *
-     * @extends gnd.ui.Topics
-     * @extends gnd.ui.Helpers
-     *
      * @return void
      **/
     Template.prototype.render = function ( options )
@@ -3626,14 +3623,14 @@ var Template = function ( objToMerge )
         // Set options
         this.__setOptions.apply( this, arguments );
 
-        //// Make sure we have a real element
-        //this.__ensureElement();
+        // Make sure we have a real element
+        this.__ensureElement();
 
         // Initialize View
         this.initialize.apply( this, arguments );
 
-        //// Create Events
-        //this.handleEvents( this.events );
+        // Create Events
+        this.handleEvents( this.events );
     };
 
     /**
@@ -4062,7 +4059,7 @@ var Template = function ( objToMerge )
      *
      * @return {Template}
      **/
-    Template.__setOptions = function ( options )
+    Template.prototype.__setOptions = function ( options )
     {
         // Determine validity of options object
         if ( is.object.empty( options ) ) {
