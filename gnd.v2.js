@@ -1384,9 +1384,7 @@ var Ajax = function ( url, options )
                 // On success
                 else {
                     // Console the response as info
-                    Logger.info( 'XHR Success: Begin' );
-                    Logger.info( response );
-                    Logger.info( 'XHR Success: End' );
+                    Logger.info( 'Ajax Success' );
 
                     // If a success handler was set
                     if ( is.func( options.success ) ) {
@@ -2333,7 +2331,7 @@ var Dom = function ( selector, context )
             }
 
             // If the filter failed and the elem is a dom element
-            while ( failsFilter === true && is.domElement( elem ) ) {
+            while ( failsFilter === true && is.element( elem ) ) {
 
                 // Set the filter to use
                 filter              = elem[ type ];
@@ -2796,7 +2794,7 @@ var Dom = function ( selector, context )
         }
 
         // If the elem is a node list
-        if ( !is.domElement( elem ) ) {
+        if ( !is.element( elem ) ) {
             // Iterate through the node list
             for ( ; i < len; i++ ) {
                 // [app/pre]end the child
@@ -2990,7 +2988,7 @@ var Dom = function ( selector, context )
             length              = classes.length;
 
             // If the elem is a single node
-            if ( is.domElement( this.elem ) ) {
+            if ( is.element( this.elem ) ) {
                 // Iterate through the classes
                 for ( ; i < length; i++ ) {
                     // Do the type for the class to the elem
@@ -3012,7 +3010,7 @@ var Dom = function ( selector, context )
         // There is only one class to add
         else {
             // Check
-            if ( is.domElement( this.elem ) ) {
+            if ( is.element( this.elem ) ) {
                 // Do the type for the class to the elem
                 classList[ type ]( className );
             }
@@ -3111,7 +3109,7 @@ var Dom = function ( selector, context )
 
         var elem = this.elem;
 
-        if ( !is.domElement( this.elem ) ) {
+        if ( !is.element( this.elem ) ) {
             elem = this.get( 0 );
         }
 
@@ -3176,7 +3174,7 @@ var Dom = function ( selector, context )
         }
 
         // If the element is a dom element and not a list
-        if ( is.domElement( this.elem ) ) {
+        if ( is.element( this.elem ) ) {
             // Set the element's attribute
             this.elem.setAttribute( attr, value );
         }
@@ -3219,7 +3217,7 @@ var Dom = function ( selector, context )
         }
 
         // If the element is a dom element and not a list
-        if ( is.domElement( this.elem ) ) {
+        if ( is.element( this.elem ) ) {
             // Remove the element's attribute
             this.elem.removeAttribute( attr );
         }
