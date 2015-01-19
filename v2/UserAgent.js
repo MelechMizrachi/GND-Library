@@ -64,7 +64,7 @@ var UserAgent = {};
      **/
     UserAgent.contains = function ( value )
     {
-        return UserAgent.UA.contains( value );
+        return String.contains( UserAgent.UA, value );
     };
     
     /**
