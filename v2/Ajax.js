@@ -228,9 +228,7 @@ var Ajax = function ( url, options )
                 // On success
                 else {
                     // Console the response as info
-                    Logger.info( 'XHR Success: Begin' );
-                    Logger.info( response );
-                    Logger.info( 'XHR Success: End' );
+                    Logger.info( 'Ajax Success' );
 
                     // If a success handler was set
                     if ( is.func( options.success ) ) {
