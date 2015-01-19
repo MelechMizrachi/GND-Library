@@ -27,8 +27,8 @@
 var Topics = function ( topicName )
 {
     var
-        topic   = topicName && this._topics[ topicName ]
-      , self    = this
+        topic   = topicName && Topics._topics[ topicName ]
+      , self    = Topics
     ;
 
     // If there is no topic already created
@@ -52,7 +52,7 @@ var Topics = function ( topicName )
         // If the topic name is passed
         if ( !is.string.empty( topicName ) ) {
             // Create the topic in the component's topics array
-            this._topics[ topicName ] = topic;
+            self._topics[ topicName ] = topic;
         }
     }
 
@@ -100,6 +100,7 @@ var Topics = function ( topicName )
         // Sanity checks
         if ( !is.func( scope[ callback ] ) )
         {
+            Logger.error( 'Scope or Callback incorrect.' );
             // Parameter is incorrect so return false
             return false;
         }

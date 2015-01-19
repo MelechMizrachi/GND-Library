@@ -60,6 +60,7 @@ gulp.task( 'scriptsv2', function ()
             'v2/Dom.js',
             'v2/Router.js',
             'v2/Template.js',
+            'v2/Topics.js',
             'v2/UserAgent.js'
         ])
         .pipe(concat('gnd.v2.js'))
