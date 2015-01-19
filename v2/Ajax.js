@@ -49,7 +49,7 @@ var Ajax = function ( url, options )
      *
      * @type {string}
      **/
-    Ajax.BASE_URL = '/service/api/';
+    Ajax.BASE_URL = GLOBALS.AJAX_URL || '';
 
     /**
      * @method
