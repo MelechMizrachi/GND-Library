@@ -54,8 +54,7 @@ var Template = function ( objToMerge )
     /**
      * @constructor
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Template initializer
@@ -65,15 +64,14 @@ var Template = function ( objToMerge )
      *
      * @return {Template}
      *  The Template object
-     **/
+     */
     Template.Init = function ( objToMerge )
     {
         return this.extend( objToMerge );
     };
 
     /**
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the Init prototype as Template's prototype
@@ -84,7 +82,7 @@ var Template = function ( objToMerge )
 
     /**
      * @constructor
-     **/
+     */
     Template.prototype.constructor = Template;
 })();
 
@@ -93,8 +91,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Render a template for a ui component/element/node
@@ -103,7 +100,7 @@ var Template = function ( objToMerge )
      *  Any custom options for this view
      *
      * @return void
-     **/
+     */
     Template.prototype.render = function ( options )
     {
         // Set options
@@ -126,7 +123,7 @@ var Template = function ( objToMerge )
      *  The Template ID
      *
      * @type {string}
-     **/
+     */
     Template.prototype.sID = '';
 
     /**
@@ -136,7 +133,7 @@ var Template = function ( objToMerge )
      *  The Template ID
      *
      * @type {Dom}
-     **/
+     */
     Template.prototype.elem = '';
 
     /**
@@ -146,7 +143,7 @@ var Template = function ( objToMerge )
      *  The element tag name
      *
      * @type {string}
-     **/
+     */
     Template.prototype.tagName = 'div';
 
     /**
@@ -156,7 +153,7 @@ var Template = function ( objToMerge )
      *  The element class name
      *
      * @type {string}
-     **/
+     */
     Template.prototype.className = '';
 
     /**
@@ -166,7 +163,7 @@ var Template = function ( objToMerge )
      *  The template to use
      *
      * @type {string}
-     **/
+     */
     Template.prototype.template = '';
 
     /**
@@ -176,7 +173,7 @@ var Template = function ( objToMerge )
      *  The element attributes
      *
      * @type {object}
-     **/
+     */
     Template.prototype.attributes = {};
 
     /**
@@ -186,7 +183,7 @@ var Template = function ( objToMerge )
      *  The events for this template
      *
      * @type {object}
-     **/
+     */
     Template.prototype.events = {};
 
     /**
@@ -196,7 +193,7 @@ var Template = function ( objToMerge )
      *  The accepted options for the template
      *
      * @type {array}
-     **/
+     */
     Template.prototype.__options = [
         'Model'
         , 'Collection'
@@ -215,20 +212,19 @@ var Template = function ( objToMerge )
      *  What to split event strings with
      *
      * @type {string}
-     **/
+     */
     Template.prototype.EVENT_SPLIT = ' ';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize Template
      *
      * @return {Template}
-     **/
+     */
     Template.prototype.initialize = function ()
     {
         // Overwrite this function for custom initialization of View
@@ -240,8 +236,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a dom element under elem
@@ -251,7 +246,7 @@ var Template = function ( objToMerge )
      *
      * @return {Dom}
      *  The child of elem
-     **/
+     */
     Template.prototype.Dom = function ( selector )
     {
         // Make sure the selector is a valid string
@@ -267,8 +262,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the View element
@@ -281,7 +275,7 @@ var Template = function ( objToMerge )
      *
      * @return {object}
      *  The view
-     **/
+     */
     Template.prototype.setElement = function ( element, delegateEvents )
     {
         // If an element is already set
@@ -308,15 +302,14 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove View - Remove element from DOM
      *
      * @return {object}
      *  The view
-     **/
+     */
     Template.prototype.remove = function ()
     {
         // Undelegate all event handlers
@@ -332,8 +325,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate an event handler
@@ -349,7 +341,7 @@ var Template = function ( objToMerge )
      *
      * @return {object}
      *  The component
-     **/
+     */
     Template.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
     {
         // Sanity checks
@@ -403,8 +395,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event handler
@@ -414,7 +405,7 @@ var Template = function ( objToMerge )
      *
      * @return {object}
      *  The component
-     **/
+     */
     Template.prototype.triggerEvent = function ( event )
     {
         // Make sure the parameter is a string
@@ -445,8 +436,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate event handlers given an object of events
@@ -458,7 +448,7 @@ var Template = function ( objToMerge )
      *
      * @return {Template}
      *  The template
-     **/
+     */
     Template.prototype.handleEvents = function ( events, removeEvent )
     {
         // Determine validity of events object
@@ -491,14 +481,13 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Undelegate all event handlers
      *
      * @return {object}
-     **/
+     */
     Template.prototype.undelegateEvents = function ()
     {
         // Remove all events attached to this element
@@ -511,14 +500,13 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ensure the view element exists
      *
      * @return void
-     **/
+     */
     Template.prototype.__ensureElement = function ()
     {
         // Check if element is an element exists
@@ -534,8 +522,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set component options
@@ -544,7 +531,7 @@ var Template = function ( objToMerge )
      *  Options passed to the Template
      *
      * @return {Template}
-     **/
+     */
     Template.prototype.__setOptions = function ( options )
     {
         // Determine validity of options object

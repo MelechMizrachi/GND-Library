@@ -16,7 +16,7 @@
 
 /**
  * @class
- **/
+ */
 var gnd = gnd || {};
 
 /**
@@ -24,7 +24,7 @@ var gnd = gnd || {};
  *
  * Ensure we have a namespace set for GND Globals
  * In the case one does not exist
- **/
+ */
 window.GND_GLOBALS = window.GND_GLOBALS || {};
 
     /**
@@ -34,7 +34,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *  The version number for this copy of the gnd library
      *
      * @type {string}
-     **/
+     */
     gnd.VERSION = '0.4.1.4. alpha';
 
     /**
@@ -44,7 +44,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *  Whether to run debug unit testing on the library or not
      *
      * @type {boolean}
-     **/
+     */
     gnd.DEBUG = GND_GLOBALS.IS_DEV || false;
 
     /**
@@ -54,14 +54,13 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *  The gnd parent (window)
      *
      * @type {object}
-     **/
+     */
     gnd.global = window;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is of a type
@@ -78,7 +77,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.isTypeOf = function ( toTest, type )
     {
         return typeof toTest === type;
@@ -87,8 +86,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Extend object
@@ -101,7 +99,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *
      * @return {object}
      *  The extended object
-     **/
+     */
     gnd.extend = function ( obj, source )
     {
         if ( source ) {
@@ -132,29 +130,27 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
 
 /**
  * @class
- **/
+ */
 gnd.array = {};
 
     /**
      * @class
-     **/
+     */
     gnd.array.is = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows Array.isArray
-         **/
+         */
         gnd.array.is.array = Array.isArray;
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if an array is empty
@@ -166,7 +162,7 @@ gnd.array = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.array.is.empty = function ( arr )
         {
             return ( arr.length == 0 );
@@ -175,8 +171,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -191,7 +186,7 @@ gnd.array = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.array.contains = function ( arr, value )
     {
         return Array.prototype.indexOf.call( arr, value ) != -1;
@@ -200,8 +195,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -216,7 +210,7 @@ gnd.array = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.array.insert = function ( arr, value )
     {
         if ( !gnd.array.contains( arr, value ) ) {
@@ -251,14 +245,13 @@ gnd.array = {};
 
 /**
  * @class
- **/
+ */
 gnd.object = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an object have this property as its own
@@ -273,7 +266,7 @@ gnd.object = {};
      *********
      *
      * @return {boolean|Object.prototype.hasOwnProperty}
-     **/
+     */
     gnd.object.hasOwn = function ( obj, key )
     {
         return Object.prototype.hasOwnProperty.call( obj, key );
@@ -281,14 +274,13 @@ gnd.object = {};
 
     /**
      * @class
-     **/
+     */
     gnd.object.is = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a object
@@ -300,7 +292,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.object = function ( obj )
         {
             return gnd.isTypeOf( obj, 'object' );
@@ -309,8 +301,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a param is an HTML Element
@@ -322,7 +313,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.domElement = function ( elem )
         {
             return ( elem instanceof HTMLElement );
@@ -331,8 +322,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a node list
@@ -344,7 +334,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.nodeList = function ( nodeList )
         {
             return Object.prototype.toString.call( nodeList ) === '[object NodeList]';
@@ -353,8 +343,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is an HTML collection
@@ -366,7 +355,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.htmlCollection = function ( htmlCollection )
         {
             return Object.prototype.toString.call( htmlCollection ) === '[object HTMLCollection]';
@@ -375,8 +364,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a node list or an HTML collection
@@ -388,7 +376,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.htmlList = function ( htmlList )
         {
             return ( gnd.object.is.nodeList( htmlList ) || gnd.object.is.htmlCollection( htmlList ) );
@@ -397,8 +385,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a the window variable to avoid endless loops
@@ -410,7 +397,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.window = function ( win )
         {
             return win === win.window;
@@ -419,8 +406,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is the document
@@ -432,7 +418,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.document = function ( doc )
         {
             return doc === document;
@@ -441,8 +427,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if an object is empty
@@ -454,7 +439,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.empty = function ( obj )
         {
             // Iterate through the object
@@ -472,14 +457,13 @@ gnd.object = {};
 
     /**
      * @class
-     **/
+     */
     gnd.object.get = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Get a nested item from an object/array via path
@@ -497,7 +481,7 @@ gnd.object = {};
          *********
          *
          * @return {*}
-         **/
+         */
         gnd.object.get.byPath = function ( obj, path, def )
         {
             return gnd.object.handlePath( 'get', obj, path, def );
@@ -506,8 +490,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Get the first property in a given object
@@ -519,7 +502,7 @@ gnd.object = {};
          *********
          *
          * @return {*}
-         **/
+         */
         gnd.object.get.firstProp = function ( obj )
         {
             for ( var prop in obj ) {
@@ -531,14 +514,13 @@ gnd.object = {};
 
     /**
      * @class
-     **/
+     */
     gnd.object.set = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Set a nested item's value from an object/array via path
@@ -559,7 +541,7 @@ gnd.object = {};
          *********
          *
          * @return {*}
-         **/
+         */
         gnd.object.set.byPath = function ( obj, path, value, def )
         {
             return gnd.object.handlePath( 'set', obj, path, value, def );
@@ -597,7 +579,7 @@ gnd.object = {};
      *********
      *
      * @return {*}
-     **/
+     */
     gnd.object.handlePath = function ( type, obj, path, value, def )
     {
         // If this is a set and the value is not present
@@ -685,14 +667,13 @@ gnd.object = {};
 
 /**
  * @class
- **/
+ */
 gnd.string = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Convert parameter to a string
@@ -704,7 +685,7 @@ gnd.string = {};
      *********
      *
      * @return {string}
-     **/
+     */
     gnd.string.makeSafe = function ( value )
     {
         return ( !value )
@@ -715,14 +696,13 @@ gnd.string = {};
 
     /**
      * @class
-     **/
+     */
     gnd.string.is = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a string
@@ -734,7 +714,7 @@ gnd.string = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.string.is.string = function ( toTest )
         {
             return gnd.isTypeOf( toTest, 'string' );
@@ -743,8 +723,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a number
@@ -756,7 +735,7 @@ gnd.string = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.string.is.numeric = function ( toTest )
         {
             return ( toTest - parseFloat( toTest ) >= 0 );
@@ -765,8 +744,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a string is empty
@@ -778,7 +756,7 @@ gnd.string = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.string.is.empty = function ( toTest )
         {
             return !(
@@ -793,8 +771,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does a string contain a value
@@ -809,7 +786,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.contains = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -822,8 +799,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -839,7 +815,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.containsInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -852,8 +828,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Compare to strings to see if they match
@@ -868,7 +843,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.compare = function ( toTest, value )
     {
         return toTest === value;
@@ -877,8 +852,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -894,7 +868,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.compareInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -924,7 +898,7 @@ gnd.string = {};
 
 /**
  * @class
- **/
+ */
 gnd.cookies = {};
 
     /**
@@ -945,7 +919,7 @@ gnd.cookies = {};
      *
      * @return {*}
      *  The cookie value
-     **/
+     */
     gnd.cookies.get = function ( key )
     {
         return decodeURIComponent(
@@ -996,7 +970,7 @@ gnd.cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was set or not
-     **/
+     */
     gnd.cookies.set = function ( key, value, expires, path, domain, isSecure )
     {
         if (
@@ -1085,7 +1059,7 @@ gnd.cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was removed or not
-     **/
+     */
     gnd.cookies.remove = function ( key, path, domain )
     {
         // Sanity checks
@@ -1129,7 +1103,7 @@ gnd.cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie exists or not
-     **/
+     */
     gnd.cookies.has = function ( key )
     {
         return (
@@ -1156,7 +1130,7 @@ gnd.cookies = {};
      *
      * @return {array}
      *  The keys
-     **/
+     */
     gnd.cookies.keys = function ()
     {
         var
@@ -1182,8 +1156,7 @@ gnd.cookies = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a list of the cookies
@@ -1193,7 +1166,7 @@ gnd.cookies = {};
      *
      * @return {object}
      *  The cookies
-     **/
+     */
     gnd.cookies.getAll = function ()
     {
         var
@@ -1258,7 +1231,7 @@ gnd.cookies = {};
 
 /**
  * @class
- **/
+ */
 gnd.userAgent = {};
 
 /**=================================================================================**\
@@ -1270,14 +1243,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  User Agent string
      *
      * @type {string}
-     **/
+     */
     gnd.userAgent.UA = navigator.userAgent;
 
 /**=================================================================================**\
@@ -1289,8 +1261,7 @@ gnd.userAgent = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user agent has a value
@@ -1302,7 +1273,7 @@ gnd.userAgent = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.userAgent.contains = function ( value )
     {
         return gnd.string.contains( gnd.userAgent.UA, value );
@@ -1317,14 +1288,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is IE
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IE = (function ()
     {
         return gnd.userAgent.contains( 'MSIE' );
@@ -1333,14 +1303,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is FireFox
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.FIREFOX = (function ()
     {
         return gnd.userAgent.contains( 'Firefox' );
@@ -1349,14 +1318,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Chrome
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.CHROME = (function ()
     {
         return gnd.userAgent.contains( 'Chrome' );
@@ -1365,14 +1333,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Safari
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.SAFARI = (function ()
     {
         return gnd.userAgent.contains( 'Safari' ) && !gnd.userAgent.CHROME;
@@ -1381,14 +1348,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPhone
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IPHONE = (function ()
     {
         return gnd.userAgent.contains( 'iPhone' );
@@ -1397,14 +1363,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPad
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IPAD = (function ()
     {
         return gnd.userAgent.contains( 'iPad' );
@@ -1413,14 +1378,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Android
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.ANDROID = (function ()
     {
         return gnd.userAgent.contains( 'Android' );
@@ -1429,27 +1393,25 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is iOS
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IOS = gnd.userAgent.IPHONE || gnd.userAgent.IPAD;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows Phone
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.WINDOWS_PHONE = (function ()
     {
         return gnd.userAgent.contains( 'Windows Phone' );
@@ -1458,27 +1420,25 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a mobile device
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.MOBILE = gnd.userAgent.IOS || gnd.userAgent.WINDOWS_PHONE || gnd.userAgent.ANDROID;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.WINDOWS = (function ()
     {
         return gnd.userAgent.contains( 'Windows NT' );
@@ -1487,14 +1447,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Mac
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.MAC = (function ()
     {
         return gnd.userAgent.contains( 'Macintosh' );
@@ -1503,14 +1462,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Linux
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.LINUX = (function ()
     {
         return gnd.userAgent.contains( 'Linux' );
@@ -1519,14 +1477,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a desktop
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.DESKTOP = !gnd.userAgent.MOBILE;
 /**=================================================================================**\
  *
@@ -1579,20 +1536,19 @@ gnd.userAgent = {};
 
 /**
  * @class 
- **/
+ */
 gnd.is = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Is this a modern browser
      *
      * @type {boolean}
-     **/
+     */
     gnd.is.modernBrowser = (
         'querySelector' in document
         && 'addEventListener' in window
@@ -1608,94 +1564,83 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @borrows Array.isArray
-     **/
+     */
     gnd.is.array = gnd.array.is.array;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.window = gnd.object.is.window;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.document = gnd.object.is.document;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.numeric = gnd.string.is.numeric;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.object = gnd.object.is.object;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @see gnd.string.is.string
      *
      * @type {Function}
-     **/
+     */
     gnd.is.string = gnd.string.is.string;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.domElement = gnd.object.is.domElement;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.nodeList = gnd.object.is.nodeList;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.htmlCollection = gnd.object.is.htmlCollection;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
-     **/
+     * @author MelechMizrachi
+     */
     gnd.is.htmlList = gnd.object.is.htmlList;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is an instance of gnd.dom.$
@@ -1707,7 +1652,7 @@ gnd.is = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.is.$ = function ( toTest )
     {
         return toTest instanceof gnd.$;
@@ -1716,8 +1661,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a boolean
@@ -1729,7 +1673,7 @@ gnd.is = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.is.bool = function ( toTest )
     {
         return gnd.isTypeOf( toTest, 'boolean' );
@@ -1738,8 +1682,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a function
@@ -1751,7 +1694,7 @@ gnd.is = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.is.func = function ( toTest )
     {
         return gnd.isTypeOf( toTest, 'function' );
@@ -1760,8 +1703,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is null/undefined/etc
@@ -1773,7 +1715,7 @@ gnd.is = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.is.invalid = function ( toTest )
     {
         return gnd.is.undefined( toTest )
@@ -1785,8 +1727,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is undefined
@@ -1798,7 +1739,7 @@ gnd.is = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.is.undefined = function ( toTest )
     {
         return gnd.isTypeOf( toTest, 'undefined' );
@@ -1806,206 +1747,187 @@ gnd.is = {};
 
     /**
      * @class
-     **/
+     */
     gnd.is.empty = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
-         **/
+         * @author MelechMizrachi
+         */
         gnd.is.empty.array = gnd.array.is.empty;
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
-         **/
+         * @author MelechMizrachi
+         */
         gnd.is.empty.object = gnd.object.is.empty;
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
-         **/
+         * @author MelechMizrachi
+         */
         gnd.is.empty.string = gnd.string.is.empty;
 
     /**
      * @class
-     **/
+     */
     gnd.is.browser = {};
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.IE
-         **/
+         */
         gnd.is.browser.IE = gnd.userAgent.IE;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.FIREFOX
-         **/
+         */
         gnd.is.browser.FIREFOX = gnd.userAgent.FIREFOX;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.CHROME
-         **/
+         */
         gnd.is.browser.CHROME = gnd.userAgent.CHROME;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.SAFARI
-         **/
+         */
         gnd.is.browser.SAFARI = gnd.userAgent.SAFARI;
 
     /**
      * @class
-     **/
+     */
     gnd.is.os = {};
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.WINDOWS
-         **/
+         */
         gnd.is.os.WINDOWS = gnd.userAgent.WINDOWS;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.MAC
-         **/
+         */
         gnd.is.os.MAC = gnd.userAgent.MAC;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.LINUX
-         **/
+         */
         gnd.is.os.LINUX = gnd.userAgent.LINUX;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.ANDROID
-         **/
+         */
         gnd.is.os.ANDROID = gnd.userAgent.ANDROID;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.IOS
-         **/
+         */
         gnd.is.os.IOS = gnd.userAgent.IOS;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.WINDOWS_PHONE
-         **/
+         */
         gnd.is.os.WP = gnd.userAgent.WINDOWS_PHONE;
 
     /**
      * @class
-     **/
+     */
     gnd.is.device = {};
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.WINDOWS_PHONE
-         **/
+         */
         gnd.is.device.WP = gnd.userAgent.WINDOWS_PHONE;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.DESKTOP
-         **/
+         */
         gnd.is.device.DESKTOP = gnd.userAgent.DESKTOP;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.MOBILE
-         **/
+         */
         gnd.is.device.MOBILE = gnd.userAgent.MOBILE;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.ANDROID
-         **/
+         */
         gnd.is.device.ANDROID = gnd.userAgent.ANDROID;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.IPHONE
-         **/
+         */
         gnd.is.device.IPHONE = gnd.userAgent.IPHONE;
 
         /**
          * @constant
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.IPAD
-         **/
+         */
         gnd.is.device.IPAD = gnd.userAgent.IPAD;
 /**=================================================================================**\
  *
@@ -2027,18 +1949,17 @@ gnd.is = {};
 
 /**
  * @class
- **/
+ */
 gnd.log = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Log variables to the console
-     **/
+     */
     gnd.log.log = function ()
     {
         if ( gnd.DEBUG ) {
@@ -2049,8 +1970,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set some info to the console
@@ -2061,7 +1981,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.info = function ()
     {
         if ( gnd.DEBUG ) {
@@ -2072,8 +1992,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console a warning
@@ -2084,7 +2003,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.warn = function ()
     {
         if ( gnd.DEBUG ) {
@@ -2095,8 +2014,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Debug variables to the console
@@ -2107,7 +2025,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.debug = function ()
     {
         if ( gnd.DEBUG ) {
@@ -2118,8 +2036,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console errors
@@ -2130,7 +2047,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.error = function ()
     {
         if ( gnd.DEBUG ) {
@@ -2141,8 +2058,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console time
@@ -2153,7 +2069,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.time = function ()
     {
         if ( gnd.DEBUG ) {
@@ -2164,8 +2080,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console timeEnd
@@ -2176,7 +2091,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.timeEnd = function ()
     {
         if ( gnd.DEBUG ) {
@@ -2201,24 +2116,22 @@ gnd.log = {};
 
 /**
  * @class
- **/
+ */
 gnd.utils = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @borrows gnd.extend
-     **/
+     */
     gnd.utils.extend = gnd.extend;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Iterate through an object || array
@@ -2233,7 +2146,7 @@ gnd.utils = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.utils.each = function ( items, callback )
     {
         // Sanity checks
@@ -2261,8 +2174,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Merge two objects
@@ -2276,7 +2188,7 @@ gnd.utils = {};
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.utils.merge = function ( mergeInto, mergeThis )
     {
         // TODO: Work on this
@@ -2286,8 +2198,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clone a given object
@@ -2299,7 +2210,7 @@ gnd.utils = {};
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.utils.cloneObject = function ( toClone )
     {
         // Is the object valid?
@@ -2318,8 +2229,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Validate a given object
@@ -2331,7 +2241,7 @@ gnd.utils = {};
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.utils.validateObject = function ( toTest )
     {
         // Is the object valid?
@@ -2358,7 +2268,7 @@ gnd.utils = {};
 
 /**
  * @class
- **/
+ */
 gnd.xhr = {};
 
     /**
@@ -2368,14 +2278,13 @@ gnd.xhr = {};
      *  Default ajax request url
      *
      * @type {string}
-     **/
+     */
     gnd.xhr.URL = '/service/api/';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax/XHR request
@@ -2391,7 +2300,7 @@ gnd.xhr = {};
      *
      * @return {object}
      *  The xhr call
-     **/
+     */
     gnd.xhr.ajax = function ( url, options )
     {
         // If the url is not valid
@@ -2416,47 +2325,47 @@ gnd.xhr = {};
 
         /**
          * @name    options
-         **/
+         */
         /**     @name   options#accept
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#async
          *      @propertyOf options
          *      @type   {boolean}
-         **/
+         */
         /**     @name   options#contentType
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#data
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#headers
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#dataString
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#method
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#success
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#error
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#complete
          *      @propertyOf options
          *      @type   {function}
-        **/
+        */
         options = options || {};
 
         var
@@ -2674,7 +2583,7 @@ gnd.xhr = {};
  *********
  *
  * @return gnd.$.Init
- **/
+ */
 gnd.$ = function ( selector, context )
 {
     return new gnd.$.Init( selector, context );
@@ -2683,8 +2592,7 @@ gnd.$ = function ( selector, context )
     /**
      * @constructor
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  gnd.dom.$ initializer
@@ -2700,7 +2608,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {gnd.$}
      *  The gnd.dom.$ object
-     **/
+     */
     gnd.$.Init = function ( selector, context )
     {
         // If the selector is not a string
@@ -2745,7 +2653,7 @@ gnd.$ = function ( selector, context )
 
     /**
      * @constructor
-     **/
+     */
     gnd.$.prototype.constructor = gnd.$;
 
     /**
@@ -2755,7 +2663,7 @@ gnd.$ = function ( selector, context )
      *  The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     gnd.$.prototype.elem = null;
 
     /**
@@ -2765,7 +2673,7 @@ gnd.$ = function ( selector, context )
      *  The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     gnd.$.prototype.context = document;
 
     /**
@@ -2775,7 +2683,7 @@ gnd.$ = function ( selector, context )
      *  The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     gnd.$.prototype.selector = '';
 
     /**
@@ -2785,14 +2693,13 @@ gnd.$ = function ( selector, context )
      *  How to split the strings within the class
      *
      * @type {string}
-     **/
+     */
     gnd.$.prototype.SPACE_SPLIT = ' ';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an element using a parent and a string selector
@@ -2808,7 +2715,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
-     **/
+     */
     gnd.$.prototype.getElements = function ( parent, selector )
     {
         // If the parent is invalid
@@ -2878,8 +2785,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -2892,7 +2798,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {gnd.$}
      *  The requested child
-     **/
+     */
     gnd.$.prototype.find = function ( selector )
     {
         return gnd.$( this.getElements( this.elem, selector ) );
@@ -2901,8 +2807,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the elem parent
@@ -2912,7 +2817,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {gnd.$}
      *  The parent
-     **/
+     */
     gnd.$.prototype.parent = function ()
     {
         return gnd.$( this.get( 0 ).parentNode );
@@ -2921,8 +2826,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -2934,7 +2838,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.get = function ( index )
     {
         // If the elem is a nodeList AND the index is numeric
@@ -2950,8 +2854,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find the closest parent with a given selector
@@ -2967,7 +2870,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.closest = function ( selector, element )
     {
         // If a selector was provided
@@ -3044,8 +2947,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get elem length
@@ -3054,7 +2956,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {number}
-     **/
+     */
     gnd.$.prototype.getLength = function ()
     {
         // If the elem has a length
@@ -3070,8 +2972,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle event for element
@@ -3092,7 +2993,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
         // Ensure we have a valid event type
@@ -3182,8 +3083,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add an event
@@ -3201,7 +3101,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.on = function ( eventType, selector, callback )
     {
         return this.handleEvent(
@@ -3215,8 +3115,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove an event
@@ -3234,7 +3133,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.off = function ( eventType, selector, callback )
     {
         // If no params have been provided
@@ -3262,8 +3161,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event
@@ -3278,7 +3176,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.trigger = function ( eventType, selector )
     {
         return this.handleEvent(
@@ -3291,8 +3189,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's value
@@ -3304,7 +3201,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|string}
-     **/
+     */
     gnd.$.prototype.val = function ( value )
     {
         // If a value was given to override with
@@ -3340,8 +3237,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's text
@@ -3354,7 +3250,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|string}
-     **/
+     */
     gnd.$.prototype.text = function ( text )
     {
         // Return this for chaining
@@ -3364,8 +3260,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's html
@@ -3382,7 +3277,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.html = function ( html, type )
     {
         // If no text was given
@@ -3430,8 +3325,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Append html to this element
@@ -3443,7 +3337,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.append = function ( html )
     {
         // Prepend the html
@@ -3453,8 +3347,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -3466,7 +3359,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.prepend = function ( html )
     {
         // Prepend the html
@@ -3476,8 +3369,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -3493,7 +3385,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.handleHTML = function ( type, html )
     {
         var
@@ -3536,8 +3428,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -3556,7 +3447,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.handlePend = function ( type, nodes, elem )
     {
         // If no elem is set use this.elem
@@ -3610,8 +3501,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem child nodes
@@ -3623,7 +3513,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.empty = function ( elem )
     {
         // If no elem is set use this.elem
@@ -3640,8 +3530,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem from the dom
@@ -3653,7 +3542,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.remove = function ( elem )
     {
         // If no elem is set use this.elem
@@ -3683,8 +3572,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle class for element
@@ -3699,7 +3587,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.handleClass = function ( className, type )
     {
         // Sanity checks
@@ -3769,8 +3657,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add class to element
@@ -3782,7 +3669,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.addClass = function ( className )
     {
         return this.handleClass( className, 'add' );
@@ -3791,8 +3678,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove class from element
@@ -3804,7 +3690,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.removeClass = function ( className )
     {
         return this.handleClass( className, 'remove' );
@@ -3813,8 +3699,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add or remove class or classes depending on whether the
@@ -3827,7 +3712,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.toggleClass = function ( className )
     {
         return this.handleClass( className, 'toggle' );
@@ -3836,8 +3721,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determines if elem has the class or classes specified
@@ -3850,7 +3734,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {boolean|object}
-     **/
+     */
     gnd.$.prototype.hasClass = function ( className )
     {
         if ( !className ) {
@@ -3876,8 +3760,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an attribute value
@@ -3889,7 +3772,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {string|boolean}
-     **/
+     */
     gnd.$.prototype.attrGet = function ( attr )
     {
         // If no attribute was provided
@@ -3905,8 +3788,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds attribute to elem
@@ -3921,7 +3803,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {gnd.$}
-     **/
+     */
     gnd.$.prototype.attrSet = function ( attr, value )
     {
         // If no attribute or value were provided
@@ -3954,8 +3836,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes an attribute from elem
@@ -3967,7 +3848,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {gnd.$}
-     **/
+     */
     gnd.$.prototype.attrRemove = function ( attr )
     {
         // If no attribute was provided
@@ -4000,8 +3881,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a data attribute value
@@ -4013,7 +3893,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {string|boolean}
-     **/
+     */
     gnd.$.prototype.dataGet = function ( data )
     {
         // If no data attribute was provided
@@ -4028,8 +3908,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds a data attribute to elem
@@ -4045,7 +3924,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.dataSet = function ( data, value )
     {
         // If no data attribute or value were provided
@@ -4060,8 +3939,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes a data attribute from elem
@@ -4073,7 +3951,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.dataRemove = function ( data )
     {
         // If no data attribute was provided
@@ -4126,14 +4004,14 @@ gnd.$.Init.prototype = gnd.$.prototype;
 
 /**
  * @class
- **/
+ */
 gnd.dom = {};
 
     /**
      * @class
      *
      * @extends {gnd.$}
-     **/
+     */
     gnd.dom.$ = GND_GLOBALS['gnd.dom.$'] || gnd.$;
 
     /**
@@ -4143,7 +4021,7 @@ gnd.dom = {};
      *  Global elements
      *
      * @type {object}
-     **/
+     */
     gnd.elems = gnd.dom.elems = {};
 
         /**
@@ -4153,7 +4031,7 @@ gnd.dom = {};
          *  Create a new instance of gnd.$ for document
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.document = gnd.$( document );
 
         /**
@@ -4163,7 +4041,7 @@ gnd.dom = {};
          *  Create a new instance of gnd.$ for window
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.window = gnd.$( window );
 
         /**
@@ -4173,7 +4051,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for html
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.html = gnd.$( 'html' );
 
         /**
@@ -4183,7 +4061,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for body
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.body = gnd.$( 'body' );
 
         /**
@@ -4193,7 +4071,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for #header
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.header = gnd.$( '#header' );
 
         /**
@@ -4203,7 +4081,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for #main
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.main = gnd.$( '#main' );
 
         /**
@@ -4213,14 +4091,13 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for #footer
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.footer = gnd.$( '#footer' );
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document variable
@@ -4228,7 +4105,7 @@ gnd.dom = {};
      * @params
      *
      * @return {object}
-     **/
+     */
     gnd.dom.getDocument = function ()
     {
         return document;
@@ -4237,8 +4114,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window variable
@@ -4246,7 +4122,7 @@ gnd.dom = {};
      * @params
      *
      * @return {object}
-     **/
+     */
     gnd.dom.getWindow = function ()
     {
         return window;
@@ -4255,8 +4131,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window width
@@ -4264,7 +4139,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.windowWidth = function ()
     {
         return window.innerWidth;
@@ -4273,8 +4148,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window height
@@ -4282,7 +4156,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.windowHeight = function ()
     {
         return window.innerHeight;
@@ -4291,8 +4165,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the amount scrolled
@@ -4300,7 +4173,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.scrollTop = function ()
     {
         return document.body.scrollTop;
@@ -4309,8 +4182,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total width
@@ -4318,7 +4190,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.documentWidth = function ()
     {
         return document.documentElement.scrollWidth;
@@ -4327,8 +4199,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
@@ -4336,7 +4207,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.documentHeight = function ()
     {
         return document.documentElement.scrollHeight;
@@ -4345,8 +4216,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
@@ -4358,7 +4228,7 @@ gnd.dom = {};
      *********
      *
      * @return {HTMLDocument}
-     **/
+     */
     gnd.dom.parseHTML = function ( html )
     {
         var
@@ -4402,22 +4272,22 @@ gnd.dom = {};
 
 /**
  * @exports gnd.scroller
- **/
+ */
 (function ( root, Factory )
 {
     /**
      * @namespace root
      * @extends gnd
-     **/
+     */
 
     /**
      * @memberOf gnd
      * @namespace scroller
-     **/
+     */
     root.scroller = Factory;
 
 // Call anonymous function
-} ( gnd, /** @lends gnd.scroller **/{
+} ( gnd, /** @lends gnd.scroller */{
 
 /**=================================================================================**\
  *
@@ -4467,7 +4337,7 @@ gnd.dom = {};
 
 /**
  * @class
- **/
+ */
 gnd.ui = {};
 
     /**
@@ -4477,7 +4347,7 @@ gnd.ui = {};
      *  The dom selector function to use
      *
      * @extends {gnd.$}
-     **/
+     */
     gnd.ui.$ = gnd.dom.$;
 
     /**
@@ -4487,7 +4357,7 @@ gnd.ui = {};
      *  Object of components created that need to be referenced globally
      *
      * @type {object}
-     **/
+     */
     gnd.ui.components = {};
 
     /**
@@ -4495,7 +4365,7 @@ gnd.ui = {};
      *
      * @desc
      *  Topics for components
-     **/
+     */
     gnd.ui.Topics = {};
 
         /**
@@ -4513,7 +4383,7 @@ gnd.ui = {};
          *     ,    { callback, scope }
          *     ]
          * }
-         **/
+         */
         gnd.ui.Topics.topics = {};
 
         /**
@@ -4523,14 +4393,13 @@ gnd.ui = {};
          *  The subscribed topics
          *
          * @type {object}
-         **/
+         */
         gnd.ui.Topics._topics = {};
 
         /**
          * @class
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Handles topic callbacks for this component
@@ -4543,7 +4412,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.Topic = function ( topicName )
         {
             var
@@ -4583,8 +4452,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Subscribe a callback method to a topic
@@ -4600,7 +4468,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.subscribeToTopic = function ( callback, scope )
         {
             // Determine if scope is a valid object
@@ -4643,8 +4511,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Subscribe a callback method to a topic
@@ -4660,7 +4527,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.unSubscribeFromTopic = function ( callback, scope )
         {
             // If the callback is not a string
@@ -4699,8 +4566,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Trigger a topic's callback methods to fire
@@ -4710,7 +4576,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.triggerTopic = function ()
         {
             var
@@ -4737,8 +4603,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Unsubscribe all callback methods from a topic
@@ -4748,7 +4613,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.unSubscribeAllFromTopic = function ()
         {
             // Re-set topics to empty array
@@ -4761,8 +4626,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Unsubscribe all callback methods from a topic
@@ -4778,7 +4642,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.handleTopics = function ( topics, remove )
         {
             // Determine if topics is a valid object
@@ -4833,8 +4697,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Remove all topics
@@ -4844,7 +4707,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.removeTopics = function ()
         {
             // Re-set topic objects to empty object
@@ -4860,7 +4723,7 @@ gnd.ui = {};
      *
      * @desc
      *  Helpers for components
-     **/
+     */
     gnd.ui.Helpers = {};
 
         /**
@@ -4870,14 +4733,13 @@ gnd.ui = {};
          *  The accepted options for the model
          *
          * @type {array}
-         **/
+         */
         gnd.ui.Helpers.__options = [];
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Set component options
@@ -4890,7 +4752,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The component
-         **/
+         */
         gnd.ui.Helpers.__setOptions = function ( options )
         {
             // Determine validity of options object
@@ -4938,8 +4800,7 @@ gnd.ui = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Extend a class
@@ -4952,7 +4813,7 @@ gnd.ui = {};
      *
      * @return {object}
      *  The extended object
-     **/
+     */
     gnd.ui.extend = function ( objectToMerge )
     {
         var
@@ -5036,7 +4897,7 @@ gnd.ui = {};
  * @extends gnd.ui.Helpers
  *
  * @return void
- **/
+ */
 gnd.ui.Model = function ( attributes, options )
 {
     // Set options
@@ -5056,7 +4917,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The Model ID
      *
      * @type {string}
-     **/
+     */
     gnd.ui.Model.prototype.sID = '';
 
     /**
@@ -5066,7 +4927,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attributes id index
      *
      * @type {string}
-     **/
+     */
     gnd.ui.Model.prototype.idAttribute = 'id';
 
     /**
@@ -5076,7 +4937,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype.attributes = {};
 
     /**
@@ -5086,7 +4947,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's changed attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype.changed = {};
 
     /**
@@ -5096,7 +4957,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's previous attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype._prevAttributes = {};
 
     /**
@@ -5106,7 +4967,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's default attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype.defaults = {};
 
     /**
@@ -5116,7 +4977,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The accepted options for the model
      *
      * @type {array}
-     **/
+     */
     gnd.ui.Model.prototype.__options = [
             'sID'
         ,   'defaults'
@@ -5126,8 +4987,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize Model
@@ -5137,7 +4997,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model
-     **/
+     */
     gnd.ui.Model.prototype.init = function ()
     {
         // Overwrite this function for custom initialization of Model
@@ -5149,8 +5009,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a copy of the model data
@@ -5160,7 +5019,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's attributes
-     **/
+     */
     gnd.ui.Model.prototype.toJSON = function ()
     {
         // Return the model's attributes (data)
@@ -5170,8 +5029,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a requested attribute value
@@ -5184,7 +5042,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {*}
      *  The requested attribute
-     **/
+     */
     gnd.ui.Model.prototype.get = function ( attribute )
     {
         // Return the requested attribute
@@ -5194,8 +5052,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set an attribute value
@@ -5212,7 +5069,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model
-     **/
+     */
     gnd.ui.Model.prototype.set = function ( attribute, attributeValue )
     {
         // Set the attribute's value
@@ -5225,8 +5082,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a requested attribute value
@@ -5238,7 +5094,7 @@ gnd.ui.Model = function ( attributes, options )
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.ui.Model.prototype.has = function ( attribute )
     {
         // If the attribute exists
@@ -5254,8 +5110,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine whether the model/attribute changed
@@ -5267,7 +5122,7 @@ gnd.ui.Model = function ( attributes, options )
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.ui.Model.prototype.hasChanged = function ( attribute )
     {
         // If no attribute was passed
@@ -5288,8 +5143,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return the changed attributes
@@ -5299,7 +5153,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's changed attributes
-     **/
+     */
     gnd.ui.Model.prototype.getChangedAttributes = function ()
     {
         // Return the changed attributes
@@ -5309,8 +5163,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return the requested previous attribute
@@ -5323,7 +5176,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's previous attributes
-     **/
+     */
     gnd.ui.Model.prototype.getPrevious = function ( attribute )
     {
         // Return the requested attribute's previous value
@@ -5333,8 +5186,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return the previous attributes
@@ -5344,7 +5196,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's attributes
-     **/
+     */
     gnd.ui.Model.prototype.getPreviousAttributes = function ()
     {
         // Return the previous attributes
@@ -5354,8 +5206,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set Model attributes
@@ -5368,7 +5219,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model
-     **/
+     */
     gnd.ui.Model.prototype.__setAttributes = function ( attributes )
     {
         // Are the defaults a valid object?
@@ -5399,7 +5250,7 @@ gnd.ui.Model = function ( attributes, options )
      * @method
      *
      * @extends gnd.ui.extend
-     **/
+     */
     gnd.ui.Model.extend = (function()
     {
         // Return gnd.ui.extend
@@ -5455,7 +5306,7 @@ gnd.ui.Model = function ( attributes, options )
  * @extends gnd.ui.Helpers
  *
  * @return void
- **/
+ */
 gnd.ui.Collection = function ( options )
 {
     // Set options
@@ -5475,7 +5326,7 @@ gnd.ui.Collection = function ( options )
      *  The collection ID
      *
      * @type {string}
-     **/
+     */
     gnd.ui.Collection.prototype.sID = '';
 
     /**
@@ -5485,7 +5336,7 @@ gnd.ui.Collection = function ( options )
      *  The selector for the DOM elements
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype.$views = {};
 
     /**
@@ -5495,7 +5346,7 @@ gnd.ui.Collection = function ( options )
      *  The views in this collection
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype.Views = {};
 
     /**
@@ -5505,7 +5356,7 @@ gnd.ui.Collection = function ( options )
      *  The options for this collections View
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype.viewOptions = {};
 
     /**
@@ -5515,7 +5366,7 @@ gnd.ui.Collection = function ( options )
      *  Index views by model id
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype._indexByModel = {};
 
     /**
@@ -5525,7 +5376,7 @@ gnd.ui.Collection = function ( options )
      *  Index views by collection id
      *
      * @type {array}
-     **/
+     */
     gnd.ui.Collection.prototype._indexByCollectionID = [];
 
     /**
@@ -5535,7 +5386,7 @@ gnd.ui.Collection = function ( options )
      *  The accepted options for the collection
      *
      * @type {array}
-     **/
+     */
     gnd.ui.Collection.prototype.__options = [
             'Views'
         ,   'sID'
@@ -5550,14 +5401,13 @@ gnd.ui.Collection = function ( options )
      *
      * @desc
      *  The View for the views in this collection
-     **/
+     */
     gnd.ui.Collection.prototype.View = gnd.ui.View;
     
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize collection
@@ -5567,7 +5417,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The collection
-     **/
+     */
     gnd.ui.Collection.prototype.init = function ()
     {
         // Overwrite this function for custom initialization of Collection
@@ -5579,8 +5429,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the views for the collection
@@ -5590,7 +5439,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The collection
-     **/
+     */
     gnd.ui.Collection.prototype.setViews = function ()
     {
         // Determine whether to use Views or $views
@@ -5637,8 +5486,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add a view to the collection
@@ -5651,7 +5499,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The collection
-     **/
+     */
     gnd.ui.Collection.prototype.addView = function ( view )
     {
         // If this is not a valid view
@@ -5702,8 +5550,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a view in this collection by its model
@@ -5716,7 +5563,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.findViewByModel = function ( model )
     {
         // If this is not a valid model
@@ -5732,8 +5579,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a view in this collection by its model id
@@ -5746,7 +5592,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested View
-     **/
+     */
     gnd.ui.Collection.prototype.findViewByModelID = function ( sID )
     {
         // If the id is not valid
@@ -5765,8 +5611,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a view in this collection by its id
@@ -5779,7 +5624,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.findViewByID = function ( sID )
     {
         // If the id is not valid
@@ -5795,8 +5640,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the nth view in the collection
@@ -5809,7 +5653,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.getNthView = function ( nthItem )
     {
         // If this is not a valid number
@@ -5825,8 +5669,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the last view in the collection
@@ -5836,7 +5679,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.getLastView = function ()
     {
         // Get the last view's sID
@@ -5849,8 +5692,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the nth view's id in the collection
@@ -5863,7 +5705,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {boolean|string}
      *  The view id
-     **/
+     */
     gnd.ui.Collection.prototype.getNthViewID = function ( nthItem )
     {
         // If this is not a valid number
@@ -5879,8 +5721,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the last view's id in the collection
@@ -5890,7 +5731,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {string}
      *  The view id
-     **/
+     */
     gnd.ui.Collection.prototype.getLastViewID = function ()
     {
         // Return the view's id
@@ -5900,8 +5741,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the nth view's collection id in the collection
@@ -5911,7 +5751,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {number}
      *  The collection id
-     **/
+     */
     gnd.ui.Collection.prototype.getLastCollectionID = function ()
     {
         // Return the last collection id (IE length of index by collection)
@@ -5927,7 +5767,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      * @extends gnd.ui.extend
-     **/
+     */
     gnd.ui.Collection.extend = (function()
     {
         // Return gnd.ui.extend
@@ -5984,7 +5824,7 @@ gnd.ui.Collection = function ( options )
  * @extends gnd.ui.Helpers
  *
  * @return void
- **/
+ */
 gnd.ui.View = function ( options )
 {
     // Set options
@@ -6007,7 +5847,7 @@ gnd.ui.View = function ( options )
      *  The View ID
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.sID = '';
 
     /**
@@ -6017,7 +5857,7 @@ gnd.ui.View = function ( options )
      *  The View ID
      *
      * @type {gnd.$}
-     **/
+     */
     gnd.ui.View.prototype.elem = '';
 
     /**
@@ -6027,7 +5867,7 @@ gnd.ui.View = function ( options )
      *  The element tag name
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.tagName = 'div';
 
     /**
@@ -6037,7 +5877,7 @@ gnd.ui.View = function ( options )
      *  The element class name
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.className = '';
 
     /**
@@ -6047,7 +5887,7 @@ gnd.ui.View = function ( options )
      *  The template to use
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.template = '';
 
     /**
@@ -6057,7 +5897,7 @@ gnd.ui.View = function ( options )
      *  The element attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.View.prototype.attributes = {};
 
     /**
@@ -6067,7 +5907,7 @@ gnd.ui.View = function ( options )
      *  The events for this view
      *
      * @type {object}
-     **/
+     */
     gnd.ui.View.prototype.events = {};
 
     /**
@@ -6077,7 +5917,7 @@ gnd.ui.View = function ( options )
      *  The accepted options for the view
      *
      * @type {array}
-     **/
+     */
     gnd.ui.View.prototype.__options = [
             'Model'
         ,   'Collection'
@@ -6096,7 +5936,7 @@ gnd.ui.View = function ( options )
      *  What to split event strings with
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.EVENT_SPLIT = ' ';
 
     /**
@@ -6105,7 +5945,7 @@ gnd.ui.View = function ( options )
      *
      * @desc
      *  The view model
-     **/
+     */
     gnd.ui.View.prototype.Model = gnd.ui.Model;
 
     /**
@@ -6114,14 +5954,13 @@ gnd.ui.View = function ( options )
      *
      * @desc
      *  The view collection
-     **/
+     */
     gnd.ui.View.prototype.Collection = gnd.ui.Collection;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize View
@@ -6131,7 +5970,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.init = function ()
     {
         // Overwrite this function for custom initialization of View
@@ -6143,8 +5982,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a dom element under elem
@@ -6157,7 +5995,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The child of elem
-     **/
+     */
     gnd.ui.View.prototype.$ = function ( selector )
     {
         // Make sure the selector is a valid string
@@ -6173,8 +6011,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Render View
@@ -6184,7 +6021,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.render = function ()
     {
         // Render the view
@@ -6197,8 +6034,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the View element
@@ -6215,7 +6051,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.setElement = function ( element, delegateEvents )
     {
         // If an element is already set
@@ -6242,8 +6078,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove View - Remove element from DOM
@@ -6253,7 +6088,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.remove = function ()
     {
         // Undelegate all event handlers
@@ -6269,8 +6104,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate an event handler
@@ -6292,7 +6126,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The component
-     **/
+     */
     gnd.ui.View.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
     {
         // Sanity checks
@@ -6346,8 +6180,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event handler
@@ -6360,7 +6193,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The component
-     **/
+     */
     gnd.ui.View.prototype.triggerEvent = function ( event )
     {
         // Make sure the parameter is a string
@@ -6391,8 +6224,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate event handlers given an object of events
@@ -6408,7 +6240,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.handleEvents = function ( events, removeEvent )
     {
         // Determine validity of events object
@@ -6441,8 +6273,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Undelegate all event handlers
@@ -6451,7 +6282,7 @@ gnd.ui.View = function ( options )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.ui.View.prototype.undelegateEvents = function ()
     {
         // Remove all events attached to this element
@@ -6464,8 +6295,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ensure the view element exists
@@ -6474,7 +6304,7 @@ gnd.ui.View = function ( options )
      *********
      *
      * @return void
-     **/
+     */
     gnd.ui.View.prototype.__ensureElement = function ()
     {
         // Check if element is an element exists
@@ -6497,7 +6327,7 @@ gnd.ui.View = function ( options )
      * @method
      *
      * @extends gnd.ui.extend
-     **/
+     */
     gnd.ui.View.extend = (function()
     {
         // Return gnd.ui.extend

@@ -26,14 +26,13 @@
 
 /**
  * @class
- **/
+ */
 gnd.object = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an object have this property as its own
@@ -48,7 +47,7 @@ gnd.object = {};
      *********
      *
      * @return {boolean|Object.prototype.hasOwnProperty}
-     **/
+     */
     gnd.object.hasOwn = function ( obj, key )
     {
         return Object.prototype.hasOwnProperty.call( obj, key );
@@ -56,14 +55,13 @@ gnd.object = {};
 
     /**
      * @class
-     **/
+     */
     gnd.object.is = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a object
@@ -75,7 +73,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.object = function ( obj )
         {
             return gnd.isTypeOf( obj, 'object' );
@@ -84,8 +82,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a param is an HTML Element
@@ -97,7 +94,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.domElement = function ( elem )
         {
             return ( elem instanceof HTMLElement );
@@ -106,8 +103,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a node list
@@ -119,7 +115,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.nodeList = function ( nodeList )
         {
             return Object.prototype.toString.call( nodeList ) === '[object NodeList]';
@@ -128,8 +124,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is an HTML collection
@@ -141,7 +136,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.htmlCollection = function ( htmlCollection )
         {
             return Object.prototype.toString.call( htmlCollection ) === '[object HTMLCollection]';
@@ -150,8 +145,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a node list or an HTML collection
@@ -163,7 +157,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.htmlList = function ( htmlList )
         {
             return ( gnd.object.is.nodeList( htmlList ) || gnd.object.is.htmlCollection( htmlList ) );
@@ -172,8 +166,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a the window variable to avoid endless loops
@@ -185,7 +178,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.window = function ( win )
         {
             return win === win.window;
@@ -194,8 +187,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is the document
@@ -207,7 +199,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.document = function ( doc )
         {
             return doc === document;
@@ -216,8 +208,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if an object is empty
@@ -229,7 +220,7 @@ gnd.object = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.object.is.empty = function ( obj )
         {
             // Iterate through the object
@@ -247,14 +238,13 @@ gnd.object = {};
 
     /**
      * @class
-     **/
+     */
     gnd.object.get = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Get a nested item from an object/array via path
@@ -272,7 +262,7 @@ gnd.object = {};
          *********
          *
          * @return {*}
-         **/
+         */
         gnd.object.get.byPath = function ( obj, path, def )
         {
             return gnd.object.handlePath( 'get', obj, path, def );
@@ -281,8 +271,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Get the first property in a given object
@@ -294,7 +283,7 @@ gnd.object = {};
          *********
          *
          * @return {*}
-         **/
+         */
         gnd.object.get.firstProp = function ( obj )
         {
             for ( var prop in obj ) {
@@ -306,14 +295,13 @@ gnd.object = {};
 
     /**
      * @class
-     **/
+     */
     gnd.object.set = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Set a nested item's value from an object/array via path
@@ -334,7 +322,7 @@ gnd.object = {};
          *********
          *
          * @return {*}
-         **/
+         */
         gnd.object.set.byPath = function ( obj, path, value, def )
         {
             return gnd.object.handlePath( 'set', obj, path, value, def );
@@ -372,7 +360,7 @@ gnd.object = {};
      *********
      *
      * @return {*}
-     **/
+     */
     gnd.object.handlePath = function ( type, obj, path, value, def )
     {
         // If this is a set and the value is not present

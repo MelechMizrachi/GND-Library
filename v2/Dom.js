@@ -82,7 +82,7 @@
  *  The context to use
  *
  * @return Dom.Init
- **/
+ */
 var Dom = function ( selector, context )
 {
     return new Dom.Init( selector, context );
@@ -93,8 +93,7 @@ var Dom = function ( selector, context )
     /**
      * @constructor
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Dom.$ initializer
@@ -106,7 +105,7 @@ var Dom = function ( selector, context )
      *
      * @return {Dom}
      *  The Dom.$ object
-     **/
+     */
     Dom.Init = function ( selector, context )
     {
         // If the selector is not a string
@@ -150,8 +149,7 @@ var Dom = function ( selector, context )
     };
 
     /**
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the Init prototype as Dom's prototype
@@ -162,7 +160,7 @@ var Dom = function ( selector, context )
 
     /**
      * @constructor
-     **/
+     */
     Dom.prototype.constructor = Dom;
 
     /**
@@ -172,7 +170,7 @@ var Dom = function ( selector, context )
      *  The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     Dom.prototype.elem = null;
 
     /**
@@ -182,7 +180,7 @@ var Dom = function ( selector, context )
      *  The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     Dom.prototype.context = document;
 
     /**
@@ -192,7 +190,7 @@ var Dom = function ( selector, context )
      *  The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     Dom.prototype.selector = '';
 
     /**
@@ -202,14 +200,13 @@ var Dom = function ( selector, context )
      *  How to split the strings within the class
      *
      * @type {string}
-     **/
+     */
     Dom.prototype.SPACE_SPLIT = ' ';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an element using a parent and a string selector
@@ -221,7 +218,7 @@ var Dom = function ( selector, context )
      *
      * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
-     **/
+     */
     Dom.prototype.getElements = function ( parent, selector )
     {
         // If the parent is invalid
@@ -291,8 +288,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -302,7 +298,7 @@ var Dom = function ( selector, context )
      *
      * @return {Dom}
      *  The requested child
-     **/
+     */
     Dom.prototype.find = function ( selector )
     {
         return Dom( this.getElements( this.elem, selector ) );
@@ -311,15 +307,14 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the elem parent
      *
      * @return {Dom}
      *  The parent
-     **/
+     */
     Dom.prototype.parent = function ()
     {
         return Dom( this.get( 0 ).parentNode );
@@ -328,8 +323,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -338,7 +332,7 @@ var Dom = function ( selector, context )
      *  The elem index to get
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.get = function ( index )
     {
         // If the elem is a nodeList AND the index is numeric
@@ -354,8 +348,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find the closest parent with a given selector
@@ -367,7 +360,7 @@ var Dom = function ( selector, context )
      *  The type to use
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.closest = function ( selector, element )
     {
         // If a selector was provided
@@ -444,14 +437,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get elem length
      *
      * @return {number}
-     **/
+     */
     Dom.prototype.getLength = function ()
     {
         // If the elem has a length
@@ -467,8 +459,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle event for element
@@ -483,7 +474,7 @@ var Dom = function ( selector, context )
      *  The callback method
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
         // Ensure we have a valid event type
@@ -573,8 +564,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add an event
@@ -587,7 +577,7 @@ var Dom = function ( selector, context )
      *  The callback method
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.on = function ( eventType, selector, callback )
     {
         return this.handleEvent(
@@ -601,8 +591,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove an event
@@ -615,7 +604,7 @@ var Dom = function ( selector, context )
      *  The callback method
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.off = function ( eventType, selector, callback )
     {
         // If no params have been provided
@@ -643,8 +632,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event
@@ -655,7 +643,7 @@ var Dom = function ( selector, context )
      *  The child node to attach event to
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.trigger = function ( eventType, selector )
     {
         return this.handleEvent(
@@ -668,8 +656,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's value
@@ -678,7 +665,7 @@ var Dom = function ( selector, context )
      *  The value to overwrite with
      *
      * @return {object|string}
-     **/
+     */
     Dom.prototype.val = function ( value )
     {
         // If a value was given to override with
@@ -714,8 +701,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's text
@@ -725,7 +711,7 @@ var Dom = function ( selector, context )
      *  The text to overwrite with
      *
      * @return {object|string}
-     **/
+     */
     Dom.prototype.text = function ( text )
     {
         // Return this for chaining
@@ -735,8 +721,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's html
@@ -749,7 +734,7 @@ var Dom = function ( selector, context )
      *  (Default) html
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.html = function ( html, type )
     {
         // If no text was given
@@ -797,8 +782,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Append html to this element
@@ -807,7 +791,7 @@ var Dom = function ( selector, context )
      *  The html to overwrite with
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.append = function ( html )
     {
         // Prepend the html
@@ -817,8 +801,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -827,7 +810,7 @@ var Dom = function ( selector, context )
      *  The html to overwrite with
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.prepend = function ( html )
     {
         // Prepend the html
@@ -837,8 +820,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -850,7 +832,7 @@ var Dom = function ( selector, context )
      *  The html to overwrite with
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.handleHTML = function ( type, html )
     {
         var
@@ -893,8 +875,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -908,7 +889,7 @@ var Dom = function ( selector, context )
      *  The elem to use
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.handlePend = function ( type, nodes, elem )
     {
         // If no elem is set use this.elem
@@ -962,8 +943,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem child nodes
@@ -972,7 +952,7 @@ var Dom = function ( selector, context )
      *  The elem to use
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.empty = function ( elem )
     {
         // If no elem is set use this.elem
@@ -989,8 +969,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem from the dom
@@ -999,7 +978,7 @@ var Dom = function ( selector, context )
      *  The elem to use
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.remove = function ( elem )
     {
         // If no elem is set use this.elem
@@ -1029,8 +1008,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle class for element
@@ -1041,7 +1019,7 @@ var Dom = function ( selector, context )
      *  The type of class manipulation to do
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.handleClass = function ( className, type )
     {
         // Sanity checks
@@ -1111,8 +1089,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add class to element
@@ -1121,7 +1098,7 @@ var Dom = function ( selector, context )
      *  The class or classes to add
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.addClass = function ( className )
     {
         return this.handleClass( className, 'add' );
@@ -1130,8 +1107,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove class from element
@@ -1140,7 +1116,7 @@ var Dom = function ( selector, context )
      *  The class or classes to remove
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.removeClass = function ( className )
     {
         return this.handleClass( className, 'remove' );
@@ -1149,8 +1125,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add or remove class or classes depending on whether the
@@ -1160,7 +1135,7 @@ var Dom = function ( selector, context )
      *  The class or classes to check for
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.toggleClass = function ( className )
     {
         return this.handleClass( className, 'toggle' );
@@ -1169,8 +1144,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determines if elem has the class or classes specified
@@ -1180,7 +1154,7 @@ var Dom = function ( selector, context )
      *  The class or classes to check for
      *
      * @return {boolean|object}
-     **/
+     */
     Dom.prototype.hasClass = function ( className )
     {
         if ( !className ) {
@@ -1206,8 +1180,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an attribute value
@@ -1216,7 +1189,7 @@ var Dom = function ( selector, context )
      *  The attribute to get
      *
      * @return {string|boolean}
-     **/
+     */
     Dom.prototype.attrGet = function ( attr )
     {
         // If no attribute was provided
@@ -1232,8 +1205,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds attribute to elem
@@ -1244,7 +1216,7 @@ var Dom = function ( selector, context )
      *  The attribute to add to
      *
      * @return {Dom}
-     **/
+     */
     Dom.prototype.attrSet = function ( attr, value )
     {
         // If no attribute or value were provided
@@ -1277,8 +1249,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes an attribute from elem
@@ -1287,7 +1258,7 @@ var Dom = function ( selector, context )
      *  The attribute to remove
      *
      * @return {Dom}
-     **/
+     */
     Dom.prototype.attrRemove = function ( attr )
     {
         // If no attribute was provided
@@ -1320,8 +1291,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a data attribute value
@@ -1330,7 +1300,7 @@ var Dom = function ( selector, context )
      *  The data attribute to get
      *
      * @return {string|boolean}
-     **/
+     */
     Dom.prototype.dataGet = function ( data )
     {
         // If no data attribute was provided
@@ -1345,8 +1315,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds a data attribute to elem
@@ -1358,7 +1327,7 @@ var Dom = function ( selector, context )
      *  The attribute to add to
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.dataSet = function ( data, value )
     {
         // If no data attribute or value were provided
@@ -1373,8 +1342,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes a data attribute from elem
@@ -1383,7 +1351,7 @@ var Dom = function ( selector, context )
      *  The data to remove
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.dataRemove = function ( data )
     {
         // If no data attribute was provided
@@ -1401,14 +1369,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document variable
      *
      * @return {object}
-     **/
+     */
     Dom.getDocument = function ()
     {
         return document;
@@ -1417,14 +1384,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window variable
      *
      * @return {object}
-     **/
+     */
     Dom.getWindow = function ()
     {
         return window;
@@ -1433,14 +1399,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window width
      *
      * @return {number}
-     **/
+     */
     Dom.windowWidth = function ()
     {
         return window.innerWidth;
@@ -1449,14 +1414,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window height
      *
      * @return {number}
-     **/
+     */
     Dom.windowHeight = function ()
     {
         return window.innerHeight;
@@ -1465,14 +1429,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the amount scrolled
      *
      * @return {number}
-     **/
+     */
     Dom.scrollTop = function ()
     {
         return window.scrollY;
@@ -1481,14 +1444,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total width
      *
      * @return {number}
-     **/
+     */
     Dom.documentWidth = function ()
     {
         return document.documentElement.scrollWidth;
@@ -1497,14 +1459,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
      *
      * @return {number}
-     **/
+     */
     Dom.documentHeight = function ()
     {
         return document.documentElement.scrollHeight;
@@ -1513,8 +1474,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
@@ -1523,7 +1483,7 @@ var Dom = function ( selector, context )
      *  The HTML string to parse
      *
      * @return {HTMLDocument}
-     **/
+     */
     Dom.parseHTML = function ( html )
     {
         var
@@ -1565,7 +1525,7 @@ var Dom = function ( selector, context )
      *  Global elements
      *
      * @type {object}
-     **/
+     */
     Dom.elems = {};
 
     /**
@@ -1575,7 +1535,7 @@ var Dom = function ( selector, context )
      *  Create a new instance of Dom for document
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.document = Dom( document );
 
     /**
@@ -1585,7 +1545,7 @@ var Dom = function ( selector, context )
      *  Create a new instance of Dom for window
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.window = Dom( window );
 
     /**
@@ -1595,7 +1555,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for html
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.html = Dom( 'html' );
 
     /**
@@ -1605,7 +1565,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for body
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.body = Dom( 'body' );
 
     /**
@@ -1615,7 +1575,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for #header
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.header = Dom( '#header' );
 
     /**
@@ -1625,7 +1585,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for #main
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.main = Dom( '#main' );
 
     /**
@@ -1635,6 +1595,6 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for #footer
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.footer = Dom( '#footer' );
 })();

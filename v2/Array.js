@@ -16,8 +16,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clone a given array
@@ -26,7 +25,7 @@
      *  The array to clone
      *
      * @return {array}
-     **/
+     */
     Array.clone = function ( toClone )
     {
         return Utils.clone( toClone, true );
@@ -35,8 +34,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -47,7 +45,7 @@
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     Array.contains = function ( arr, value )
     {
         return Array.prototype.indexOf.call( arr, value ) != -1;
@@ -56,8 +54,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -68,7 +65,7 @@
      *  The value to test for
      *
      * @return void
-     **/
+     */
     Array.insert = function ( arr, value )
     {
         if ( !Array.contains( arr, value ) ) {

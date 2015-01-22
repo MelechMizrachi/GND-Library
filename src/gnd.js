@@ -16,7 +16,7 @@
 
 /**
  * @class
- **/
+ */
 var gnd = gnd || {};
 
 /**
@@ -24,7 +24,7 @@ var gnd = gnd || {};
  *
  * Ensure we have a namespace set for GND Globals
  * In the case one does not exist
- **/
+ */
 window.GND_GLOBALS = window.GND_GLOBALS || {};
 
     /**
@@ -34,7 +34,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *  The version number for this copy of the gnd library
      *
      * @type {string}
-     **/
+     */
     gnd.VERSION = '0.4.1.4. alpha';
 
     /**
@@ -44,7 +44,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *  Whether to run debug unit testing on the library or not
      *
      * @type {boolean}
-     **/
+     */
     gnd.DEBUG = GND_GLOBALS.IS_DEV || false;
 
     /**
@@ -54,14 +54,13 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *  The gnd parent (window)
      *
      * @type {object}
-     **/
+     */
     gnd.global = window;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is of a type
@@ -78,7 +77,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.isTypeOf = function ( toTest, type )
     {
         return typeof toTest === type;
@@ -87,8 +86,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Extend object
@@ -101,7 +99,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      *
      * @return {object}
      *  The extended object
-     **/
+     */
     gnd.extend = function ( obj, source )
     {
         if ( source ) {

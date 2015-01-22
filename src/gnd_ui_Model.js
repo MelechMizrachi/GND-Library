@@ -49,7 +49,7 @@
  * @extends gnd.ui.Helpers
  *
  * @return void
- **/
+ */
 gnd.ui.Model = function ( attributes, options )
 {
     // Set options
@@ -69,7 +69,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The Model ID
      *
      * @type {string}
-     **/
+     */
     gnd.ui.Model.prototype.sID = '';
 
     /**
@@ -79,7 +79,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attributes id index
      *
      * @type {string}
-     **/
+     */
     gnd.ui.Model.prototype.idAttribute = 'id';
 
     /**
@@ -89,7 +89,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype.attributes = {};
 
     /**
@@ -99,7 +99,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's changed attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype.changed = {};
 
     /**
@@ -109,7 +109,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's previous attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype._prevAttributes = {};
 
     /**
@@ -119,7 +119,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Model's default attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Model.prototype.defaults = {};
 
     /**
@@ -129,7 +129,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The accepted options for the model
      *
      * @type {array}
-     **/
+     */
     gnd.ui.Model.prototype.__options = [
             'sID'
         ,   'defaults'
@@ -139,8 +139,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize Model
@@ -150,7 +149,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model
-     **/
+     */
     gnd.ui.Model.prototype.init = function ()
     {
         // Overwrite this function for custom initialization of Model
@@ -162,8 +161,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a copy of the model data
@@ -173,7 +171,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's attributes
-     **/
+     */
     gnd.ui.Model.prototype.toJSON = function ()
     {
         // Return the model's attributes (data)
@@ -183,8 +181,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a requested attribute value
@@ -197,7 +194,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {*}
      *  The requested attribute
-     **/
+     */
     gnd.ui.Model.prototype.get = function ( attribute )
     {
         // Return the requested attribute
@@ -207,8 +204,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set an attribute value
@@ -225,7 +221,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model
-     **/
+     */
     gnd.ui.Model.prototype.set = function ( attribute, attributeValue )
     {
         // Set the attribute's value
@@ -238,8 +234,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a requested attribute value
@@ -251,7 +246,7 @@ gnd.ui.Model = function ( attributes, options )
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.ui.Model.prototype.has = function ( attribute )
     {
         // If the attribute exists
@@ -267,8 +262,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine whether the model/attribute changed
@@ -280,7 +274,7 @@ gnd.ui.Model = function ( attributes, options )
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.ui.Model.prototype.hasChanged = function ( attribute )
     {
         // If no attribute was passed
@@ -301,8 +295,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return the changed attributes
@@ -312,7 +305,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's changed attributes
-     **/
+     */
     gnd.ui.Model.prototype.getChangedAttributes = function ()
     {
         // Return the changed attributes
@@ -322,8 +315,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return the requested previous attribute
@@ -336,7 +328,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's previous attributes
-     **/
+     */
     gnd.ui.Model.prototype.getPrevious = function ( attribute )
     {
         // Return the requested attribute's previous value
@@ -346,8 +338,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return the previous attributes
@@ -357,7 +348,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model's attributes
-     **/
+     */
     gnd.ui.Model.prototype.getPreviousAttributes = function ()
     {
         // Return the previous attributes
@@ -367,8 +358,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set Model attributes
@@ -381,7 +371,7 @@ gnd.ui.Model = function ( attributes, options )
      *
      * @return {object}
      *  The model
-     **/
+     */
     gnd.ui.Model.prototype.__setAttributes = function ( attributes )
     {
         // Are the defaults a valid object?
@@ -412,7 +402,7 @@ gnd.ui.Model = function ( attributes, options )
      * @method
      *
      * @extends gnd.ui.extend
-     **/
+     */
     gnd.ui.Model.extend = (function()
     {
         // Return gnd.ui.extend

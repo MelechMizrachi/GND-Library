@@ -39,7 +39,7 @@ var Cookies = {};
      *
      * @return {*}
      *  The cookie value
-     **/
+     */
     Cookies.get = function ( key )
     {
         return decodeURIComponent(
@@ -82,7 +82,7 @@ var Cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was set or not
-     **/
+     */
     Cookies.set = function ( key, value, expires, path, domain, isSecure )
     {
         if (
@@ -166,7 +166,7 @@ var Cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was removed or not
-     **/
+     */
     Cookies.remove = function ( key, path, domain )
     {
         // Sanity checks
@@ -207,7 +207,7 @@ var Cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie exists or not
-     **/
+     */
     Cookies.has = function ( key )
     {
         return (
@@ -231,7 +231,7 @@ var Cookies = {};
      *
      * @return {array}
      *  The keys
-     **/
+     */
     Cookies.keys = function ()
     {
         var
@@ -257,15 +257,14 @@ var Cookies = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a list of the cookies
      *
      * @return {object}
      *  The cookies
-     **/
+     */
     Cookies.getAll = function ()
     {
         var

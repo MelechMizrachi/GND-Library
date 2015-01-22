@@ -49,7 +49,7 @@
  * @extends gnd.ui.Helpers
  *
  * @return void
- **/
+ */
 gnd.ui.View = function ( options )
 {
     // Set options
@@ -72,7 +72,7 @@ gnd.ui.View = function ( options )
      *  The View ID
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.sID = '';
 
     /**
@@ -82,7 +82,7 @@ gnd.ui.View = function ( options )
      *  The View ID
      *
      * @type {gnd.$}
-     **/
+     */
     gnd.ui.View.prototype.elem = '';
 
     /**
@@ -92,7 +92,7 @@ gnd.ui.View = function ( options )
      *  The element tag name
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.tagName = 'div';
 
     /**
@@ -102,7 +102,7 @@ gnd.ui.View = function ( options )
      *  The element class name
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.className = '';
 
     /**
@@ -112,7 +112,7 @@ gnd.ui.View = function ( options )
      *  The template to use
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.template = '';
 
     /**
@@ -122,7 +122,7 @@ gnd.ui.View = function ( options )
      *  The element attributes
      *
      * @type {object}
-     **/
+     */
     gnd.ui.View.prototype.attributes = {};
 
     /**
@@ -132,7 +132,7 @@ gnd.ui.View = function ( options )
      *  The events for this view
      *
      * @type {object}
-     **/
+     */
     gnd.ui.View.prototype.events = {};
 
     /**
@@ -142,7 +142,7 @@ gnd.ui.View = function ( options )
      *  The accepted options for the view
      *
      * @type {array}
-     **/
+     */
     gnd.ui.View.prototype.__options = [
             'Model'
         ,   'Collection'
@@ -161,7 +161,7 @@ gnd.ui.View = function ( options )
      *  What to split event strings with
      *
      * @type {string}
-     **/
+     */
     gnd.ui.View.prototype.EVENT_SPLIT = ' ';
 
     /**
@@ -170,7 +170,7 @@ gnd.ui.View = function ( options )
      *
      * @desc
      *  The view model
-     **/
+     */
     gnd.ui.View.prototype.Model = gnd.ui.Model;
 
     /**
@@ -179,14 +179,13 @@ gnd.ui.View = function ( options )
      *
      * @desc
      *  The view collection
-     **/
+     */
     gnd.ui.View.prototype.Collection = gnd.ui.Collection;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize View
@@ -196,7 +195,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.init = function ()
     {
         // Overwrite this function for custom initialization of View
@@ -208,8 +207,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a dom element under elem
@@ -222,7 +220,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The child of elem
-     **/
+     */
     gnd.ui.View.prototype.$ = function ( selector )
     {
         // Make sure the selector is a valid string
@@ -238,8 +236,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Render View
@@ -249,7 +246,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.render = function ()
     {
         // Render the view
@@ -262,8 +259,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the View element
@@ -280,7 +276,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.setElement = function ( element, delegateEvents )
     {
         // If an element is already set
@@ -307,8 +303,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove View - Remove element from DOM
@@ -318,7 +313,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.remove = function ()
     {
         // Undelegate all event handlers
@@ -334,8 +329,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate an event handler
@@ -357,7 +351,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The component
-     **/
+     */
     gnd.ui.View.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
     {
         // Sanity checks
@@ -411,8 +405,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event handler
@@ -425,7 +418,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The component
-     **/
+     */
     gnd.ui.View.prototype.triggerEvent = function ( event )
     {
         // Make sure the parameter is a string
@@ -456,8 +449,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate event handlers given an object of events
@@ -473,7 +465,7 @@ gnd.ui.View = function ( options )
      *
      * @return {object}
      *  The view
-     **/
+     */
     gnd.ui.View.prototype.handleEvents = function ( events, removeEvent )
     {
         // Determine validity of events object
@@ -506,8 +498,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Undelegate all event handlers
@@ -516,7 +507,7 @@ gnd.ui.View = function ( options )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.ui.View.prototype.undelegateEvents = function ()
     {
         // Remove all events attached to this element
@@ -529,8 +520,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ensure the view element exists
@@ -539,7 +529,7 @@ gnd.ui.View = function ( options )
      *********
      *
      * @return void
-     **/
+     */
     gnd.ui.View.prototype.__ensureElement = function ()
     {
         // Check if element is an element exists
@@ -562,7 +552,7 @@ gnd.ui.View = function ( options )
      * @method
      *
      * @extends gnd.ui.extend
-     **/
+     */
     gnd.ui.View.extend = (function()
     {
         // Return gnd.ui.extend

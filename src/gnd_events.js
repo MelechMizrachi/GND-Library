@@ -12,22 +12,22 @@
 
 /**
  * @exports gnd.events
- **/
+ */
 (function ( root, Factory )
 {
     /**
      * @namespace root
      * @extends gnd
-     **/
+     */
 
     /**
      * @memberOf gnd
      * @namespace events
-     **/
+     */
     root.events = Factory;
 
 // Call anonymous function
-} ( gnd, /** @lends gnd.events **/{
+} ( gnd, /** @lends gnd.events */{
 
 /**=================================================================================**\
  *

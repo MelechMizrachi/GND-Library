@@ -13,7 +13,7 @@
 
 /**
  * @class
- **/
+ */
 gnd.xhr = {};
 
     /**
@@ -23,14 +23,13 @@ gnd.xhr = {};
      *  Default ajax request url
      *
      * @type {string}
-     **/
+     */
     gnd.xhr.URL = '/service/api/';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax/XHR request
@@ -46,7 +45,7 @@ gnd.xhr = {};
      *
      * @return {object}
      *  The xhr call
-     **/
+     */
     gnd.xhr.ajax = function ( url, options )
     {
         // If the url is not valid
@@ -71,47 +70,47 @@ gnd.xhr = {};
 
         /**
          * @name    options
-         **/
+         */
         /**     @name   options#accept
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#async
          *      @propertyOf options
          *      @type   {boolean}
-         **/
+         */
         /**     @name   options#contentType
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#data
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#headers
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#dataString
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#method
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#success
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#error
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#complete
          *      @propertyOf options
          *      @type   {function}
-        **/
+        */
         options = options || {};
 
         var

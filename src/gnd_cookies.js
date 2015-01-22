@@ -19,7 +19,7 @@
 
 /**
  * @class
- **/
+ */
 gnd.cookies = {};
 
     /**
@@ -40,7 +40,7 @@ gnd.cookies = {};
      *
      * @return {*}
      *  The cookie value
-     **/
+     */
     gnd.cookies.get = function ( key )
     {
         return decodeURIComponent(
@@ -91,7 +91,7 @@ gnd.cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was set or not
-     **/
+     */
     gnd.cookies.set = function ( key, value, expires, path, domain, isSecure )
     {
         if (
@@ -180,7 +180,7 @@ gnd.cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was removed or not
-     **/
+     */
     gnd.cookies.remove = function ( key, path, domain )
     {
         // Sanity checks
@@ -224,7 +224,7 @@ gnd.cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie exists or not
-     **/
+     */
     gnd.cookies.has = function ( key )
     {
         return (
@@ -251,7 +251,7 @@ gnd.cookies = {};
      *
      * @return {array}
      *  The keys
-     **/
+     */
     gnd.cookies.keys = function ()
     {
         var
@@ -277,8 +277,7 @@ gnd.cookies = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a list of the cookies
@@ -288,7 +287,7 @@ gnd.cookies = {};
      *
      * @return {object}
      *  The cookies
-     **/
+     */
     gnd.cookies.getAll = function ()
     {
         var

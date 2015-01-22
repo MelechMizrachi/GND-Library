@@ -12,22 +12,22 @@
 
 /**
  * @exports gnd.callbacks
- **/
+ */
 (function ( root, Factory )
 {
     /**
      * @namespace root
      * @extends gnd
-     **/
+     */
 
     /**
      * @memberOf gnd
      * @namespace callbacks
-     **/
+     */
     root.callbacks = Factory;
 
 // Call anonymous function
-} ( gnd, /** @lends gnd.callbacks **/{
+} ( gnd, /** @lends gnd.callbacks */{
 
 /**=================================================================================**\
  *

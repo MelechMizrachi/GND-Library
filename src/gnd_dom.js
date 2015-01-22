@@ -29,14 +29,14 @@
 
 /**
  * @class
- **/
+ */
 gnd.dom = {};
 
     /**
      * @class
      *
      * @extends {gnd.$}
-     **/
+     */
     gnd.dom.$ = GND_GLOBALS['gnd.dom.$'] || gnd.$;
 
     /**
@@ -46,7 +46,7 @@ gnd.dom = {};
      *  Global elements
      *
      * @type {object}
-     **/
+     */
     gnd.elems = gnd.dom.elems = {};
 
         /**
@@ -56,7 +56,7 @@ gnd.dom = {};
          *  Create a new instance of gnd.$ for document
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.document = gnd.$( document );
 
         /**
@@ -66,7 +66,7 @@ gnd.dom = {};
          *  Create a new instance of gnd.$ for window
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.window = gnd.$( window );
 
         /**
@@ -76,7 +76,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for html
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.html = gnd.$( 'html' );
 
         /**
@@ -86,7 +86,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for body
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.body = gnd.$( 'body' );
 
         /**
@@ -96,7 +96,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for #header
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.header = gnd.$( '#header' );
 
         /**
@@ -106,7 +106,7 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for #main
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.main = gnd.$( '#main' );
 
         /**
@@ -116,14 +116,13 @@ gnd.dom = {};
          *  Create new instance of gnd.$ for #footer
          *
          * @type {gnd.$}
-         **/
+         */
         gnd.dom.elems.footer = gnd.$( '#footer' );
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document variable
@@ -131,7 +130,7 @@ gnd.dom = {};
      * @params
      *
      * @return {object}
-     **/
+     */
     gnd.dom.getDocument = function ()
     {
         return document;
@@ -140,8 +139,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window variable
@@ -149,7 +147,7 @@ gnd.dom = {};
      * @params
      *
      * @return {object}
-     **/
+     */
     gnd.dom.getWindow = function ()
     {
         return window;
@@ -158,8 +156,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window width
@@ -167,7 +164,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.windowWidth = function ()
     {
         return window.innerWidth;
@@ -176,8 +173,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window height
@@ -185,7 +181,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.windowHeight = function ()
     {
         return window.innerHeight;
@@ -194,8 +190,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the amount scrolled
@@ -203,7 +198,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.scrollTop = function ()
     {
         return document.body.scrollTop;
@@ -212,8 +207,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total width
@@ -221,7 +215,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.documentWidth = function ()
     {
         return document.documentElement.scrollWidth;
@@ -230,8 +224,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
@@ -239,7 +232,7 @@ gnd.dom = {};
      * @params
      *
      * @return {number}
-     **/
+     */
     gnd.dom.documentHeight = function ()
     {
         return document.documentElement.scrollHeight;
@@ -248,8 +241,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
@@ -261,7 +253,7 @@ gnd.dom = {};
      *********
      *
      * @return {HTMLDocument}
-     **/
+     */
     gnd.dom.parseHTML = function ( html )
     {
         var

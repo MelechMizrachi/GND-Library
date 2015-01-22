@@ -38,21 +38,19 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  User Agent string
      *
      * @type {string}
-     **/
+     */
     UserAgent.UA = navigator.userAgent;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user agent has a value
@@ -61,7 +59,7 @@ var UserAgent = {};
      *  The value to test if userAgent contains it
      *
      * @return {boolean}
-     **/
+     */
     UserAgent.contains = function ( value )
     {
         return String.contains( UserAgent.UA, value );
@@ -70,14 +68,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is IE
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IE = (
         UserAgent.contains( 'MSIE' )
     );
@@ -85,14 +82,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is FireFox
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.FIREFOX = (
         UserAgent.contains( 'Firefox' )
     );
@@ -100,14 +96,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Chrome
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.CHROME = (
         UserAgent.contains( 'Chrome' )
     );
@@ -115,14 +110,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Safari
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.SAFARI = (
         UserAgent.contains( 'Safari' ) && !UserAgent.CHROME
     );
@@ -130,14 +124,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPhone
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IPHONE = (
         UserAgent.contains( 'iPhone' )
     );
@@ -145,14 +138,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPad
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IPAD = (
         UserAgent.contains( 'iPad' )
     );
@@ -160,14 +152,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Android
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.ANDROID = (
         UserAgent.contains( 'Android' )
     );
@@ -175,27 +166,25 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is iOS
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IOS = UserAgent.IPHONE || UserAgent.IPAD;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows Phone
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.WINDOWS_PHONE = (
         UserAgent.contains( 'Windows Phone' )
     );
@@ -203,27 +192,25 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a mobile device
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.MOBILE = UserAgent.IOS || UserAgent.WINDOWS_PHONE || UserAgent.ANDROID;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.WINDOWS = (
         UserAgent.contains( 'Windows NT' )
     );
@@ -231,14 +218,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Mac
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.MAC = (
         UserAgent.contains( 'Macintosh' )
     );
@@ -246,14 +232,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Linux
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.LINUX = (
         UserAgent.contains( 'Linux' )
     );
@@ -261,13 +246,12 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a desktop
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.DESKTOP = !UserAgent.MOBILE;
 })();

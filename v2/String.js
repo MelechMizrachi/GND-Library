@@ -18,8 +18,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Convert parameter to a string
@@ -28,7 +27,7 @@
      *  The string to make safe
      *
      * @return {string}
-     **/
+     */
     String.makeSafe = function ( value )
     {
         return ( !value )
@@ -40,8 +39,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does a string contain a value
@@ -52,7 +50,7 @@
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.contains = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -65,8 +63,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -79,7 +76,7 @@
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.containsInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -92,8 +89,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Compare to strings to see if they match
@@ -104,7 +100,7 @@
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.compare = function ( toTest, value )
     {
         return toTest === value;
@@ -113,8 +109,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -127,7 +122,7 @@
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.compareInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {

@@ -27,8 +27,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a cached item
@@ -37,7 +36,7 @@ var Cache = {};
      *  The key to retrieve
      *
      * @return {*}
-     **/
+     */
     Cache.get = function ( key )
     {
         return JSON.parse( localStorage.getItem( key ) );
@@ -46,8 +45,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set a cached item
@@ -58,7 +56,7 @@ var Cache = {};
      *  The value to set
      *
      * @return {*}
-     **/
+     */
     Cache.set = function ( key, value )
     {
         return localStorage.setItem( key, JSON.stringify( value ) );
@@ -67,14 +65,13 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the amount of items cached
      *
      * @return {number}
-     **/
+     */
     Cache.len = function ()
     {
         return localStorage.length;
@@ -83,8 +80,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delete a cached item
@@ -93,7 +89,7 @@ var Cache = {};
      *  The key to delete
      *
      * @returns {*}
-     **/
+     */
     Cache.del = function ( key )
     {
         return localStorage.removeItem( key );
@@ -102,14 +98,13 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clear all cached items
      *
      * @returns {*}
-     **/
+     */
     Cache.clear = function ()
     {
         return localStorage.clear();

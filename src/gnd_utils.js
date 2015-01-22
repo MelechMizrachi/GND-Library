@@ -16,24 +16,22 @@
 
 /**
  * @class
- **/
+ */
 gnd.utils = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @borrows gnd.extend
-     **/
+     */
     gnd.utils.extend = gnd.extend;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Iterate through an object || array
@@ -48,7 +46,7 @@ gnd.utils = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.utils.each = function ( items, callback )
     {
         // Sanity checks
@@ -76,8 +74,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Merge two objects
@@ -91,7 +88,7 @@ gnd.utils = {};
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.utils.merge = function ( mergeInto, mergeThis )
     {
         // TODO: Work on this
@@ -101,8 +98,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clone a given object
@@ -114,7 +110,7 @@ gnd.utils = {};
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.utils.cloneObject = function ( toClone )
     {
         // Is the object valid?
@@ -133,8 +129,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Validate a given object
@@ -146,7 +141,7 @@ gnd.utils = {};
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.utils.validateObject = function ( toTest )
     {
         // Is the object valid?

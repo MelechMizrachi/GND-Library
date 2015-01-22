@@ -29,12 +29,11 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Log variables to the console
-     **/
+     */
     Logger.log = function ()
     {
         if ( Config.DEBUG ) {
@@ -45,8 +44,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set some info to the console
@@ -54,7 +52,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.info = function ()
     {
         if ( Config.DEBUG ) {
@@ -65,8 +63,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console a warning
@@ -77,7 +74,7 @@ var Logger = {};
      *********
      *
      * @return void
-     **/
+     */
     Logger.warn = function ()
     {
         if ( Config.DEBUG ) {
@@ -88,8 +85,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Debug variables to the console
@@ -97,7 +93,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.debug = function ()
     {
         if ( Config.DEBUG ) {
@@ -108,8 +104,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console errors
@@ -117,7 +112,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.error = function ()
     {
         if ( Config.DEBUG ) {
@@ -128,8 +123,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console time
@@ -137,7 +131,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.time = function ()
     {
         if ( Config.DEBUG ) {
@@ -148,8 +142,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console timeEnd
@@ -157,7 +150,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.timeEnd = function ()
     {
         if ( Config.DEBUG ) {

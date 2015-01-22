@@ -12,22 +12,22 @@
 
 /**
  * @exports gnd.sockets
- **/
+ */
 (function ( root, Factory )
 {
     /**
      * @namespace root
      * @extends gnd
-     **/
+     */
 
     /**
      * @memberOf gnd
      * @namespace sockets
-     **/
+     */
     root.sockets = Factory;
 
 // Call anonymous function
-} ( gnd, /** @lends gnd.sockets **/{
+} ( gnd, /** @lends gnd.sockets */{
 
 /**=================================================================================**\
  *

@@ -42,8 +42,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is of a type
@@ -54,7 +53,7 @@ var is = {};
      *  The type to test
      *
      * @return {boolean}
-     **/
+     */
     is.typeOf = function ( toTest, type )
     {
         return typeof toTest === type;
@@ -63,14 +62,13 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Is this a modern browser
      *
      * @type {boolean}
-     **/
+     */
     is.modernBrowser = (
         'querySelector' in document
         && 'addEventListener' in window
@@ -86,8 +84,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a boolean
@@ -96,7 +93,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.bool = function ( bool )
     {
         return is.typeOf( bool, 'boolean' );
@@ -105,18 +102,16 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @borrows Array.isArray
-     **/
+     */
     is.array = Array.isArray;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a object
@@ -125,7 +120,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.object = function ( obj )
     {
         return is.typeOf( obj, 'object' );
@@ -134,8 +129,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is the document
@@ -144,7 +138,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.document = function ( doc )
     {
         return doc === document;
@@ -153,8 +147,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a the window variable to avoid endless loops
@@ -163,7 +156,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.window = function ( win )
     {
         return win === win.window;
@@ -172,8 +165,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a param is an HTML Element
@@ -182,7 +174,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.element = function ( elem )
     {
         return ( elem instanceof HTMLElement );
@@ -191,8 +183,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a node list
@@ -201,7 +192,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.nodeList = function ( nodeList )
     {
         return Object.prototype.toString.call( nodeList ) === '[object NodeList]';
@@ -210,8 +201,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is an HTML collection
@@ -220,7 +210,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.htmlCollection = function ( htmlCollection )
     {
         return Object.prototype.toString.call( htmlCollection ) === '[object HTMLCollection]';
@@ -229,8 +219,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a node list or an HTML collection
@@ -239,7 +228,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.htmlList = function ( htmlList )
     {
         return ( is.nodeList( htmlList ) || is.htmlCollection( htmlList ) );
@@ -248,8 +237,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a string
@@ -258,7 +246,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.string = function ( toTest )
     {
         return is.typeOf( toTest, 'string' );
@@ -267,8 +255,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a number
@@ -277,7 +264,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.numeric = function ( toTest )
     {
         return ( toTest - parseFloat( toTest ) >= 0 );
@@ -286,8 +273,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is an instance of Dom
@@ -296,7 +282,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.$ = function ( toTest )
     {
         return toTest instanceof Dom;
@@ -305,8 +291,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a boolean
@@ -315,7 +300,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.bool = function ( toTest )
     {
         return is.typeOf( toTest, 'boolean' );
@@ -324,8 +309,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a function
@@ -334,7 +318,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.func = function ( toTest )
     {
         return is.typeOf( toTest, 'function' );
@@ -343,8 +327,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is null/undefined/etc
@@ -353,7 +336,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.invalid = function ( toTest )
     {
         return is.undefined( toTest )
@@ -365,8 +348,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is undefined
@@ -375,7 +357,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.undefined = function ( toTest )
     {
         return is.typeOf( toTest, 'undefined' );
@@ -384,8 +366,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if an array is empty
@@ -394,7 +375,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.array.empty = function ( arr )
     {
         return ( arr.length == 0 );
@@ -403,8 +384,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if an object is empty
@@ -413,7 +393,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.object.empty = function ( obj )
     {
         // Iterate through the object
@@ -432,8 +412,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a string is empty
@@ -442,7 +421,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.string.empty = function ( toTest )
     {
         return ( !toTest );

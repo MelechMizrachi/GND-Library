@@ -18,8 +18,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Validate a given object
@@ -28,7 +27,7 @@
      *  The object to validate
      *
      * @return {object}
-     **/
+     */
     Object.validate = function ( toTest )
     {
         // Is the object valid?
@@ -44,8 +43,7 @@
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the first property in a given object
@@ -54,7 +52,7 @@
      *  The object
      *
      * @return {*}
-     **/
+     */
     Object.first = function ( obj )
     {
         for ( var prop in obj ) {

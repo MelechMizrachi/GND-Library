@@ -27,7 +27,7 @@
 
 /**
  * @class
- **/
+ */
 gnd.userAgent = {};
 
 /**=================================================================================**\
@@ -39,14 +39,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  User Agent string
      *
      * @type {string}
-     **/
+     */
     gnd.userAgent.UA = navigator.userAgent;
 
 /**=================================================================================**\
@@ -58,8 +57,7 @@ gnd.userAgent = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user agent has a value
@@ -71,7 +69,7 @@ gnd.userAgent = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.userAgent.contains = function ( value )
     {
         return gnd.string.contains( gnd.userAgent.UA, value );
@@ -86,14 +84,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is IE
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IE = (function ()
     {
         return gnd.userAgent.contains( 'MSIE' );
@@ -102,14 +99,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is FireFox
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.FIREFOX = (function ()
     {
         return gnd.userAgent.contains( 'Firefox' );
@@ -118,14 +114,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Chrome
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.CHROME = (function ()
     {
         return gnd.userAgent.contains( 'Chrome' );
@@ -134,14 +129,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Safari
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.SAFARI = (function ()
     {
         return gnd.userAgent.contains( 'Safari' ) && !gnd.userAgent.CHROME;
@@ -150,14 +144,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPhone
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IPHONE = (function ()
     {
         return gnd.userAgent.contains( 'iPhone' );
@@ -166,14 +159,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPad
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IPAD = (function ()
     {
         return gnd.userAgent.contains( 'iPad' );
@@ -182,14 +174,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Android
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.ANDROID = (function ()
     {
         return gnd.userAgent.contains( 'Android' );
@@ -198,27 +189,25 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is iOS
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.IOS = gnd.userAgent.IPHONE || gnd.userAgent.IPAD;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows Phone
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.WINDOWS_PHONE = (function ()
     {
         return gnd.userAgent.contains( 'Windows Phone' );
@@ -227,27 +216,25 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a mobile device
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.MOBILE = gnd.userAgent.IOS || gnd.userAgent.WINDOWS_PHONE || gnd.userAgent.ANDROID;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.WINDOWS = (function ()
     {
         return gnd.userAgent.contains( 'Windows NT' );
@@ -256,14 +243,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Mac
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.MAC = (function ()
     {
         return gnd.userAgent.contains( 'Macintosh' );
@@ -272,14 +258,13 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Linux
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.LINUX = (function ()
     {
         return gnd.userAgent.contains( 'Linux' );
@@ -288,12 +273,11 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a desktop
      *
      * @type {boolean}
-     **/
+     */
     gnd.userAgent.DESKTOP = !gnd.userAgent.MOBILE;

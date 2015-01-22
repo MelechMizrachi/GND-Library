@@ -26,8 +26,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clone a given object or array
@@ -38,7 +37,7 @@ var Utils = {};
      *  Is this an array to clone?
      *
      * @return {object|array}
-     **/
+     */
     Utils.clone = function ( toClone, isArr )
     {
         isArr = isArr ? [] : {};
@@ -58,8 +57,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Iterate through an object || array
@@ -70,7 +68,7 @@ var Utils = {};
      *  The callback for each item
      *
      * @return void
-     **/
+     */
     Utils.each = function ( items, callback )
     {
         // Sanity checks
@@ -98,8 +96,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Extend object
@@ -108,7 +105,7 @@ var Utils = {};
      *
      * @return {object}
      *  The extended object
-     **/
+     */
     Utils.extend = function ( obj, source )
     {
         if ( source ) {
@@ -125,8 +122,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Merge two objects
@@ -137,7 +133,7 @@ var Utils = {};
      *  The object to merge into
      *
      * @return {object}
-     **/
+     */
     Utils.merge = function ( mergeInto, mergeThis )
     {
         // TODO: Work on this

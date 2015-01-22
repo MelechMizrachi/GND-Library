@@ -18,18 +18,17 @@
 
 /**
  * @class
- **/
+ */
 gnd.log = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Log variables to the console
-     **/
+     */
     gnd.log.log = function ()
     {
         if ( gnd.DEBUG ) {
@@ -40,8 +39,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set some info to the console
@@ -52,7 +50,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.info = function ()
     {
         if ( gnd.DEBUG ) {
@@ -63,8 +61,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console a warning
@@ -75,7 +72,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.warn = function ()
     {
         if ( gnd.DEBUG ) {
@@ -86,8 +83,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Debug variables to the console
@@ -98,7 +94,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.debug = function ()
     {
         if ( gnd.DEBUG ) {
@@ -109,8 +105,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console errors
@@ -121,7 +116,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.error = function ()
     {
         if ( gnd.DEBUG ) {
@@ -132,8 +127,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console time
@@ -144,7 +138,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.time = function ()
     {
         if ( gnd.DEBUG ) {
@@ -155,8 +149,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console timeEnd
@@ -167,7 +160,7 @@ gnd.log = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.log.timeEnd = function ()
     {
         if ( gnd.DEBUG ) {

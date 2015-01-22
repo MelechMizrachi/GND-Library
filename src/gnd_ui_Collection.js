@@ -48,7 +48,7 @@
  * @extends gnd.ui.Helpers
  *
  * @return void
- **/
+ */
 gnd.ui.Collection = function ( options )
 {
     // Set options
@@ -68,7 +68,7 @@ gnd.ui.Collection = function ( options )
      *  The collection ID
      *
      * @type {string}
-     **/
+     */
     gnd.ui.Collection.prototype.sID = '';
 
     /**
@@ -78,7 +78,7 @@ gnd.ui.Collection = function ( options )
      *  The selector for the DOM elements
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype.$views = {};
 
     /**
@@ -88,7 +88,7 @@ gnd.ui.Collection = function ( options )
      *  The views in this collection
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype.Views = {};
 
     /**
@@ -98,7 +98,7 @@ gnd.ui.Collection = function ( options )
      *  The options for this collections View
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype.viewOptions = {};
 
     /**
@@ -108,7 +108,7 @@ gnd.ui.Collection = function ( options )
      *  Index views by model id
      *
      * @type {object}
-     **/
+     */
     gnd.ui.Collection.prototype._indexByModel = {};
 
     /**
@@ -118,7 +118,7 @@ gnd.ui.Collection = function ( options )
      *  Index views by collection id
      *
      * @type {array}
-     **/
+     */
     gnd.ui.Collection.prototype._indexByCollectionID = [];
 
     /**
@@ -128,7 +128,7 @@ gnd.ui.Collection = function ( options )
      *  The accepted options for the collection
      *
      * @type {array}
-     **/
+     */
     gnd.ui.Collection.prototype.__options = [
             'Views'
         ,   'sID'
@@ -143,14 +143,13 @@ gnd.ui.Collection = function ( options )
      *
      * @desc
      *  The View for the views in this collection
-     **/
+     */
     gnd.ui.Collection.prototype.View = gnd.ui.View;
     
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize collection
@@ -160,7 +159,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The collection
-     **/
+     */
     gnd.ui.Collection.prototype.init = function ()
     {
         // Overwrite this function for custom initialization of Collection
@@ -172,8 +171,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the views for the collection
@@ -183,7 +181,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The collection
-     **/
+     */
     gnd.ui.Collection.prototype.setViews = function ()
     {
         // Determine whether to use Views or $views
@@ -230,8 +228,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add a view to the collection
@@ -244,7 +241,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The collection
-     **/
+     */
     gnd.ui.Collection.prototype.addView = function ( view )
     {
         // If this is not a valid view
@@ -295,8 +292,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a view in this collection by its model
@@ -309,7 +305,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.findViewByModel = function ( model )
     {
         // If this is not a valid model
@@ -325,8 +321,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a view in this collection by its model id
@@ -339,7 +334,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested View
-     **/
+     */
     gnd.ui.Collection.prototype.findViewByModelID = function ( sID )
     {
         // If the id is not valid
@@ -358,8 +353,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a view in this collection by its id
@@ -372,7 +366,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.findViewByID = function ( sID )
     {
         // If the id is not valid
@@ -388,8 +382,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the nth view in the collection
@@ -402,7 +395,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.getNthView = function ( nthItem )
     {
         // If this is not a valid number
@@ -418,8 +411,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the last view in the collection
@@ -429,7 +421,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {object}
      *  The requested view
-     **/
+     */
     gnd.ui.Collection.prototype.getLastView = function ()
     {
         // Get the last view's sID
@@ -442,8 +434,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the nth view's id in the collection
@@ -456,7 +447,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {boolean|string}
      *  The view id
-     **/
+     */
     gnd.ui.Collection.prototype.getNthViewID = function ( nthItem )
     {
         // If this is not a valid number
@@ -472,8 +463,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the last view's id in the collection
@@ -483,7 +473,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {string}
      *  The view id
-     **/
+     */
     gnd.ui.Collection.prototype.getLastViewID = function ()
     {
         // Return the view's id
@@ -493,8 +483,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the nth view's collection id in the collection
@@ -504,7 +493,7 @@ gnd.ui.Collection = function ( options )
      *
      * @return {number}
      *  The collection id
-     **/
+     */
     gnd.ui.Collection.prototype.getLastCollectionID = function ()
     {
         // Return the last collection id (IE length of index by collection)
@@ -520,7 +509,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      * @extends gnd.ui.extend
-     **/
+     */
     gnd.ui.Collection.extend = (function()
     {
         // Return gnd.ui.extend

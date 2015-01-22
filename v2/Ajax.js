@@ -48,14 +48,13 @@ var Ajax = function ( url, options )
      *  Default ajax request url
      *
      * @type {string}
-     **/
+     */
     Ajax.BASE_URL = GLOBALS.AJAX_URL || '';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax/XHR request
@@ -67,7 +66,7 @@ var Ajax = function ( url, options )
      *
      * @return {Ajax}
      *  The xhr call
-     **/
+     */
     Ajax.Init = function ( url, options )
     {
         // If the url is not valid
@@ -94,47 +93,47 @@ var Ajax = function ( url, options )
 
         /**
          * @name    options
-         **/
+         */
         /**     @name   options#accept
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#async
          *      @propertyOf options
          *      @type   {boolean}
-         **/
+         */
         /**     @name   options#contentType
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#data
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#headers
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#dataString
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#method
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#success
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#error
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#complete
          *      @propertyOf options
          *      @type   {function}
-        **/
+        */
         options = options || {};
 
         var
@@ -283,8 +282,7 @@ var Ajax = function ( url, options )
     };
 
     /**
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the Init prototype as Dom's prototype
@@ -295,14 +293,13 @@ var Ajax = function ( url, options )
 
     /**
      * @constructor
-     **/
+     */
     Ajax.prototype.constructor = Ajax;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Easy method for setting options.method for ajax calls
@@ -331,8 +328,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax post method so as to not have to define options.method
@@ -350,8 +346,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax update method so as to not have to define options.method
@@ -369,8 +364,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax delete method so as to not have to define options.method

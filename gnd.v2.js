@@ -28,7 +28,7 @@ var Config = {};
      *
      * Ensure we have a namespace set for Globals
      * In the case one does not exist
-     **/
+     */
     Config.GLOBALS = window.GLOBALS = window.GLOBALS || {};
 
     /**
@@ -38,7 +38,7 @@ var Config = {};
      *  The version of gnd library
      *
      * @type {string}
-     **/
+     */
     Config.VERSION = '2.0.0. alpha';
 
     /**
@@ -48,7 +48,7 @@ var Config = {};
      *  Whether to run debug within the library
      *
      * @type {boolean}
-     **/
+     */
     Config.DEBUG = Config.GLOBALS.DEBUG || Config.GLOBALS.IS_DEV || false;
 
     /**
@@ -58,7 +58,7 @@ var Config = {};
      *  The parent (window)
      *
      * @type {object}
-     **/
+     */
     Config.global = window;
 })();
 /**********************************************************************************************************************\
@@ -105,8 +105,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is of a type
@@ -117,7 +116,7 @@ var is = {};
      *  The type to test
      *
      * @return {boolean}
-     **/
+     */
     is.typeOf = function ( toTest, type )
     {
         return typeof toTest === type;
@@ -126,14 +125,13 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Is this a modern browser
      *
      * @type {boolean}
-     **/
+     */
     is.modernBrowser = (
         'querySelector' in document
         && 'addEventListener' in window
@@ -149,8 +147,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a boolean
@@ -159,7 +156,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.bool = function ( bool )
     {
         return is.typeOf( bool, 'boolean' );
@@ -168,18 +165,16 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @borrows Array.isArray
-     **/
+     */
     is.array = Array.isArray;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a object
@@ -188,7 +183,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.object = function ( obj )
     {
         return is.typeOf( obj, 'object' );
@@ -197,8 +192,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is the document
@@ -207,7 +201,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.document = function ( doc )
     {
         return doc === document;
@@ -216,8 +210,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a the window variable to avoid endless loops
@@ -226,7 +219,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.window = function ( win )
     {
         return win === win.window;
@@ -235,8 +228,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a param is an HTML Element
@@ -245,7 +237,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.element = function ( elem )
     {
         return ( elem instanceof HTMLElement );
@@ -254,8 +246,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a node list
@@ -264,7 +255,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.nodeList = function ( nodeList )
     {
         return Object.prototype.toString.call( nodeList ) === '[object NodeList]';
@@ -273,8 +264,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is an HTML collection
@@ -283,7 +273,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.htmlCollection = function ( htmlCollection )
     {
         return Object.prototype.toString.call( htmlCollection ) === '[object HTMLCollection]';
@@ -292,8 +282,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a node list or an HTML collection
@@ -302,7 +291,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.htmlList = function ( htmlList )
     {
         return ( is.nodeList( htmlList ) || is.htmlCollection( htmlList ) );
@@ -311,8 +300,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a string
@@ -321,7 +309,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.string = function ( toTest )
     {
         return is.typeOf( toTest, 'string' );
@@ -330,8 +318,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a number
@@ -340,7 +327,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.numeric = function ( toTest )
     {
         return ( toTest - parseFloat( toTest ) >= 0 );
@@ -349,8 +336,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is an instance of Dom
@@ -359,7 +345,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.$ = function ( toTest )
     {
         return toTest instanceof Dom;
@@ -368,8 +354,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a boolean
@@ -378,7 +363,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.bool = function ( toTest )
     {
         return is.typeOf( toTest, 'boolean' );
@@ -387,8 +372,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is a function
@@ -397,7 +381,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.func = function ( toTest )
     {
         return is.typeOf( toTest, 'function' );
@@ -406,8 +390,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is null/undefined/etc
@@ -416,7 +399,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.invalid = function ( toTest )
     {
         return is.undefined( toTest )
@@ -428,8 +411,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a variable is undefined
@@ -438,7 +420,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.undefined = function ( toTest )
     {
         return is.typeOf( toTest, 'undefined' );
@@ -447,8 +429,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if an array is empty
@@ -457,7 +438,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.array.empty = function ( arr )
     {
         return ( arr.length == 0 );
@@ -466,8 +447,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if an object is empty
@@ -476,7 +456,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.object.empty = function ( obj )
     {
         // Iterate through the object
@@ -495,8 +475,7 @@ var is = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if a string is empty
@@ -505,7 +484,7 @@ var is = {};
      *  The variable to test
      *
      * @return {boolean}
-     **/
+     */
     is.string.empty = function ( toTest )
     {
         return ( !toTest );
@@ -542,12 +521,11 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Log variables to the console
-     **/
+     */
     Logger.log = function ()
     {
         if ( Config.DEBUG ) {
@@ -558,8 +536,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set some info to the console
@@ -567,7 +544,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.info = function ()
     {
         if ( Config.DEBUG ) {
@@ -578,8 +555,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console a warning
@@ -590,7 +566,7 @@ var Logger = {};
      *********
      *
      * @return void
-     **/
+     */
     Logger.warn = function ()
     {
         if ( Config.DEBUG ) {
@@ -601,8 +577,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Debug variables to the console
@@ -610,7 +585,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.debug = function ()
     {
         if ( Config.DEBUG ) {
@@ -621,8 +596,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console errors
@@ -630,7 +604,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.error = function ()
     {
         if ( Config.DEBUG ) {
@@ -641,8 +615,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console time
@@ -650,7 +623,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.time = function ()
     {
         if ( Config.DEBUG ) {
@@ -661,8 +634,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Console timeEnd
@@ -670,7 +642,7 @@ var Logger = {};
      * @params  {...} {*}
      *
      * @return void
-     **/
+     */
     Logger.timeEnd = function ()
     {
         if ( Config.DEBUG ) {
@@ -706,8 +678,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clone a given object or array
@@ -718,7 +689,7 @@ var Utils = {};
      *  Is this an array to clone?
      *
      * @return {object|array}
-     **/
+     */
     Utils.clone = function ( toClone, isArr )
     {
         isArr = isArr ? [] : {};
@@ -738,8 +709,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Iterate through an object || array
@@ -750,7 +720,7 @@ var Utils = {};
      *  The callback for each item
      *
      * @return void
-     **/
+     */
     Utils.each = function ( items, callback )
     {
         // Sanity checks
@@ -778,8 +748,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Extend object
@@ -788,7 +757,7 @@ var Utils = {};
      *
      * @return {object}
      *  The extended object
-     **/
+     */
     Utils.extend = function ( obj, source )
     {
         if ( source ) {
@@ -805,8 +774,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Merge two objects
@@ -817,7 +785,7 @@ var Utils = {};
      *  The object to merge into
      *
      * @return {object}
-     **/
+     */
     Utils.merge = function ( mergeInto, mergeThis )
     {
         // TODO: Work on this
@@ -842,8 +810,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clone a given array
@@ -852,7 +819,7 @@ var Utils = {};
      *  The array to clone
      *
      * @return {array}
-     **/
+     */
     Array.clone = function ( toClone )
     {
         return Utils.clone( toClone, true );
@@ -861,8 +828,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -873,7 +839,7 @@ var Utils = {};
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     Array.contains = function ( arr, value )
     {
         return Array.prototype.indexOf.call( arr, value ) != -1;
@@ -882,8 +848,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -894,7 +859,7 @@ var Utils = {};
      *  The value to test for
      *
      * @return void
-     **/
+     */
     Array.insert = function ( arr, value )
     {
         if ( !Array.contains( arr, value ) ) {
@@ -946,8 +911,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Validate a given object
@@ -956,7 +920,7 @@ var Utils = {};
      *  The object to validate
      *
      * @return {object}
-     **/
+     */
     Object.validate = function ( toTest )
     {
         // Is the object valid?
@@ -972,8 +936,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the first property in a given object
@@ -982,7 +945,7 @@ var Utils = {};
      *  The object
      *
      * @return {*}
-     **/
+     */
     Object.first = function ( obj )
     {
         for ( var prop in obj ) {
@@ -1065,8 +1028,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Convert parameter to a string
@@ -1075,7 +1037,7 @@ var Utils = {};
      *  The string to make safe
      *
      * @return {string}
-     **/
+     */
     String.makeSafe = function ( value )
     {
         return ( !value )
@@ -1087,8 +1049,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does a string contain a value
@@ -1099,7 +1060,7 @@ var Utils = {};
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.contains = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -1112,8 +1073,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -1126,7 +1086,7 @@ var Utils = {};
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.containsInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -1139,8 +1099,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Compare to strings to see if they match
@@ -1151,7 +1110,7 @@ var Utils = {};
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.compare = function ( toTest, value )
     {
         return toTest === value;
@@ -1160,8 +1119,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -1174,7 +1132,7 @@ var Utils = {};
      *  The value to test for
      *
      * @return {boolean}
-     **/
+     */
     String.compareInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -1234,14 +1192,13 @@ var Ajax = function ( url, options )
      *  Default ajax request url
      *
      * @type {string}
-     **/
+     */
     Ajax.BASE_URL = GLOBALS.AJAX_URL || '';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax/XHR request
@@ -1253,7 +1210,7 @@ var Ajax = function ( url, options )
      *
      * @return {Ajax}
      *  The xhr call
-     **/
+     */
     Ajax.Init = function ( url, options )
     {
         // If the url is not valid
@@ -1280,47 +1237,47 @@ var Ajax = function ( url, options )
 
         /**
          * @name    options
-         **/
+         */
         /**     @name   options#accept
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#async
          *      @propertyOf options
          *      @type   {boolean}
-         **/
+         */
         /**     @name   options#contentType
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#data
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#headers
          *      @propertyOf options
          *      @type   {object}
-         **/
+         */
         /**     @name   options#dataString
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#method
          *      @propertyOf options
          *      @type   {string}
-         **/
+         */
         /**     @name   options#success
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#error
          *      @propertyOf options
          *      @type   {function}
-         **/
+         */
         /**     @name   options#complete
          *      @propertyOf options
          *      @type   {function}
-        **/
+        */
         options = options || {};
 
         var
@@ -1469,8 +1426,7 @@ var Ajax = function ( url, options )
     };
 
     /**
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the Init prototype as Dom's prototype
@@ -1481,14 +1437,13 @@ var Ajax = function ( url, options )
 
     /**
      * @constructor
-     **/
+     */
     Ajax.prototype.constructor = Ajax;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Easy method for setting options.method for ajax calls
@@ -1517,8 +1472,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax post method so as to not have to define options.method
@@ -1536,8 +1490,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax update method so as to not have to define options.method
@@ -1555,8 +1508,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ajax delete method so as to not have to define options.method
@@ -1626,8 +1578,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a cached item
@@ -1636,7 +1587,7 @@ var Cache = {};
      *  The key to retrieve
      *
      * @return {*}
-     **/
+     */
     Cache.get = function ( key )
     {
         return JSON.parse( localStorage.getItem( key ) );
@@ -1645,8 +1596,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set a cached item
@@ -1657,7 +1607,7 @@ var Cache = {};
      *  The value to set
      *
      * @return {*}
-     **/
+     */
     Cache.set = function ( key, value )
     {
         return localStorage.setItem( key, JSON.stringify( value ) );
@@ -1666,14 +1616,13 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the amount of items cached
      *
      * @return {number}
-     **/
+     */
     Cache.len = function ()
     {
         return localStorage.length;
@@ -1682,8 +1631,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delete a cached item
@@ -1692,7 +1640,7 @@ var Cache = {};
      *  The key to delete
      *
      * @returns {*}
-     **/
+     */
     Cache.del = function ( key )
     {
         return localStorage.removeItem( key );
@@ -1701,14 +1649,13 @@ var Cache = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Clear all cached items
      *
      * @returns {*}
-     **/
+     */
     Cache.clear = function ()
     {
         return localStorage.clear();
@@ -1755,7 +1702,7 @@ var Cookies = {};
      *
      * @return {*}
      *  The cookie value
-     **/
+     */
     Cookies.get = function ( key )
     {
         return decodeURIComponent(
@@ -1798,7 +1745,7 @@ var Cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was set or not
-     **/
+     */
     Cookies.set = function ( key, value, expires, path, domain, isSecure )
     {
         if (
@@ -1882,7 +1829,7 @@ var Cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie was removed or not
-     **/
+     */
     Cookies.remove = function ( key, path, domain )
     {
         // Sanity checks
@@ -1923,7 +1870,7 @@ var Cookies = {};
      *
      * @return {boolean}
      *  Whether the cookie exists or not
-     **/
+     */
     Cookies.has = function ( key )
     {
         return (
@@ -1947,7 +1894,7 @@ var Cookies = {};
      *
      * @return {array}
      *  The keys
-     **/
+     */
     Cookies.keys = function ()
     {
         var
@@ -1973,15 +1920,14 @@ var Cookies = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a list of the cookies
      *
      * @return {object}
      *  The cookies
-     **/
+     */
     Cookies.getAll = function ()
     {
         var
@@ -2102,7 +2048,7 @@ var Cookies = {};
  *  The context to use
  *
  * @return Dom.Init
- **/
+ */
 var Dom = function ( selector, context )
 {
     return new Dom.Init( selector, context );
@@ -2113,8 +2059,7 @@ var Dom = function ( selector, context )
     /**
      * @constructor
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Dom.$ initializer
@@ -2126,7 +2071,7 @@ var Dom = function ( selector, context )
      *
      * @return {Dom}
      *  The Dom.$ object
-     **/
+     */
     Dom.Init = function ( selector, context )
     {
         // If the selector is not a string
@@ -2170,8 +2115,7 @@ var Dom = function ( selector, context )
     };
 
     /**
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the Init prototype as Dom's prototype
@@ -2182,7 +2126,7 @@ var Dom = function ( selector, context )
 
     /**
      * @constructor
-     **/
+     */
     Dom.prototype.constructor = Dom;
 
     /**
@@ -2192,7 +2136,7 @@ var Dom = function ( selector, context )
      *  The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     Dom.prototype.elem = null;
 
     /**
@@ -2202,7 +2146,7 @@ var Dom = function ( selector, context )
      *  The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     Dom.prototype.context = document;
 
     /**
@@ -2212,7 +2156,7 @@ var Dom = function ( selector, context )
      *  The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     Dom.prototype.selector = '';
 
     /**
@@ -2222,14 +2166,13 @@ var Dom = function ( selector, context )
      *  How to split the strings within the class
      *
      * @type {string}
-     **/
+     */
     Dom.prototype.SPACE_SPLIT = ' ';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an element using a parent and a string selector
@@ -2241,7 +2184,7 @@ var Dom = function ( selector, context )
      *
      * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
-     **/
+     */
     Dom.prototype.getElements = function ( parent, selector )
     {
         // If the parent is invalid
@@ -2311,8 +2254,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -2322,7 +2264,7 @@ var Dom = function ( selector, context )
      *
      * @return {Dom}
      *  The requested child
-     **/
+     */
     Dom.prototype.find = function ( selector )
     {
         return Dom( this.getElements( this.elem, selector ) );
@@ -2331,15 +2273,14 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the elem parent
      *
      * @return {Dom}
      *  The parent
-     **/
+     */
     Dom.prototype.parent = function ()
     {
         return Dom( this.get( 0 ).parentNode );
@@ -2348,8 +2289,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -2358,7 +2298,7 @@ var Dom = function ( selector, context )
      *  The elem index to get
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.get = function ( index )
     {
         // If the elem is a nodeList AND the index is numeric
@@ -2374,8 +2314,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find the closest parent with a given selector
@@ -2387,7 +2326,7 @@ var Dom = function ( selector, context )
      *  The type to use
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.closest = function ( selector, element )
     {
         // If a selector was provided
@@ -2464,14 +2403,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get elem length
      *
      * @return {number}
-     **/
+     */
     Dom.prototype.getLength = function ()
     {
         // If the elem has a length
@@ -2487,8 +2425,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle event for element
@@ -2503,7 +2440,7 @@ var Dom = function ( selector, context )
      *  The callback method
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
         // Ensure we have a valid event type
@@ -2593,8 +2530,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add an event
@@ -2607,7 +2543,7 @@ var Dom = function ( selector, context )
      *  The callback method
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.on = function ( eventType, selector, callback )
     {
         return this.handleEvent(
@@ -2621,8 +2557,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove an event
@@ -2635,7 +2570,7 @@ var Dom = function ( selector, context )
      *  The callback method
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.off = function ( eventType, selector, callback )
     {
         // If no params have been provided
@@ -2663,8 +2598,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event
@@ -2675,7 +2609,7 @@ var Dom = function ( selector, context )
      *  The child node to attach event to
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.trigger = function ( eventType, selector )
     {
         return this.handleEvent(
@@ -2688,8 +2622,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's value
@@ -2698,7 +2631,7 @@ var Dom = function ( selector, context )
      *  The value to overwrite with
      *
      * @return {object|string}
-     **/
+     */
     Dom.prototype.val = function ( value )
     {
         // If a value was given to override with
@@ -2734,8 +2667,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's text
@@ -2745,7 +2677,7 @@ var Dom = function ( selector, context )
      *  The text to overwrite with
      *
      * @return {object|string}
-     **/
+     */
     Dom.prototype.text = function ( text )
     {
         // Return this for chaining
@@ -2755,8 +2687,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's html
@@ -2769,7 +2700,7 @@ var Dom = function ( selector, context )
      *  (Default) html
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.html = function ( html, type )
     {
         // If no text was given
@@ -2817,8 +2748,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Append html to this element
@@ -2827,7 +2757,7 @@ var Dom = function ( selector, context )
      *  The html to overwrite with
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.append = function ( html )
     {
         // Prepend the html
@@ -2837,8 +2767,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -2847,7 +2776,7 @@ var Dom = function ( selector, context )
      *  The html to overwrite with
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.prepend = function ( html )
     {
         // Prepend the html
@@ -2857,8 +2786,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -2870,7 +2798,7 @@ var Dom = function ( selector, context )
      *  The html to overwrite with
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.handleHTML = function ( type, html )
     {
         var
@@ -2913,8 +2841,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -2928,7 +2855,7 @@ var Dom = function ( selector, context )
      *  The elem to use
      *
      * @return {object|html}
-     **/
+     */
     Dom.prototype.handlePend = function ( type, nodes, elem )
     {
         // If no elem is set use this.elem
@@ -2982,8 +2909,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem child nodes
@@ -2992,7 +2918,7 @@ var Dom = function ( selector, context )
      *  The elem to use
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.empty = function ( elem )
     {
         // If no elem is set use this.elem
@@ -3009,8 +2935,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem from the dom
@@ -3019,7 +2944,7 @@ var Dom = function ( selector, context )
      *  The elem to use
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.remove = function ( elem )
     {
         // If no elem is set use this.elem
@@ -3049,8 +2974,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle class for element
@@ -3061,7 +2985,7 @@ var Dom = function ( selector, context )
      *  The type of class manipulation to do
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.handleClass = function ( className, type )
     {
         // Sanity checks
@@ -3131,8 +3055,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add class to element
@@ -3141,7 +3064,7 @@ var Dom = function ( selector, context )
      *  The class or classes to add
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.addClass = function ( className )
     {
         return this.handleClass( className, 'add' );
@@ -3150,8 +3073,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove class from element
@@ -3160,7 +3082,7 @@ var Dom = function ( selector, context )
      *  The class or classes to remove
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.removeClass = function ( className )
     {
         return this.handleClass( className, 'remove' );
@@ -3169,8 +3091,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add or remove class or classes depending on whether the
@@ -3180,7 +3101,7 @@ var Dom = function ( selector, context )
      *  The class or classes to check for
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.toggleClass = function ( className )
     {
         return this.handleClass( className, 'toggle' );
@@ -3189,8 +3110,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determines if elem has the class or classes specified
@@ -3200,7 +3120,7 @@ var Dom = function ( selector, context )
      *  The class or classes to check for
      *
      * @return {boolean|object}
-     **/
+     */
     Dom.prototype.hasClass = function ( className )
     {
         if ( !className ) {
@@ -3226,8 +3146,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an attribute value
@@ -3236,7 +3155,7 @@ var Dom = function ( selector, context )
      *  The attribute to get
      *
      * @return {string|boolean}
-     **/
+     */
     Dom.prototype.attrGet = function ( attr )
     {
         // If no attribute was provided
@@ -3252,8 +3171,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds attribute to elem
@@ -3264,7 +3182,7 @@ var Dom = function ( selector, context )
      *  The attribute to add to
      *
      * @return {Dom}
-     **/
+     */
     Dom.prototype.attrSet = function ( attr, value )
     {
         // If no attribute or value were provided
@@ -3297,8 +3215,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes an attribute from elem
@@ -3307,7 +3224,7 @@ var Dom = function ( selector, context )
      *  The attribute to remove
      *
      * @return {Dom}
-     **/
+     */
     Dom.prototype.attrRemove = function ( attr )
     {
         // If no attribute was provided
@@ -3340,8 +3257,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a data attribute value
@@ -3350,7 +3266,7 @@ var Dom = function ( selector, context )
      *  The data attribute to get
      *
      * @return {string|boolean}
-     **/
+     */
     Dom.prototype.dataGet = function ( data )
     {
         // If no data attribute was provided
@@ -3365,8 +3281,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds a data attribute to elem
@@ -3378,7 +3293,7 @@ var Dom = function ( selector, context )
      *  The attribute to add to
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.dataSet = function ( data, value )
     {
         // If no data attribute or value were provided
@@ -3393,8 +3308,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes a data attribute from elem
@@ -3403,7 +3317,7 @@ var Dom = function ( selector, context )
      *  The data to remove
      *
      * @return {object}
-     **/
+     */
     Dom.prototype.dataRemove = function ( data )
     {
         // If no data attribute was provided
@@ -3421,14 +3335,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document variable
      *
      * @return {object}
-     **/
+     */
     Dom.getDocument = function ()
     {
         return document;
@@ -3437,14 +3350,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window variable
      *
      * @return {object}
-     **/
+     */
     Dom.getWindow = function ()
     {
         return window;
@@ -3453,14 +3365,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window width
      *
      * @return {number}
-     **/
+     */
     Dom.windowWidth = function ()
     {
         return window.innerWidth;
@@ -3469,14 +3380,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the window height
      *
      * @return {number}
-     **/
+     */
     Dom.windowHeight = function ()
     {
         return window.innerHeight;
@@ -3485,14 +3395,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the amount scrolled
      *
      * @return {number}
-     **/
+     */
     Dom.scrollTop = function ()
     {
         return window.scrollY;
@@ -3501,14 +3410,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total width
      *
      * @return {number}
-     **/
+     */
     Dom.documentWidth = function ()
     {
         return document.documentElement.scrollWidth;
@@ -3517,14 +3425,13 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
      *
      * @return {number}
-     **/
+     */
     Dom.documentHeight = function ()
     {
         return document.documentElement.scrollHeight;
@@ -3533,8 +3440,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the document's total height
@@ -3543,7 +3449,7 @@ var Dom = function ( selector, context )
      *  The HTML string to parse
      *
      * @return {HTMLDocument}
-     **/
+     */
     Dom.parseHTML = function ( html )
     {
         var
@@ -3585,7 +3491,7 @@ var Dom = function ( selector, context )
      *  Global elements
      *
      * @type {object}
-     **/
+     */
     Dom.elems = {};
 
     /**
@@ -3595,7 +3501,7 @@ var Dom = function ( selector, context )
      *  Create a new instance of Dom for document
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.document = Dom( document );
 
     /**
@@ -3605,7 +3511,7 @@ var Dom = function ( selector, context )
      *  Create a new instance of Dom for window
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.window = Dom( window );
 
     /**
@@ -3615,7 +3521,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for html
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.html = Dom( 'html' );
 
     /**
@@ -3625,7 +3531,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for body
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.body = Dom( 'body' );
 
     /**
@@ -3635,7 +3541,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for #header
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.header = Dom( '#header' );
 
     /**
@@ -3645,7 +3551,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for #main
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.main = Dom( '#main' );
 
     /**
@@ -3655,7 +3561,7 @@ var Dom = function ( selector, context )
      *  Create new instance of Dom for #footer
      *
      * @type {Dom}
-     **/
+     */
     Dom.elems.footer = Dom( '#footer' );
 })();
 /**********************************************************************************************************************\
@@ -3737,8 +3643,7 @@ var Template = function ( objToMerge )
     /**
      * @constructor
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Template initializer
@@ -3748,15 +3653,14 @@ var Template = function ( objToMerge )
      *
      * @return {Template}
      *  The Template object
-     **/
+     */
     Template.Init = function ( objToMerge )
     {
         return this.extend( objToMerge );
     };
 
     /**
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the Init prototype as Template's prototype
@@ -3767,7 +3671,7 @@ var Template = function ( objToMerge )
 
     /**
      * @constructor
-     **/
+     */
     Template.prototype.constructor = Template;
 })();
 
@@ -3776,8 +3680,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Render a template for a ui component/element/node
@@ -3786,7 +3689,7 @@ var Template = function ( objToMerge )
      *  Any custom options for this view
      *
      * @return void
-     **/
+     */
     Template.prototype.render = function ( options )
     {
         // Set options
@@ -3809,7 +3712,7 @@ var Template = function ( objToMerge )
      *  The Template ID
      *
      * @type {string}
-     **/
+     */
     Template.prototype.sID = '';
 
     /**
@@ -3819,7 +3722,7 @@ var Template = function ( objToMerge )
      *  The Template ID
      *
      * @type {Dom}
-     **/
+     */
     Template.prototype.elem = '';
 
     /**
@@ -3829,7 +3732,7 @@ var Template = function ( objToMerge )
      *  The element tag name
      *
      * @type {string}
-     **/
+     */
     Template.prototype.tagName = 'div';
 
     /**
@@ -3839,7 +3742,7 @@ var Template = function ( objToMerge )
      *  The element class name
      *
      * @type {string}
-     **/
+     */
     Template.prototype.className = '';
 
     /**
@@ -3849,7 +3752,7 @@ var Template = function ( objToMerge )
      *  The template to use
      *
      * @type {string}
-     **/
+     */
     Template.prototype.template = '';
 
     /**
@@ -3859,7 +3762,7 @@ var Template = function ( objToMerge )
      *  The element attributes
      *
      * @type {object}
-     **/
+     */
     Template.prototype.attributes = {};
 
     /**
@@ -3869,7 +3772,7 @@ var Template = function ( objToMerge )
      *  The events for this template
      *
      * @type {object}
-     **/
+     */
     Template.prototype.events = {};
 
     /**
@@ -3879,7 +3782,7 @@ var Template = function ( objToMerge )
      *  The accepted options for the template
      *
      * @type {array}
-     **/
+     */
     Template.prototype.__options = [
         'Model'
         , 'Collection'
@@ -3898,20 +3801,19 @@ var Template = function ( objToMerge )
      *  What to split event strings with
      *
      * @type {string}
-     **/
+     */
     Template.prototype.EVENT_SPLIT = ' ';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Initialize Template
      *
      * @return {Template}
-     **/
+     */
     Template.prototype.initialize = function ()
     {
         // Overwrite this function for custom initialization of View
@@ -3923,8 +3825,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Return a dom element under elem
@@ -3934,7 +3835,7 @@ var Template = function ( objToMerge )
      *
      * @return {Dom}
      *  The child of elem
-     **/
+     */
     Template.prototype.Dom = function ( selector )
     {
         // Make sure the selector is a valid string
@@ -3950,8 +3851,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set the View element
@@ -3964,7 +3864,7 @@ var Template = function ( objToMerge )
      *
      * @return {object}
      *  The view
-     **/
+     */
     Template.prototype.setElement = function ( element, delegateEvents )
     {
         // If an element is already set
@@ -3991,15 +3891,14 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove View - Remove element from DOM
      *
      * @return {object}
      *  The view
-     **/
+     */
     Template.prototype.remove = function ()
     {
         // Undelegate all event handlers
@@ -4015,8 +3914,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate an event handler
@@ -4032,7 +3930,7 @@ var Template = function ( objToMerge )
      *
      * @return {object}
      *  The component
-     **/
+     */
     Template.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
     {
         // Sanity checks
@@ -4086,8 +3984,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event handler
@@ -4097,7 +3994,7 @@ var Template = function ( objToMerge )
      *
      * @return {object}
      *  The component
-     **/
+     */
     Template.prototype.triggerEvent = function ( event )
     {
         // Make sure the parameter is a string
@@ -4128,8 +4025,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Delegate/Undelegate event handlers given an object of events
@@ -4141,7 +4037,7 @@ var Template = function ( objToMerge )
      *
      * @return {Template}
      *  The template
-     **/
+     */
     Template.prototype.handleEvents = function ( events, removeEvent )
     {
         // Determine validity of events object
@@ -4174,14 +4070,13 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Undelegate all event handlers
      *
      * @return {object}
-     **/
+     */
     Template.prototype.undelegateEvents = function ()
     {
         // Remove all events attached to this element
@@ -4194,14 +4089,13 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Ensure the view element exists
      *
      * @return void
-     **/
+     */
     Template.prototype.__ensureElement = function ()
     {
         // Check if element is an element exists
@@ -4217,8 +4111,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Set component options
@@ -4227,7 +4120,7 @@ var Template = function ( objToMerge )
      *  Options passed to the Template
      *
      * @return {Template}
-     **/
+     */
     Template.prototype.__setOptions = function ( options )
     {
         // Determine validity of options object
@@ -4337,14 +4230,13 @@ var Topics = function ( topicName )
      *  The subscribed topics
      *
      * @type {object}
-     **/
+     */
     Topics._topics = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Subscribe a callback method to a topic
@@ -4356,7 +4248,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.subscribeToTopic = function ( callback, scope )
     {
         // Determine if scope is a valid object
@@ -4400,8 +4292,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Subscribe a callback method to a topic
@@ -4413,7 +4304,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.unSubscribeFromTopic = function ( callback, scope )
     {
         // If the callback is not a string
@@ -4452,15 +4343,14 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger a topic's callback methods to fire
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.triggerTopic = function ()
     {
         var
@@ -4487,15 +4377,14 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Unsubscribe all callback methods from a topic
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.unSubscribeAllFromTopic = function ()
     {
         // Re-set topics to empty array
@@ -4508,8 +4397,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Unsubscribe all callback methods from a topic
@@ -4521,7 +4409,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.handleTopics = function ( topics, remove )
     {
         // Determine if topics is a valid object
@@ -4575,8 +4463,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove all topics
@@ -4586,7 +4473,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.removeTopics = function ()
     {
         // Re-set topic objects to empty object
@@ -4637,21 +4524,19 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  User Agent string
      *
      * @type {string}
-     **/
+     */
     UserAgent.UA = navigator.userAgent;
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user agent has a value
@@ -4660,7 +4545,7 @@ var UserAgent = {};
      *  The value to test if userAgent contains it
      *
      * @return {boolean}
-     **/
+     */
     UserAgent.contains = function ( value )
     {
         return String.contains( UserAgent.UA, value );
@@ -4669,14 +4554,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is IE
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IE = (
         UserAgent.contains( 'MSIE' )
     );
@@ -4684,14 +4568,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is FireFox
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.FIREFOX = (
         UserAgent.contains( 'Firefox' )
     );
@@ -4699,14 +4582,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Chrome
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.CHROME = (
         UserAgent.contains( 'Chrome' )
     );
@@ -4714,14 +4596,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's browser is Safari
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.SAFARI = (
         UserAgent.contains( 'Safari' ) && !UserAgent.CHROME
     );
@@ -4729,14 +4610,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPhone
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IPHONE = (
         UserAgent.contains( 'iPhone' )
     );
@@ -4744,14 +4624,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is iPad
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IPAD = (
         UserAgent.contains( 'iPad' )
     );
@@ -4759,14 +4638,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Android
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.ANDROID = (
         UserAgent.contains( 'Android' )
     );
@@ -4774,27 +4652,25 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is iOS
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.IOS = UserAgent.IPHONE || UserAgent.IPAD;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows Phone
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.WINDOWS_PHONE = (
         UserAgent.contains( 'Windows Phone' )
     );
@@ -4802,27 +4678,25 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a mobile device
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.MOBILE = UserAgent.IOS || UserAgent.WINDOWS_PHONE || UserAgent.ANDROID;
 
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Windows
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.WINDOWS = (
         UserAgent.contains( 'Windows NT' )
     );
@@ -4830,14 +4704,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Mac
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.MAC = (
         UserAgent.contains( 'Macintosh' )
     );
@@ -4845,14 +4718,13 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's OS is Linux
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.LINUX = (
         UserAgent.contains( 'Linux' )
     );
@@ -4860,13 +4732,12 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determine if the user's device is a desktop
      *
      * @type {boolean}
-     **/
+     */
     UserAgent.DESKTOP = !UserAgent.MOBILE;
 })();

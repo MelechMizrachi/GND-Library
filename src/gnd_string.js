@@ -20,14 +20,13 @@
 
 /**
  * @class
- **/
+ */
 gnd.string = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Convert parameter to a string
@@ -39,7 +38,7 @@ gnd.string = {};
      *********
      *
      * @return {string}
-     **/
+     */
     gnd.string.makeSafe = function ( value )
     {
         return ( !value )
@@ -50,14 +49,13 @@ gnd.string = {};
 
     /**
      * @class
-     **/
+     */
     gnd.string.is = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a string
@@ -69,7 +67,7 @@ gnd.string = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.string.is.string = function ( toTest )
         {
             return gnd.isTypeOf( toTest, 'string' );
@@ -78,8 +76,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a variable is a number
@@ -91,7 +88,7 @@ gnd.string = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.string.is.numeric = function ( toTest )
         {
             return ( toTest - parseFloat( toTest ) >= 0 );
@@ -100,8 +97,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if a string is empty
@@ -113,7 +109,7 @@ gnd.string = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.string.is.empty = function ( toTest )
         {
             return !(
@@ -128,8 +124,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does a string contain a value
@@ -144,7 +139,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.contains = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -157,8 +152,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -174,7 +168,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.containsInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {
@@ -187,8 +181,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Compare to strings to see if they match
@@ -203,7 +196,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.compare = function ( toTest, value )
     {
         return toTest === value;
@@ -212,8 +205,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Case insensitive of
@@ -229,7 +221,7 @@ gnd.string = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.string.compareInsensitive = function ( toTest, value )
     {
         if ( !toTest || !value ) {

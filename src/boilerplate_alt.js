@@ -12,22 +12,22 @@
 
 /**
  * @exports gnd.NAMESPACE_HERE
- **/
+ */
 (function ( root, Factory )
 {
     /**
      * @namespace root
      * @extends gnd
-     **/
+     */
 
     /**
      * @memberOf gnd
      * @namespace NAMESPACE_HERE
-     **/
+     */
     root.NAMESPACE_HERE = Factory;
 
 // Call anonymous function
-} ( gnd, /** @lends gnd.NAMESPACE_HERE **/{
+} ( gnd, /** @lends gnd.NAMESPACE_HERE */{
 
 /**=================================================================================**\
  *

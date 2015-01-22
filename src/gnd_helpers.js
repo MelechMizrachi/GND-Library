@@ -12,22 +12,22 @@
 
 /**
  * @exports gnd.helpers
- **/
+ */
 (function ( root, Factory )
 {
     /**
      * @namespace root
      * @extends gnd
-     **/
+     */
 
     /**
      * @memberOf gnd
      * @namespace helpers
-     **/
+     */
     root.helpers = Factory;
 
 // Call anonymous function
-} ( gnd, /** @lends gnd.helpers **/{
+} ( gnd, /** @lends gnd.helpers */{
 
 /**=================================================================================**\
  *

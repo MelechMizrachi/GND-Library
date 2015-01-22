@@ -76,14 +76,13 @@ var Topics = function ( topicName )
      *  The subscribed topics
      *
      * @type {object}
-     **/
+     */
     Topics._topics = {};
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Subscribe a callback method to a topic
@@ -95,7 +94,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.subscribeToTopic = function ( callback, scope )
     {
         // Determine if scope is a valid object
@@ -139,8 +138,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Subscribe a callback method to a topic
@@ -152,7 +150,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.unSubscribeFromTopic = function ( callback, scope )
     {
         // If the callback is not a string
@@ -191,15 +189,14 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger a topic's callback methods to fire
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.triggerTopic = function ()
     {
         var
@@ -226,15 +223,14 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Unsubscribe all callback methods from a topic
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.unSubscribeAllFromTopic = function ()
     {
         // Re-set topics to empty array
@@ -247,8 +243,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Unsubscribe all callback methods from a topic
@@ -260,7 +255,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.handleTopics = function ( topics, remove )
     {
         // Determine if topics is a valid object
@@ -314,8 +309,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove all topics
@@ -325,7 +319,7 @@ var Topics = function ( topicName )
      *
      * @return {object}
      *  The topic
-     **/
+     */
     Topics.removeTopics = function ()
     {
         // Re-set topic objects to empty object

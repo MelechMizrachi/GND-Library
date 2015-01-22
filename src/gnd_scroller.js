@@ -12,22 +12,22 @@
 
 /**
  * @exports gnd.scroller
- **/
+ */
 (function ( root, Factory )
 {
     /**
      * @namespace root
      * @extends gnd
-     **/
+     */
 
     /**
      * @memberOf gnd
      * @namespace scroller
-     **/
+     */
     root.scroller = Factory;
 
 // Call anonymous function
-} ( gnd, /** @lends gnd.scroller **/{
+} ( gnd, /** @lends gnd.scroller */{
 
 /**=================================================================================**\
  *

@@ -64,7 +64,7 @@
  *********
  *
  * @return gnd.$.Init
- **/
+ */
 gnd.$ = function ( selector, context )
 {
     return new gnd.$.Init( selector, context );
@@ -73,8 +73,7 @@ gnd.$ = function ( selector, context )
     /**
      * @constructor
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  gnd.dom.$ initializer
@@ -90,7 +89,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {gnd.$}
      *  The gnd.dom.$ object
-     **/
+     */
     gnd.$.Init = function ( selector, context )
     {
         // If the selector is not a string
@@ -135,7 +134,7 @@ gnd.$ = function ( selector, context )
 
     /**
      * @constructor
-     **/
+     */
     gnd.$.prototype.constructor = gnd.$;
 
     /**
@@ -145,7 +144,7 @@ gnd.$ = function ( selector, context )
      *  The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     gnd.$.prototype.elem = null;
 
     /**
@@ -155,7 +154,7 @@ gnd.$ = function ( selector, context )
      *  The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     gnd.$.prototype.context = document;
 
     /**
@@ -165,7 +164,7 @@ gnd.$ = function ( selector, context )
      *  The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
-     **/
+     */
     gnd.$.prototype.selector = '';
 
     /**
@@ -175,14 +174,13 @@ gnd.$ = function ( selector, context )
      *  How to split the strings within the class
      *
      * @type {string}
-     **/
+     */
     gnd.$.prototype.SPACE_SPLIT = ' ';
 
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an element using a parent and a string selector
@@ -198,7 +196,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
-     **/
+     */
     gnd.$.prototype.getElements = function ( parent, selector )
     {
         // If the parent is invalid
@@ -268,8 +266,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -282,7 +279,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {gnd.$}
      *  The requested child
-     **/
+     */
     gnd.$.prototype.find = function ( selector )
     {
         return gnd.$( this.getElements( this.elem, selector ) );
@@ -291,8 +288,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get the elem parent
@@ -302,7 +298,7 @@ gnd.$ = function ( selector, context )
      *
      * @return {gnd.$}
      *  The parent
-     **/
+     */
     gnd.$.prototype.parent = function ()
     {
         return gnd.$( this.get( 0 ).parentNode );
@@ -311,8 +307,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find a child element
@@ -324,7 +319,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.get = function ( index )
     {
         // If the elem is a nodeList AND the index is numeric
@@ -340,8 +335,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Find the closest parent with a given selector
@@ -357,7 +351,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.closest = function ( selector, element )
     {
         // If a selector was provided
@@ -434,8 +428,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get elem length
@@ -444,7 +437,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {number}
-     **/
+     */
     gnd.$.prototype.getLength = function ()
     {
         // If the elem has a length
@@ -460,8 +453,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle event for element
@@ -482,7 +474,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
         // Ensure we have a valid event type
@@ -572,8 +564,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add an event
@@ -591,7 +582,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.on = function ( eventType, selector, callback )
     {
         return this.handleEvent(
@@ -605,8 +596,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove an event
@@ -624,7 +614,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.off = function ( eventType, selector, callback )
     {
         // If no params have been provided
@@ -652,8 +642,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Trigger an event
@@ -668,7 +657,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.trigger = function ( eventType, selector )
     {
         return this.handleEvent(
@@ -681,8 +670,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's value
@@ -694,7 +682,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|string}
-     **/
+     */
     gnd.$.prototype.val = function ( value )
     {
         // If a value was given to override with
@@ -730,8 +718,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's text
@@ -744,7 +731,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|string}
-     **/
+     */
     gnd.$.prototype.text = function ( text )
     {
         // Return this for chaining
@@ -754,8 +741,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Overwrite, or get, the element's html
@@ -772,7 +758,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.html = function ( html, type )
     {
         // If no text was given
@@ -820,8 +806,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Append html to this element
@@ -833,7 +818,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.append = function ( html )
     {
         // Prepend the html
@@ -843,8 +828,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -856,7 +840,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.prepend = function ( html )
     {
         // Prepend the html
@@ -866,8 +850,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -883,7 +866,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.handleHTML = function ( type, html )
     {
         var
@@ -926,8 +909,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Prepend html to this element
@@ -946,7 +928,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object|html}
-     **/
+     */
     gnd.$.prototype.handlePend = function ( type, nodes, elem )
     {
         // If no elem is set use this.elem
@@ -1000,8 +982,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem child nodes
@@ -1013,7 +994,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.empty = function ( elem )
     {
         // If no elem is set use this.elem
@@ -1030,8 +1011,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove elem from the dom
@@ -1043,7 +1023,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.remove = function ( elem )
     {
         // If no elem is set use this.elem
@@ -1073,8 +1053,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Handle class for element
@@ -1089,7 +1068,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.handleClass = function ( className, type )
     {
         // Sanity checks
@@ -1159,8 +1138,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add class to element
@@ -1172,7 +1150,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.addClass = function ( className )
     {
         return this.handleClass( className, 'add' );
@@ -1181,8 +1159,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Remove class from element
@@ -1194,7 +1171,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.removeClass = function ( className )
     {
         return this.handleClass( className, 'remove' );
@@ -1203,8 +1180,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Add or remove class or classes depending on whether the
@@ -1217,7 +1193,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.toggleClass = function ( className )
     {
         return this.handleClass( className, 'toggle' );
@@ -1226,8 +1202,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Determines if elem has the class or classes specified
@@ -1240,7 +1215,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {boolean|object}
-     **/
+     */
     gnd.$.prototype.hasClass = function ( className )
     {
         if ( !className ) {
@@ -1266,8 +1241,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get an attribute value
@@ -1279,7 +1253,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {string|boolean}
-     **/
+     */
     gnd.$.prototype.attrGet = function ( attr )
     {
         // If no attribute was provided
@@ -1295,8 +1269,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds attribute to elem
@@ -1311,7 +1284,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {gnd.$}
-     **/
+     */
     gnd.$.prototype.attrSet = function ( attr, value )
     {
         // If no attribute or value were provided
@@ -1344,8 +1317,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes an attribute from elem
@@ -1357,7 +1329,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {gnd.$}
-     **/
+     */
     gnd.$.prototype.attrRemove = function ( attr )
     {
         // If no attribute was provided
@@ -1390,8 +1362,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Get a data attribute value
@@ -1403,7 +1374,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {string|boolean}
-     **/
+     */
     gnd.$.prototype.dataGet = function ( data )
     {
         // If no data attribute was provided
@@ -1418,8 +1389,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Adds a data attribute to elem
@@ -1435,7 +1405,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.dataSet = function ( data, value )
     {
         // If no data attribute or value were provided
@@ -1450,8 +1420,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Removes a data attribute from elem
@@ -1463,7 +1432,7 @@ gnd.$ = function ( selector, context )
      *********
      *
      * @return {object}
-     **/
+     */
     gnd.$.prototype.dataRemove = function ( data )
     {
         // If no data attribute was provided

@@ -16,29 +16,27 @@
 
 /**
  * @class
- **/
+ */
 gnd.array = {};
 
     /**
      * @class
-     **/
+     */
     gnd.array.is = {};
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @borrows Array.isArray
-         **/
+         */
         gnd.array.is.array = Array.isArray;
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Determine if an array is empty
@@ -50,7 +48,7 @@ gnd.array = {};
          *********
          *
          * @return {boolean}
-         **/
+         */
         gnd.array.is.empty = function ( arr )
         {
             return ( arr.length == 0 );
@@ -59,8 +57,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -75,7 +72,7 @@ gnd.array = {};
      *********
      *
      * @return {boolean}
-     **/
+     */
     gnd.array.contains = function ( arr, value )
     {
         return Array.prototype.indexOf.call( arr, value ) != -1;
@@ -84,8 +81,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Does an array contain a value
@@ -100,7 +96,7 @@ gnd.array = {};
      *********
      *
      * @return void
-     **/
+     */
     gnd.array.insert = function ( arr, value )
     {
         if ( !gnd.array.contains( arr, value ) ) {

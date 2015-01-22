@@ -28,7 +28,7 @@
 
 /**
  * @class
- **/
+ */
 gnd.ui = {};
 
     /**
@@ -38,7 +38,7 @@ gnd.ui = {};
      *  The dom selector function to use
      *
      * @extends {gnd.$}
-     **/
+     */
     gnd.ui.$ = gnd.dom.$;
 
     /**
@@ -48,7 +48,7 @@ gnd.ui = {};
      *  Object of components created that need to be referenced globally
      *
      * @type {object}
-     **/
+     */
     gnd.ui.components = {};
 
     /**
@@ -56,7 +56,7 @@ gnd.ui = {};
      *
      * @desc
      *  Topics for components
-     **/
+     */
     gnd.ui.Topics = {};
 
         /**
@@ -74,7 +74,7 @@ gnd.ui = {};
          *     ,    { callback, scope }
          *     ]
          * }
-         **/
+         */
         gnd.ui.Topics.topics = {};
 
         /**
@@ -84,14 +84,13 @@ gnd.ui = {};
          *  The subscribed topics
          *
          * @type {object}
-         **/
+         */
         gnd.ui.Topics._topics = {};
 
         /**
          * @class
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Handles topic callbacks for this component
@@ -104,7 +103,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.Topic = function ( topicName )
         {
             var
@@ -144,8 +143,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Subscribe a callback method to a topic
@@ -161,7 +159,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.subscribeToTopic = function ( callback, scope )
         {
             // Determine if scope is a valid object
@@ -204,8 +202,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Subscribe a callback method to a topic
@@ -221,7 +218,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.unSubscribeFromTopic = function ( callback, scope )
         {
             // If the callback is not a string
@@ -260,8 +257,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Trigger a topic's callback methods to fire
@@ -271,7 +267,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.triggerTopic = function ()
         {
             var
@@ -298,8 +294,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Unsubscribe all callback methods from a topic
@@ -309,7 +304,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.unSubscribeAllFromTopic = function ()
         {
             // Re-set topics to empty array
@@ -322,8 +317,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Unsubscribe all callback methods from a topic
@@ -339,7 +333,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.handleTopics = function ( topics, remove )
         {
             // Determine if topics is a valid object
@@ -394,8 +388,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Remove all topics
@@ -405,7 +398,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The topic
-         **/
+         */
         gnd.ui.Topics.removeTopics = function ()
         {
             // Re-set topic objects to empty object
@@ -421,7 +414,7 @@ gnd.ui = {};
      *
      * @desc
      *  Helpers for components
-     **/
+     */
     gnd.ui.Helpers = {};
 
         /**
@@ -431,14 +424,13 @@ gnd.ui = {};
          *  The accepted options for the model
          *
          * @type {array}
-         **/
+         */
         gnd.ui.Helpers.__options = [];
 
         /**
          * @method
          *
-         * @author
-         *  MelechMizrachi
+         * @author MelechMizrachi
          *
          * @desc
          *  Set component options
@@ -451,7 +443,7 @@ gnd.ui = {};
          *
          * @return {object}
          *  The component
-         **/
+         */
         gnd.ui.Helpers.__setOptions = function ( options )
         {
             // Determine validity of options object
@@ -499,8 +491,7 @@ gnd.ui = {};
     /**
      * @method
      *
-     * @author
-     *  MelechMizrachi
+     * @author MelechMizrachi
      *
      * @desc
      *  Extend a class
@@ -513,7 +504,7 @@ gnd.ui = {};
      *
      * @return {object}
      *  The extended object
-     **/
+     */
     gnd.ui.extend = function ( objectToMerge )
     {
         var
