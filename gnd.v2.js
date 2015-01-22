@@ -934,6 +934,7 @@ var Utils = {};
  *  @Table_of_Contents
  *
  *  @property                           Object.validate()
+ *  @property                           Object.first()
  *  @property                           Object.clone()
  *  @property                           Object.each()
  *  @property                           Object.extend()
@@ -966,6 +967,29 @@ var Utils = {};
 
         // Always assume object is invalid so return new empty object
         return {};
+    };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Get the first property in a given object
+     *
+     * @param obj {object|array}
+     *  The object
+     *
+     * @return {*}
+     **/
+    Object.first = function ( obj )
+    {
+        for ( var prop in obj ) {
+            if ( obj.hasOwnProperty( prop ) ) {
+                return obj[ prop ];
+            }
+        }
     };
 
     // Define prototype properties
@@ -1004,6 +1028,12 @@ var Utils = {};
                 value : function ( source )
                 {
                     return Object.extend( this, source );
+                }
+            }
+            , 'first' : {
+                value : function ()
+                {
+                    return Object.first( this );
                 }
             }
             , 'validate' : {
