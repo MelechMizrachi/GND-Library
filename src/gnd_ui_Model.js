@@ -30,8 +30,7 @@
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  The model for a ui component

@@ -70,8 +70,7 @@
 /**
  * @class Dom
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  GND Library Dom Class

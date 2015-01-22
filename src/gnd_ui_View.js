@@ -33,8 +33,7 @@
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  The view for a ui component/element/node

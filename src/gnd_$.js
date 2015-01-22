@@ -48,8 +48,7 @@
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  gnd.dom.$ initializer
@@ -1445,8 +1444,7 @@ gnd.$ = function ( selector, context )
     };
 
 /**
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  Set the Init prototype as gnd.$'s prototype

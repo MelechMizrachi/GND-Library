@@ -2567,8 +2567,7 @@ gnd.xhr = {};
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  gnd.dom.$ initializer
@@ -3964,8 +3963,7 @@ gnd.$ = function ( selector, context )
     };
 
 /**
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  Set the Init prototype as gnd.$'s prototype
@@ -4878,8 +4876,7 @@ gnd.ui = {};
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  The model for a ui component
@@ -5290,8 +5287,7 @@ gnd.ui.Model = function ( attributes, options )
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  A collection of ui components/elements/nodes
@@ -5808,8 +5804,7 @@ gnd.ui.Collection = function ( options )
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  The view for a ui component/element/node

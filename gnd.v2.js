@@ -1164,8 +1164,7 @@ var Utils = {};
 /**
  * @class Ajax
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  GND Library Ajax Class
@@ -2036,8 +2035,7 @@ var Cookies = {};
 /**
  * @class Dom
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  GND Library Dom Class
@@ -4173,8 +4171,7 @@ var Template = function ( objToMerge )
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  Handles topic callbacks for this component

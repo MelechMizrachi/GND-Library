@@ -19,8 +19,7 @@
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  Handles topic callbacks for this component

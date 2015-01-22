@@ -20,8 +20,7 @@
 /**
  * @class Ajax
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  GND Library Ajax Class

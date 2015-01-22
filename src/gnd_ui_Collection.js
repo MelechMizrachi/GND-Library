@@ -32,8 +32,7 @@
 /**
  * @class
  *
- * @author
- *  MelechMizrachi
+ * @author MelechMizrachi
  *
  * @desc
  *  A collection of ui components/elements/nodes
