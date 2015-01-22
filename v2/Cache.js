@@ -24,22 +24,92 @@ var Cache = {};
 
 (function ()
 {
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Get a cached item
+     *
+     * @param key {string}
+     *  The key to retrieve
+     *
+     * @return {*}
+     **/
     Cache.get = function ( key )
     {
         return JSON.parse( localStorage.getItem( key ) );
     };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Set a cached item
+     *
+     * @param key {string}
+     *  The key to set
+     * @param value {*}
+     *  The value to set
+     *
+     * @return {*}
+     **/
     Cache.set = function ( key, value )
     {
         return localStorage.setItem( key, JSON.stringify( value ) );
     };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Get the amount of items cached
+     *
+     * @return {number}
+     **/
     Cache.len = function ()
     {
         return localStorage.length;
     };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Delete a cached item
+     *
+     * @param key {string}
+     *  The key to delete
+     *
+     * @returns {*}
+     **/
     Cache.del = function ( key )
     {
         return localStorage.removeItem( key );
     };
+
+    /**
+     * @method
+     *
+     * @author
+     *  MelechMizrachi
+     *
+     * @desc
+     *  Clear all cached items
+     *
+     * @returns {*}
+     **/
     Cache.clear = function ()
     {
         return localStorage.clear();
