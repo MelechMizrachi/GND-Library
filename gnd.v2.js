@@ -3425,7 +3425,7 @@ var Dom = function ( selector, context )
      **/
     Dom.scrollTop = function ()
     {
-        return document.body.scrollTop;
+        return window.scrollY;
     };
 
     /**
