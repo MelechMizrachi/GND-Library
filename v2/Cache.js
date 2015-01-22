@@ -35,7 +35,7 @@ var Cache = {};
      * @param key {string}
      *  The key to retrieve
      *
-     * @return {*}
+     * @returns {*}
      */
     Cache.get = function ( key )
     {
@@ -55,7 +55,7 @@ var Cache = {};
      * @param value {*}
      *  The value to set
      *
-     * @return {*}
+     * @returns {*}
      */
     Cache.set = function ( key, value )
     {
@@ -70,7 +70,7 @@ var Cache = {};
      * @desc
      *  Get the amount of items cached
      *
-     * @return {number}
+     * @returns {number}
      */
     Cache.len = function ()
     {

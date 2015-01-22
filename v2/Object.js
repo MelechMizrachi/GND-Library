@@ -26,7 +26,7 @@
      * @param toTest {object}
      *  The object to validate
      *
-     * @return {object}
+     * @returns {object}
      */
     Object.validate = function ( toTest )
     {
@@ -51,7 +51,7 @@
      * @param obj {object|array}
      *  The object
      *
-     * @return {*}
+     * @returns {*}
      */
     Object.first = function ( obj )
     {

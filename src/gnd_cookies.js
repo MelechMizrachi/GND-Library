@@ -38,7 +38,7 @@ gnd.cookies = {};
      *  The cookie key
      *********
      *
-     * @return {*}
+     * @returns {*}
      *  The cookie value
      */
     gnd.cookies.get = function ( key )
@@ -89,7 +89,7 @@ gnd.cookies = {};
      *  The cookie key
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was set or not
      */
     gnd.cookies.set = function ( key, value, expires, path, domain, isSecure )
@@ -178,7 +178,7 @@ gnd.cookies = {};
      *  The cookie domain
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was removed or not
      */
     gnd.cookies.remove = function ( key, path, domain )
@@ -222,7 +222,7 @@ gnd.cookies = {};
      *  The cookie key
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie exists or not
      */
     gnd.cookies.has = function ( key )
@@ -249,7 +249,7 @@ gnd.cookies = {};
      * @params
      *********
      *
-     * @return {array}
+     * @returns {array}
      *  The keys
      */
     gnd.cookies.keys = function ()
@@ -285,7 +285,7 @@ gnd.cookies = {};
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The cookies
      */
     gnd.cookies.getAll = function ()

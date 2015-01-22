@@ -47,7 +47,7 @@
  * @extends gnd.ui.Topics
  * @extends gnd.ui.Helpers
  *
- * @return void
+ * @returns void
  */
 gnd.ui.View = function ( options )
 {
@@ -192,7 +192,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.init = function ()
@@ -217,7 +217,7 @@ gnd.ui.View = function ( options )
      *  The selector to use to find the elem's child
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The child of elem
      */
     gnd.ui.View.prototype.$ = function ( selector )
@@ -243,7 +243,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.render = function ()
@@ -273,7 +273,7 @@ gnd.ui.View = function ( options )
      *  (Default) true
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.setElement = function ( element, delegateEvents )
@@ -310,7 +310,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.remove = function ()
@@ -348,7 +348,7 @@ gnd.ui.View = function ( options )
      *  Whether to delete the event or not
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     gnd.ui.View.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
@@ -415,7 +415,7 @@ gnd.ui.View = function ( options )
      *  The event to trigger
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     gnd.ui.View.prototype.triggerEvent = function ( event )
@@ -462,7 +462,7 @@ gnd.ui.View = function ( options )
      *  Whether to add/remove the event
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.handleEvents = function ( events, removeEvent )
@@ -505,7 +505,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.ui.View.prototype.undelegateEvents = function ()
     {
@@ -527,7 +527,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.ui.View.prototype.__ensureElement = function ()
     {

@@ -47,7 +47,7 @@
  * @extends gnd.ui.Topics
  * @extends gnd.ui.Helpers
  *
- * @return void
+ * @returns void
  */
 gnd.ui.Model = function ( attributes, options )
 {
@@ -146,7 +146,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model
      */
     gnd.ui.Model.prototype.init = function ()
@@ -168,7 +168,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's attributes
      */
     gnd.ui.Model.prototype.toJSON = function ()
@@ -191,7 +191,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to return
      *********
      *
-     * @return {*}
+     * @returns {*}
      *  The requested attribute
      */
     gnd.ui.Model.prototype.get = function ( attribute )
@@ -218,7 +218,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute value
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model
      */
     gnd.ui.Model.prototype.set = function ( attribute, attributeValue )
@@ -244,7 +244,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.ui.Model.prototype.has = function ( attribute )
     {
@@ -272,7 +272,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.ui.Model.prototype.hasChanged = function ( attribute )
     {
@@ -302,7 +302,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's changed attributes
      */
     gnd.ui.Model.prototype.getChangedAttributes = function ()
@@ -325,7 +325,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to test for
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's previous attributes
      */
     gnd.ui.Model.prototype.getPrevious = function ( attribute )
@@ -345,7 +345,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's attributes
      */
     gnd.ui.Model.prototype.getPreviousAttributes = function ()
@@ -368,7 +368,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Attributes passed for the model
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model
      */
     gnd.ui.Model.prototype.__setAttributes = function ( attributes )

@@ -68,7 +68,7 @@ gnd.userAgent = {};
      *  The value to test if userAgent contains it
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.userAgent.contains = function ( value )
     {

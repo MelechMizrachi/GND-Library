@@ -58,7 +58,7 @@ var UserAgent = {};
      * @param value {string}
      *  The value to test if userAgent contains it
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     UserAgent.contains = function ( value )
     {

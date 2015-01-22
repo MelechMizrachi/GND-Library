@@ -45,7 +45,7 @@ gnd.utils = {};
      *  The callback for each item
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.utils.each = function ( items, callback )
     {
@@ -87,7 +87,7 @@ gnd.utils = {};
      *  The object to merge into
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.utils.merge = function ( mergeInto, mergeThis )
     {
@@ -109,7 +109,7 @@ gnd.utils = {};
      *  The object to clone
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.utils.cloneObject = function ( toClone )
     {
@@ -140,7 +140,7 @@ gnd.utils = {};
      *  The object to validate
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.utils.validateObject = function ( toTest )
     {

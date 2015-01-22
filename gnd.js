@@ -76,7 +76,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      * @type    {string}
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.isTypeOf = function ( toTest, type )
     {
@@ -97,7 +97,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      * @type    {...}
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The extended object
      */
     gnd.extend = function ( obj, source )
@@ -161,7 +161,7 @@ gnd.array = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.array.is.empty = function ( arr )
         {
@@ -185,7 +185,7 @@ gnd.array = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.array.contains = function ( arr, value )
     {
@@ -209,7 +209,7 @@ gnd.array = {};
      *  The value to test for
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.array.insert = function ( arr, value )
     {
@@ -265,7 +265,7 @@ gnd.object = {};
      *  The key to test for
      *********
      *
-     * @return {boolean|Object.prototype.hasOwnProperty}
+     * @returns {boolean|Object.prototype.hasOwnProperty}
      */
     gnd.object.hasOwn = function ( obj, key )
     {
@@ -291,7 +291,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.object = function ( obj )
         {
@@ -312,7 +312,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.domElement = function ( elem )
         {
@@ -333,7 +333,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.nodeList = function ( nodeList )
         {
@@ -354,7 +354,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.htmlCollection = function ( htmlCollection )
         {
@@ -375,7 +375,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.htmlList = function ( htmlList )
         {
@@ -396,7 +396,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.window = function ( win )
         {
@@ -417,7 +417,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.document = function ( doc )
         {
@@ -438,7 +438,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.empty = function ( obj )
         {
@@ -480,7 +480,7 @@ gnd.object = {};
          *  The default if undefined
          *********
          *
-         * @return {*}
+         * @returns {*}
          */
         gnd.object.get.byPath = function ( obj, path, def )
         {
@@ -501,7 +501,7 @@ gnd.object = {};
          *  The object
          *********
          *
-         * @return {*}
+         * @returns {*}
          */
         gnd.object.get.firstProp = function ( obj )
         {
@@ -540,7 +540,7 @@ gnd.object = {};
          *  The default if undefined
          *********
          *
-         * @return {*}
+         * @returns {*}
          */
         gnd.object.set.byPath = function ( obj, path, value, def )
         {
@@ -578,7 +578,7 @@ gnd.object = {};
      *  The default if undefined
      *********
      *
-     * @return {*}
+     * @returns {*}
      */
     gnd.object.handlePath = function ( type, obj, path, value, def )
     {
@@ -684,7 +684,7 @@ gnd.string = {};
      *  The string to make safe
      *********
      *
-     * @return {string}
+     * @returns {string}
      */
     gnd.string.makeSafe = function ( value )
     {
@@ -713,7 +713,7 @@ gnd.string = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.string.is.string = function ( toTest )
         {
@@ -734,7 +734,7 @@ gnd.string = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.string.is.numeric = function ( toTest )
         {
@@ -755,7 +755,7 @@ gnd.string = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.string.is.empty = function ( toTest )
         {
@@ -785,7 +785,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.contains = function ( toTest, value )
     {
@@ -814,7 +814,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.containsInsensitive = function ( toTest, value )
     {
@@ -842,7 +842,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.compare = function ( toTest, value )
     {
@@ -867,7 +867,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.compareInsensitive = function ( toTest, value )
     {
@@ -917,7 +917,7 @@ gnd.cookies = {};
      *  The cookie key
      *********
      *
-     * @return {*}
+     * @returns {*}
      *  The cookie value
      */
     gnd.cookies.get = function ( key )
@@ -968,7 +968,7 @@ gnd.cookies = {};
      *  The cookie key
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was set or not
      */
     gnd.cookies.set = function ( key, value, expires, path, domain, isSecure )
@@ -1057,7 +1057,7 @@ gnd.cookies = {};
      *  The cookie domain
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was removed or not
      */
     gnd.cookies.remove = function ( key, path, domain )
@@ -1101,7 +1101,7 @@ gnd.cookies = {};
      *  The cookie key
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie exists or not
      */
     gnd.cookies.has = function ( key )
@@ -1128,7 +1128,7 @@ gnd.cookies = {};
      * @params
      *********
      *
-     * @return {array}
+     * @returns {array}
      *  The keys
      */
     gnd.cookies.keys = function ()
@@ -1164,7 +1164,7 @@ gnd.cookies = {};
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The cookies
      */
     gnd.cookies.getAll = function ()
@@ -1272,7 +1272,7 @@ gnd.userAgent = {};
      *  The value to test if userAgent contains it
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.userAgent.contains = function ( value )
     {
@@ -1651,7 +1651,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.$ = function ( toTest )
     {
@@ -1672,7 +1672,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.bool = function ( toTest )
     {
@@ -1693,7 +1693,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.func = function ( toTest )
     {
@@ -1714,7 +1714,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.invalid = function ( toTest )
     {
@@ -1738,7 +1738,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.undefined = function ( toTest )
     {
@@ -1980,7 +1980,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.info = function ()
     {
@@ -2002,7 +2002,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.warn = function ()
     {
@@ -2024,7 +2024,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.debug = function ()
     {
@@ -2046,7 +2046,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.error = function ()
     {
@@ -2068,7 +2068,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.time = function ()
     {
@@ -2090,7 +2090,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.timeEnd = function ()
     {
@@ -2145,7 +2145,7 @@ gnd.utils = {};
      *  The callback for each item
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.utils.each = function ( items, callback )
     {
@@ -2187,7 +2187,7 @@ gnd.utils = {};
      *  The object to merge into
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.utils.merge = function ( mergeInto, mergeThis )
     {
@@ -2209,7 +2209,7 @@ gnd.utils = {};
      *  The object to clone
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.utils.cloneObject = function ( toClone )
     {
@@ -2240,7 +2240,7 @@ gnd.utils = {};
      *  The object to validate
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.utils.validateObject = function ( toTest )
     {
@@ -2298,7 +2298,7 @@ gnd.xhr = {};
      *  The options for the ajax request
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The xhr call
      */
     gnd.xhr.ajax = function ( url, options )
@@ -2581,7 +2581,7 @@ gnd.xhr = {};
  *  The context to use
  *********
  *
- * @return gnd.$.Init
+ * @returns gnd.$.Init
  */
 gnd.$ = function ( selector, context )
 {
@@ -2605,7 +2605,7 @@ gnd.$ = function ( selector, context )
      *  The context to use
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      *  The gnd.dom.$ object
      */
     gnd.$.Init = function ( selector, context )
@@ -2712,7 +2712,7 @@ gnd.$ = function ( selector, context )
      *  The event string
      *********
      *
-     * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
+     * @returns {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
      */
     gnd.$.prototype.getElements = function ( parent, selector )
@@ -2795,7 +2795,7 @@ gnd.$ = function ( selector, context )
      *  The selector to use
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      *  The requested child
      */
     gnd.$.prototype.find = function ( selector )
@@ -2814,7 +2814,7 @@ gnd.$ = function ( selector, context )
      * @params
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      *  The parent
      */
     gnd.$.prototype.parent = function ()
@@ -2836,7 +2836,7 @@ gnd.$ = function ( selector, context )
      *  The elem index to get
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.get = function ( index )
     {
@@ -2868,7 +2868,7 @@ gnd.$ = function ( selector, context )
      *  The type to use
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.closest = function ( selector, element )
     {
@@ -2954,7 +2954,7 @@ gnd.$ = function ( selector, context )
      * @params
      *********
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.$.prototype.getLength = function ()
     {
@@ -2991,7 +2991,7 @@ gnd.$ = function ( selector, context )
      *  The callback method
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
@@ -3099,7 +3099,7 @@ gnd.$ = function ( selector, context )
      *  The callback method
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.on = function ( eventType, selector, callback )
     {
@@ -3131,7 +3131,7 @@ gnd.$ = function ( selector, context )
      *  The callback method
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.off = function ( eventType, selector, callback )
     {
@@ -3174,7 +3174,7 @@ gnd.$ = function ( selector, context )
      *  The child node to attach event to
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.trigger = function ( eventType, selector )
     {
@@ -3199,7 +3199,7 @@ gnd.$ = function ( selector, context )
      *  The value to overwrite with
      *********
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     gnd.$.prototype.val = function ( value )
     {
@@ -3248,7 +3248,7 @@ gnd.$ = function ( selector, context )
      *  The text to overwrite with
      *********
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     gnd.$.prototype.text = function ( text )
     {
@@ -3275,7 +3275,7 @@ gnd.$ = function ( selector, context )
      *  (Default) html
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.html = function ( html, type )
     {
@@ -3335,7 +3335,7 @@ gnd.$ = function ( selector, context )
      *  The html to overwrite with
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.append = function ( html )
     {
@@ -3357,7 +3357,7 @@ gnd.$ = function ( selector, context )
      *  The html to overwrite with
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.prepend = function ( html )
     {
@@ -3383,7 +3383,7 @@ gnd.$ = function ( selector, context )
      *  The html to overwrite with
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.handleHTML = function ( type, html )
     {
@@ -3445,7 +3445,7 @@ gnd.$ = function ( selector, context )
      *  The elem to use
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.handlePend = function ( type, nodes, elem )
     {
@@ -3511,7 +3511,7 @@ gnd.$ = function ( selector, context )
      *  The elem to use
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.empty = function ( elem )
     {
@@ -3540,7 +3540,7 @@ gnd.$ = function ( selector, context )
      *  The elem to use
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.remove = function ( elem )
     {
@@ -3585,7 +3585,7 @@ gnd.$ = function ( selector, context )
      *  The type of class manipulation to do
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.handleClass = function ( className, type )
     {
@@ -3667,7 +3667,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to add
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.addClass = function ( className )
     {
@@ -3688,7 +3688,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to remove
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.removeClass = function ( className )
     {
@@ -3710,7 +3710,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to check for
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.toggleClass = function ( className )
     {
@@ -3732,7 +3732,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to check for
      *********
      *
-     * @return {boolean|object}
+     * @returns {boolean|object}
      */
     gnd.$.prototype.hasClass = function ( className )
     {
@@ -3770,7 +3770,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to get
      *********
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     gnd.$.prototype.attrGet = function ( attr )
     {
@@ -3801,7 +3801,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to add to
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      */
     gnd.$.prototype.attrSet = function ( attr, value )
     {
@@ -3846,7 +3846,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to remove
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      */
     gnd.$.prototype.attrRemove = function ( attr )
     {
@@ -3891,7 +3891,7 @@ gnd.$ = function ( selector, context )
      *  The data attribute to get
      *********
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     gnd.$.prototype.dataGet = function ( data )
     {
@@ -3922,7 +3922,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to add to
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.dataSet = function ( data, value )
     {
@@ -3949,7 +3949,7 @@ gnd.$ = function ( selector, context )
      *  The data to remove
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.dataRemove = function ( data )
     {
@@ -4102,7 +4102,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.dom.getDocument = function ()
     {
@@ -4119,7 +4119,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.dom.getWindow = function ()
     {
@@ -4136,7 +4136,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.windowWidth = function ()
     {
@@ -4153,7 +4153,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.windowHeight = function ()
     {
@@ -4170,7 +4170,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.scrollTop = function ()
     {
@@ -4187,7 +4187,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.documentWidth = function ()
     {
@@ -4204,7 +4204,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.documentHeight = function ()
     {
@@ -4225,7 +4225,7 @@ gnd.dom = {};
      *  The HTML string to parse
      *********
      *
-     * @return {HTMLDocument}
+     * @returns {HTMLDocument}
      */
     gnd.dom.parseHTML = function ( html )
     {
@@ -4408,7 +4408,7 @@ gnd.ui = {};
          *  The topic name
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.Topic = function ( topicName )
@@ -4464,7 +4464,7 @@ gnd.ui = {};
          *  The scope
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.subscribeToTopic = function ( callback, scope )
@@ -4523,7 +4523,7 @@ gnd.ui = {};
          *  The scope
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.unSubscribeFromTopic = function ( callback, scope )
@@ -4572,7 +4572,7 @@ gnd.ui = {};
          * @params
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.triggerTopic = function ()
@@ -4609,7 +4609,7 @@ gnd.ui = {};
          * @params
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.unSubscribeAllFromTopic = function ()
@@ -4638,7 +4638,7 @@ gnd.ui = {};
          *  Whether to remove the topics or not
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.handleTopics = function ( topics, remove )
@@ -4703,7 +4703,7 @@ gnd.ui = {};
          * @params
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.removeTopics = function ()
@@ -4748,7 +4748,7 @@ gnd.ui = {};
          *  Options passed for component
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The component
          */
         gnd.ui.Helpers.__setOptions = function ( options )
@@ -4809,7 +4809,7 @@ gnd.ui = {};
      *  The object to merge
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The extended object
      */
     gnd.ui.extend = function ( objectToMerge )
@@ -4893,7 +4893,7 @@ gnd.ui = {};
  * @extends gnd.ui.Topics
  * @extends gnd.ui.Helpers
  *
- * @return void
+ * @returns void
  */
 gnd.ui.Model = function ( attributes, options )
 {
@@ -4992,7 +4992,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model
      */
     gnd.ui.Model.prototype.init = function ()
@@ -5014,7 +5014,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's attributes
      */
     gnd.ui.Model.prototype.toJSON = function ()
@@ -5037,7 +5037,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to return
      *********
      *
-     * @return {*}
+     * @returns {*}
      *  The requested attribute
      */
     gnd.ui.Model.prototype.get = function ( attribute )
@@ -5064,7 +5064,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute value
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model
      */
     gnd.ui.Model.prototype.set = function ( attribute, attributeValue )
@@ -5090,7 +5090,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.ui.Model.prototype.has = function ( attribute )
     {
@@ -5118,7 +5118,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.ui.Model.prototype.hasChanged = function ( attribute )
     {
@@ -5148,7 +5148,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's changed attributes
      */
     gnd.ui.Model.prototype.getChangedAttributes = function ()
@@ -5171,7 +5171,7 @@ gnd.ui.Model = function ( attributes, options )
      *  The attribute to test for
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's previous attributes
      */
     gnd.ui.Model.prototype.getPrevious = function ( attribute )
@@ -5191,7 +5191,7 @@ gnd.ui.Model = function ( attributes, options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model's attributes
      */
     gnd.ui.Model.prototype.getPreviousAttributes = function ()
@@ -5214,7 +5214,7 @@ gnd.ui.Model = function ( attributes, options )
      *  Attributes passed for the model
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The model
      */
     gnd.ui.Model.prototype.__setAttributes = function ( attributes )
@@ -5301,7 +5301,7 @@ gnd.ui.Model = function ( attributes, options )
  * @extends gnd.ui.Topics
  * @extends gnd.ui.Helpers
  *
- * @return void
+ * @returns void
  */
 gnd.ui.Collection = function ( options )
 {
@@ -5411,7 +5411,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The collection
      */
     gnd.ui.Collection.prototype.init = function ()
@@ -5433,7 +5433,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The collection
      */
     gnd.ui.Collection.prototype.setViews = function ()
@@ -5493,7 +5493,7 @@ gnd.ui.Collection = function ( options )
      *  The view to add to the collection
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The collection
      */
     gnd.ui.Collection.prototype.addView = function ( view )
@@ -5557,7 +5557,7 @@ gnd.ui.Collection = function ( options )
      *  The model to find by
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.findViewByModel = function ( model )
@@ -5586,7 +5586,7 @@ gnd.ui.Collection = function ( options )
      *  The model id to find by
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested View
      */
     gnd.ui.Collection.prototype.findViewByModelID = function ( sID )
@@ -5618,7 +5618,7 @@ gnd.ui.Collection = function ( options )
      *  The id to find by
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.findViewByID = function ( sID )
@@ -5647,7 +5647,7 @@ gnd.ui.Collection = function ( options )
      *  Int of the nth view to get
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.getNthView = function ( nthItem )
@@ -5673,7 +5673,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.getLastView = function ()
@@ -5699,7 +5699,7 @@ gnd.ui.Collection = function ( options )
      *  Int of the nth view to get
      *********
      *
-     * @return {boolean|string}
+     * @returns {boolean|string}
      *  The view id
      */
     gnd.ui.Collection.prototype.getNthViewID = function ( nthItem )
@@ -5725,7 +5725,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {string}
+     * @returns {string}
      *  The view id
      */
     gnd.ui.Collection.prototype.getLastViewID = function ()
@@ -5745,7 +5745,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {number}
+     * @returns {number}
      *  The collection id
      */
     gnd.ui.Collection.prototype.getLastCollectionID = function ()
@@ -5818,7 +5818,7 @@ gnd.ui.Collection = function ( options )
  * @extends gnd.ui.Topics
  * @extends gnd.ui.Helpers
  *
- * @return void
+ * @returns void
  */
 gnd.ui.View = function ( options )
 {
@@ -5963,7 +5963,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.init = function ()
@@ -5988,7 +5988,7 @@ gnd.ui.View = function ( options )
      *  The selector to use to find the elem's child
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The child of elem
      */
     gnd.ui.View.prototype.$ = function ( selector )
@@ -6014,7 +6014,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.render = function ()
@@ -6044,7 +6044,7 @@ gnd.ui.View = function ( options )
      *  (Default) true
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.setElement = function ( element, delegateEvents )
@@ -6081,7 +6081,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.remove = function ()
@@ -6119,7 +6119,7 @@ gnd.ui.View = function ( options )
      *  Whether to delete the event or not
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     gnd.ui.View.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
@@ -6186,7 +6186,7 @@ gnd.ui.View = function ( options )
      *  The event to trigger
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     gnd.ui.View.prototype.triggerEvent = function ( event )
@@ -6233,7 +6233,7 @@ gnd.ui.View = function ( options )
      *  Whether to add/remove the event
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     gnd.ui.View.prototype.handleEvents = function ( events, removeEvent )
@@ -6276,7 +6276,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.ui.View.prototype.undelegateEvents = function ()
     {
@@ -6298,7 +6298,7 @@ gnd.ui.View = function ( options )
      * @params
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.ui.View.prototype.__ensureElement = function ()
     {

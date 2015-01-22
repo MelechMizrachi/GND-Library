@@ -51,7 +51,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.info = function ()
     {
@@ -73,7 +73,7 @@ var Logger = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     Logger.warn = function ()
     {
@@ -92,7 +92,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.debug = function ()
     {
@@ -111,7 +111,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.error = function ()
     {
@@ -130,7 +130,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.time = function ()
     {
@@ -149,7 +149,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.timeEnd = function ()
     {

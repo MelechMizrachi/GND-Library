@@ -37,7 +37,7 @@ gnd.string = {};
      *  The string to make safe
      *********
      *
-     * @return {string}
+     * @returns {string}
      */
     gnd.string.makeSafe = function ( value )
     {
@@ -66,7 +66,7 @@ gnd.string = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.string.is.string = function ( toTest )
         {
@@ -87,7 +87,7 @@ gnd.string = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.string.is.numeric = function ( toTest )
         {
@@ -108,7 +108,7 @@ gnd.string = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.string.is.empty = function ( toTest )
         {
@@ -138,7 +138,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.contains = function ( toTest, value )
     {
@@ -167,7 +167,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.containsInsensitive = function ( toTest, value )
     {
@@ -195,7 +195,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.compare = function ( toTest, value )
     {
@@ -220,7 +220,7 @@ gnd.string = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.string.compareInsensitive = function ( toTest, value )
     {

@@ -62,7 +62,7 @@
  *  The context to use
  *********
  *
- * @return gnd.$.Init
+ * @returns gnd.$.Init
  */
 gnd.$ = function ( selector, context )
 {
@@ -86,7 +86,7 @@ gnd.$ = function ( selector, context )
      *  The context to use
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      *  The gnd.dom.$ object
      */
     gnd.$.Init = function ( selector, context )
@@ -193,7 +193,7 @@ gnd.$ = function ( selector, context )
      *  The event string
      *********
      *
-     * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
+     * @returns {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
      */
     gnd.$.prototype.getElements = function ( parent, selector )
@@ -276,7 +276,7 @@ gnd.$ = function ( selector, context )
      *  The selector to use
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      *  The requested child
      */
     gnd.$.prototype.find = function ( selector )
@@ -295,7 +295,7 @@ gnd.$ = function ( selector, context )
      * @params
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      *  The parent
      */
     gnd.$.prototype.parent = function ()
@@ -317,7 +317,7 @@ gnd.$ = function ( selector, context )
      *  The elem index to get
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.get = function ( index )
     {
@@ -349,7 +349,7 @@ gnd.$ = function ( selector, context )
      *  The type to use
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.closest = function ( selector, element )
     {
@@ -435,7 +435,7 @@ gnd.$ = function ( selector, context )
      * @params
      *********
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.$.prototype.getLength = function ()
     {
@@ -472,7 +472,7 @@ gnd.$ = function ( selector, context )
      *  The callback method
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
@@ -580,7 +580,7 @@ gnd.$ = function ( selector, context )
      *  The callback method
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.on = function ( eventType, selector, callback )
     {
@@ -612,7 +612,7 @@ gnd.$ = function ( selector, context )
      *  The callback method
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.off = function ( eventType, selector, callback )
     {
@@ -655,7 +655,7 @@ gnd.$ = function ( selector, context )
      *  The child node to attach event to
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.trigger = function ( eventType, selector )
     {
@@ -680,7 +680,7 @@ gnd.$ = function ( selector, context )
      *  The value to overwrite with
      *********
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     gnd.$.prototype.val = function ( value )
     {
@@ -729,7 +729,7 @@ gnd.$ = function ( selector, context )
      *  The text to overwrite with
      *********
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     gnd.$.prototype.text = function ( text )
     {
@@ -756,7 +756,7 @@ gnd.$ = function ( selector, context )
      *  (Default) html
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.html = function ( html, type )
     {
@@ -816,7 +816,7 @@ gnd.$ = function ( selector, context )
      *  The html to overwrite with
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.append = function ( html )
     {
@@ -838,7 +838,7 @@ gnd.$ = function ( selector, context )
      *  The html to overwrite with
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.prepend = function ( html )
     {
@@ -864,7 +864,7 @@ gnd.$ = function ( selector, context )
      *  The html to overwrite with
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.handleHTML = function ( type, html )
     {
@@ -926,7 +926,7 @@ gnd.$ = function ( selector, context )
      *  The elem to use
      *********
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     gnd.$.prototype.handlePend = function ( type, nodes, elem )
     {
@@ -992,7 +992,7 @@ gnd.$ = function ( selector, context )
      *  The elem to use
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.empty = function ( elem )
     {
@@ -1021,7 +1021,7 @@ gnd.$ = function ( selector, context )
      *  The elem to use
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.remove = function ( elem )
     {
@@ -1066,7 +1066,7 @@ gnd.$ = function ( selector, context )
      *  The type of class manipulation to do
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.handleClass = function ( className, type )
     {
@@ -1148,7 +1148,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to add
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.addClass = function ( className )
     {
@@ -1169,7 +1169,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to remove
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.removeClass = function ( className )
     {
@@ -1191,7 +1191,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to check for
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.toggleClass = function ( className )
     {
@@ -1213,7 +1213,7 @@ gnd.$ = function ( selector, context )
      *  The class or classes to check for
      *********
      *
-     * @return {boolean|object}
+     * @returns {boolean|object}
      */
     gnd.$.prototype.hasClass = function ( className )
     {
@@ -1251,7 +1251,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to get
      *********
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     gnd.$.prototype.attrGet = function ( attr )
     {
@@ -1282,7 +1282,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to add to
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      */
     gnd.$.prototype.attrSet = function ( attr, value )
     {
@@ -1327,7 +1327,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to remove
      *********
      *
-     * @return {gnd.$}
+     * @returns {gnd.$}
      */
     gnd.$.prototype.attrRemove = function ( attr )
     {
@@ -1372,7 +1372,7 @@ gnd.$ = function ( selector, context )
      *  The data attribute to get
      *********
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     gnd.$.prototype.dataGet = function ( data )
     {
@@ -1403,7 +1403,7 @@ gnd.$ = function ( selector, context )
      *  The attribute to add to
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.dataSet = function ( data, value )
     {
@@ -1430,7 +1430,7 @@ gnd.$ = function ( selector, context )
      *  The data to remove
      *********
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.$.prototype.dataRemove = function ( data )
     {

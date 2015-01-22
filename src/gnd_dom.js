@@ -129,7 +129,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.dom.getDocument = function ()
     {
@@ -146,7 +146,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {object}
+     * @returns {object}
      */
     gnd.dom.getWindow = function ()
     {
@@ -163,7 +163,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.windowWidth = function ()
     {
@@ -180,7 +180,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.windowHeight = function ()
     {
@@ -197,7 +197,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.scrollTop = function ()
     {
@@ -214,7 +214,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.documentWidth = function ()
     {
@@ -231,7 +231,7 @@ gnd.dom = {};
      *
      * @params
      *
-     * @return {number}
+     * @returns {number}
      */
     gnd.dom.documentHeight = function ()
     {
@@ -252,7 +252,7 @@ gnd.dom = {};
      *  The HTML string to parse
      *********
      *
-     * @return {HTMLDocument}
+     * @returns {HTMLDocument}
      */
     gnd.dom.parseHTML = function ( html )
     {

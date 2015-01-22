@@ -41,7 +41,7 @@
  * @param objToMerge {object}
  *  The object to merge
  *
- * @return {object}
+ * @returns {object}
  *  The extended object
  */
 var Template = function ( objToMerge )
@@ -62,7 +62,7 @@ var Template = function ( objToMerge )
      * @param objToMerge {object}
      *  The object to merge
      *
-     * @return {Template}
+     * @returns {Template}
      *  The Template object
      */
     Template.Init = function ( objToMerge )
@@ -99,7 +99,7 @@ var Template = function ( objToMerge )
      * @param [options] {object}
      *  Any custom options for this view
      *
-     * @return void
+     * @returns void
      */
     Template.prototype.render = function ( options )
     {
@@ -223,7 +223,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Initialize Template
      *
-     * @return {Template}
+     * @returns {Template}
      */
     Template.prototype.initialize = function ()
     {
@@ -244,7 +244,7 @@ var Template = function ( objToMerge )
      * @param [selector] {string}
      *  The selector to use to find the elem's child
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The child of elem
      */
     Template.prototype.Dom = function ( selector )
@@ -273,7 +273,7 @@ var Template = function ( objToMerge )
      *  Whether to delegate events
      *  (Default) true
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     Template.prototype.setElement = function ( element, delegateEvents )
@@ -307,7 +307,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Remove View - Remove element from DOM
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     Template.prototype.remove = function ()
@@ -339,7 +339,7 @@ var Template = function ( objToMerge )
      * @param [removeEvent] {boolean}
      *  Whether to delete the event or not
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     Template.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
@@ -403,7 +403,7 @@ var Template = function ( objToMerge )
      * @param event {string}
      *  The event to trigger
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     Template.prototype.triggerEvent = function ( event )
@@ -446,7 +446,7 @@ var Template = function ( objToMerge )
      * @param [removeEvent] {string}
      *  Whether to add/remove the event
      *
-     * @return {Template}
+     * @returns {Template}
      *  The template
      */
     Template.prototype.handleEvents = function ( events, removeEvent )
@@ -486,7 +486,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Undelegate all event handlers
      *
-     * @return {object}
+     * @returns {object}
      */
     Template.prototype.undelegateEvents = function ()
     {
@@ -505,7 +505,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Ensure the view element exists
      *
-     * @return void
+     * @returns void
      */
     Template.prototype.__ensureElement = function ()
     {
@@ -530,7 +530,7 @@ var Template = function ( objToMerge )
      * @param options {object}
      *  Options passed to the Template
      *
-     * @return {Template}
+     * @returns {Template}
      */
     Template.prototype.__setOptions = function ( options )
     {

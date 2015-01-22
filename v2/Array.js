@@ -24,7 +24,7 @@
      * @param toClone {array}
      *  The array to clone
      *
-     * @return {array}
+     * @returns {array}
      */
     Array.clone = function ( toClone )
     {
@@ -44,7 +44,7 @@
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     Array.contains = function ( arr, value )
     {
@@ -64,7 +64,7 @@
      * @param value {string}
      *  The value to test for
      *
-     * @return void
+     * @returns void
      */
     Array.insert = function ( arr, value )
     {

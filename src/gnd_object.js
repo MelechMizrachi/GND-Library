@@ -46,7 +46,7 @@ gnd.object = {};
      *  The key to test for
      *********
      *
-     * @return {boolean|Object.prototype.hasOwnProperty}
+     * @returns {boolean|Object.prototype.hasOwnProperty}
      */
     gnd.object.hasOwn = function ( obj, key )
     {
@@ -72,7 +72,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.object = function ( obj )
         {
@@ -93,7 +93,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.domElement = function ( elem )
         {
@@ -114,7 +114,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.nodeList = function ( nodeList )
         {
@@ -135,7 +135,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.htmlCollection = function ( htmlCollection )
         {
@@ -156,7 +156,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.htmlList = function ( htmlList )
         {
@@ -177,7 +177,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.window = function ( win )
         {
@@ -198,7 +198,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.document = function ( doc )
         {
@@ -219,7 +219,7 @@ gnd.object = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.object.is.empty = function ( obj )
         {
@@ -261,7 +261,7 @@ gnd.object = {};
          *  The default if undefined
          *********
          *
-         * @return {*}
+         * @returns {*}
          */
         gnd.object.get.byPath = function ( obj, path, def )
         {
@@ -282,7 +282,7 @@ gnd.object = {};
          *  The object
          *********
          *
-         * @return {*}
+         * @returns {*}
          */
         gnd.object.get.firstProp = function ( obj )
         {
@@ -321,7 +321,7 @@ gnd.object = {};
          *  The default if undefined
          *********
          *
-         * @return {*}
+         * @returns {*}
          */
         gnd.object.set.byPath = function ( obj, path, value, def )
         {
@@ -359,7 +359,7 @@ gnd.object = {};
      *  The default if undefined
      *********
      *
-     * @return {*}
+     * @returns {*}
      */
     gnd.object.handlePath = function ( type, obj, path, value, def )
     {

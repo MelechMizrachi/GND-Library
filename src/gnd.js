@@ -76,7 +76,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      * @type    {string}
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.isTypeOf = function ( toTest, type )
     {
@@ -97,7 +97,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
      * @type    {...}
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The extended object
      */
     gnd.extend = function ( obj, source )

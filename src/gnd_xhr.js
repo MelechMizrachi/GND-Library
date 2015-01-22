@@ -43,7 +43,7 @@ gnd.xhr = {};
      *  The options for the ajax request
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The xhr call
      */
     gnd.xhr.ajax = function ( url, options )

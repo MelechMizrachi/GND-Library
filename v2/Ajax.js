@@ -30,7 +30,7 @@
  * @param [options] {object}
  *  The options for the ajax request
  *
- * @return {object}
+ * @returns {object}
  *  The xhr call
  */
 var Ajax = function ( url, options )
@@ -63,7 +63,7 @@ var Ajax = function ( url, options )
      * @param [options] {object}
      *  The options for the ajax request
      *
-     * @return {Ajax}
+     * @returns {Ajax}
      *  The xhr call
      */
     Ajax.Init = function ( url, options )

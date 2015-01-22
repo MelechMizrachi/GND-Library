@@ -49,7 +49,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.info = function ()
     {
@@ -71,7 +71,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.warn = function ()
     {
@@ -93,7 +93,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.debug = function ()
     {
@@ -115,7 +115,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.error = function ()
     {
@@ -137,7 +137,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.time = function ()
     {
@@ -159,7 +159,7 @@ gnd.log = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.log.timeEnd = function ()
     {

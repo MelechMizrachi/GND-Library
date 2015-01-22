@@ -37,7 +37,7 @@ var Cookies = {};
      * @param key {string}
      *  The cookie key
      *
-     * @return {*}
+     * @returns {*}
      *  The cookie value
      */
     Cookies.get = function ( key )
@@ -80,7 +80,7 @@ var Cookies = {};
      * @param [isSecure] {string}
      *  The cookie key
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was set or not
      */
     Cookies.set = function ( key, value, expires, path, domain, isSecure )
@@ -164,7 +164,7 @@ var Cookies = {};
      * @param [domain] {string}
      *  The cookie domain
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was removed or not
      */
     Cookies.remove = function ( key, path, domain )
@@ -205,7 +205,7 @@ var Cookies = {};
      * @param key {string}
      *  The cookie key
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie exists or not
      */
     Cookies.has = function ( key )
@@ -229,7 +229,7 @@ var Cookies = {};
      * @desc
      *  Get a list of the cookie keys
      *
-     * @return {array}
+     * @returns {array}
      *  The keys
      */
     Cookies.keys = function ()
@@ -262,7 +262,7 @@ var Cookies = {};
      * @desc
      *  Get a list of the cookies
      *
-     * @return {object}
+     * @returns {object}
      *  The cookies
      */
     Cookies.getAll = function ()

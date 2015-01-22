@@ -36,7 +36,7 @@ var Utils = {};
      * @param [isArr] {boolean}
      *  Is this an array to clone?
      *
-     * @return {object|array}
+     * @returns {object|array}
      */
     Utils.clone = function ( toClone, isArr )
     {
@@ -67,7 +67,7 @@ var Utils = {};
      * @param callback {function}
      *  The callback for each item
      *
-     * @return void
+     * @returns void
      */
     Utils.each = function ( items, callback )
     {
@@ -103,7 +103,7 @@ var Utils = {};
      *
      * @params  {...}
      *
-     * @return {object}
+     * @returns {object}
      *  The extended object
      */
     Utils.extend = function ( obj, source )
@@ -132,7 +132,7 @@ var Utils = {};
      * @param mergeThis {object}
      *  The object to merge into
      *
-     * @return {object}
+     * @returns {object}
      */
     Utils.merge = function ( mergeInto, mergeThis )
     {

@@ -26,7 +26,7 @@
      * @param value {*}
      *  The string to make safe
      *
-     * @return {string}
+     * @returns {string}
      */
     String.makeSafe = function ( value )
     {
@@ -49,7 +49,7 @@
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.contains = function ( toTest, value )
     {
@@ -75,7 +75,7 @@
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.containsInsensitive = function ( toTest, value )
     {
@@ -99,7 +99,7 @@
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.compare = function ( toTest, value )
     {
@@ -121,7 +121,7 @@
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.compareInsensitive = function ( toTest, value )
     {

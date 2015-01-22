@@ -164,7 +164,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.$ = function ( toTest )
     {
@@ -185,7 +185,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.bool = function ( toTest )
     {
@@ -206,7 +206,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.func = function ( toTest )
     {
@@ -227,7 +227,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.invalid = function ( toTest )
     {
@@ -251,7 +251,7 @@ gnd.is = {};
      *  The variable to test
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.is.undefined = function ( toTest )
     {

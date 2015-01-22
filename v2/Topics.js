@@ -27,7 +27,7 @@
  * @param topicName {string}
  *  The topic name
  *
- * @return {object}
+ * @returns {object}
  *  The topic
  */
 var Topics = function ( topicName )
@@ -91,7 +91,7 @@ var Topics = function ( topicName )
      * @param [scope] {object}
      *  The scope
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.subscribeToTopic = function ( callback, scope )
@@ -147,7 +147,7 @@ var Topics = function ( topicName )
      * @param [scope] {object}
      *  The scope
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.unSubscribeFromTopic = function ( callback, scope )
@@ -193,7 +193,7 @@ var Topics = function ( topicName )
      * @desc
      *  Trigger a topic's callback methods to fire
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.triggerTopic = function ()
@@ -227,7 +227,7 @@ var Topics = function ( topicName )
      * @desc
      *  Unsubscribe all callback methods from a topic
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.unSubscribeAllFromTopic = function ()
@@ -252,7 +252,7 @@ var Topics = function ( topicName )
      * @param [remove] {boolean}
      *  Whether to remove the topics or not
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.handleTopics = function ( topics, remove )
@@ -316,7 +316,7 @@ var Topics = function ( topicName )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.removeTopics = function ()

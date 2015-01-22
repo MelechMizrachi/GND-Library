@@ -80,7 +80,7 @@
  * @param [context] {object}
  *  The context to use
  *
- * @return Dom.Init
+ * @returns Dom.Init
  */
 var Dom = function ( selector, context )
 {
@@ -102,7 +102,7 @@ var Dom = function ( selector, context )
      * @param [context] {object}
      *  The context to use
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The Dom.$ object
      */
     Dom.Init = function ( selector, context )
@@ -215,7 +215,7 @@ var Dom = function ( selector, context )
      * @param selector {string}
      *  The event string
      *
-     * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
+     * @returns {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
      */
     Dom.prototype.getElements = function ( parent, selector )
@@ -295,7 +295,7 @@ var Dom = function ( selector, context )
      * @param selector {string}
      *  The selector to use
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The requested child
      */
     Dom.prototype.find = function ( selector )
@@ -311,7 +311,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the elem parent
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The parent
      */
     Dom.prototype.parent = function ()
@@ -330,7 +330,7 @@ var Dom = function ( selector, context )
      * @param index {number}
      *  The elem index to get
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.get = function ( index )
     {
@@ -358,7 +358,7 @@ var Dom = function ( selector, context )
      *  The element to use
      *  The type to use
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.closest = function ( selector, element )
     {
@@ -441,7 +441,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get elem length
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.prototype.getLength = function ()
     {
@@ -472,7 +472,7 @@ var Dom = function ( selector, context )
      * @param [callback] {function}
      *  The callback method
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
@@ -575,7 +575,7 @@ var Dom = function ( selector, context )
      * @param [callback] {function}
      *  The callback method
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.on = function ( eventType, selector, callback )
     {
@@ -602,7 +602,7 @@ var Dom = function ( selector, context )
      * @param [callback] {function}
      *  The callback method
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.off = function ( eventType, selector, callback )
     {
@@ -641,7 +641,7 @@ var Dom = function ( selector, context )
      * @param [selector] {string|object}
      *  The child node to attach event to
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.trigger = function ( eventType, selector )
     {
@@ -663,7 +663,7 @@ var Dom = function ( selector, context )
      * @param [value] {string}
      *  The value to overwrite with
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     Dom.prototype.val = function ( value )
     {
@@ -709,7 +709,7 @@ var Dom = function ( selector, context )
      * @param [text] {string}
      *  The text to overwrite with
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     Dom.prototype.text = function ( text )
     {
@@ -732,7 +732,7 @@ var Dom = function ( selector, context )
      *  The type of manipulation [text|html]
      *  (Default) html
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.html = function ( html, type )
     {
@@ -789,7 +789,7 @@ var Dom = function ( selector, context )
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.append = function ( html )
     {
@@ -808,7 +808,7 @@ var Dom = function ( selector, context )
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.prepend = function ( html )
     {
@@ -830,7 +830,7 @@ var Dom = function ( selector, context )
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.handleHTML = function ( type, html )
     {
@@ -887,7 +887,7 @@ var Dom = function ( selector, context )
      * @param [elem] {HTMLElement|Node|NodeList}
      *  The elem to use
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.handlePend = function ( type, nodes, elem )
     {
@@ -950,7 +950,7 @@ var Dom = function ( selector, context )
      * @param [elem] {HTMLDocument|HTMLElement|Node}
      *  The elem to use
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.empty = function ( elem )
     {
@@ -976,7 +976,7 @@ var Dom = function ( selector, context )
      * @param [elem] {HTMLDocument}
      *  The elem to use
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.remove = function ( elem )
     {
@@ -1017,7 +1017,7 @@ var Dom = function ( selector, context )
      * @param type {string}
      *  The type of class manipulation to do
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.handleClass = function ( className, type )
     {
@@ -1096,7 +1096,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to add
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.addClass = function ( className )
     {
@@ -1114,7 +1114,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to remove
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.removeClass = function ( className )
     {
@@ -1133,7 +1133,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to check for
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.toggleClass = function ( className )
     {
@@ -1152,7 +1152,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to check for
      *
-     * @return {boolean|object}
+     * @returns {boolean|object}
      */
     Dom.prototype.hasClass = function ( className )
     {
@@ -1187,7 +1187,7 @@ var Dom = function ( selector, context )
      * @param attr {string}
      *  The attribute to get
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     Dom.prototype.attrGet = function ( attr )
     {
@@ -1214,7 +1214,7 @@ var Dom = function ( selector, context )
      * @param value {*}
      *  The attribute to add to
      *
-     * @return {Dom}
+     * @returns {Dom}
      */
     Dom.prototype.attrSet = function ( attr, value )
     {
@@ -1256,7 +1256,7 @@ var Dom = function ( selector, context )
      * @param attr {string}
      *  The attribute to remove
      *
-     * @return {Dom}
+     * @returns {Dom}
      */
     Dom.prototype.attrRemove = function ( attr )
     {
@@ -1298,7 +1298,7 @@ var Dom = function ( selector, context )
      * @param data {string}
      *  The data attribute to get
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     Dom.prototype.dataGet = function ( data )
     {
@@ -1325,7 +1325,7 @@ var Dom = function ( selector, context )
      * @param value {*}
      *  The attribute to add to
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.dataSet = function ( data, value )
     {
@@ -1349,7 +1349,7 @@ var Dom = function ( selector, context )
      * @param data {string}
      *  The data to remove
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.dataRemove = function ( data )
     {
@@ -1373,7 +1373,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the document variable
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.getDocument = function ()
     {
@@ -1388,7 +1388,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the window variable
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.getWindow = function ()
     {
@@ -1403,7 +1403,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the window width
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.windowWidth = function ()
     {
@@ -1418,7 +1418,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the window height
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.windowHeight = function ()
     {
@@ -1433,7 +1433,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the amount scrolled
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.scrollTop = function ()
     {
@@ -1448,7 +1448,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the document's total width
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.documentWidth = function ()
     {
@@ -1463,7 +1463,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the document's total height
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.documentHeight = function ()
     {
@@ -1481,7 +1481,7 @@ var Dom = function ( selector, context )
      * @param html {string}
      *  The HTML string to parse
      *
-     * @return {HTMLDocument}
+     * @returns {HTMLDocument}
      */
     Dom.parseHTML = function ( html )
     {

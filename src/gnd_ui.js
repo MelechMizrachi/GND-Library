@@ -101,7 +101,7 @@ gnd.ui = {};
          *  The topic name
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.Topic = function ( topicName )
@@ -157,7 +157,7 @@ gnd.ui = {};
          *  The scope
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.subscribeToTopic = function ( callback, scope )
@@ -216,7 +216,7 @@ gnd.ui = {};
          *  The scope
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.unSubscribeFromTopic = function ( callback, scope )
@@ -265,7 +265,7 @@ gnd.ui = {};
          * @params
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.triggerTopic = function ()
@@ -302,7 +302,7 @@ gnd.ui = {};
          * @params
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.unSubscribeAllFromTopic = function ()
@@ -331,7 +331,7 @@ gnd.ui = {};
          *  Whether to remove the topics or not
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.handleTopics = function ( topics, remove )
@@ -396,7 +396,7 @@ gnd.ui = {};
          * @params
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The topic
          */
         gnd.ui.Topics.removeTopics = function ()
@@ -441,7 +441,7 @@ gnd.ui = {};
          *  Options passed for component
          *********
          *
-         * @return {object}
+         * @returns {object}
          *  The component
          */
         gnd.ui.Helpers.__setOptions = function ( options )
@@ -502,7 +502,7 @@ gnd.ui = {};
      *  The object to merge
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The extended object
      */
     gnd.ui.extend = function ( objectToMerge )

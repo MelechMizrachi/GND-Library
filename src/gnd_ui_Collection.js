@@ -46,7 +46,7 @@
  * @extends gnd.ui.Topics
  * @extends gnd.ui.Helpers
  *
- * @return void
+ * @returns void
  */
 gnd.ui.Collection = function ( options )
 {
@@ -156,7 +156,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The collection
      */
     gnd.ui.Collection.prototype.init = function ()
@@ -178,7 +178,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The collection
      */
     gnd.ui.Collection.prototype.setViews = function ()
@@ -238,7 +238,7 @@ gnd.ui.Collection = function ( options )
      *  The view to add to the collection
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The collection
      */
     gnd.ui.Collection.prototype.addView = function ( view )
@@ -302,7 +302,7 @@ gnd.ui.Collection = function ( options )
      *  The model to find by
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.findViewByModel = function ( model )
@@ -331,7 +331,7 @@ gnd.ui.Collection = function ( options )
      *  The model id to find by
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested View
      */
     gnd.ui.Collection.prototype.findViewByModelID = function ( sID )
@@ -363,7 +363,7 @@ gnd.ui.Collection = function ( options )
      *  The id to find by
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.findViewByID = function ( sID )
@@ -392,7 +392,7 @@ gnd.ui.Collection = function ( options )
      *  Int of the nth view to get
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.getNthView = function ( nthItem )
@@ -418,7 +418,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The requested view
      */
     gnd.ui.Collection.prototype.getLastView = function ()
@@ -444,7 +444,7 @@ gnd.ui.Collection = function ( options )
      *  Int of the nth view to get
      *********
      *
-     * @return {boolean|string}
+     * @returns {boolean|string}
      *  The view id
      */
     gnd.ui.Collection.prototype.getNthViewID = function ( nthItem )
@@ -470,7 +470,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {string}
+     * @returns {string}
      *  The view id
      */
     gnd.ui.Collection.prototype.getLastViewID = function ()
@@ -490,7 +490,7 @@ gnd.ui.Collection = function ( options )
      * @params
      *********
      *
-     * @return {number}
+     * @returns {number}
      *  The collection id
      */
     gnd.ui.Collection.prototype.getLastCollectionID = function ()

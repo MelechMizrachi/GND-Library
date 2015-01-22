@@ -52,7 +52,7 @@ var is = {};
      * @param type {string}
      *  The type to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.typeOf = function ( toTest, type )
     {
@@ -92,7 +92,7 @@ var is = {};
      * @param bool {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.bool = function ( bool )
     {
@@ -119,7 +119,7 @@ var is = {};
      * @param obj {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.object = function ( obj )
     {
@@ -137,7 +137,7 @@ var is = {};
      * @param doc {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.document = function ( doc )
     {
@@ -155,7 +155,7 @@ var is = {};
      * @param win {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.window = function ( win )
     {
@@ -173,7 +173,7 @@ var is = {};
      * @param elem {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.element = function ( elem )
     {
@@ -191,7 +191,7 @@ var is = {};
      * @param nodeList {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.nodeList = function ( nodeList )
     {
@@ -209,7 +209,7 @@ var is = {};
      * @param htmlCollection {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.htmlCollection = function ( htmlCollection )
     {
@@ -227,7 +227,7 @@ var is = {};
      * @param htmlList {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.htmlList = function ( htmlList )
     {
@@ -245,7 +245,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.string = function ( toTest )
     {
@@ -263,7 +263,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.numeric = function ( toTest )
     {
@@ -281,7 +281,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.$ = function ( toTest )
     {
@@ -299,7 +299,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.bool = function ( toTest )
     {
@@ -317,7 +317,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.func = function ( toTest )
     {
@@ -335,7 +335,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.invalid = function ( toTest )
     {
@@ -356,7 +356,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.undefined = function ( toTest )
     {
@@ -374,7 +374,7 @@ var is = {};
      * @param arr {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.array.empty = function ( arr )
     {
@@ -392,7 +392,7 @@ var is = {};
      * @param obj {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.object.empty = function ( obj )
     {
@@ -420,7 +420,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.string.empty = function ( toTest )
     {

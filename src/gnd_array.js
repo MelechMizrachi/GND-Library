@@ -47,7 +47,7 @@ gnd.array = {};
          *  The variable to test
          *********
          *
-         * @return {boolean}
+         * @returns {boolean}
          */
         gnd.array.is.empty = function ( arr )
         {
@@ -71,7 +71,7 @@ gnd.array = {};
      *  The value to test for
      *********
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     gnd.array.contains = function ( arr, value )
     {
@@ -95,7 +95,7 @@ gnd.array = {};
      *  The value to test for
      *********
      *
-     * @return void
+     * @returns void
      */
     gnd.array.insert = function ( arr, value )
     {

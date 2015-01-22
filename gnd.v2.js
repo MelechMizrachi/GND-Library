@@ -115,7 +115,7 @@ var is = {};
      * @param type {string}
      *  The type to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.typeOf = function ( toTest, type )
     {
@@ -155,7 +155,7 @@ var is = {};
      * @param bool {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.bool = function ( bool )
     {
@@ -182,7 +182,7 @@ var is = {};
      * @param obj {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.object = function ( obj )
     {
@@ -200,7 +200,7 @@ var is = {};
      * @param doc {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.document = function ( doc )
     {
@@ -218,7 +218,7 @@ var is = {};
      * @param win {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.window = function ( win )
     {
@@ -236,7 +236,7 @@ var is = {};
      * @param elem {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.element = function ( elem )
     {
@@ -254,7 +254,7 @@ var is = {};
      * @param nodeList {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.nodeList = function ( nodeList )
     {
@@ -272,7 +272,7 @@ var is = {};
      * @param htmlCollection {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.htmlCollection = function ( htmlCollection )
     {
@@ -290,7 +290,7 @@ var is = {};
      * @param htmlList {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.htmlList = function ( htmlList )
     {
@@ -308,7 +308,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.string = function ( toTest )
     {
@@ -326,7 +326,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.numeric = function ( toTest )
     {
@@ -344,7 +344,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.$ = function ( toTest )
     {
@@ -362,7 +362,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.bool = function ( toTest )
     {
@@ -380,7 +380,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.func = function ( toTest )
     {
@@ -398,7 +398,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.invalid = function ( toTest )
     {
@@ -419,7 +419,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.undefined = function ( toTest )
     {
@@ -437,7 +437,7 @@ var is = {};
      * @param arr {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.array.empty = function ( arr )
     {
@@ -455,7 +455,7 @@ var is = {};
      * @param obj {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.object.empty = function ( obj )
     {
@@ -483,7 +483,7 @@ var is = {};
      * @param toTest {*}
      *  The variable to test
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     is.string.empty = function ( toTest )
     {
@@ -543,7 +543,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.info = function ()
     {
@@ -565,7 +565,7 @@ var Logger = {};
      * @params  {...} {*}
      *********
      *
-     * @return void
+     * @returns void
      */
     Logger.warn = function ()
     {
@@ -584,7 +584,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.debug = function ()
     {
@@ -603,7 +603,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.error = function ()
     {
@@ -622,7 +622,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.time = function ()
     {
@@ -641,7 +641,7 @@ var Logger = {};
      *
      * @params  {...} {*}
      *
-     * @return void
+     * @returns void
      */
     Logger.timeEnd = function ()
     {
@@ -688,7 +688,7 @@ var Utils = {};
      * @param [isArr] {boolean}
      *  Is this an array to clone?
      *
-     * @return {object|array}
+     * @returns {object|array}
      */
     Utils.clone = function ( toClone, isArr )
     {
@@ -719,7 +719,7 @@ var Utils = {};
      * @param callback {function}
      *  The callback for each item
      *
-     * @return void
+     * @returns void
      */
     Utils.each = function ( items, callback )
     {
@@ -755,7 +755,7 @@ var Utils = {};
      *
      * @params  {...}
      *
-     * @return {object}
+     * @returns {object}
      *  The extended object
      */
     Utils.extend = function ( obj, source )
@@ -784,7 +784,7 @@ var Utils = {};
      * @param mergeThis {object}
      *  The object to merge into
      *
-     * @return {object}
+     * @returns {object}
      */
     Utils.merge = function ( mergeInto, mergeThis )
     {
@@ -818,7 +818,7 @@ var Utils = {};
      * @param toClone {array}
      *  The array to clone
      *
-     * @return {array}
+     * @returns {array}
      */
     Array.clone = function ( toClone )
     {
@@ -838,7 +838,7 @@ var Utils = {};
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     Array.contains = function ( arr, value )
     {
@@ -858,7 +858,7 @@ var Utils = {};
      * @param value {string}
      *  The value to test for
      *
-     * @return void
+     * @returns void
      */
     Array.insert = function ( arr, value )
     {
@@ -919,7 +919,7 @@ var Utils = {};
      * @param toTest {object}
      *  The object to validate
      *
-     * @return {object}
+     * @returns {object}
      */
     Object.validate = function ( toTest )
     {
@@ -944,7 +944,7 @@ var Utils = {};
      * @param obj {object|array}
      *  The object
      *
-     * @return {*}
+     * @returns {*}
      */
     Object.first = function ( obj )
     {
@@ -1036,7 +1036,7 @@ var Utils = {};
      * @param value {*}
      *  The string to make safe
      *
-     * @return {string}
+     * @returns {string}
      */
     String.makeSafe = function ( value )
     {
@@ -1059,7 +1059,7 @@ var Utils = {};
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.contains = function ( toTest, value )
     {
@@ -1085,7 +1085,7 @@ var Utils = {};
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.containsInsensitive = function ( toTest, value )
     {
@@ -1109,7 +1109,7 @@ var Utils = {};
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.compare = function ( toTest, value )
     {
@@ -1131,7 +1131,7 @@ var Utils = {};
      * @param value {string}
      *  The value to test for
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     String.compareInsensitive = function ( toTest, value )
     {
@@ -1174,7 +1174,7 @@ var Utils = {};
  * @param [options] {object}
  *  The options for the ajax request
  *
- * @return {object}
+ * @returns {object}
  *  The xhr call
  */
 var Ajax = function ( url, options )
@@ -1207,7 +1207,7 @@ var Ajax = function ( url, options )
      * @param [options] {object}
      *  The options for the ajax request
      *
-     * @return {Ajax}
+     * @returns {Ajax}
      *  The xhr call
      */
     Ajax.Init = function ( url, options )
@@ -1585,7 +1585,7 @@ var Cache = {};
      * @param key {string}
      *  The key to retrieve
      *
-     * @return {*}
+     * @returns {*}
      */
     Cache.get = function ( key )
     {
@@ -1605,7 +1605,7 @@ var Cache = {};
      * @param value {*}
      *  The value to set
      *
-     * @return {*}
+     * @returns {*}
      */
     Cache.set = function ( key, value )
     {
@@ -1620,7 +1620,7 @@ var Cache = {};
      * @desc
      *  Get the amount of items cached
      *
-     * @return {number}
+     * @returns {number}
      */
     Cache.len = function ()
     {
@@ -1699,7 +1699,7 @@ var Cookies = {};
      * @param key {string}
      *  The cookie key
      *
-     * @return {*}
+     * @returns {*}
      *  The cookie value
      */
     Cookies.get = function ( key )
@@ -1742,7 +1742,7 @@ var Cookies = {};
      * @param [isSecure] {string}
      *  The cookie key
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was set or not
      */
     Cookies.set = function ( key, value, expires, path, domain, isSecure )
@@ -1826,7 +1826,7 @@ var Cookies = {};
      * @param [domain] {string}
      *  The cookie domain
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie was removed or not
      */
     Cookies.remove = function ( key, path, domain )
@@ -1867,7 +1867,7 @@ var Cookies = {};
      * @param key {string}
      *  The cookie key
      *
-     * @return {boolean}
+     * @returns {boolean}
      *  Whether the cookie exists or not
      */
     Cookies.has = function ( key )
@@ -1891,7 +1891,7 @@ var Cookies = {};
      * @desc
      *  Get a list of the cookie keys
      *
-     * @return {array}
+     * @returns {array}
      *  The keys
      */
     Cookies.keys = function ()
@@ -1924,7 +1924,7 @@ var Cookies = {};
      * @desc
      *  Get a list of the cookies
      *
-     * @return {object}
+     * @returns {object}
      *  The cookies
      */
     Cookies.getAll = function ()
@@ -2045,7 +2045,7 @@ var Cookies = {};
  * @param [context] {object}
  *  The context to use
  *
- * @return Dom.Init
+ * @returns Dom.Init
  */
 var Dom = function ( selector, context )
 {
@@ -2067,7 +2067,7 @@ var Dom = function ( selector, context )
      * @param [context] {object}
      *  The context to use
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The Dom.$ object
      */
     Dom.Init = function ( selector, context )
@@ -2180,7 +2180,7 @@ var Dom = function ( selector, context )
      * @param selector {string}
      *  The event string
      *
-     * @return {HTMLDocument|HTMLElement|Node|NodeList|object}
+     * @returns {HTMLDocument|HTMLElement|Node|NodeList|object}
      *  The element
      */
     Dom.prototype.getElements = function ( parent, selector )
@@ -2260,7 +2260,7 @@ var Dom = function ( selector, context )
      * @param selector {string}
      *  The selector to use
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The requested child
      */
     Dom.prototype.find = function ( selector )
@@ -2276,7 +2276,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the elem parent
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The parent
      */
     Dom.prototype.parent = function ()
@@ -2295,7 +2295,7 @@ var Dom = function ( selector, context )
      * @param index {number}
      *  The elem index to get
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.get = function ( index )
     {
@@ -2323,7 +2323,7 @@ var Dom = function ( selector, context )
      *  The element to use
      *  The type to use
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.closest = function ( selector, element )
     {
@@ -2406,7 +2406,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get elem length
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.prototype.getLength = function ()
     {
@@ -2437,7 +2437,7 @@ var Dom = function ( selector, context )
      * @param [callback] {function}
      *  The callback method
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.handleEvent = function ( type, eventType, selector, callback )
     {
@@ -2540,7 +2540,7 @@ var Dom = function ( selector, context )
      * @param [callback] {function}
      *  The callback method
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.on = function ( eventType, selector, callback )
     {
@@ -2567,7 +2567,7 @@ var Dom = function ( selector, context )
      * @param [callback] {function}
      *  The callback method
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.off = function ( eventType, selector, callback )
     {
@@ -2606,7 +2606,7 @@ var Dom = function ( selector, context )
      * @param [selector] {string|object}
      *  The child node to attach event to
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.trigger = function ( eventType, selector )
     {
@@ -2628,7 +2628,7 @@ var Dom = function ( selector, context )
      * @param [value] {string}
      *  The value to overwrite with
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     Dom.prototype.val = function ( value )
     {
@@ -2674,7 +2674,7 @@ var Dom = function ( selector, context )
      * @param [text] {string}
      *  The text to overwrite with
      *
-     * @return {object|string}
+     * @returns {object|string}
      */
     Dom.prototype.text = function ( text )
     {
@@ -2697,7 +2697,7 @@ var Dom = function ( selector, context )
      *  The type of manipulation [text|html]
      *  (Default) html
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.html = function ( html, type )
     {
@@ -2754,7 +2754,7 @@ var Dom = function ( selector, context )
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.append = function ( html )
     {
@@ -2773,7 +2773,7 @@ var Dom = function ( selector, context )
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.prepend = function ( html )
     {
@@ -2795,7 +2795,7 @@ var Dom = function ( selector, context )
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.handleHTML = function ( type, html )
     {
@@ -2852,7 +2852,7 @@ var Dom = function ( selector, context )
      * @param [elem] {HTMLElement|Node|NodeList}
      *  The elem to use
      *
-     * @return {object|html}
+     * @returns {object|html}
      */
     Dom.prototype.handlePend = function ( type, nodes, elem )
     {
@@ -2915,7 +2915,7 @@ var Dom = function ( selector, context )
      * @param [elem] {HTMLDocument|HTMLElement|Node}
      *  The elem to use
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.empty = function ( elem )
     {
@@ -2941,7 +2941,7 @@ var Dom = function ( selector, context )
      * @param [elem] {HTMLDocument}
      *  The elem to use
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.remove = function ( elem )
     {
@@ -2982,7 +2982,7 @@ var Dom = function ( selector, context )
      * @param type {string}
      *  The type of class manipulation to do
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.handleClass = function ( className, type )
     {
@@ -3061,7 +3061,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to add
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.addClass = function ( className )
     {
@@ -3079,7 +3079,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to remove
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.removeClass = function ( className )
     {
@@ -3098,7 +3098,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to check for
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.toggleClass = function ( className )
     {
@@ -3117,7 +3117,7 @@ var Dom = function ( selector, context )
      * @param className {string}
      *  The class or classes to check for
      *
-     * @return {boolean|object}
+     * @returns {boolean|object}
      */
     Dom.prototype.hasClass = function ( className )
     {
@@ -3152,7 +3152,7 @@ var Dom = function ( selector, context )
      * @param attr {string}
      *  The attribute to get
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     Dom.prototype.attrGet = function ( attr )
     {
@@ -3179,7 +3179,7 @@ var Dom = function ( selector, context )
      * @param value {*}
      *  The attribute to add to
      *
-     * @return {Dom}
+     * @returns {Dom}
      */
     Dom.prototype.attrSet = function ( attr, value )
     {
@@ -3221,7 +3221,7 @@ var Dom = function ( selector, context )
      * @param attr {string}
      *  The attribute to remove
      *
-     * @return {Dom}
+     * @returns {Dom}
      */
     Dom.prototype.attrRemove = function ( attr )
     {
@@ -3263,7 +3263,7 @@ var Dom = function ( selector, context )
      * @param data {string}
      *  The data attribute to get
      *
-     * @return {string|boolean}
+     * @returns {string|boolean}
      */
     Dom.prototype.dataGet = function ( data )
     {
@@ -3290,7 +3290,7 @@ var Dom = function ( selector, context )
      * @param value {*}
      *  The attribute to add to
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.dataSet = function ( data, value )
     {
@@ -3314,7 +3314,7 @@ var Dom = function ( selector, context )
      * @param data {string}
      *  The data to remove
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.prototype.dataRemove = function ( data )
     {
@@ -3338,7 +3338,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the document variable
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.getDocument = function ()
     {
@@ -3353,7 +3353,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the window variable
      *
-     * @return {object}
+     * @returns {object}
      */
     Dom.getWindow = function ()
     {
@@ -3368,7 +3368,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the window width
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.windowWidth = function ()
     {
@@ -3383,7 +3383,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the window height
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.windowHeight = function ()
     {
@@ -3398,7 +3398,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the amount scrolled
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.scrollTop = function ()
     {
@@ -3413,7 +3413,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the document's total width
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.documentWidth = function ()
     {
@@ -3428,7 +3428,7 @@ var Dom = function ( selector, context )
      * @desc
      *  Get the document's total height
      *
-     * @return {number}
+     * @returns {number}
      */
     Dom.documentHeight = function ()
     {
@@ -3446,7 +3446,7 @@ var Dom = function ( selector, context )
      * @param html {string}
      *  The HTML string to parse
      *
-     * @return {HTMLDocument}
+     * @returns {HTMLDocument}
      */
     Dom.parseHTML = function ( html )
     {
@@ -3628,7 +3628,7 @@ var Router = {};
  * @param objToMerge {object}
  *  The object to merge
  *
- * @return {object}
+ * @returns {object}
  *  The extended object
  */
 var Template = function ( objToMerge )
@@ -3649,7 +3649,7 @@ var Template = function ( objToMerge )
      * @param objToMerge {object}
      *  The object to merge
      *
-     * @return {Template}
+     * @returns {Template}
      *  The Template object
      */
     Template.Init = function ( objToMerge )
@@ -3686,7 +3686,7 @@ var Template = function ( objToMerge )
      * @param [options] {object}
      *  Any custom options for this view
      *
-     * @return void
+     * @returns void
      */
     Template.prototype.render = function ( options )
     {
@@ -3810,7 +3810,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Initialize Template
      *
-     * @return {Template}
+     * @returns {Template}
      */
     Template.prototype.initialize = function ()
     {
@@ -3831,7 +3831,7 @@ var Template = function ( objToMerge )
      * @param [selector] {string}
      *  The selector to use to find the elem's child
      *
-     * @return {Dom}
+     * @returns {Dom}
      *  The child of elem
      */
     Template.prototype.Dom = function ( selector )
@@ -3860,7 +3860,7 @@ var Template = function ( objToMerge )
      *  Whether to delegate events
      *  (Default) true
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     Template.prototype.setElement = function ( element, delegateEvents )
@@ -3894,7 +3894,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Remove View - Remove element from DOM
      *
-     * @return {object}
+     * @returns {object}
      *  The view
      */
     Template.prototype.remove = function ()
@@ -3926,7 +3926,7 @@ var Template = function ( objToMerge )
      * @param [removeEvent] {boolean}
      *  Whether to delete the event or not
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     Template.prototype.handleEvent = function ( event, callbackMethod, scope, removeEvent )
@@ -3990,7 +3990,7 @@ var Template = function ( objToMerge )
      * @param event {string}
      *  The event to trigger
      *
-     * @return {object}
+     * @returns {object}
      *  The component
      */
     Template.prototype.triggerEvent = function ( event )
@@ -4033,7 +4033,7 @@ var Template = function ( objToMerge )
      * @param [removeEvent] {string}
      *  Whether to add/remove the event
      *
-     * @return {Template}
+     * @returns {Template}
      *  The template
      */
     Template.prototype.handleEvents = function ( events, removeEvent )
@@ -4073,7 +4073,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Undelegate all event handlers
      *
-     * @return {object}
+     * @returns {object}
      */
     Template.prototype.undelegateEvents = function ()
     {
@@ -4092,7 +4092,7 @@ var Template = function ( objToMerge )
      * @desc
      *  Ensure the view element exists
      *
-     * @return void
+     * @returns void
      */
     Template.prototype.__ensureElement = function ()
     {
@@ -4117,7 +4117,7 @@ var Template = function ( objToMerge )
      * @param options {object}
      *  Options passed to the Template
      *
-     * @return {Template}
+     * @returns {Template}
      */
     Template.prototype.__setOptions = function ( options )
     {
@@ -4179,7 +4179,7 @@ var Template = function ( objToMerge )
  * @param topicName {string}
  *  The topic name
  *
- * @return {object}
+ * @returns {object}
  *  The topic
  */
 var Topics = function ( topicName )
@@ -4243,7 +4243,7 @@ var Topics = function ( topicName )
      * @param [scope] {object}
      *  The scope
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.subscribeToTopic = function ( callback, scope )
@@ -4299,7 +4299,7 @@ var Topics = function ( topicName )
      * @param [scope] {object}
      *  The scope
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.unSubscribeFromTopic = function ( callback, scope )
@@ -4345,7 +4345,7 @@ var Topics = function ( topicName )
      * @desc
      *  Trigger a topic's callback methods to fire
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.triggerTopic = function ()
@@ -4379,7 +4379,7 @@ var Topics = function ( topicName )
      * @desc
      *  Unsubscribe all callback methods from a topic
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.unSubscribeAllFromTopic = function ()
@@ -4404,7 +4404,7 @@ var Topics = function ( topicName )
      * @param [remove] {boolean}
      *  Whether to remove the topics or not
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.handleTopics = function ( topics, remove )
@@ -4468,7 +4468,7 @@ var Topics = function ( topicName )
      * @params
      *********
      *
-     * @return {object}
+     * @returns {object}
      *  The topic
      */
     Topics.removeTopics = function ()
@@ -4541,7 +4541,7 @@ var UserAgent = {};
      * @param value {string}
      *  The value to test if userAgent contains it
      *
-     * @return {boolean}
+     * @returns {boolean}
      */
     UserAgent.contains = function ( value )
     {
