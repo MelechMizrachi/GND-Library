@@ -446,7 +446,7 @@ var Dom = function ( selector, context )
     Dom.prototype.getLength = function ()
     {
         // If the elem has a length
-        if ( this.elem.length || this.elem.length === 0 ) {
+        if ( this.elem && ( this.elem.length || this.elem.length === 0 ) ) {
             // Return the elem length
             return this.elem.length;
         }
