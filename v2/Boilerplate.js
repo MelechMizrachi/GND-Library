@@ -12,8 +12,7 @@
 /**
  * @class Boilerplate
  *
- * @desc
- *  GND Library Boilerplate Class
+ * GND Library Boilerplate Class
  */
 var Boilerplate = {};
 

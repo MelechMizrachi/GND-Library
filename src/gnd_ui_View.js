@@ -33,10 +33,7 @@
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  The view for a ui component/element/node
+ * The view for a ui component/element/node
  *
  * @params
  *********
@@ -67,8 +64,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The View ID
+     * The View ID
      *
      * @type {string}
      */
@@ -77,8 +73,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The View ID
+     * The View ID
      *
      * @type {gnd.$}
      */
@@ -87,8 +82,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The element tag name
+     * The element tag name
      *
      * @type {string}
      */
@@ -97,8 +91,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The element class name
+     * The element class name
      *
      * @type {string}
      */
@@ -107,8 +100,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The template to use
+     * The template to use
      *
      * @type {string}
      */
@@ -117,8 +109,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The element attributes
+     * The element attributes
      *
      * @type {object}
      */
@@ -127,8 +118,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The events for this view
+     * The events for this view
      *
      * @type {object}
      */
@@ -137,8 +127,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the view
+     * The accepted options for the view
      *
      * @type {array}
      */
@@ -156,8 +145,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  What to split event strings with
+     * What to split event strings with
      *
      * @type {string}
      */
@@ -167,8 +155,7 @@ gnd.ui.View = function ( options )
      * @namespace
      * @extends gnd.ui.Model
      *
-     * @desc
-     *  The view model
+     * The view model
      */
     gnd.ui.View.prototype.Model = gnd.ui.Model;
 
@@ -176,18 +163,14 @@ gnd.ui.View = function ( options )
      * @namespace
      * @extends gnd.ui.Collection
      *
-     * @desc
-     *  The view collection
+     * The view collection
      */
     gnd.ui.View.prototype.Collection = gnd.ui.Collection;
 
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize View
+     * Initialize View
      *
      * @params
      *********
@@ -206,10 +189,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a dom element under elem
+     * Return a dom element under elem
      *
      * @params
      *********
@@ -235,10 +215,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Render View
+     * Render View
      *
      * @params
      *********
@@ -258,10 +235,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set the View element
+     * Set the View element
      *
      * @params
      *********
@@ -302,10 +276,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove View - Remove element from DOM
+     * Remove View - Remove element from DOM
      *
      * @params
      *********
@@ -328,10 +299,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate an event handler
+     * Delegate/Undelegate an event handler
      *
      * @params
      *********
@@ -404,10 +372,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event handler
+     * Trigger an event handler
      *
      * @params
      *********
@@ -448,10 +413,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate event handlers given an object of events
+     * Delegate/Undelegate event handlers given an object of events
      *
      * @params
      *********
@@ -497,10 +459,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Undelegate all event handlers
+     * Undelegate all event handlers
      *
      * @params
      *********
@@ -519,10 +478,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ensure the view element exists
+     * Ensure the view element exists
      *
      * @params
      *********

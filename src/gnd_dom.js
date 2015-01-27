@@ -42,8 +42,7 @@ gnd.dom = {};
     /**
      * @namespace
      *
-     * @desc
-     *  Global elements
+     * Global elements
      *
      * @type {object}
      */
@@ -52,8 +51,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create a new instance of gnd.$ for document
+         * Create a new instance of gnd.$ for document
          *
          * @type {gnd.$}
          */
@@ -62,8 +60,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create a new instance of gnd.$ for window
+         * Create a new instance of gnd.$ for window
          *
          * @type {gnd.$}
          */
@@ -72,8 +69,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for html
+         * Create new instance of gnd.$ for html
          *
          * @type {gnd.$}
          */
@@ -82,8 +78,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for body
+         * Create new instance of gnd.$ for body
          *
          * @type {gnd.$}
          */
@@ -92,8 +87,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for #header
+         * Create new instance of gnd.$ for #header
          *
          * @type {gnd.$}
          */
@@ -102,8 +96,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for #main
+         * Create new instance of gnd.$ for #main
          *
          * @type {gnd.$}
          */
@@ -112,8 +105,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for #footer
+         * Create new instance of gnd.$ for #footer
          *
          * @type {gnd.$}
          */
@@ -122,10 +114,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document variable
+     * Get the document variable
      *
      * @params
      *
@@ -139,10 +128,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window variable
+     * Get the window variable
      *
      * @params
      *
@@ -156,10 +142,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window width
+     * Get the window width
      *
      * @params
      *
@@ -173,10 +156,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window height
+     * Get the window height
      *
      * @params
      *
@@ -190,10 +170,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the amount scrolled
+     * Get the amount scrolled
      *
      * @params
      *
@@ -207,10 +184,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total width
+     * Get the document's total width
      *
      * @params
      *
@@ -224,10 +198,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @params
      *
@@ -241,10 +212,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @params
      *********

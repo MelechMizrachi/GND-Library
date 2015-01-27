@@ -29,8 +29,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a cookie
+     * Get a cookie
      *
      * @params
      *********
@@ -65,8 +64,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Set a cookie
+     * Set a cookie
      *
      * @params
      *********
@@ -163,8 +161,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Remove a cookie
+     * Remove a cookie
      *
      * @params
      *********
@@ -213,8 +210,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Determine if a cookie exists
+     * Determine if a cookie exists
      *
      * @params
      *********
@@ -243,8 +239,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a list of the cookie keys
+     * Get a list of the cookie keys
      *
      * @params
      *********
@@ -277,10 +272,7 @@ gnd.cookies = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a list of the cookies
+     * Get a list of the cookies
      *
      * @params
      *********

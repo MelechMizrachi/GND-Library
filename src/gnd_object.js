@@ -32,10 +32,7 @@ gnd.object = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an object have this property as its own
+     * Does an object have this property as its own
      *
      * @params
      *********
@@ -61,10 +58,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a object
+         * Determine if a variable is a object
          *
          * @params
          *********
@@ -82,10 +76,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a param is an HTML Element
+         * Determine if a param is an HTML Element
          *
          * @params
          *********
@@ -103,10 +94,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a node list
+         * Determine if a variable is a node list
          *
          * @params
          *********
@@ -124,10 +112,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is an HTML collection
+         * Determine if a variable is an HTML collection
          *
          * @params
          *********
@@ -145,10 +130,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a node list or an HTML collection
+         * Determine if a variable is a node list or an HTML collection
          *
          * @params
          *********
@@ -166,10 +148,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a the window variable to avoid endless loops
+         * Determine if a variable is a the window variable to avoid endless loops
          *
          * @params
          *********
@@ -187,10 +166,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is the document
+         * Determine if a variable is the document
          *
          * @params
          *********
@@ -208,10 +184,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if an object is empty
+         * Determine if an object is empty
          *
          * @params
          *********
@@ -244,10 +217,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Get a nested item from an object/array via path
+         * Get a nested item from an object/array via path
          *
          * @params
          *********
@@ -271,10 +241,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Get the first property in a given object
+         * Get the first property in a given object
          *
          * @params
          *********
@@ -301,10 +268,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Set a nested item's value from an object/array via path
+         * Set a nested item's value from an object/array via path
          *
          * @params
          *********
@@ -338,8 +302,7 @@ gnd.object = {};
      * @url
      *  http://stackoverflow.com/a/16190716
      *
-     * @desc
-     *  Set a nested item's value from an object/array via path
+     * Set a nested item's value from an object/array via path
      *
      * @params
      *********

@@ -30,10 +30,7 @@
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  The model for a ui component
+ * The model for a ui component
  *
  * @params
  *********
@@ -64,8 +61,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  The Model ID
+     * The Model ID
      *
      * @type {string}
      */
@@ -74,8 +70,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  The attributes id index
+     * The attributes id index
      *
      * @type {string}
      */
@@ -84,8 +79,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's attributes
+     * Model's attributes
      *
      * @type {object}
      */
@@ -94,8 +88,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's changed attributes
+     * Model's changed attributes
      *
      * @type {object}
      */
@@ -104,8 +97,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's previous attributes
+     * Model's previous attributes
      *
      * @type {object}
      */
@@ -114,8 +106,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's default attributes
+     * Model's default attributes
      *
      * @type {object}
      */
@@ -124,8 +115,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the model
+     * The accepted options for the model
      *
      * @type {array}
      */
@@ -138,10 +128,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize Model
+     * Initialize Model
      *
      * @params
      *********
@@ -160,10 +147,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a copy of the model data
+     * Return a copy of the model data
      *
      * @params
      *********
@@ -180,10 +164,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a requested attribute value
+     * Return a requested attribute value
      *
      * @params
      *********
@@ -203,10 +184,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set an attribute value
+     * Set an attribute value
      *
      * @params
      *********
@@ -233,10 +211,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a requested attribute value
+     * Return a requested attribute value
      *
      * @params
      *********
@@ -261,10 +236,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine whether the model/attribute changed
+     * Determine whether the model/attribute changed
      *
      * @params
      *********
@@ -294,10 +266,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return the changed attributes
+     * Return the changed attributes
      *
      * @params
      *********
@@ -314,10 +283,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return the requested previous attribute
+     * Return the requested previous attribute
      *
      * @params
      *********
@@ -337,10 +303,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return the previous attributes
+     * Return the previous attributes
      *
      * @params
      *********
@@ -357,10 +320,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set Model attributes
+     * Set Model attributes
      *
      * @params
      *********

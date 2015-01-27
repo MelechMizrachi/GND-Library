@@ -12,8 +12,7 @@
 /**
  * @class Auth
  *
- * @desc
- *  GND Library Auth Class
+ * GND Library Auth Class
  */
 var Auth = function ()
 {

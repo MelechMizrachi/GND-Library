@@ -16,8 +16,7 @@
 /**
  * @class Utils
  *
- * @desc
- *  GND Library Utils class
+ * GND Library Utils class
  */
 var Utils = {};
 
@@ -26,10 +25,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clone a given object or array
+     * Clone a given object or array
      *
      * @param toClone {object|array}
      *  The object or array to clone
@@ -57,10 +53,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Iterate through an object || array
+     * Iterate through an object || array
      *
      * @param items {object|array}
      *  The items to loop through
@@ -96,10 +89,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Extend object
+     * Extend object
      *
      * @params  {...}
      *
@@ -122,10 +112,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Merge two objects
+     * Merge two objects
      *
      * @param mergeInto {object}
      *  The object to merge into

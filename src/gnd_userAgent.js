@@ -39,10 +39,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  User Agent string
+     * User Agent string
      *
      * @type {string}
      */
@@ -57,10 +54,7 @@ gnd.userAgent = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user agent has a value
+     * Determine if the user agent has a value
      *
      * @params
      *********
@@ -84,10 +78,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is IE
+     * Determine if the user's browser is IE
      *
      * @type {boolean}
      */
@@ -99,10 +90,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is FireFox
+     * Determine if the user's browser is FireFox
      *
      * @type {boolean}
      */
@@ -114,10 +102,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is Chrome
+     * Determine if the user's browser is Chrome
      *
      * @type {boolean}
      */
@@ -129,10 +114,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is Safari
+     * Determine if the user's browser is Safari
      *
      * @type {boolean}
      */
@@ -144,10 +126,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is iPhone
+     * Determine if the user's device is iPhone
      *
      * @type {boolean}
      */
@@ -159,10 +138,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is iPad
+     * Determine if the user's device is iPad
      *
      * @type {boolean}
      */
@@ -174,10 +150,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Android
+     * Determine if the user's OS is Android
      *
      * @type {boolean}
      */
@@ -189,10 +162,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is iOS
+     * Determine if the user's OS is iOS
      *
      * @type {boolean}
      */
@@ -201,10 +171,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Windows Phone
+     * Determine if the user's OS is Windows Phone
      *
      * @type {boolean}
      */
@@ -216,10 +183,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is a mobile device
+     * Determine if the user's device is a mobile device
      *
      * @type {boolean}
      */
@@ -228,10 +192,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Windows
+     * Determine if the user's OS is Windows
      *
      * @type {boolean}
      */
@@ -243,10 +204,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Mac
+     * Determine if the user's OS is Mac
      *
      * @type {boolean}
      */
@@ -258,10 +216,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Linux
+     * Determine if the user's OS is Linux
      *
      * @type {boolean}
      */
@@ -273,10 +228,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is a desktop
+     * Determine if the user's device is a desktop
      *
      * @type {boolean}
      */

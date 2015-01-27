@@ -32,8 +32,7 @@
 /**
  * @class is
  *
- * @desc
- *  GND Library is class
+ * GND Library is class
  */
 var is = {};
 
@@ -42,10 +41,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is of a type
+     * Determine if a variable is of a type
      *
      * @param toTest {*}
      *  The variable to test
@@ -62,10 +58,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Is this a modern browser
+     * Is this a modern browser
      *
      * @type {boolean}
      */
@@ -84,10 +77,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a boolean
+     * Determine if a variable is a boolean
      *
      * @param bool {*}
      *  The variable to test
@@ -102,8 +92,6 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
      * @borrows Array.isArray
      */
     is.array = Array.isArray;
@@ -111,10 +99,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a object
+     * Determine if a variable is a object
      *
      * @param obj {*}
      *  The variable to test
@@ -129,10 +114,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is the document
+     * Determine if a variable is the document
      *
      * @param doc {*}
      *  The variable to test
@@ -147,10 +129,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a the window variable to avoid endless loops
+     * Determine if a variable is a the window variable to avoid endless loops
      *
      * @param win {*}
      *  The variable to test
@@ -165,10 +144,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a param is an HTML Element
+     * Determine if a param is an HTML Element
      *
      * @param elem {*}
      *  The variable to test
@@ -183,10 +159,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a node list
+     * Determine if a variable is a node list
      *
      * @param nodeList {*}
      *  The variable to test
@@ -201,10 +174,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is an HTML collection
+     * Determine if a variable is an HTML collection
      *
      * @param htmlCollection {*}
      *  The variable to test
@@ -219,10 +189,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a node list or an HTML collection
+     * Determine if a variable is a node list or an HTML collection
      *
      * @param htmlList {*}
      *  The variable to test
@@ -237,10 +204,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a string
+     * Determine if a variable is a string
      *
      * @param toTest {*}
      *  The variable to test
@@ -255,10 +219,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a number
+     * Determine if a variable is a number
      *
      * @param toTest {*}
      *  The variable to test
@@ -273,10 +234,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is an instance of Dom
+     * Determine if a variable is an instance of Dom
      *
      * @param toTest {*}
      *  The variable to test
@@ -291,10 +249,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a boolean
+     * Determine if a variable is a boolean
      *
      * @param toTest {*}
      *  The variable to test
@@ -309,10 +264,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a function
+     * Determine if a variable is a function
      *
      * @param toTest {*}
      *  The variable to test
@@ -327,10 +279,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is null/undefined/etc
+     * Determine if a variable is null/undefined/etc
      *
      * @param toTest {*}
      *  The variable to test
@@ -348,10 +297,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is undefined
+     * Determine if a variable is undefined
      *
      * @param toTest {*}
      *  The variable to test
@@ -366,10 +312,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if an array is empty
+     * Determine if an array is empty
      *
      * @param arr {*}
      *  The variable to test
@@ -384,10 +327,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if an object is empty
+     * Determine if an object is empty
      *
      * @param obj {*}
      *  The variable to test
@@ -412,10 +352,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a string is empty
+     * Determine if a string is empty
      *
      * @param toTest {*}
      *  The variable to test

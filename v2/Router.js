@@ -12,8 +12,7 @@
 /**
  * @class Router
  *
- * @desc
- *  GND Library Router Class
+ * GND Library Router Class
  */
 var Router = {};
 

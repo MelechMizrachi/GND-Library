@@ -35,8 +35,7 @@
 /**
  * @class Template
  *
- * @desc
- *  GND Library Template Class
+ * GND Library Template Class
  *
  * @param objToMerge {object}
  *  The object to merge
@@ -54,10 +53,7 @@ var Template = function ( objToMerge )
     /**
      * @constructor
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Template initializer
+     * Template initializer
      *
      * @param objToMerge {object}
      *  The object to merge
@@ -73,8 +69,7 @@ var Template = function ( objToMerge )
     /**
      * @author MelechMizrachi
      *
-     * @desc
-     *  Set the Init prototype as Template's prototype
+     * Set the Init prototype as Template's prototype
      *
      * @type {Object|Function}
      */
@@ -91,10 +86,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Render a template for a ui component/element/node
+     * Render a template for a ui component/element/node
      *
      * @param [options] {object}
      *  Any custom options for this view
@@ -119,8 +111,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The Template ID
+     * The Template ID
      *
      * @type {string}
      */
@@ -129,8 +120,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The Template ID
+     * The Template ID
      *
      * @type {Dom}
      */
@@ -139,8 +129,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The element tag name
+     * The element tag name
      *
      * @type {string}
      */
@@ -149,8 +138,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The element class name
+     * The element class name
      *
      * @type {string}
      */
@@ -159,8 +147,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The template to use
+     * The template to use
      *
      * @type {string}
      */
@@ -169,8 +156,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The element attributes
+     * The element attributes
      *
      * @type {object}
      */
@@ -179,8 +165,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The events for this template
+     * The events for this template
      *
      * @type {object}
      */
@@ -189,8 +174,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the template
+     * The accepted options for the template
      *
      * @type {array}
      */
@@ -208,8 +192,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  What to split event strings with
+     * What to split event strings with
      *
      * @type {string}
      */
@@ -218,10 +201,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize Template
+     * Initialize Template
      *
      * @returns {Template}
      */
@@ -236,10 +216,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a dom element under elem
+     * Return a dom element under elem
      *
      * @param [selector] {string}
      *  The selector to use to find the elem's child
@@ -262,10 +239,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set the View element
+     * Set the View element
      *
      * @param element {object|string}
      *  The element to set
@@ -302,10 +276,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove View - Remove element from DOM
+     * Remove View - Remove element from DOM
      *
      * @returns {object}
      *  The view
@@ -325,10 +296,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate an event handler
+     * Delegate/Undelegate an event handler
      *
      * @param event {string}
      *  The event string
@@ -395,10 +363,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event handler
+     * Trigger an event handler
      *
      * @param event {string}
      *  The event to trigger
@@ -436,10 +401,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate event handlers given an object of events
+     * Delegate/Undelegate event handlers given an object of events
      *
      * @param events {object}
      *  The events to create
@@ -481,10 +443,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Undelegate all event handlers
+     * Undelegate all event handlers
      *
      * @returns {object}
      */
@@ -500,10 +459,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ensure the view element exists
+     * Ensure the view element exists
      *
      * @returns void
      */
@@ -522,10 +478,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set component options
+     * Set component options
      *
      * @param options {object}
      *  Options passed to the Template

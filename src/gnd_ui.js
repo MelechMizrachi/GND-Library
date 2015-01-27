@@ -34,8 +34,7 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  The dom selector function to use
+     * The dom selector function to use
      *
      * @extends {gnd.$}
      */
@@ -44,8 +43,7 @@ gnd.ui = {};
     /**
      * @namespace
      *
-     * @desc
-     *  Object of components created that need to be referenced globally
+     * Object of components created that need to be referenced globally
      *
      * @type {object}
      */
@@ -54,16 +52,14 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  Topics for components
+     * Topics for components
      */
     gnd.ui.Topics = {};
 
         /**
          * @namespace
          *
-         * @desc
-         *  The topics to subscribe for this component
+         * The topics to subscribe for this component
          *
          * @type {object}
          *
@@ -80,8 +76,7 @@ gnd.ui = {};
         /**
          * @namespace
          *
-         * @desc
-         *  The subscribed topics
+         * The subscribed topics
          *
          * @type {object}
          */
@@ -90,10 +85,7 @@ gnd.ui = {};
         /**
          * @class
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Handles topic callbacks for this component
+         * Handles topic callbacks for this component
          *
          * @params
          *********
@@ -143,10 +135,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Subscribe a callback method to a topic
+         * Subscribe a callback method to a topic
          *
          * @params
          *********
@@ -202,10 +191,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Subscribe a callback method to a topic
+         * Subscribe a callback method to a topic
          *
          * @params
          *********
@@ -257,10 +243,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Trigger a topic's callback methods to fire
+         * Trigger a topic's callback methods to fire
          *
          * @params
          *********
@@ -294,10 +277,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Unsubscribe all callback methods from a topic
+         * Unsubscribe all callback methods from a topic
          *
          * @params
          *********
@@ -317,10 +297,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Unsubscribe all callback methods from a topic
+         * Unsubscribe all callback methods from a topic
          *
          * @params
          *********
@@ -388,10 +365,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Remove all topics
+         * Remove all topics
          *
          * @params
          *********
@@ -412,16 +386,14 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  Helpers for components
+     * Helpers for components
      */
     gnd.ui.Helpers = {};
 
         /**
          * @namespace
          *
-         * @desc
-         *  The accepted options for the model
+         * The accepted options for the model
          *
          * @type {array}
          */
@@ -430,10 +402,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Set component options
+         * Set component options
          *
          * @params
          *********
@@ -480,8 +449,7 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  Extend Helpers and Topics to new class
+     * Extend Helpers and Topics to new class
      */
     gnd.ui.baseExtend = gnd.extend(
         gnd.ui.Topics
@@ -491,10 +459,7 @@ gnd.ui = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Extend a class
+     * Extend a class
      *
      * @params
      *********

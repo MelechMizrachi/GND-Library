@@ -17,8 +17,7 @@
 /**
  * @class Cookies
  *
- * @desc
- *  GND Library Cookies Class
+ * GND Library Cookies Class
  */
 var Cookies = {};
 
@@ -31,8 +30,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a cookie
+     * Get a cookie
      *
      * @param key {string}
      *  The cookie key
@@ -64,8 +62,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Set a cookie
+     * Set a cookie
      *
      * @param key {string}
      *  The cookie key
@@ -154,8 +151,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Remove a cookie
+     * Remove a cookie
      *
      * @param key {string}
      *  The cookie key
@@ -199,8 +195,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Determine if a cookie exists
+     * Determine if a cookie exists
      *
      * @param key {string}
      *  The cookie key
@@ -226,8 +221,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a list of the cookie keys
+     * Get a list of the cookie keys
      *
      * @returns {array}
      *  The keys
@@ -257,10 +251,7 @@ var Cookies = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a list of the cookies
+     * Get a list of the cookies
      *
      * @returns {object}
      *  The cookies

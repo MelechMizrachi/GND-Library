@@ -17,8 +17,7 @@
 /**
  * @class Cache
  *
- * @desc
- *  GND Library Cache Class
+ * GND Library Cache Class
  */
 var Cache = {};
 
@@ -27,10 +26,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a cached item
+     * Get a cached item
      *
      * @param key {string}
      *  The key to retrieve
@@ -45,10 +41,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set a cached item
+     * Set a cached item
      *
      * @param key {string}
      *  The key to set
@@ -65,10 +58,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the amount of items cached
+     * Get the amount of items cached
      *
      * @returns {number}
      */
@@ -80,10 +70,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delete a cached item
+     * Delete a cached item
      *
      * @param key {string}
      *  The key to delete
@@ -98,10 +85,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clear all cached items
+     * Clear all cached items
      *
      * @returns {*}
      */

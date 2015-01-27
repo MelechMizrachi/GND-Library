@@ -19,8 +19,7 @@
 /**
  * @class Logger
  *
- * @desc
- *  GND Library Logger Class
+ * GND Library Logger Class
  */
 var Logger = {};
 
@@ -29,10 +28,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Log variables to the console
+     * Log variables to the console
      */
     Logger.log = function ()
     {
@@ -44,10 +40,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set some info to the console
+     * Set some info to the console
      *
      * @params  {...} {*}
      *
@@ -63,10 +56,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console a warning
+     * Console a warning
      *
      * @params
      *********
@@ -85,10 +75,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Debug variables to the console
+     * Debug variables to the console
      *
      * @params  {...} {*}
      *
@@ -104,10 +91,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console errors
+     * Console errors
      *
      * @params  {...} {*}
      *
@@ -123,10 +107,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console time
+     * Console time
      *
      * @params  {...} {*}
      *
@@ -142,10 +123,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console timeEnd
+     * Console timeEnd
      *
      * @params  {...} {*}
      *

@@ -19,8 +19,7 @@ gnd.xhr = {};
     /**
      * @constant
      *
-     * @desc
-     *  Default ajax request url
+     * Default ajax request url
      *
      * @type {string}
      */
@@ -29,10 +28,7 @@ gnd.xhr = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax/XHR request
+     * Ajax/XHR request
      *
      * @params
      *********

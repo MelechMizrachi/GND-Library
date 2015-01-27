@@ -70,10 +70,7 @@
 /**
  * @class Dom
  *
- * @author MelechMizrachi
- *
- * @desc
- *  GND Library Dom Class
+ * GND Library Dom Class
  *
  * @param selector {string|HTMLDocument|HTMLElement|Node|NodeList}
  *  The event string
@@ -92,10 +89,7 @@ var Dom = function ( selector, context )
     /**
      * @constructor
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Dom.$ initializer
+     * Dom.$ initializer
      *
      * @param selector {string|HTMLDocument|HTMLElement|Node|NodeList}
      *  The event string
@@ -150,8 +144,7 @@ var Dom = function ( selector, context )
     /**
      * @author MelechMizrachi
      *
-     * @desc
-     *  Set the Init prototype as Dom's prototype
+     * Set the Init prototype as Dom's prototype
      *
      * @type {Object|Function}
      */
@@ -165,8 +158,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The HTML element
+     * The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -175,8 +167,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The context used to get this element
+     * The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -185,8 +176,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The selector used
+     * The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -195,8 +185,7 @@ var Dom = function ( selector, context )
     /**
      * @constant
      *
-     * @desc
-     *  How to split the strings within the class
+     * How to split the strings within the class
      *
      * @type {string}
      */
@@ -205,10 +194,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an element using a parent and a string selector
+     * Get an element using a parent and a string selector
      *
      * @param parent {HTMLDocument|HTMLElement|Node|NodeList}
      *  The parent element to use
@@ -287,10 +273,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @param selector {string}
      *  The selector to use
@@ -306,10 +289,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the elem parent
+     * Get the elem parent
      *
      * @returns {Dom}
      *  The parent
@@ -322,10 +302,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @param index {number}
      *  The elem index to get
@@ -347,10 +324,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find the closest parent with a given selector
+     * Find the closest parent with a given selector
      *
      * @param selector {string}
      *  The selector to use
@@ -436,10 +410,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get elem length
+     * Get elem length
      *
      * @returns {number}
      */
@@ -458,10 +429,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle event for element
+     * Handle event for element
      *
      * @param type {string}
      *  The type of event to handle
@@ -563,10 +531,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add an event
+     * Add an event
      *
      * @param eventType {string}
      *  The type of event to handle
@@ -590,10 +555,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove an event
+     * Remove an event
      *
      * @param [eventType] {string}
      *  The type of event to handle
@@ -631,10 +593,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event
+     * Trigger an event
      *
      * @param eventType {string}
      *  The type of event to handle
@@ -655,10 +614,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's value
+     * Overwrite, or get, the element's value
      *
      * @param [value] {string}
      *  The value to overwrite with
@@ -700,10 +656,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's text
+     * Overwrite, or get, the element's text
      *  NOTE: For use with single node elem
      *
      * @param [text] {string}
@@ -720,10 +673,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's html
+     * Overwrite, or get, the element's html
      *  NOTE: For use with single node elem
      *
      * @param [html] {string|Node|NodeList}
@@ -781,10 +731,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Append html to this element
+     * Append html to this element
      *
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
@@ -800,10 +747,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
@@ -819,10 +763,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @param type {string}
      *  The type of pend to use
@@ -874,10 +815,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @param type {string}
      *  The type of pend to use
@@ -942,10 +880,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem child nodes
+     * Remove elem child nodes
      *
      * @param [elem] {HTMLDocument|HTMLElement|Node}
      *  The elem to use
@@ -968,10 +903,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem from the dom
+     * Remove elem from the dom
      *
      * @param [elem] {HTMLDocument}
      *  The elem to use
@@ -1007,10 +939,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle class for element
+     * Handle class for element
      *
      * @param className {string}
      *  The class or classes to add
@@ -1088,10 +1017,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add class to element
+     * Add class to element
      *
      * @param className {string}
      *  The class or classes to add
@@ -1106,10 +1032,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove class from element
+     * Remove class from element
      *
      * @param className {string}
      *  The class or classes to remove
@@ -1124,10 +1047,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add or remove class or classes depending on whether the
+     * Add or remove class or classes depending on whether the
      *  elem has them or not
      *
      * @param className {string}
@@ -1143,10 +1063,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determines if elem has the class or classes specified
+     * Determines if elem has the class or classes specified
      *  NOTE: For use with single node elem
      *
      * @param className {string}
@@ -1179,10 +1096,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an attribute value
+     * Get an attribute value
      *
      * @param attr {string}
      *  The attribute to get
@@ -1204,10 +1118,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds attribute to elem
+     * Adds attribute to elem
      *
      * @param attr {string}
      *  The attribute to add to
@@ -1248,10 +1159,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes an attribute from elem
+     * Removes an attribute from elem
      *
      * @param attr {string}
      *  The attribute to remove
@@ -1290,10 +1198,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a data attribute value
+     * Get a data attribute value
      *
      * @param data {string}
      *  The data attribute to get
@@ -1314,10 +1219,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds a data attribute to elem
+     * Adds a data attribute to elem
      *
      * @param data
      *  The data to add to
@@ -1341,10 +1243,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes a data attribute from elem
+     * Removes a data attribute from elem
      *
      * @param data {string}
      *  The data to remove
@@ -1368,10 +1267,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document variable
+     * Get the document variable
      *
      * @returns {object}
      */
@@ -1383,10 +1279,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window variable
+     * Get the window variable
      *
      * @returns {object}
      */
@@ -1398,10 +1291,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window width
+     * Get the window width
      *
      * @returns {number}
      */
@@ -1413,10 +1303,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window height
+     * Get the window height
      *
      * @returns {number}
      */
@@ -1428,10 +1315,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the amount scrolled
+     * Get the amount scrolled
      *
      * @returns {number}
      */
@@ -1443,10 +1327,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total width
+     * Get the document's total width
      *
      * @returns {number}
      */
@@ -1458,10 +1339,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @returns {number}
      */
@@ -1473,10 +1351,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @param html {string}
      *  The HTML string to parse
@@ -1520,8 +1395,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Global elements
+     * Global elements
      *
      * @type {object}
      */
@@ -1530,8 +1404,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create a new instance of Dom for document
+     * Create a new instance of Dom for document
      *
      * @type {Dom}
      */
@@ -1540,8 +1413,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create a new instance of Dom for window
+     * Create a new instance of Dom for window
      *
      * @type {Dom}
      */
@@ -1550,8 +1422,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for html
+     * Create new instance of Dom for html
      *
      * @type {Dom}
      */
@@ -1560,8 +1431,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for body
+     * Create new instance of Dom for body
      *
      * @type {Dom}
      */
@@ -1570,8 +1440,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for #header
+     * Create new instance of Dom for #header
      *
      * @type {Dom}
      */
@@ -1580,8 +1449,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for #main
+     * Create new instance of Dom for #main
      *
      * @type {Dom}
      */
@@ -1590,8 +1458,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for #footer
+     * Create new instance of Dom for #footer
      *
      * @type {Dom}
      */

@@ -32,10 +32,7 @@
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  A collection of ui components/elements/nodes
+ * A collection of ui components/elements/nodes
  *
  * @params
  *********
@@ -63,8 +60,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The collection ID
+     * The collection ID
      *
      * @type {string}
      */
@@ -73,8 +69,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The selector for the DOM elements
+     * The selector for the DOM elements
      *
      * @type {object}
      */
@@ -83,8 +78,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The views in this collection
+     * The views in this collection
      *
      * @type {object}
      */
@@ -93,8 +87,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The options for this collections View
+     * The options for this collections View
      *
      * @type {object}
      */
@@ -103,8 +96,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  Index views by model id
+     * Index views by model id
      *
      * @type {object}
      */
@@ -113,8 +105,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  Index views by collection id
+     * Index views by collection id
      *
      * @type {array}
      */
@@ -123,8 +114,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the collection
+     * The accepted options for the collection
      *
      * @type {array}
      */
@@ -140,18 +130,14 @@ gnd.ui.Collection = function ( options )
      * @class
      * @extends gnd.ui.View
      *
-     * @desc
-     *  The View for the views in this collection
+     * The View for the views in this collection
      */
     gnd.ui.Collection.prototype.View = gnd.ui.View;
     
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize collection
+     * Initialize collection
      *
      * @params
      *********
@@ -170,10 +156,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set the views for the collection
+     * Set the views for the collection
      *
      * @params
      *********
@@ -227,10 +210,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add a view to the collection
+     * Add a view to the collection
      *
      * @params
      *********
@@ -291,10 +271,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a view in this collection by its model
+     * Find a view in this collection by its model
      *
      * @params
      *********
@@ -320,10 +297,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a view in this collection by its model id
+     * Find a view in this collection by its model id
      *
      * @params
      *********
@@ -352,10 +326,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a view in this collection by its id
+     * Find a view in this collection by its id
      *
      * @params
      *********
@@ -381,10 +352,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the nth view in the collection
+     * Get the nth view in the collection
      *
      * @params
      *********
@@ -410,10 +378,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the last view in the collection
+     * Get the last view in the collection
      *
      * @params
      *********
@@ -433,10 +398,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the nth view's id in the collection
+     * Get the nth view's id in the collection
      *
      * @params
      *********
@@ -462,10 +424,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the last view's id in the collection
+     * Get the last view's id in the collection
      *
      * @params
      *********
@@ -482,10 +441,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the nth view's collection id in the collection
+     * Get the nth view's collection id in the collection
      *
      * @params
      *********

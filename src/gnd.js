@@ -30,8 +30,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @constant
      *
-     * @desc
-     *  The version number for this copy of the gnd library
+     * The version number for this copy of the gnd library
      *
      * @type {string}
      */
@@ -40,8 +39,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @constant
      *
-     * @desc
-     *  Whether to run debug unit testing on the library or not
+     * Whether to run debug unit testing on the library or not
      *
      * @type {boolean}
      */
@@ -50,8 +48,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @namespace
      *
-     * @desc
-     *  The gnd parent (window)
+     * The gnd parent (window)
      *
      * @type {object}
      */
@@ -60,10 +57,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is of a type
+     * Determine if a variable is of a type
      *
      * @params
      *********
@@ -86,10 +80,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Extend object
+     * Extend object
      *
      * @params
      *********

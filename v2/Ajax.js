@@ -20,10 +20,7 @@
 /**
  * @class Ajax
  *
- * @author MelechMizrachi
- *
- * @desc
- *  GND Library Ajax Class
+ * GND Library Ajax Class
  *
  * @param url {string|object}
  *  The xhr url
@@ -43,8 +40,7 @@ var Ajax = function ( url, options )
     /**
      * @constant
      *
-     * @desc
-     *  Default ajax request url
+     * Default ajax request url
      *
      * @type {string}
      */
@@ -53,10 +49,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax/XHR request
+     * Ajax/XHR request
      *
      * @param url {string|object}
      *  The xhr url
@@ -283,8 +276,7 @@ var Ajax = function ( url, options )
     /**
      * @author MelechMizrachi
      *
-     * @desc
-     *  Set the Init prototype as Dom's prototype
+     * Set the Init prototype as Dom's prototype
      *
      * @type {Object|Function}
      */
@@ -298,10 +290,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Easy method for setting options.method for ajax calls
+     * Easy method for setting options.method for ajax calls
      *
      * @param url {string|object}
      * @param options {object}
@@ -327,10 +316,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax post method so as to not have to define options.method
+     * Ajax post method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
@@ -345,10 +331,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax update method so as to not have to define options.method
+     * Ajax update method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
@@ -363,10 +346,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax delete method so as to not have to define options.method
+     * Ajax delete method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}

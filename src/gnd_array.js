@@ -27,8 +27,6 @@ gnd.array = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
          * @borrows Array.isArray
          */
         gnd.array.is.array = Array.isArray;
@@ -36,10 +34,7 @@ gnd.array = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if an array is empty
+         * Determine if an array is empty
          *
          * @params
          *********
@@ -57,10 +52,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @params
      *********
@@ -81,10 +73,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @params
      *********

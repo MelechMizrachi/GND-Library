@@ -55,10 +55,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Is this a modern browser
+     * Is this a modern browser
      *
      * @type {boolean}
      */
@@ -77,44 +74,32 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
      * @borrows Array.isArray
      */
     gnd.is.array = gnd.array.is.array;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.window = gnd.object.is.window;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.document = gnd.object.is.document;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.numeric = gnd.string.is.numeric;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.object = gnd.object.is.object;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      *
      * @see gnd.string.is.string
      *
@@ -124,39 +109,28 @@ gnd.is = {};
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.domElement = gnd.object.is.domElement;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.nodeList = gnd.object.is.nodeList;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.htmlCollection = gnd.object.is.htmlCollection;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.htmlList = gnd.object.is.htmlList;
 
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is an instance of gnd.dom.$
+     * Determine if a variable is an instance of gnd.dom.$
      *
      * @params
      *********
@@ -174,10 +148,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a boolean
+     * Determine if a variable is a boolean
      *
      * @params
      *********
@@ -195,10 +166,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a function
+     * Determine if a variable is a function
      *
      * @params
      *********
@@ -216,10 +184,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is null/undefined/etc
+     * Determine if a variable is null/undefined/etc
      *
      * @params
      *********
@@ -240,10 +205,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is undefined
+     * Determine if a variable is undefined
      *
      * @params
      *********
@@ -265,22 +227,16 @@ gnd.is = {};
 
         /**
          * @method
-         *
-         * @author MelechMizrachi
          */
         gnd.is.empty.array = gnd.array.is.empty;
 
         /**
          * @method
-         *
-         * @author MelechMizrachi
          */
         gnd.is.empty.object = gnd.object.is.empty;
 
         /**
          * @method
-         *
-         * @author MelechMizrachi
          */
         gnd.is.empty.string = gnd.string.is.empty;
 
@@ -292,16 +248,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.IE
          */
         gnd.is.browser.IE = gnd.userAgent.IE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.FIREFOX
          */
@@ -310,16 +262,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.CHROME
          */
         gnd.is.browser.CHROME = gnd.userAgent.CHROME;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.SAFARI
          */
@@ -333,16 +281,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.WINDOWS
          */
         gnd.is.os.WINDOWS = gnd.userAgent.WINDOWS;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.MAC
          */
@@ -351,16 +295,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.LINUX
          */
         gnd.is.os.LINUX = gnd.userAgent.LINUX;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.ANDROID
          */
@@ -369,16 +309,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.IOS
          */
         gnd.is.os.IOS = gnd.userAgent.IOS;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.WINDOWS_PHONE
          */
@@ -392,16 +328,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.WINDOWS_PHONE
          */
         gnd.is.device.WP = gnd.userAgent.WINDOWS_PHONE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.DESKTOP
          */
@@ -410,16 +342,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.MOBILE
          */
         gnd.is.device.MOBILE = gnd.userAgent.MOBILE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.ANDROID
          */
@@ -428,16 +356,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.IPHONE
          */
         gnd.is.device.IPHONE = gnd.userAgent.IPHONE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.IPAD
          */

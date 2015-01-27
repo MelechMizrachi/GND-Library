@@ -16,8 +16,7 @@
 /**
  * @class Config
  *
- * @desc
- *  GND Library Config Class
+ * GND Library Config Class
  */
 var Config = {};
 
@@ -34,8 +33,7 @@ var Config = {};
     /**
      * @constant
      *
-     * @desc
-     *  The version of gnd library
+     * The version of gnd library
      *
      * @type {string}
      */
@@ -44,8 +42,7 @@ var Config = {};
     /**
      * @constant
      *
-     * @desc
-     *  Whether to run debug within the library
+     * Whether to run debug within the library
      *
      * @type {boolean}
      */
@@ -54,8 +51,7 @@ var Config = {};
     /**
      * @namespace
      *
-     * @desc
-     *  The parent (window)
+     * The parent (window)
      *
      * @type {object}
      */
@@ -95,8 +91,7 @@ var Config = {};
 /**
  * @class is
  *
- * @desc
- *  GND Library is class
+ * GND Library is class
  */
 var is = {};
 
@@ -105,10 +100,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is of a type
+     * Determine if a variable is of a type
      *
      * @param toTest {*}
      *  The variable to test
@@ -125,10 +117,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Is this a modern browser
+     * Is this a modern browser
      *
      * @type {boolean}
      */
@@ -147,10 +136,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a boolean
+     * Determine if a variable is a boolean
      *
      * @param bool {*}
      *  The variable to test
@@ -165,8 +151,6 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
      * @borrows Array.isArray
      */
     is.array = Array.isArray;
@@ -174,10 +158,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a object
+     * Determine if a variable is a object
      *
      * @param obj {*}
      *  The variable to test
@@ -192,10 +173,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is the document
+     * Determine if a variable is the document
      *
      * @param doc {*}
      *  The variable to test
@@ -210,10 +188,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a the window variable to avoid endless loops
+     * Determine if a variable is a the window variable to avoid endless loops
      *
      * @param win {*}
      *  The variable to test
@@ -228,10 +203,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a param is an HTML Element
+     * Determine if a param is an HTML Element
      *
      * @param elem {*}
      *  The variable to test
@@ -246,10 +218,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a node list
+     * Determine if a variable is a node list
      *
      * @param nodeList {*}
      *  The variable to test
@@ -264,10 +233,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is an HTML collection
+     * Determine if a variable is an HTML collection
      *
      * @param htmlCollection {*}
      *  The variable to test
@@ -282,10 +248,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a node list or an HTML collection
+     * Determine if a variable is a node list or an HTML collection
      *
      * @param htmlList {*}
      *  The variable to test
@@ -300,10 +263,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a string
+     * Determine if a variable is a string
      *
      * @param toTest {*}
      *  The variable to test
@@ -318,10 +278,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a number
+     * Determine if a variable is a number
      *
      * @param toTest {*}
      *  The variable to test
@@ -336,10 +293,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is an instance of Dom
+     * Determine if a variable is an instance of Dom
      *
      * @param toTest {*}
      *  The variable to test
@@ -354,10 +308,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a boolean
+     * Determine if a variable is a boolean
      *
      * @param toTest {*}
      *  The variable to test
@@ -372,10 +323,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a function
+     * Determine if a variable is a function
      *
      * @param toTest {*}
      *  The variable to test
@@ -390,10 +338,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is null/undefined/etc
+     * Determine if a variable is null/undefined/etc
      *
      * @param toTest {*}
      *  The variable to test
@@ -411,10 +356,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is undefined
+     * Determine if a variable is undefined
      *
      * @param toTest {*}
      *  The variable to test
@@ -429,10 +371,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if an array is empty
+     * Determine if an array is empty
      *
      * @param arr {*}
      *  The variable to test
@@ -447,10 +386,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if an object is empty
+     * Determine if an object is empty
      *
      * @param obj {*}
      *  The variable to test
@@ -475,10 +411,7 @@ var is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a string is empty
+     * Determine if a string is empty
      *
      * @param toTest {*}
      *  The variable to test
@@ -511,8 +444,7 @@ var is = {};
 /**
  * @class Logger
  *
- * @desc
- *  GND Library Logger Class
+ * GND Library Logger Class
  */
 var Logger = {};
 
@@ -521,10 +453,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Log variables to the console
+     * Log variables to the console
      */
     Logger.log = function ()
     {
@@ -536,10 +465,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set some info to the console
+     * Set some info to the console
      *
      * @params  {...} {*}
      *
@@ -555,10 +481,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console a warning
+     * Console a warning
      *
      * @params
      *********
@@ -577,10 +500,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Debug variables to the console
+     * Debug variables to the console
      *
      * @params  {...} {*}
      *
@@ -596,10 +516,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console errors
+     * Console errors
      *
      * @params  {...} {*}
      *
@@ -615,10 +532,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console time
+     * Console time
      *
      * @params  {...} {*}
      *
@@ -634,10 +548,7 @@ var Logger = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console timeEnd
+     * Console timeEnd
      *
      * @params  {...} {*}
      *
@@ -668,8 +579,7 @@ var Logger = {};
 /**
  * @class Utils
  *
- * @desc
- *  GND Library Utils class
+ * GND Library Utils class
  */
 var Utils = {};
 
@@ -678,10 +588,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clone a given object or array
+     * Clone a given object or array
      *
      * @param toClone {object|array}
      *  The object or array to clone
@@ -709,10 +616,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Iterate through an object || array
+     * Iterate through an object || array
      *
      * @param items {object|array}
      *  The items to loop through
@@ -748,10 +652,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Extend object
+     * Extend object
      *
      * @params  {...}
      *
@@ -774,10 +675,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Merge two objects
+     * Merge two objects
      *
      * @param mergeInto {object}
      *  The object to merge into
@@ -810,10 +708,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clone a given array
+     * Clone a given array
      *
      * @param toClone {array}
      *  The array to clone
@@ -828,10 +723,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @param arr {array}
      *  The array to test
@@ -848,10 +740,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @param arr {Array}
      *  The array to test
@@ -911,10 +800,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Validate a given object
+     * Validate a given object
      *
      * @param toTest {object}
      *  The object to validate
@@ -936,10 +822,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the first property in a given object
+     * Get the first property in a given object
      *
      * @param obj {object|array}
      *  The object
@@ -1028,10 +911,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Convert parameter to a string
+     * Convert parameter to a string
      *
      * @param value {*}
      *  The string to make safe
@@ -1049,10 +929,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does a string contain a value
+     * Does a string contain a value
      *
      * @param toTest {string}
      *  The string to test
@@ -1073,10 +950,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *
      * @link String.contains
      *
@@ -1099,10 +973,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Compare to strings to see if they match
+     * Compare to strings to see if they match
      *
      * @param toTest {string}
      *  The string to test
@@ -1119,10 +990,7 @@ var Utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *
      * @link String.compare
      *
@@ -1164,10 +1032,7 @@ var Utils = {};
 /**
  * @class Ajax
  *
- * @author MelechMizrachi
- *
- * @desc
- *  GND Library Ajax Class
+ * GND Library Ajax Class
  *
  * @param url {string|object}
  *  The xhr url
@@ -1187,8 +1052,7 @@ var Ajax = function ( url, options )
     /**
      * @constant
      *
-     * @desc
-     *  Default ajax request url
+     * Default ajax request url
      *
      * @type {string}
      */
@@ -1197,10 +1061,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax/XHR request
+     * Ajax/XHR request
      *
      * @param url {string|object}
      *  The xhr url
@@ -1427,8 +1288,7 @@ var Ajax = function ( url, options )
     /**
      * @author MelechMizrachi
      *
-     * @desc
-     *  Set the Init prototype as Dom's prototype
+     * Set the Init prototype as Dom's prototype
      *
      * @type {Object|Function}
      */
@@ -1442,10 +1302,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Easy method for setting options.method for ajax calls
+     * Easy method for setting options.method for ajax calls
      *
      * @param url {string|object}
      * @param options {object}
@@ -1471,10 +1328,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax post method so as to not have to define options.method
+     * Ajax post method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
@@ -1489,10 +1343,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax update method so as to not have to define options.method
+     * Ajax update method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
@@ -1507,10 +1358,7 @@ var Ajax = function ( url, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax delete method so as to not have to define options.method
+     * Ajax delete method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
@@ -1536,8 +1384,7 @@ var Ajax = function ( url, options )
 /**
  * @class Auth
  *
- * @desc
- *  GND Library Auth Class
+ * GND Library Auth Class
  */
 var Auth = function ()
 {
@@ -1567,8 +1414,7 @@ var Auth = function ()
 /**
  * @class Cache
  *
- * @desc
- *  GND Library Cache Class
+ * GND Library Cache Class
  */
 var Cache = {};
 
@@ -1577,10 +1423,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a cached item
+     * Get a cached item
      *
      * @param key {string}
      *  The key to retrieve
@@ -1595,10 +1438,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set a cached item
+     * Set a cached item
      *
      * @param key {string}
      *  The key to set
@@ -1615,10 +1455,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the amount of items cached
+     * Get the amount of items cached
      *
      * @returns {number}
      */
@@ -1630,10 +1467,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delete a cached item
+     * Delete a cached item
      *
      * @param key {string}
      *  The key to delete
@@ -1648,10 +1482,7 @@ var Cache = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clear all cached items
+     * Clear all cached items
      *
      * @returns {*}
      */
@@ -1679,8 +1510,7 @@ var Cache = {};
 /**
  * @class Cookies
  *
- * @desc
- *  GND Library Cookies Class
+ * GND Library Cookies Class
  */
 var Cookies = {};
 
@@ -1693,8 +1523,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a cookie
+     * Get a cookie
      *
      * @param key {string}
      *  The cookie key
@@ -1726,8 +1555,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Set a cookie
+     * Set a cookie
      *
      * @param key {string}
      *  The cookie key
@@ -1816,8 +1644,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Remove a cookie
+     * Remove a cookie
      *
      * @param key {string}
      *  The cookie key
@@ -1861,8 +1688,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Determine if a cookie exists
+     * Determine if a cookie exists
      *
      * @param key {string}
      *  The cookie key
@@ -1888,8 +1714,7 @@ var Cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a list of the cookie keys
+     * Get a list of the cookie keys
      *
      * @returns {array}
      *  The keys
@@ -1919,10 +1744,7 @@ var Cookies = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a list of the cookies
+     * Get a list of the cookies
      *
      * @returns {object}
      *  The cookies
@@ -2035,10 +1857,7 @@ var Cookies = {};
 /**
  * @class Dom
  *
- * @author MelechMizrachi
- *
- * @desc
- *  GND Library Dom Class
+ * GND Library Dom Class
  *
  * @param selector {string|HTMLDocument|HTMLElement|Node|NodeList}
  *  The event string
@@ -2057,10 +1876,7 @@ var Dom = function ( selector, context )
     /**
      * @constructor
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Dom.$ initializer
+     * Dom.$ initializer
      *
      * @param selector {string|HTMLDocument|HTMLElement|Node|NodeList}
      *  The event string
@@ -2115,8 +1931,7 @@ var Dom = function ( selector, context )
     /**
      * @author MelechMizrachi
      *
-     * @desc
-     *  Set the Init prototype as Dom's prototype
+     * Set the Init prototype as Dom's prototype
      *
      * @type {Object|Function}
      */
@@ -2130,8 +1945,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The HTML element
+     * The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -2140,8 +1954,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The context used to get this element
+     * The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -2150,8 +1963,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The selector used
+     * The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -2160,8 +1972,7 @@ var Dom = function ( selector, context )
     /**
      * @constant
      *
-     * @desc
-     *  How to split the strings within the class
+     * How to split the strings within the class
      *
      * @type {string}
      */
@@ -2170,10 +1981,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an element using a parent and a string selector
+     * Get an element using a parent and a string selector
      *
      * @param parent {HTMLDocument|HTMLElement|Node|NodeList}
      *  The parent element to use
@@ -2252,10 +2060,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @param selector {string}
      *  The selector to use
@@ -2271,10 +2076,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the elem parent
+     * Get the elem parent
      *
      * @returns {Dom}
      *  The parent
@@ -2287,10 +2089,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @param index {number}
      *  The elem index to get
@@ -2312,10 +2111,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find the closest parent with a given selector
+     * Find the closest parent with a given selector
      *
      * @param selector {string}
      *  The selector to use
@@ -2401,10 +2197,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get elem length
+     * Get elem length
      *
      * @returns {number}
      */
@@ -2423,10 +2216,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle event for element
+     * Handle event for element
      *
      * @param type {string}
      *  The type of event to handle
@@ -2528,10 +2318,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add an event
+     * Add an event
      *
      * @param eventType {string}
      *  The type of event to handle
@@ -2555,10 +2342,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove an event
+     * Remove an event
      *
      * @param [eventType] {string}
      *  The type of event to handle
@@ -2596,10 +2380,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event
+     * Trigger an event
      *
      * @param eventType {string}
      *  The type of event to handle
@@ -2620,10 +2401,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's value
+     * Overwrite, or get, the element's value
      *
      * @param [value] {string}
      *  The value to overwrite with
@@ -2665,10 +2443,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's text
+     * Overwrite, or get, the element's text
      *  NOTE: For use with single node elem
      *
      * @param [text] {string}
@@ -2685,10 +2460,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's html
+     * Overwrite, or get, the element's html
      *  NOTE: For use with single node elem
      *
      * @param [html] {string|Node|NodeList}
@@ -2746,10 +2518,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Append html to this element
+     * Append html to this element
      *
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
@@ -2765,10 +2534,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @param html {string|Node|NodeList}
      *  The html to overwrite with
@@ -2784,10 +2550,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @param type {string}
      *  The type of pend to use
@@ -2839,10 +2602,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @param type {string}
      *  The type of pend to use
@@ -2907,10 +2667,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem child nodes
+     * Remove elem child nodes
      *
      * @param [elem] {HTMLDocument|HTMLElement|Node}
      *  The elem to use
@@ -2933,10 +2690,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem from the dom
+     * Remove elem from the dom
      *
      * @param [elem] {HTMLDocument}
      *  The elem to use
@@ -2972,10 +2726,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle class for element
+     * Handle class for element
      *
      * @param className {string}
      *  The class or classes to add
@@ -3053,10 +2804,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add class to element
+     * Add class to element
      *
      * @param className {string}
      *  The class or classes to add
@@ -3071,10 +2819,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove class from element
+     * Remove class from element
      *
      * @param className {string}
      *  The class or classes to remove
@@ -3089,10 +2834,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add or remove class or classes depending on whether the
+     * Add or remove class or classes depending on whether the
      *  elem has them or not
      *
      * @param className {string}
@@ -3108,10 +2850,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determines if elem has the class or classes specified
+     * Determines if elem has the class or classes specified
      *  NOTE: For use with single node elem
      *
      * @param className {string}
@@ -3144,10 +2883,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an attribute value
+     * Get an attribute value
      *
      * @param attr {string}
      *  The attribute to get
@@ -3169,10 +2905,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds attribute to elem
+     * Adds attribute to elem
      *
      * @param attr {string}
      *  The attribute to add to
@@ -3213,10 +2946,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes an attribute from elem
+     * Removes an attribute from elem
      *
      * @param attr {string}
      *  The attribute to remove
@@ -3255,10 +2985,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a data attribute value
+     * Get a data attribute value
      *
      * @param data {string}
      *  The data attribute to get
@@ -3279,10 +3006,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds a data attribute to elem
+     * Adds a data attribute to elem
      *
      * @param data
      *  The data to add to
@@ -3306,10 +3030,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes a data attribute from elem
+     * Removes a data attribute from elem
      *
      * @param data {string}
      *  The data to remove
@@ -3333,10 +3054,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document variable
+     * Get the document variable
      *
      * @returns {object}
      */
@@ -3348,10 +3066,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window variable
+     * Get the window variable
      *
      * @returns {object}
      */
@@ -3363,10 +3078,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window width
+     * Get the window width
      *
      * @returns {number}
      */
@@ -3378,10 +3090,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window height
+     * Get the window height
      *
      * @returns {number}
      */
@@ -3393,10 +3102,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the amount scrolled
+     * Get the amount scrolled
      *
      * @returns {number}
      */
@@ -3408,10 +3114,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total width
+     * Get the document's total width
      *
      * @returns {number}
      */
@@ -3423,10 +3126,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @returns {number}
      */
@@ -3438,10 +3138,7 @@ var Dom = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @param html {string}
      *  The HTML string to parse
@@ -3485,8 +3182,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Global elements
+     * Global elements
      *
      * @type {object}
      */
@@ -3495,8 +3191,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create a new instance of Dom for document
+     * Create a new instance of Dom for document
      *
      * @type {Dom}
      */
@@ -3505,8 +3200,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create a new instance of Dom for window
+     * Create a new instance of Dom for window
      *
      * @type {Dom}
      */
@@ -3515,8 +3209,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for html
+     * Create new instance of Dom for html
      *
      * @type {Dom}
      */
@@ -3525,8 +3218,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for body
+     * Create new instance of Dom for body
      *
      * @type {Dom}
      */
@@ -3535,8 +3227,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for #header
+     * Create new instance of Dom for #header
      *
      * @type {Dom}
      */
@@ -3545,8 +3236,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for #main
+     * Create new instance of Dom for #main
      *
      * @type {Dom}
      */
@@ -3555,8 +3245,7 @@ var Dom = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  Create new instance of Dom for #footer
+     * Create new instance of Dom for #footer
      *
      * @type {Dom}
      */
@@ -3576,8 +3265,7 @@ var Dom = function ( selector, context )
 /**
  * @class Router
  *
- * @desc
- *  GND Library Router Class
+ * GND Library Router Class
  */
 var Router = {};
 
@@ -3622,8 +3310,7 @@ var Router = {};
 /**
  * @class Template
  *
- * @desc
- *  GND Library Template Class
+ * GND Library Template Class
  *
  * @param objToMerge {object}
  *  The object to merge
@@ -3641,10 +3328,7 @@ var Template = function ( objToMerge )
     /**
      * @constructor
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Template initializer
+     * Template initializer
      *
      * @param objToMerge {object}
      *  The object to merge
@@ -3660,8 +3344,7 @@ var Template = function ( objToMerge )
     /**
      * @author MelechMizrachi
      *
-     * @desc
-     *  Set the Init prototype as Template's prototype
+     * Set the Init prototype as Template's prototype
      *
      * @type {Object|Function}
      */
@@ -3678,10 +3361,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Render a template for a ui component/element/node
+     * Render a template for a ui component/element/node
      *
      * @param [options] {object}
      *  Any custom options for this view
@@ -3706,8 +3386,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The Template ID
+     * The Template ID
      *
      * @type {string}
      */
@@ -3716,8 +3395,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The Template ID
+     * The Template ID
      *
      * @type {Dom}
      */
@@ -3726,8 +3404,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The element tag name
+     * The element tag name
      *
      * @type {string}
      */
@@ -3736,8 +3413,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The element class name
+     * The element class name
      *
      * @type {string}
      */
@@ -3746,8 +3422,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The template to use
+     * The template to use
      *
      * @type {string}
      */
@@ -3756,8 +3431,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The element attributes
+     * The element attributes
      *
      * @type {object}
      */
@@ -3766,8 +3440,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The events for this template
+     * The events for this template
      *
      * @type {object}
      */
@@ -3776,8 +3449,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the template
+     * The accepted options for the template
      *
      * @type {array}
      */
@@ -3795,8 +3467,7 @@ var Template = function ( objToMerge )
     /**
      * @namespace
      *
-     * @desc
-     *  What to split event strings with
+     * What to split event strings with
      *
      * @type {string}
      */
@@ -3805,10 +3476,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize Template
+     * Initialize Template
      *
      * @returns {Template}
      */
@@ -3823,10 +3491,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a dom element under elem
+     * Return a dom element under elem
      *
      * @param [selector] {string}
      *  The selector to use to find the elem's child
@@ -3849,10 +3514,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set the View element
+     * Set the View element
      *
      * @param element {object|string}
      *  The element to set
@@ -3889,10 +3551,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove View - Remove element from DOM
+     * Remove View - Remove element from DOM
      *
      * @returns {object}
      *  The view
@@ -3912,10 +3571,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate an event handler
+     * Delegate/Undelegate an event handler
      *
      * @param event {string}
      *  The event string
@@ -3982,10 +3638,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event handler
+     * Trigger an event handler
      *
      * @param event {string}
      *  The event to trigger
@@ -4023,10 +3676,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate event handlers given an object of events
+     * Delegate/Undelegate event handlers given an object of events
      *
      * @param events {object}
      *  The events to create
@@ -4068,10 +3718,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Undelegate all event handlers
+     * Undelegate all event handlers
      *
      * @returns {object}
      */
@@ -4087,10 +3734,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ensure the view element exists
+     * Ensure the view element exists
      *
      * @returns void
      */
@@ -4109,10 +3753,7 @@ var Template = function ( objToMerge )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set component options
+     * Set component options
      *
      * @param options {object}
      *  Options passed to the Template
@@ -4171,10 +3812,7 @@ var Template = function ( objToMerge )
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  Handles topic callbacks for this component
+ * Handles topic callbacks for this component
  *
  * @param topicName {string}
  *  The topic name
@@ -4223,8 +3861,7 @@ var Topics = function ( topicName )
     /**
      * @namespace
      *
-     * @desc
-     *  The subscribed topics
+     * The subscribed topics
      *
      * @type {object}
      */
@@ -4233,10 +3870,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Subscribe a callback method to a topic
+     * Subscribe a callback method to a topic
      *
      * @param callback {string}
      *  The callback method
@@ -4289,10 +3923,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Subscribe a callback method to a topic
+     * Subscribe a callback method to a topic
      *
      * @param callback {string}
      *  The callback method
@@ -4340,10 +3971,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger a topic's callback methods to fire
+     * Trigger a topic's callback methods to fire
      *
      * @returns {object}
      *  The topic
@@ -4374,10 +4002,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Unsubscribe all callback methods from a topic
+     * Unsubscribe all callback methods from a topic
      *
      * @returns {object}
      *  The topic
@@ -4394,10 +4019,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Unsubscribe all callback methods from a topic
+     * Unsubscribe all callback methods from a topic
      *
      * @param topics {object}
      *  The topics to create
@@ -4460,10 +4082,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove all topics
+     * Remove all topics
      *
      * @params
      *********
@@ -4511,8 +4130,7 @@ var Topics = function ( topicName )
 /**
  * @class UserAgent
  *
- * @desc
- *  GND Library User Agent Class
+ * GND Library User Agent Class
  */
 var UserAgent = {};
 
@@ -4521,10 +4139,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  User Agent string
+     * User Agent string
      *
      * @type {string}
      */
@@ -4533,10 +4148,7 @@ var UserAgent = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user agent has a value
+     * Determine if the user agent has a value
      *
      * @param value {string}
      *  The value to test if userAgent contains it
@@ -4551,10 +4163,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is IE
+     * Determine if the user's browser is IE
      *
      * @type {boolean}
      */
@@ -4565,10 +4174,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is FireFox
+     * Determine if the user's browser is FireFox
      *
      * @type {boolean}
      */
@@ -4579,10 +4185,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is Chrome
+     * Determine if the user's browser is Chrome
      *
      * @type {boolean}
      */
@@ -4593,10 +4196,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is Safari
+     * Determine if the user's browser is Safari
      *
      * @type {boolean}
      */
@@ -4607,10 +4207,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is iPhone
+     * Determine if the user's device is iPhone
      *
      * @type {boolean}
      */
@@ -4621,10 +4218,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is iPad
+     * Determine if the user's device is iPad
      *
      * @type {boolean}
      */
@@ -4635,10 +4229,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Android
+     * Determine if the user's OS is Android
      *
      * @type {boolean}
      */
@@ -4649,10 +4240,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is iOS
+     * Determine if the user's OS is iOS
      *
      * @type {boolean}
      */
@@ -4661,10 +4249,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Windows Phone
+     * Determine if the user's OS is Windows Phone
      *
      * @type {boolean}
      */
@@ -4675,10 +4260,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is a mobile device
+     * Determine if the user's device is a mobile device
      *
      * @type {boolean}
      */
@@ -4687,10 +4269,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Windows
+     * Determine if the user's OS is Windows
      *
      * @type {boolean}
      */
@@ -4701,10 +4280,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Mac
+     * Determine if the user's OS is Mac
      *
      * @type {boolean}
      */
@@ -4715,10 +4291,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Linux
+     * Determine if the user's OS is Linux
      *
      * @type {boolean}
      */
@@ -4729,10 +4302,7 @@ var UserAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is a desktop
+     * Determine if the user's device is a desktop
      *
      * @type {boolean}
      */

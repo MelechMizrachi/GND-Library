@@ -30,8 +30,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @constant
      *
-     * @desc
-     *  The version number for this copy of the gnd library
+     * The version number for this copy of the gnd library
      *
      * @type {string}
      */
@@ -40,8 +39,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @constant
      *
-     * @desc
-     *  Whether to run debug unit testing on the library or not
+     * Whether to run debug unit testing on the library or not
      *
      * @type {boolean}
      */
@@ -50,8 +48,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @namespace
      *
-     * @desc
-     *  The gnd parent (window)
+     * The gnd parent (window)
      *
      * @type {object}
      */
@@ -60,10 +57,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is of a type
+     * Determine if a variable is of a type
      *
      * @params
      *********
@@ -86,10 +80,7 @@ window.GND_GLOBALS = window.GND_GLOBALS || {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Extend object
+     * Extend object
      *
      * @params
      *********
@@ -141,8 +132,6 @@ gnd.array = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
          * @borrows Array.isArray
          */
         gnd.array.is.array = Array.isArray;
@@ -150,10 +139,7 @@ gnd.array = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if an array is empty
+         * Determine if an array is empty
          *
          * @params
          *********
@@ -171,10 +157,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @params
      *********
@@ -195,10 +178,7 @@ gnd.array = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @params
      *********
@@ -251,10 +231,7 @@ gnd.object = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an object have this property as its own
+     * Does an object have this property as its own
      *
      * @params
      *********
@@ -280,10 +257,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a object
+         * Determine if a variable is a object
          *
          * @params
          *********
@@ -301,10 +275,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a param is an HTML Element
+         * Determine if a param is an HTML Element
          *
          * @params
          *********
@@ -322,10 +293,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a node list
+         * Determine if a variable is a node list
          *
          * @params
          *********
@@ -343,10 +311,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is an HTML collection
+         * Determine if a variable is an HTML collection
          *
          * @params
          *********
@@ -364,10 +329,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a node list or an HTML collection
+         * Determine if a variable is a node list or an HTML collection
          *
          * @params
          *********
@@ -385,10 +347,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a the window variable to avoid endless loops
+         * Determine if a variable is a the window variable to avoid endless loops
          *
          * @params
          *********
@@ -406,10 +365,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is the document
+         * Determine if a variable is the document
          *
          * @params
          *********
@@ -427,10 +383,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if an object is empty
+         * Determine if an object is empty
          *
          * @params
          *********
@@ -463,10 +416,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Get a nested item from an object/array via path
+         * Get a nested item from an object/array via path
          *
          * @params
          *********
@@ -490,10 +440,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Get the first property in a given object
+         * Get the first property in a given object
          *
          * @params
          *********
@@ -520,10 +467,7 @@ gnd.object = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Set a nested item's value from an object/array via path
+         * Set a nested item's value from an object/array via path
          *
          * @params
          *********
@@ -557,8 +501,7 @@ gnd.object = {};
      * @url
      *  http://stackoverflow.com/a/16190716
      *
-     * @desc
-     *  Set a nested item's value from an object/array via path
+     * Set a nested item's value from an object/array via path
      *
      * @params
      *********
@@ -673,10 +616,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Convert parameter to a string
+     * Convert parameter to a string
      *
      * @params
      *********
@@ -702,10 +642,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a string
+         * Determine if a variable is a string
          *
          * @params
          *********
@@ -723,10 +660,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a number
+         * Determine if a variable is a number
          *
          * @params
          *********
@@ -744,10 +678,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a string is empty
+         * Determine if a string is empty
          *
          * @params
          *********
@@ -771,10 +702,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does a string contain a value
+     * Does a string contain a value
      *
      * @params
      *********
@@ -799,10 +727,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *  @link gnd.string.contains
      *
      * @params
@@ -828,10 +753,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Compare to strings to see if they match
+     * Compare to strings to see if they match
      *
      * @params
      *********
@@ -852,10 +774,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *  @link gnd.string.compare
      *
      * @params
@@ -908,8 +827,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a cookie
+     * Get a cookie
      *
      * @params
      *********
@@ -944,8 +862,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Set a cookie
+     * Set a cookie
      *
      * @params
      *********
@@ -1042,8 +959,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Remove a cookie
+     * Remove a cookie
      *
      * @params
      *********
@@ -1092,8 +1008,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Determine if a cookie exists
+     * Determine if a cookie exists
      *
      * @params
      *********
@@ -1122,8 +1037,7 @@ gnd.cookies = {};
      *  Mozilla Developers
      *  MelechMizrachi
      *
-     * @desc
-     *  Get a list of the cookie keys
+     * Get a list of the cookie keys
      *
      * @params
      *********
@@ -1156,10 +1070,7 @@ gnd.cookies = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a list of the cookies
+     * Get a list of the cookies
      *
      * @params
      *********
@@ -1243,10 +1154,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  User Agent string
+     * User Agent string
      *
      * @type {string}
      */
@@ -1261,10 +1169,7 @@ gnd.userAgent = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user agent has a value
+     * Determine if the user agent has a value
      *
      * @params
      *********
@@ -1288,10 +1193,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is IE
+     * Determine if the user's browser is IE
      *
      * @type {boolean}
      */
@@ -1303,10 +1205,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is FireFox
+     * Determine if the user's browser is FireFox
      *
      * @type {boolean}
      */
@@ -1318,10 +1217,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is Chrome
+     * Determine if the user's browser is Chrome
      *
      * @type {boolean}
      */
@@ -1333,10 +1229,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's browser is Safari
+     * Determine if the user's browser is Safari
      *
      * @type {boolean}
      */
@@ -1348,10 +1241,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is iPhone
+     * Determine if the user's device is iPhone
      *
      * @type {boolean}
      */
@@ -1363,10 +1253,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is iPad
+     * Determine if the user's device is iPad
      *
      * @type {boolean}
      */
@@ -1378,10 +1265,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Android
+     * Determine if the user's OS is Android
      *
      * @type {boolean}
      */
@@ -1393,10 +1277,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is iOS
+     * Determine if the user's OS is iOS
      *
      * @type {boolean}
      */
@@ -1405,10 +1286,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Windows Phone
+     * Determine if the user's OS is Windows Phone
      *
      * @type {boolean}
      */
@@ -1420,10 +1298,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is a mobile device
+     * Determine if the user's device is a mobile device
      *
      * @type {boolean}
      */
@@ -1432,10 +1307,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Windows
+     * Determine if the user's OS is Windows
      *
      * @type {boolean}
      */
@@ -1447,10 +1319,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Mac
+     * Determine if the user's OS is Mac
      *
      * @type {boolean}
      */
@@ -1462,10 +1331,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's OS is Linux
+     * Determine if the user's OS is Linux
      *
      * @type {boolean}
      */
@@ -1477,10 +1343,7 @@ gnd.userAgent = {};
     /**
      * @constant
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if the user's device is a desktop
+     * Determine if the user's device is a desktop
      *
      * @type {boolean}
      */
@@ -1542,10 +1405,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Is this a modern browser
+     * Is this a modern browser
      *
      * @type {boolean}
      */
@@ -1564,44 +1424,32 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
      * @borrows Array.isArray
      */
     gnd.is.array = gnd.array.is.array;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.window = gnd.object.is.window;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.document = gnd.object.is.document;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.numeric = gnd.string.is.numeric;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.object = gnd.object.is.object;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      *
      * @see gnd.string.is.string
      *
@@ -1611,39 +1459,28 @@ gnd.is = {};
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.domElement = gnd.object.is.domElement;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.nodeList = gnd.object.is.nodeList;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.htmlCollection = gnd.object.is.htmlCollection;
 
     /**
      * @method
-     *
-     * @author MelechMizrachi
      */
     gnd.is.htmlList = gnd.object.is.htmlList;
 
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is an instance of gnd.dom.$
+     * Determine if a variable is an instance of gnd.dom.$
      *
      * @params
      *********
@@ -1661,10 +1498,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a boolean
+     * Determine if a variable is a boolean
      *
      * @params
      *********
@@ -1682,10 +1516,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is a function
+     * Determine if a variable is a function
      *
      * @params
      *********
@@ -1703,10 +1534,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is null/undefined/etc
+     * Determine if a variable is null/undefined/etc
      *
      * @params
      *********
@@ -1727,10 +1555,7 @@ gnd.is = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine if a variable is undefined
+     * Determine if a variable is undefined
      *
      * @params
      *********
@@ -1752,22 +1577,16 @@ gnd.is = {};
 
         /**
          * @method
-         *
-         * @author MelechMizrachi
          */
         gnd.is.empty.array = gnd.array.is.empty;
 
         /**
          * @method
-         *
-         * @author MelechMizrachi
          */
         gnd.is.empty.object = gnd.object.is.empty;
 
         /**
          * @method
-         *
-         * @author MelechMizrachi
          */
         gnd.is.empty.string = gnd.string.is.empty;
 
@@ -1779,16 +1598,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.IE
          */
         gnd.is.browser.IE = gnd.userAgent.IE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.FIREFOX
          */
@@ -1797,16 +1612,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.CHROME
          */
         gnd.is.browser.CHROME = gnd.userAgent.CHROME;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.SAFARI
          */
@@ -1820,16 +1631,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.WINDOWS
          */
         gnd.is.os.WINDOWS = gnd.userAgent.WINDOWS;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.MAC
          */
@@ -1838,16 +1645,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.LINUX
          */
         gnd.is.os.LINUX = gnd.userAgent.LINUX;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.ANDROID
          */
@@ -1856,16 +1659,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.IOS
          */
         gnd.is.os.IOS = gnd.userAgent.IOS;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.WINDOWS_PHONE
          */
@@ -1879,16 +1678,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.WINDOWS_PHONE
          */
         gnd.is.device.WP = gnd.userAgent.WINDOWS_PHONE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.DESKTOP
          */
@@ -1897,16 +1692,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.MOBILE
          */
         gnd.is.device.MOBILE = gnd.userAgent.MOBILE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.ANDROID
          */
@@ -1915,16 +1706,12 @@ gnd.is = {};
         /**
          * @constant
          *
-         * @author MelechMizrachi
-         *
          * @borrows gnd.userAgent.IPHONE
          */
         gnd.is.device.IPHONE = gnd.userAgent.IPHONE;
 
         /**
          * @constant
-         *
-         * @author MelechMizrachi
          *
          * @borrows gnd.userAgent.IPAD
          */
@@ -1955,10 +1742,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Log variables to the console
+     * Log variables to the console
      */
     gnd.log.log = function ()
     {
@@ -1970,10 +1754,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set some info to the console
+     * Set some info to the console
      *
      * @params
      *********
@@ -1992,10 +1773,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console a warning
+     * Console a warning
      *
      * @params
      *********
@@ -2014,10 +1792,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Debug variables to the console
+     * Debug variables to the console
      *
      * @params
      *********
@@ -2036,10 +1811,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console errors
+     * Console errors
      *
      * @params
      *********
@@ -2058,10 +1830,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console time
+     * Console time
      *
      * @params
      *********
@@ -2080,10 +1849,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console timeEnd
+     * Console timeEnd
      *
      * @params
      *********
@@ -2122,8 +1888,6 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
      * @borrows gnd.extend
      */
     gnd.utils.extend = gnd.extend;
@@ -2131,10 +1895,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Iterate through an object || array
+     * Iterate through an object || array
      *
      * @params
      *********
@@ -2174,10 +1935,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Merge two objects
+     * Merge two objects
      *
      * @params
      *********
@@ -2198,10 +1956,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clone a given object
+     * Clone a given object
      *
      * @params
      *********
@@ -2229,10 +1984,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Validate a given object
+     * Validate a given object
      *
      * @params
      *********
@@ -2274,8 +2026,7 @@ gnd.xhr = {};
     /**
      * @constant
      *
-     * @desc
-     *  Default ajax request url
+     * Default ajax request url
      *
      * @type {string}
      */
@@ -2284,10 +2035,7 @@ gnd.xhr = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ajax/XHR request
+     * Ajax/XHR request
      *
      * @params
      *********
@@ -2567,10 +2315,7 @@ gnd.xhr = {};
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  gnd.dom.$ initializer
+ * gnd.dom.$ initializer
  *
  * @params
  *********
@@ -2591,10 +2336,7 @@ gnd.$ = function ( selector, context )
     /**
      * @constructor
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  gnd.dom.$ initializer
+     * gnd.dom.$ initializer
      *
      * @params
      *********
@@ -2658,8 +2400,7 @@ gnd.$ = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The HTML element
+     * The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -2668,8 +2409,7 @@ gnd.$ = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The context used to get this element
+     * The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -2678,8 +2418,7 @@ gnd.$ = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The selector used
+     * The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -2688,8 +2427,7 @@ gnd.$ = function ( selector, context )
     /**
      * @constant
      *
-     * @desc
-     *  How to split the strings within the class
+     * How to split the strings within the class
      *
      * @type {string}
      */
@@ -2698,10 +2436,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an element using a parent and a string selector
+     * Get an element using a parent and a string selector
      *
      * @params
      *********
@@ -2784,10 +2519,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @params
      *********
@@ -2806,10 +2538,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the elem parent
+     * Get the elem parent
      *
      * @params
      *********
@@ -2825,10 +2554,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @params
      *********
@@ -2853,10 +2579,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find the closest parent with a given selector
+     * Find the closest parent with a given selector
      *
      * @params
      *********
@@ -2946,10 +2669,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get elem length
+     * Get elem length
      *
      * @params
      *********
@@ -2971,10 +2691,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle event for element
+     * Handle event for element
      *
      * @params
      *********
@@ -3082,10 +2799,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add an event
+     * Add an event
      *
      * @params
      *********
@@ -3114,10 +2828,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove an event
+     * Remove an event
      *
      * @params
      *********
@@ -3160,10 +2871,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event
+     * Trigger an event
      *
      * @params
      *********
@@ -3188,10 +2896,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's value
+     * Overwrite, or get, the element's value
      *
      * @params
      *********
@@ -3236,10 +2941,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's text
+     * Overwrite, or get, the element's text
      *  NOTE: For use with single node elem
      *
      * @params
@@ -3259,10 +2961,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's html
+     * Overwrite, or get, the element's html
      *  NOTE: For use with single node elem
      *
      * @params
@@ -3324,10 +3023,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Append html to this element
+     * Append html to this element
      *
      * @params
      *********
@@ -3346,10 +3042,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @params
      *********
@@ -3368,10 +3061,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @params
      *********
@@ -3427,10 +3117,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @params
      *********
@@ -3500,10 +3187,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem child nodes
+     * Remove elem child nodes
      *
      * @params
      *********
@@ -3529,10 +3213,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem from the dom
+     * Remove elem from the dom
      *
      * @params
      *********
@@ -3571,10 +3252,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle class for element
+     * Handle class for element
      *
      * @params
      *********
@@ -3656,10 +3334,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add class to element
+     * Add class to element
      *
      * @params
      *********
@@ -3677,10 +3352,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove class from element
+     * Remove class from element
      *
      * @params
      *********
@@ -3698,10 +3370,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add or remove class or classes depending on whether the
+     * Add or remove class or classes depending on whether the
      *  elem has them or not
      *
      * @params
@@ -3720,10 +3389,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determines if elem has the class or classes specified
+     * Determines if elem has the class or classes specified
      *  NOTE: For use with single node elem
      *
      * @params
@@ -3759,10 +3425,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an attribute value
+     * Get an attribute value
      *
      * @params
      *********
@@ -3787,10 +3450,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds attribute to elem
+     * Adds attribute to elem
      *
      * @params
      *********
@@ -3835,10 +3495,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes an attribute from elem
+     * Removes an attribute from elem
      *
      * @params
      *********
@@ -3880,10 +3537,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a data attribute value
+     * Get a data attribute value
      *
      * @params
      *********
@@ -3907,10 +3561,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds a data attribute to elem
+     * Adds a data attribute to elem
      *
      * @params
      *********
@@ -3938,10 +3589,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes a data attribute from elem
+     * Removes a data attribute from elem
      *
      * @params
      *********
@@ -3965,8 +3613,7 @@ gnd.$ = function ( selector, context )
 /**
  * @author MelechMizrachi
  *
- * @desc
- *  Set the Init prototype as gnd.$'s prototype
+ * Set the Init prototype as gnd.$'s prototype
  *
  * @type {Object|Function}
  */
@@ -4015,8 +3662,7 @@ gnd.dom = {};
     /**
      * @namespace
      *
-     * @desc
-     *  Global elements
+     * Global elements
      *
      * @type {object}
      */
@@ -4025,8 +3671,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create a new instance of gnd.$ for document
+         * Create a new instance of gnd.$ for document
          *
          * @type {gnd.$}
          */
@@ -4035,8 +3680,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create a new instance of gnd.$ for window
+         * Create a new instance of gnd.$ for window
          *
          * @type {gnd.$}
          */
@@ -4045,8 +3689,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for html
+         * Create new instance of gnd.$ for html
          *
          * @type {gnd.$}
          */
@@ -4055,8 +3698,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for body
+         * Create new instance of gnd.$ for body
          *
          * @type {gnd.$}
          */
@@ -4065,8 +3707,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for #header
+         * Create new instance of gnd.$ for #header
          *
          * @type {gnd.$}
          */
@@ -4075,8 +3716,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for #main
+         * Create new instance of gnd.$ for #main
          *
          * @type {gnd.$}
          */
@@ -4085,8 +3725,7 @@ gnd.dom = {};
         /**
          * @namespace
          *
-         * @desc
-         *  Create new instance of gnd.$ for #footer
+         * Create new instance of gnd.$ for #footer
          *
          * @type {gnd.$}
          */
@@ -4095,10 +3734,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document variable
+     * Get the document variable
      *
      * @params
      *
@@ -4112,10 +3748,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window variable
+     * Get the window variable
      *
      * @params
      *
@@ -4129,10 +3762,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window width
+     * Get the window width
      *
      * @params
      *
@@ -4146,10 +3776,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the window height
+     * Get the window height
      *
      * @params
      *
@@ -4163,10 +3790,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the amount scrolled
+     * Get the amount scrolled
      *
      * @params
      *
@@ -4180,10 +3804,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total width
+     * Get the document's total width
      *
      * @params
      *
@@ -4197,10 +3818,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @params
      *
@@ -4214,10 +3832,7 @@ gnd.dom = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the document's total height
+     * Get the document's total height
      *
      * @params
      *********
@@ -4341,8 +3956,7 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  The dom selector function to use
+     * The dom selector function to use
      *
      * @extends {gnd.$}
      */
@@ -4351,8 +3965,7 @@ gnd.ui = {};
     /**
      * @namespace
      *
-     * @desc
-     *  Object of components created that need to be referenced globally
+     * Object of components created that need to be referenced globally
      *
      * @type {object}
      */
@@ -4361,16 +3974,14 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  Topics for components
+     * Topics for components
      */
     gnd.ui.Topics = {};
 
         /**
          * @namespace
          *
-         * @desc
-         *  The topics to subscribe for this component
+         * The topics to subscribe for this component
          *
          * @type {object}
          *
@@ -4387,8 +3998,7 @@ gnd.ui = {};
         /**
          * @namespace
          *
-         * @desc
-         *  The subscribed topics
+         * The subscribed topics
          *
          * @type {object}
          */
@@ -4397,10 +4007,7 @@ gnd.ui = {};
         /**
          * @class
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Handles topic callbacks for this component
+         * Handles topic callbacks for this component
          *
          * @params
          *********
@@ -4450,10 +4057,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Subscribe a callback method to a topic
+         * Subscribe a callback method to a topic
          *
          * @params
          *********
@@ -4509,10 +4113,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Subscribe a callback method to a topic
+         * Subscribe a callback method to a topic
          *
          * @params
          *********
@@ -4564,10 +4165,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Trigger a topic's callback methods to fire
+         * Trigger a topic's callback methods to fire
          *
          * @params
          *********
@@ -4601,10 +4199,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Unsubscribe all callback methods from a topic
+         * Unsubscribe all callback methods from a topic
          *
          * @params
          *********
@@ -4624,10 +4219,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Unsubscribe all callback methods from a topic
+         * Unsubscribe all callback methods from a topic
          *
          * @params
          *********
@@ -4695,10 +4287,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Remove all topics
+         * Remove all topics
          *
          * @params
          *********
@@ -4719,16 +4308,14 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  Helpers for components
+     * Helpers for components
      */
     gnd.ui.Helpers = {};
 
         /**
          * @namespace
          *
-         * @desc
-         *  The accepted options for the model
+         * The accepted options for the model
          *
          * @type {array}
          */
@@ -4737,10 +4324,7 @@ gnd.ui = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Set component options
+         * Set component options
          *
          * @params
          *********
@@ -4787,8 +4371,7 @@ gnd.ui = {};
     /**
      * @class
      *
-     * @desc
-     *  Extend Helpers and Topics to new class
+     * Extend Helpers and Topics to new class
      */
     gnd.ui.baseExtend = gnd.extend(
         gnd.ui.Topics
@@ -4798,10 +4381,7 @@ gnd.ui = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Extend a class
+     * Extend a class
      *
      * @params
      *********
@@ -4876,10 +4456,7 @@ gnd.ui = {};
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  The model for a ui component
+ * The model for a ui component
  *
  * @params
  *********
@@ -4910,8 +4487,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  The Model ID
+     * The Model ID
      *
      * @type {string}
      */
@@ -4920,8 +4496,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  The attributes id index
+     * The attributes id index
      *
      * @type {string}
      */
@@ -4930,8 +4505,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's attributes
+     * Model's attributes
      *
      * @type {object}
      */
@@ -4940,8 +4514,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's changed attributes
+     * Model's changed attributes
      *
      * @type {object}
      */
@@ -4950,8 +4523,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's previous attributes
+     * Model's previous attributes
      *
      * @type {object}
      */
@@ -4960,8 +4532,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  Model's default attributes
+     * Model's default attributes
      *
      * @type {object}
      */
@@ -4970,8 +4541,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the model
+     * The accepted options for the model
      *
      * @type {array}
      */
@@ -4984,10 +4554,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize Model
+     * Initialize Model
      *
      * @params
      *********
@@ -5006,10 +4573,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a copy of the model data
+     * Return a copy of the model data
      *
      * @params
      *********
@@ -5026,10 +4590,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a requested attribute value
+     * Return a requested attribute value
      *
      * @params
      *********
@@ -5049,10 +4610,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set an attribute value
+     * Set an attribute value
      *
      * @params
      *********
@@ -5079,10 +4637,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a requested attribute value
+     * Return a requested attribute value
      *
      * @params
      *********
@@ -5107,10 +4662,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determine whether the model/attribute changed
+     * Determine whether the model/attribute changed
      *
      * @params
      *********
@@ -5140,10 +4692,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return the changed attributes
+     * Return the changed attributes
      *
      * @params
      *********
@@ -5160,10 +4709,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return the requested previous attribute
+     * Return the requested previous attribute
      *
      * @params
      *********
@@ -5183,10 +4729,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return the previous attributes
+     * Return the previous attributes
      *
      * @params
      *********
@@ -5203,10 +4746,7 @@ gnd.ui.Model = function ( attributes, options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set Model attributes
+     * Set Model attributes
      *
      * @params
      *********
@@ -5287,10 +4827,7 @@ gnd.ui.Model = function ( attributes, options )
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  A collection of ui components/elements/nodes
+ * A collection of ui components/elements/nodes
  *
  * @params
  *********
@@ -5318,8 +4855,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The collection ID
+     * The collection ID
      *
      * @type {string}
      */
@@ -5328,8 +4864,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The selector for the DOM elements
+     * The selector for the DOM elements
      *
      * @type {object}
      */
@@ -5338,8 +4873,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The views in this collection
+     * The views in this collection
      *
      * @type {object}
      */
@@ -5348,8 +4882,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The options for this collections View
+     * The options for this collections View
      *
      * @type {object}
      */
@@ -5358,8 +4891,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  Index views by model id
+     * Index views by model id
      *
      * @type {object}
      */
@@ -5368,8 +4900,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  Index views by collection id
+     * Index views by collection id
      *
      * @type {array}
      */
@@ -5378,8 +4909,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the collection
+     * The accepted options for the collection
      *
      * @type {array}
      */
@@ -5395,18 +4925,14 @@ gnd.ui.Collection = function ( options )
      * @class
      * @extends gnd.ui.View
      *
-     * @desc
-     *  The View for the views in this collection
+     * The View for the views in this collection
      */
     gnd.ui.Collection.prototype.View = gnd.ui.View;
     
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize collection
+     * Initialize collection
      *
      * @params
      *********
@@ -5425,10 +4951,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set the views for the collection
+     * Set the views for the collection
      *
      * @params
      *********
@@ -5482,10 +5005,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add a view to the collection
+     * Add a view to the collection
      *
      * @params
      *********
@@ -5546,10 +5066,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a view in this collection by its model
+     * Find a view in this collection by its model
      *
      * @params
      *********
@@ -5575,10 +5092,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a view in this collection by its model id
+     * Find a view in this collection by its model id
      *
      * @params
      *********
@@ -5607,10 +5121,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a view in this collection by its id
+     * Find a view in this collection by its id
      *
      * @params
      *********
@@ -5636,10 +5147,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the nth view in the collection
+     * Get the nth view in the collection
      *
      * @params
      *********
@@ -5665,10 +5173,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the last view in the collection
+     * Get the last view in the collection
      *
      * @params
      *********
@@ -5688,10 +5193,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the nth view's id in the collection
+     * Get the nth view's id in the collection
      *
      * @params
      *********
@@ -5717,10 +5219,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the last view's id in the collection
+     * Get the last view's id in the collection
      *
      * @params
      *********
@@ -5737,10 +5236,7 @@ gnd.ui.Collection = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the nth view's collection id in the collection
+     * Get the nth view's collection id in the collection
      *
      * @params
      *********
@@ -5804,10 +5300,7 @@ gnd.ui.Collection = function ( options )
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  The view for a ui component/element/node
+ * The view for a ui component/element/node
  *
  * @params
  *********
@@ -5838,8 +5331,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The View ID
+     * The View ID
      *
      * @type {string}
      */
@@ -5848,8 +5340,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The View ID
+     * The View ID
      *
      * @type {gnd.$}
      */
@@ -5858,8 +5349,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The element tag name
+     * The element tag name
      *
      * @type {string}
      */
@@ -5868,8 +5358,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The element class name
+     * The element class name
      *
      * @type {string}
      */
@@ -5878,8 +5367,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The template to use
+     * The template to use
      *
      * @type {string}
      */
@@ -5888,8 +5376,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The element attributes
+     * The element attributes
      *
      * @type {object}
      */
@@ -5898,8 +5385,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The events for this view
+     * The events for this view
      *
      * @type {object}
      */
@@ -5908,8 +5394,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  The accepted options for the view
+     * The accepted options for the view
      *
      * @type {array}
      */
@@ -5927,8 +5412,7 @@ gnd.ui.View = function ( options )
     /**
      * @namespace
      *
-     * @desc
-     *  What to split event strings with
+     * What to split event strings with
      *
      * @type {string}
      */
@@ -5938,8 +5422,7 @@ gnd.ui.View = function ( options )
      * @namespace
      * @extends gnd.ui.Model
      *
-     * @desc
-     *  The view model
+     * The view model
      */
     gnd.ui.View.prototype.Model = gnd.ui.Model;
 
@@ -5947,18 +5430,14 @@ gnd.ui.View = function ( options )
      * @namespace
      * @extends gnd.ui.Collection
      *
-     * @desc
-     *  The view collection
+     * The view collection
      */
     gnd.ui.View.prototype.Collection = gnd.ui.Collection;
 
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Initialize View
+     * Initialize View
      *
      * @params
      *********
@@ -5977,10 +5456,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Return a dom element under elem
+     * Return a dom element under elem
      *
      * @params
      *********
@@ -6006,10 +5482,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Render View
+     * Render View
      *
      * @params
      *********
@@ -6029,10 +5502,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set the View element
+     * Set the View element
      *
      * @params
      *********
@@ -6073,10 +5543,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove View - Remove element from DOM
+     * Remove View - Remove element from DOM
      *
      * @params
      *********
@@ -6099,10 +5566,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate an event handler
+     * Delegate/Undelegate an event handler
      *
      * @params
      *********
@@ -6175,10 +5639,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event handler
+     * Trigger an event handler
      *
      * @params
      *********
@@ -6219,10 +5680,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Delegate/Undelegate event handlers given an object of events
+     * Delegate/Undelegate event handlers given an object of events
      *
      * @params
      *********
@@ -6268,10 +5726,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Undelegate all event handlers
+     * Undelegate all event handlers
      *
      * @params
      *********
@@ -6290,10 +5745,7 @@ gnd.ui.View = function ( options )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Ensure the view element exists
+     * Ensure the view element exists
      *
      * @params
      *********

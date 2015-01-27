@@ -18,10 +18,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Convert parameter to a string
+     * Convert parameter to a string
      *
      * @param value {*}
      *  The string to make safe
@@ -39,10 +36,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does a string contain a value
+     * Does a string contain a value
      *
      * @param toTest {string}
      *  The string to test
@@ -63,10 +57,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *
      * @link String.contains
      *
@@ -89,10 +80,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Compare to strings to see if they match
+     * Compare to strings to see if they match
      *
      * @param toTest {string}
      *  The string to test
@@ -109,10 +97,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *
      * @link String.compare
      *

@@ -16,10 +16,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clone a given array
+     * Clone a given array
      *
      * @param toClone {array}
      *  The array to clone
@@ -34,10 +31,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @param arr {array}
      *  The array to test
@@ -54,10 +48,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does an array contain a value
+     * Does an array contain a value
      *
      * @param arr {Array}
      *  The array to test

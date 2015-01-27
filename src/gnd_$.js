@@ -48,10 +48,7 @@
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  gnd.dom.$ initializer
+ * gnd.dom.$ initializer
  *
  * @params
  *********
@@ -72,10 +69,7 @@ gnd.$ = function ( selector, context )
     /**
      * @constructor
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  gnd.dom.$ initializer
+     * gnd.dom.$ initializer
      *
      * @params
      *********
@@ -139,8 +133,7 @@ gnd.$ = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The HTML element
+     * The HTML element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -149,8 +142,7 @@ gnd.$ = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The context used to get this element
+     * The context used to get this element
      *
      * @type {HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -159,8 +151,7 @@ gnd.$ = function ( selector, context )
     /**
      * @namespace
      *
-     * @desc
-     *  The selector used
+     * The selector used
      *
      * @type {string|HTMLDocument|HTMLElement|Node|NodeList}
      */
@@ -169,8 +160,7 @@ gnd.$ = function ( selector, context )
     /**
      * @constant
      *
-     * @desc
-     *  How to split the strings within the class
+     * How to split the strings within the class
      *
      * @type {string}
      */
@@ -179,10 +169,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an element using a parent and a string selector
+     * Get an element using a parent and a string selector
      *
      * @params
      *********
@@ -265,10 +252,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @params
      *********
@@ -287,10 +271,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the elem parent
+     * Get the elem parent
      *
      * @params
      *********
@@ -306,10 +287,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find a child element
+     * Find a child element
      *
      * @params
      *********
@@ -334,10 +312,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Find the closest parent with a given selector
+     * Find the closest parent with a given selector
      *
      * @params
      *********
@@ -427,10 +402,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get elem length
+     * Get elem length
      *
      * @params
      *********
@@ -452,10 +424,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle event for element
+     * Handle event for element
      *
      * @params
      *********
@@ -563,10 +532,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add an event
+     * Add an event
      *
      * @params
      *********
@@ -595,10 +561,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove an event
+     * Remove an event
      *
      * @params
      *********
@@ -641,10 +604,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger an event
+     * Trigger an event
      *
      * @params
      *********
@@ -669,10 +629,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's value
+     * Overwrite, or get, the element's value
      *
      * @params
      *********
@@ -717,10 +674,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's text
+     * Overwrite, or get, the element's text
      *  NOTE: For use with single node elem
      *
      * @params
@@ -740,10 +694,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Overwrite, or get, the element's html
+     * Overwrite, or get, the element's html
      *  NOTE: For use with single node elem
      *
      * @params
@@ -805,10 +756,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Append html to this element
+     * Append html to this element
      *
      * @params
      *********
@@ -827,10 +775,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @params
      *********
@@ -849,10 +794,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @params
      *********
@@ -908,10 +850,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Prepend html to this element
+     * Prepend html to this element
      *
      * @params
      *********
@@ -981,10 +920,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem child nodes
+     * Remove elem child nodes
      *
      * @params
      *********
@@ -1010,10 +946,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove elem from the dom
+     * Remove elem from the dom
      *
      * @params
      *********
@@ -1052,10 +985,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Handle class for element
+     * Handle class for element
      *
      * @params
      *********
@@ -1137,10 +1067,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add class to element
+     * Add class to element
      *
      * @params
      *********
@@ -1158,10 +1085,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove class from element
+     * Remove class from element
      *
      * @params
      *********
@@ -1179,10 +1103,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Add or remove class or classes depending on whether the
+     * Add or remove class or classes depending on whether the
      *  elem has them or not
      *
      * @params
@@ -1201,10 +1122,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Determines if elem has the class or classes specified
+     * Determines if elem has the class or classes specified
      *  NOTE: For use with single node elem
      *
      * @params
@@ -1240,10 +1158,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get an attribute value
+     * Get an attribute value
      *
      * @params
      *********
@@ -1268,10 +1183,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds attribute to elem
+     * Adds attribute to elem
      *
      * @params
      *********
@@ -1316,10 +1228,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes an attribute from elem
+     * Removes an attribute from elem
      *
      * @params
      *********
@@ -1361,10 +1270,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get a data attribute value
+     * Get a data attribute value
      *
      * @params
      *********
@@ -1388,10 +1294,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Adds a data attribute to elem
+     * Adds a data attribute to elem
      *
      * @params
      *********
@@ -1419,10 +1322,7 @@ gnd.$ = function ( selector, context )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Removes a data attribute from elem
+     * Removes a data attribute from elem
      *
      * @params
      *********
@@ -1446,8 +1346,7 @@ gnd.$ = function ( selector, context )
 /**
  * @author MelechMizrachi
  *
- * @desc
- *  Set the Init prototype as gnd.$'s prototype
+ * Set the Init prototype as gnd.$'s prototype
  *
  * @type {Object|Function}
  */

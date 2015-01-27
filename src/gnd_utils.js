@@ -22,8 +22,6 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
      * @borrows gnd.extend
      */
     gnd.utils.extend = gnd.extend;
@@ -31,10 +29,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Iterate through an object || array
+     * Iterate through an object || array
      *
      * @params
      *********
@@ -74,10 +69,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Merge two objects
+     * Merge two objects
      *
      * @params
      *********
@@ -98,10 +90,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Clone a given object
+     * Clone a given object
      *
      * @params
      *********
@@ -129,10 +118,7 @@ gnd.utils = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Validate a given object
+     * Validate a given object
      *
      * @params
      *********

@@ -16,8 +16,7 @@
 /**
  * @class Config
  *
- * @desc
- *  GND Library Config Class
+ * GND Library Config Class
  */
 var Config = {};
 
@@ -34,8 +33,7 @@ var Config = {};
     /**
      * @constant
      *
-     * @desc
-     *  The version of gnd library
+     * The version of gnd library
      *
      * @type {string}
      */
@@ -44,8 +42,7 @@ var Config = {};
     /**
      * @constant
      *
-     * @desc
-     *  Whether to run debug within the library
+     * Whether to run debug within the library
      *
      * @type {boolean}
      */
@@ -54,8 +51,7 @@ var Config = {};
     /**
      * @namespace
      *
-     * @desc
-     *  The parent (window)
+     * The parent (window)
      *
      * @type {object}
      */

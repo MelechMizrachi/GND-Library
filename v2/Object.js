@@ -18,10 +18,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Validate a given object
+     * Validate a given object
      *
      * @param toTest {object}
      *  The object to validate
@@ -43,10 +40,7 @@
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Get the first property in a given object
+     * Get the first property in a given object
      *
      * @param obj {object|array}
      *  The object

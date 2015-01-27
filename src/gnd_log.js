@@ -24,10 +24,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Log variables to the console
+     * Log variables to the console
      */
     gnd.log.log = function ()
     {
@@ -39,10 +36,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Set some info to the console
+     * Set some info to the console
      *
      * @params
      *********
@@ -61,10 +55,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console a warning
+     * Console a warning
      *
      * @params
      *********
@@ -83,10 +74,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Debug variables to the console
+     * Debug variables to the console
      *
      * @params
      *********
@@ -105,10 +93,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console errors
+     * Console errors
      *
      * @params
      *********
@@ -127,10 +112,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console time
+     * Console time
      *
      * @params
      *********
@@ -149,10 +131,7 @@ gnd.log = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Console timeEnd
+     * Console timeEnd
      *
      * @params
      *********

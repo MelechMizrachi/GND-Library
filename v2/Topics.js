@@ -19,10 +19,7 @@
 /**
  * @class
  *
- * @author MelechMizrachi
- *
- * @desc
- *  Handles topic callbacks for this component
+ * Handles topic callbacks for this component
  *
  * @param topicName {string}
  *  The topic name
@@ -71,8 +68,7 @@ var Topics = function ( topicName )
     /**
      * @namespace
      *
-     * @desc
-     *  The subscribed topics
+     * The subscribed topics
      *
      * @type {object}
      */
@@ -81,10 +77,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Subscribe a callback method to a topic
+     * Subscribe a callback method to a topic
      *
      * @param callback {string}
      *  The callback method
@@ -137,10 +130,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Subscribe a callback method to a topic
+     * Subscribe a callback method to a topic
      *
      * @param callback {string}
      *  The callback method
@@ -188,10 +178,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Trigger a topic's callback methods to fire
+     * Trigger a topic's callback methods to fire
      *
      * @returns {object}
      *  The topic
@@ -222,10 +209,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Unsubscribe all callback methods from a topic
+     * Unsubscribe all callback methods from a topic
      *
      * @returns {object}
      *  The topic
@@ -242,10 +226,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Unsubscribe all callback methods from a topic
+     * Unsubscribe all callback methods from a topic
      *
      * @param topics {object}
      *  The topics to create
@@ -308,10 +289,7 @@ var Topics = function ( topicName )
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Remove all topics
+     * Remove all topics
      *
      * @params
      *********

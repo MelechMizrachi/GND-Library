@@ -26,10 +26,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Convert parameter to a string
+     * Convert parameter to a string
      *
      * @params
      *********
@@ -55,10 +52,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a string
+         * Determine if a variable is a string
          *
          * @params
          *********
@@ -76,10 +70,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a variable is a number
+         * Determine if a variable is a number
          *
          * @params
          *********
@@ -97,10 +88,7 @@ gnd.string = {};
         /**
          * @method
          *
-         * @author MelechMizrachi
-         *
-         * @desc
-         *  Determine if a string is empty
+         * Determine if a string is empty
          *
          * @params
          *********
@@ -124,10 +112,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Does a string contain a value
+     * Does a string contain a value
      *
      * @params
      *********
@@ -152,10 +137,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *  @link gnd.string.contains
      *
      * @params
@@ -181,10 +163,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Compare to strings to see if they match
+     * Compare to strings to see if they match
      *
      * @params
      *********
@@ -205,10 +184,7 @@ gnd.string = {};
     /**
      * @method
      *
-     * @author MelechMizrachi
-     *
-     * @desc
-     *  Case insensitive of
+     * Case insensitive of
      *  @link gnd.string.compare
      *
      * @params
