@@ -3,15 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Cookies Management [Set, Get, Delete]
  *
- *  @Table_of_Contents
- *
- *  @property                           Cookies.get()
- *  @property                           Cookies.set()
- *  @property                           Cookies.remove()
- *  @property                           Cookies.has()
- *  @property                           Cookies.keys()
- *  @property                           Cookies.getAll()
- *
 \**********************************************************************************************************************/
 
 /**

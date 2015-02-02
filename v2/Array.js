@@ -3,12 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Array Extensions
  *
- *  @Table_of_Contents
- *
- *  @property                           Array.clone()
- *  @property                           Array.contains()
- *  @property                           Array.insert()
- *
 \**********************************************************************************************************************/
 
 (function ()

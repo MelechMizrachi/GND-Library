@@ -3,17 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Console Logging
  *
- *  @Table_of_Contents
- *
- *  @property                           Logger
- *  @property                           Logger.log()
- *  @property                           Logger.info()
- *  @property                           Logger.warn()
- *  @property                           Logger.error()
- *  @property                           Logger.debug()
- *  @property                           Logger.time()
- *  @property                           Logger.timeEnd()
- *
 \**********************************************************************************************************************/
 
 /**

@@ -3,14 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Configs
  *
- *  @Table_of_Contents
- *
- *  @property                           Config
- *  @property                           Config.GLOBALS
- *  @property                           Config.VERSION
- *  @property                           Config.DEBUG
- *  @property                           Config.global
- *
 \**********************************************************************************************************************/
 
 /**

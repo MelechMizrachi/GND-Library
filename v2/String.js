@@ -3,14 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library String Extensions
  *
- *  @Table_of_Contents
- *
- *  @property                           String.makeSafe()
- *  @property                           String.contains()
- *  @property                           String.containsInsensitive()
- *  @property                           String.compare()
- *  @property                           String.compareInsensitive()
- *
 \**********************************************************************************************************************/
 
 (function ()

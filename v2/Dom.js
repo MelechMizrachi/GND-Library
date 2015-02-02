@@ -3,68 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Dom Manipulation
  *
- *  @Table_of_Contents
- *
- *  @property                           Dom
- *
- *  @property                           DomPrototype
- *  @property                           Dom.Init()
- *  @property                           Dom.Init.prototype
- *  @property                           Dom.constructor
- *  @property                           Dom.elem
- *  @property                           Dom.context
- *  @property                           Dom.selector
- *  @property                           Dom.SPACE_SPLIT
- *  @property                           Dom.getElements()
- *  @property                           Dom.find()
- *  @property                           Dom.parent()
- *  @property                           Dom.get()
- *  @property                           Dom.closest()
- *  @property                           Dom.handleEvent()
- *  @property                           Dom.on()
- *  @property                           Dom.off()
- *  @property                           Dom.trigger()
- *  @property                           Dom.val()
- *  @property                           Dom.text()
- *  @property                           Dom.html()
- *  @property                           Dom.append()
- *  @property                           Dom.prepend()
- *  @property                           Dom.handlePend()
- *  @property                           Dom.handleHTML()
- *  @property                           Dom.empty()
- *  @property                           Dom.remove()
- *  @property                           Dom.handleClass()
- *  @property                           Dom.addClass()
- *  @property                           Dom.removeClass()
- *  @property                           Dom.toggleClass()
- *  @property                           Dom.hasClass()
- *  @property                           Dom.attrGet()
- *  @property                           Dom.attrSet()
- *  @property                           Dom.attrRemove()
- *  @property                           Dom.dataGet()
- *  @property                           Dom.dataSet()
- *  @property                           Dom.dataRemove()
- *
- *  @property                           DomMethods
- *  @property                           Dom.getDocument()
- *  @property                           Dom.getWindow()
- *  @property                           Dom.windowWidth()
- *  @property                           Dom.windowHeight()
- *  @property                           Dom.scrollTop()
- *  @property                           Dom.documentWidth()
- *  @property                           Dom.documentHeight()
- *  @property                           Dom.parseHTML()
- *
- *  @property                           DomElems
- *  @property                           Dom.elems
- *  @property                           Dom.elems.document
- *  @property                           Dom.elems.window
- *  @property                           Dom.elems.html
- *  @property                           Dom.elems.body
- *  @property                           Dom.elems.header
- *  @property                           Dom.elems.main
- *  @property                           Dom.elems.footer
- *
 \**********************************************************************************************************************/
 
 /**

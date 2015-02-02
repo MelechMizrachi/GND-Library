@@ -3,26 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library User Agent Detections
  *
- *  @Table_of_Contents
- *
- *  @property                           UserAgent
- *      @property                           UserAgent.UA
- *      @property                           UserAgent.contains
- *      @property                           UserAgent.IE
- *      @property                           UserAgent.FIREFOX
- *      @property                           UserAgent.CHROME
- *      @property                           UserAgent.SAFARI
- *      @property                           UserAgent.IPHONE
- *      @property                           UserAgent.IPAD
- *      @property                           UserAgent.ANDROID
- *      @property                           UserAgent.IOS
- *      @property                           UserAgent.WINDOWS_PHONE
- *      @property                           UserAgent.MOBILE
- *      @property                           UserAgent.WINDOWS
- *      @property                           UserAgent.MAC
- *      @property                           UserAgent.LINUX
- *      @property                           UserAgent.DESKTOP
- *
 \**********************************************************************************************************************/
 
 /**

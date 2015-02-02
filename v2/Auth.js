@@ -3,10 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Authentication for signed in user
  *
- *  @Table_of_Contents
- *
- *  @property                           Auth
- *
 \**********************************************************************************************************************/
 
 /**

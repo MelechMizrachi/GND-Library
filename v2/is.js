@@ -3,30 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library is checks
  *
- *  @Table_of_Contents
- *
- *  @property                           is
- *  @property                           is.typeOf()
- *  @property                           is.modernBrowser()
- *  @property                           is.bool()
- *  @property                           is.array()
- *  @property                           is.object()
- *  @property                           is.document()
- *  @property                           is.window()
- *  @property                           is.element()
- *  @property                           is.nodeList()
- *  @property                           is.htmlCollection()
- *  @property                           is.string()
- *  @property                           is.numeric()
- *  @property                           is.$()
- *  @property                           is.bool()
- *  @property                           is.func()
- *  @property                           is.invalid()
- *  @property                           is.undefined()
- *  @property                           is.array.empty()
- *  @property                           is.object.empty()
- *  @property                           is.string.empty()
- *
 \**********************************************************************************************************************/
 
 /**

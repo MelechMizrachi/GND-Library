@@ -3,17 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Topics
  *
- *  @Table_of_Contents
- *
- *  @property                           Topics
- *  @property                           Topics._topics
- *  @property                           Topics.subscribeToTopic()
- *  @property                           Topics.unSubscribeFromTopic()
- *  @property                           Topics.triggerTopic()
- *  @property                           Topics.unSubscribeAllFromTopic()
- *  @property                           Topics.handleTopics()
- *  @property                           Topics.removeTopics()
- *
 \**********************************************************************************************************************/
 
 /**

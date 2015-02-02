@@ -3,18 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Ajax Requests
  *
- *  @Table_of_Contents
- *
- *  @property                           Ajax
- *  @property                           Ajax.BASE_URL
- *  @property                           Ajax.Init
- *  @property                           Ajax.Init.prototype
- *  @property                           Ajax.constructor
- *  @property                           Ajax.method
- *  @property                           Ajax.post
- *  @property                           Ajax.update
- *  @property                           Ajax.del
- *
 \**********************************************************************************************************************/
 
 /**

@@ -3,15 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Cache
  *
- *  @Table_of_Contents
- *
- *  @property                           Cache
- *  @property                           Cache.get()
- *  @property                           Cache.set()
- *  @property                           Cache.len()
- *  @property                           Cache.del()
- *  @property                           Cache.clear()
- *
 \**********************************************************************************************************************/
 
 /**

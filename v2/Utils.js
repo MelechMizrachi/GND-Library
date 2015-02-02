@@ -3,14 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Global Utilities
  *
- *  @Table_of_Contents
- *
- *  @property                           Utils
- *  @property                           Utils.cloneObject()
- *  @property                           Utils.each()
- *  @property                           Utils.extend()
- *  @property                           Utils.merge()
- *
 \**********************************************************************************************************************/
 
 /**

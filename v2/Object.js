@@ -3,14 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Object Extensions
  *
- *  @Table_of_Contents
- *
- *  @property                           Object.validate()
- *  @property                           Object.first()
- *  @property                           Object.clone()
- *  @property                           Object.each()
- *  @property                           Object.extend()
- *
 \**********************************************************************************************************************/
 
 (function ()
