@@ -3,14 +3,6 @@
  *  @author                             VGND Team
  *  @desc                               GND Library Configs
  *
- *  @Table_of_Contents
- *
- *  @property                           Config
- *  @property                           Config.GLOBALS
- *  @property                           Config.VERSION
- *  @property                           Config.DEBUG
- *  @property                           Config.global
- *
 \**********************************************************************************************************************/
 
 /**
@@ -61,30 +53,6 @@ var Config = {};
  *
  *  @author                             VGND Team
  *  @desc                               GND Library is checks
- *
- *  @Table_of_Contents
- *
- *  @property                           is
- *  @property                           is.typeOf()
- *  @property                           is.modernBrowser()
- *  @property                           is.bool()
- *  @property                           is.array()
- *  @property                           is.object()
- *  @property                           is.document()
- *  @property                           is.window()
- *  @property                           is.element()
- *  @property                           is.nodeList()
- *  @property                           is.htmlCollection()
- *  @property                           is.string()
- *  @property                           is.numeric()
- *  @property                           is.$()
- *  @property                           is.bool()
- *  @property                           is.func()
- *  @property                           is.invalid()
- *  @property                           is.undefined()
- *  @property                           is.array.empty()
- *  @property                           is.object.empty()
- *  @property                           is.string.empty()
  *
 \**********************************************************************************************************************/
 
@@ -428,17 +396,6 @@ var is = {};
  *  @author                             VGND Team
  *  @desc                               GND Library Console Logging
  *
- *  @Table_of_Contents
- *
- *  @property                           Logger
- *  @property                           Logger.log()
- *  @property                           Logger.info()
- *  @property                           Logger.warn()
- *  @property                           Logger.error()
- *  @property                           Logger.debug()
- *  @property                           Logger.time()
- *  @property                           Logger.timeEnd()
- *
 \**********************************************************************************************************************/
 
 /**
@@ -566,14 +523,6 @@ var Logger = {};
  *  @author                             VGND Team
  *  @desc                               GND Library Global Utilities
  *
- *  @Table_of_Contents
- *
- *  @property                           Utils
- *  @property                           Utils.cloneObject()
- *  @property                           Utils.each()
- *  @property                           Utils.extend()
- *  @property                           Utils.merge()
- *
 \**********************************************************************************************************************/
 
 /**
@@ -695,12 +644,6 @@ var Utils = {};
  *  @author                             VGND Team
  *  @desc                               GND Library Array Extensions
  *
- *  @Table_of_Contents
- *
- *  @property                           Array.clone()
- *  @property                           Array.contains()
- *  @property                           Array.insert()
- *
 \**********************************************************************************************************************/
 
 (function ()
@@ -784,14 +727,6 @@ var Utils = {};
  *
  *  @author                             VGND Team
  *  @desc                               GND Library Object Extensions
- *
- *  @Table_of_Contents
- *
- *  @property                           Object.validate()
- *  @property                           Object.first()
- *  @property                           Object.clone()
- *  @property                           Object.each()
- *  @property                           Object.extend()
  *
 \**********************************************************************************************************************/
 
@@ -895,14 +830,6 @@ var Utils = {};
  *
  *  @author                             VGND Team
  *  @desc                               GND Library String Extensions
- *
- *  @Table_of_Contents
- *
- *  @property                           String.makeSafe()
- *  @property                           String.contains()
- *  @property                           String.containsInsensitive()
- *  @property                           String.compare()
- *  @property                           String.compareInsensitive()
  *
 \**********************************************************************************************************************/
 
@@ -1013,26 +940,14 @@ var Utils = {};
 /**********************************************************************************************************************\
  *
  *  @author                             VGND Team
- *  @desc                               GND Library Ajax Requests
- *
- *  @Table_of_Contents
- *
- *  @property                           Ajax
- *  @property                           Ajax.BASE_URL
- *  @property                           Ajax.Init
- *  @property                           Ajax.Init.prototype
- *  @property                           Ajax.constructor
- *  @property                           Ajax.method
- *  @property                           Ajax.post
- *  @property                           Ajax.update
- *  @property                           Ajax.del
+ *  @desc                               GND Library Http Requests
  *
 \**********************************************************************************************************************/
 
 /**
- * @class Ajax
+ * @class Http
  *
- * GND Library Ajax Class
+ * GND Library Http Class
  *
  * @param url {string|object}
  *  The xhr url
@@ -1042,9 +957,9 @@ var Utils = {};
  * @returns {object}
  *  The xhr call
  */
-var Ajax = function ( url, options )
+var Http = function ( url, options )
 {
-    return new Ajax.Init( url, options );
+    return new Http.Init( url, options );
 };
 
 (function ()
@@ -1056,22 +971,22 @@ var Ajax = function ( url, options )
      *
      * @type {string}
      */
-    Ajax.BASE_URL = GLOBALS.AJAX_URL || '';
+    Http.BASE_URL = GLOBALS.AJAX_URL || '';
 
     /**
      * @method
      *
-     * Ajax/XHR request
+     * Http/XHR request
      *
      * @param url {string|object}
      *  The xhr url
      * @param [options] {object}
      *  The options for the ajax request
      *
-     * @returns {Ajax}
+     * @returns {Http}
      *  The xhr call
      */
-    Ajax.Init = function ( url, options )
+    Http.Init = function ( url, options )
     {
         // If the url is not valid
         if ( is.string.empty( url ) ) {
@@ -1231,7 +1146,7 @@ var Ajax = function ( url, options )
                 // On success
                 else {
                     // Console the response as info
-                    Logger.info( 'Ajax Success' );
+                    Logger.info( 'Http Success' );
 
                     // If a success handler was set
                     if ( is.func( options.success ) ) {
@@ -1292,12 +1207,12 @@ var Ajax = function ( url, options )
      *
      * @type {Object|Function}
      */
-    Ajax.Init.prototype = Ajax.prototype;
+    Http.Init.prototype = Http.prototype;
 
     /**
      * @constructor
      */
-    Ajax.prototype.constructor = Ajax;
+    Http.prototype.constructor = Http;
 
     /**
      * @method
@@ -1308,9 +1223,9 @@ var Ajax = function ( url, options )
      * @param options {object}
      * @param method {string}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.method = function ( url, options, method )
+    Http.method = function ( url, options, method )
     {
         if ( is.object( url ) ) {
             options = url;
@@ -1322,62 +1237,58 @@ var Ajax = function ( url, options )
             method : method
         });
 
-        return new Ajax.Init( url, options );
+        return new Http.Init( url, options );
     };
 
     /**
      * @method
      *
-     * Ajax post method so as to not have to define options.method
+     * Http post method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.post = function ( url, options )
+    Http.post = function ( url, options )
     {
-        return Ajax.method( url, options, 'POST' );
+        return Http.method( url, options, 'POST' );
     };
 
     /**
      * @method
      *
-     * Ajax update method so as to not have to define options.method
+     * Http update method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.update = function ( url, options )
+    Http.update = function ( url, options )
     {
-        return Ajax.method( url, options, 'UPDATE' );
+        return Http.method( url, options, 'UPDATE' );
     };
 
     /**
      * @method
      *
-     * Ajax delete method so as to not have to define options.method
+     * Http delete method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.del = function ( url, options )
+    Http.del = function ( url, options )
     {
-        return Ajax.method( url, options, 'DELETE' );
+        return Http.method( url, options, 'DELETE' );
     };
 })();
 /**********************************************************************************************************************\
  *
  *  @author                             VGND Team
  *  @desc                               GND Library Authentication for signed in user
- *
- *  @Table_of_Contents
- *
- *  @property                           Auth
  *
 \**********************************************************************************************************************/
 
@@ -1399,15 +1310,6 @@ var Auth = function ()
  *
  *  @author                             VGND Team
  *  @desc                               GND Library Cache
- *
- *  @Table_of_Contents
- *
- *  @property                           Cache
- *  @property                           Cache.get()
- *  @property                           Cache.set()
- *  @property                           Cache.len()
- *  @property                           Cache.del()
- *  @property                           Cache.clear()
  *
 \**********************************************************************************************************************/
 
@@ -1495,15 +1397,6 @@ var Cache = {};
  *
  *  @author                             VGND Team
  *  @desc                               GND Library Cookies Management [Set, Get, Delete]
- *
- *  @Table_of_Contents
- *
- *  @property                           Cookies.get()
- *  @property                           Cookies.set()
- *  @property                           Cookies.remove()
- *  @property                           Cookies.has()
- *  @property                           Cookies.keys()
- *  @property                           Cookies.getAll()
  *
 \**********************************************************************************************************************/
 
@@ -1789,68 +1682,6 @@ var Cookies = {};
  *
  *  @author                             VGND Team
  *  @desc                               GND Library Dom Manipulation
- *
- *  @Table_of_Contents
- *
- *  @property                           Dom
- *
- *  @property                           DomPrototype
- *  @property                           Dom.Init()
- *  @property                           Dom.Init.prototype
- *  @property                           Dom.constructor
- *  @property                           Dom.elem
- *  @property                           Dom.context
- *  @property                           Dom.selector
- *  @property                           Dom.SPACE_SPLIT
- *  @property                           Dom.getElements()
- *  @property                           Dom.find()
- *  @property                           Dom.parent()
- *  @property                           Dom.get()
- *  @property                           Dom.closest()
- *  @property                           Dom.handleEvent()
- *  @property                           Dom.on()
- *  @property                           Dom.off()
- *  @property                           Dom.trigger()
- *  @property                           Dom.val()
- *  @property                           Dom.text()
- *  @property                           Dom.html()
- *  @property                           Dom.append()
- *  @property                           Dom.prepend()
- *  @property                           Dom.handlePend()
- *  @property                           Dom.handleHTML()
- *  @property                           Dom.empty()
- *  @property                           Dom.remove()
- *  @property                           Dom.handleClass()
- *  @property                           Dom.addClass()
- *  @property                           Dom.removeClass()
- *  @property                           Dom.toggleClass()
- *  @property                           Dom.hasClass()
- *  @property                           Dom.attrGet()
- *  @property                           Dom.attrSet()
- *  @property                           Dom.attrRemove()
- *  @property                           Dom.dataGet()
- *  @property                           Dom.dataSet()
- *  @property                           Dom.dataRemove()
- *
- *  @property                           DomMethods
- *  @property                           Dom.getDocument()
- *  @property                           Dom.getWindow()
- *  @property                           Dom.windowWidth()
- *  @property                           Dom.windowHeight()
- *  @property                           Dom.scrollTop()
- *  @property                           Dom.documentWidth()
- *  @property                           Dom.documentHeight()
- *  @property                           Dom.parseHTML()
- *
- *  @property                           DomElems
- *  @property                           Dom.elems
- *  @property                           Dom.elems.document
- *  @property                           Dom.elems.window
- *  @property                           Dom.elems.html
- *  @property                           Dom.elems.body
- *  @property                           Dom.elems.header
- *  @property                           Dom.elems.main
- *  @property                           Dom.elems.footer
  *
 \**********************************************************************************************************************/
 
@@ -3256,10 +3087,6 @@ var Dom = function ( selector, context )
  *  @author                             VGND Team
  *  @desc                               GND Library Routes Handling
  *
- *  @Table_of_Contents
- *
- *  @property                           Router
- *
 \**********************************************************************************************************************/
 
 /**
@@ -3277,33 +3104,6 @@ var Router = {};
  *
  *  @author                             VGND Team
  *  @desc                               GND Library Templates for view events, topics, and models
- *
- *  @Table_of_Contents
- *
- *  @property                           Template
- *  @property                           Template.Init()
- *  @property                           Template.Init.prototype
- *  @property                           Template.prototype.constructor
- *  @property                           Template.prototype.render
- *  @property                           Template.prototype.sID
- *  @property                           Template.prototype.elem
- *  @property                           Template.prototype.tagName
- *  @property                           Template.prototype.className
- *  @property                           Template.prototype.template
- *  @property                           Template.prototype.attributes
- *  @property                           Template.prototype.events
- *  @property                           Template.prototype.__options
- *  @property                           Template.prototype.EVENT_SPLIT
- *  @property                           Template.prototype.initialize()
- *  @property                           Template.prototype.Dom()
- *  @property                           Template.prototype.setElement()
- *  @property                           Template.prototype.remove()
- *  @property                           Template.prototype.handleEvent()
- *  @property                           Template.prototype.triggerEvent()
- *  @property                           Template.prototype.handleEvents()
- *  @property                           Template.prototype.undelegateEvents()
- *  @property                           Template.prototype.__ensureElement()
- *  @property                           Template.prototype.__setOptions()
  *
 \**********************************************************************************************************************/
 
@@ -3796,17 +3596,6 @@ var Template = function ( objToMerge )
  *  @author                             VGND Team
  *  @desc                               GND Library Topics
  *
- *  @Table_of_Contents
- *
- *  @property                           Topics
- *  @property                           Topics._topics
- *  @property                           Topics.subscribeToTopic()
- *  @property                           Topics.unSubscribeFromTopic()
- *  @property                           Topics.triggerTopic()
- *  @property                           Topics.unSubscribeAllFromTopic()
- *  @property                           Topics.handleTopics()
- *  @property                           Topics.removeTopics()
- *
 \**********************************************************************************************************************/
 
 /**
@@ -4104,26 +3893,6 @@ var Topics = function ( topicName )
  *
  *  @author                             VGND Team
  *  @desc                               GND Library User Agent Detections
- *
- *  @Table_of_Contents
- *
- *  @property                           UserAgent
- *      @property                           UserAgent.UA
- *      @property                           UserAgent.contains
- *      @property                           UserAgent.IE
- *      @property                           UserAgent.FIREFOX
- *      @property                           UserAgent.CHROME
- *      @property                           UserAgent.SAFARI
- *      @property                           UserAgent.IPHONE
- *      @property                           UserAgent.IPAD
- *      @property                           UserAgent.ANDROID
- *      @property                           UserAgent.IOS
- *      @property                           UserAgent.WINDOWS_PHONE
- *      @property                           UserAgent.MOBILE
- *      @property                           UserAgent.WINDOWS
- *      @property                           UserAgent.MAC
- *      @property                           UserAgent.LINUX
- *      @property                           UserAgent.DESKTOP
  *
 \**********************************************************************************************************************/
 

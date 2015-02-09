@@ -54,7 +54,7 @@ gulp.task( 'scriptsv2', function ()
             'v2/Array.js',
             'v2/Object.js',
             'v2/String.js',
-            'v2/Ajax.js',
+            'v2/Http.js',
             'v2/Auth.js',
             'v2/Cache.js',
             'v2/Cookies.js',

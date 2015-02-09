@@ -1,14 +1,14 @@
 /**********************************************************************************************************************\
  *
  *  @author                             VGND Team
- *  @desc                               GND Library Ajax Requests
+ *  @desc                               GND Library Http Requests
  *
 \**********************************************************************************************************************/
 
 /**
- * @class Ajax
+ * @class Http
  *
- * GND Library Ajax Class
+ * GND Library Http Class
  *
  * @param url {string|object}
  *  The xhr url
@@ -18,9 +18,9 @@
  * @returns {object}
  *  The xhr call
  */
-var Ajax = function ( url, options )
+var Http = function ( url, options )
 {
-    return new Ajax.Init( url, options );
+    return new Http.Init( url, options );
 };
 
 (function ()
@@ -32,22 +32,22 @@ var Ajax = function ( url, options )
      *
      * @type {string}
      */
-    Ajax.BASE_URL = GLOBALS.AJAX_URL || '';
+    Http.BASE_URL = GLOBALS.AJAX_URL || '';
 
     /**
      * @method
      *
-     * Ajax/XHR request
+     * Http/XHR request
      *
      * @param url {string|object}
      *  The xhr url
      * @param [options] {object}
      *  The options for the ajax request
      *
-     * @returns {Ajax}
+     * @returns {Http}
      *  The xhr call
      */
-    Ajax.Init = function ( url, options )
+    Http.Init = function ( url, options )
     {
         // If the url is not valid
         if ( is.string.empty( url ) ) {
@@ -207,7 +207,7 @@ var Ajax = function ( url, options )
                 // On success
                 else {
                     // Console the response as info
-                    Logger.info( 'Ajax Success' );
+                    Logger.info( 'Http Success' );
 
                     // If a success handler was set
                     if ( is.func( options.success ) ) {
@@ -268,12 +268,12 @@ var Ajax = function ( url, options )
      *
      * @type {Object|Function}
      */
-    Ajax.Init.prototype = Ajax.prototype;
+    Http.Init.prototype = Http.prototype;
 
     /**
      * @constructor
      */
-    Ajax.prototype.constructor = Ajax;
+    Http.prototype.constructor = Http;
 
     /**
      * @method
@@ -284,9 +284,9 @@ var Ajax = function ( url, options )
      * @param options {object}
      * @param method {string}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.method = function ( url, options, method )
+    Http.method = function ( url, options, method )
     {
         if ( is.object( url ) ) {
             options = url;
@@ -298,51 +298,51 @@ var Ajax = function ( url, options )
             method : method
         });
 
-        return new Ajax.Init( url, options );
+        return new Http.Init( url, options );
     };
 
     /**
      * @method
      *
-     * Ajax post method so as to not have to define options.method
+     * Http post method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.post = function ( url, options )
+    Http.post = function ( url, options )
     {
-        return Ajax.method( url, options, 'POST' );
+        return Http.method( url, options, 'POST' );
     };
 
     /**
      * @method
      *
-     * Ajax update method so as to not have to define options.method
+     * Http update method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.update = function ( url, options )
+    Http.update = function ( url, options )
     {
-        return Ajax.method( url, options, 'UPDATE' );
+        return Http.method( url, options, 'UPDATE' );
     };
 
     /**
      * @method
      *
-     * Ajax delete method so as to not have to define options.method
+     * Http delete method so as to not have to define options.method
      *
      * @param url {string|object}
      * @param options {object}
      *
-     * @returns {Ajax}
+     * @returns {Http}
      */
-    Ajax.del = function ( url, options )
+    Http.del = function ( url, options )
     {
-        return Ajax.method( url, options, 'DELETE' );
+        return Http.method( url, options, 'DELETE' );
     };
 })();
