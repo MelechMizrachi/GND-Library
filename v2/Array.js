@@ -61,23 +61,26 @@
     Object.defineProperties(
         Array.prototype
         , {
-            'clone' : {
-                value : function ()
+            'clone'     : {
+                value   : function ()
                 {
-                    return Array.clone( this );
-                }
+                    return Array.clone(this);
+                },
+                writable: true
             }
-            , 'contains' : {
-                value : function ( value )
+            , 'contains': {
+                value   : function (value)
                 {
-                    return Array.contains( this, value );
-                }
+                    return Array.contains(this, value);
+                },
+                writable: true
             }
-            , 'insert' : {
-                value : function ( value )
+            , 'insert'  : {
+                value   : function (value)
                 {
-                    return Array.insert( this, value );
-                }
+                    return Array.insert(this, value);
+                },
+                writable: true
             }
         }
     );
