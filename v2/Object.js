@@ -52,14 +52,17 @@
     Object.defineProperties(
         Object
         , {
-            'clone' : {
-                value : Utils.clone
+            'clone'   : {
+                value   : Utils.clone,
+                writable: true
             }
-            , 'each' : {
-                value : Utils.each
+            , 'each'  : {
+                value   : Utils.each,
+                writable: true
             }
-            , 'extend' : {
-                value : Utils.extend
+            , 'extend': {
+                value   : Utils.extend,
+                writable: true
             }
         }
     );
@@ -68,35 +71,53 @@
     Object.defineProperties(
         Object.prototype
         , {
-            'clone' : {
-                value : function ()
+            'length'    : {
+                value   : function ()
                 {
-                    return Object.clone( this );
-                }
+                    var size = 0, key;
+                    for (key in this) {
+                        if (this.hasOwnProperty(key)) size++;
+                    }
+
+                    return size;
+                },
+                writable: true
             }
-            , 'each' : {
-                value : function ( callback )
+            ,
+            'clone'     : {
+                value   : function ()
                 {
-                    return Object.each( this, callback );
-                }
+                    return Object.clone(this);
+                },
+                writable: true
             }
-            , 'extend' : {
-                value : function ( source )
+            , 'each'    : {
+                value   : function (callback)
                 {
-                    return Object.extend( this, source );
-                }
+                    return Object.each(this, callback);
+                },
+                writable: true
             }
-            , 'first' : {
-                value : function ()
+            , 'extend'  : {
+                value   : function (source)
                 {
-                    return Object.first( this );
-                }
+                    return Object.extend(this, source);
+                },
+                writable: true
             }
-            , 'validate' : {
-                value : function ()
+            , 'first'   : {
+                value   : function ()
                 {
-                    return Object.validate( this );
-                }
+                    return Object.first(this);
+                },
+                writable: true
+            }
+            , 'validate': {
+                value   : function ()
+                {
+                    return Object.validate(this);
+                },
+                writable: true
             }
         }
     );
