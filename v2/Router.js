@@ -44,7 +44,7 @@ var Router = {};
 
         controller = controller.split('@');
 
-        Router.routes[path] = {
+        this.routes[path] = {
             templateId    : templateId,
             controllerName: controller[0],
             actionName    : controller[1],
