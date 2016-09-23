@@ -104,6 +104,30 @@ var Utils = {};
     /**
      * @method
      *
+     * Extend Class
+     *
+     * @params  {...}
+     *
+     * @returns {object}
+     *  The extended class
+     */
+    Utils.extendClass = function (classToExtend)
+    {
+        var obj = function ()
+        {
+            classToExtend.call(this);
+        };
+
+        obj.prototype = Object.create(classToExtend.prototype);
+
+        obj.prototype.constructor = obj;
+
+        return obj;
+    };
+
+    /**
+     * @method
+     *
      * Merge two objects
      *
      * @param mergeInto {object}
